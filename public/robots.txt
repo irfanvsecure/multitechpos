@@ -1,0 +1,46 @@
+User-agent: *
+Allow: /
+Disallow: /request-demo
+Disallow: /thank-you/
+Disallow: /?s=
+
+# --- OpenAI (ChatGPT) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# --- Anthropic (Claude) ---
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# --- Perplexity ---
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Google (Gemini / generative AI) ---
+User-agent: Google-Extended
+Allow: /
+
+# --- Apple Intelligence ---
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Microsoft Copilot / Bing AI ---
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://multitechpos.com/sitemap.xml
