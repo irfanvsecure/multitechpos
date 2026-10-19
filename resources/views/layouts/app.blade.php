@@ -47,7 +47,7 @@
     <link rel="apple-touch-icon" href="{{ $base }}/images/2025/12/logo4.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="{{ $base }}/css/style.css?v=11">
+    <link rel="stylesheet" href="{{ $base }}/css/style.css?v=15">
 
     @include('partials.schema-site', ['siteUrl' => $siteUrl.$base])
     @stack('schema')
