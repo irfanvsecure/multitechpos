@@ -1,0 +1,29 @@
+# Used when the whole Laravel project sits inside the web root (e.g. cPanel public_html).
+# Every request is served from the public/ folder; the code and .env are never reachable.
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # SSL certificate checks (cPanel AutoSSL / Let's Encrypt) must keep working
+    RewriteRule ^\.well-known/ - [L]
+
+    # Never serve hidden files (.env, .git, ...) or project folders/files directly
+    RewriteRule (^|/)\. - [F,L]
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|scripts|storage|tests|vendor|node_modules)(/|$) - [F,L]
+    RewriteRule ^(artisan|composer\.(json|lock)|package\.json|phpunit\.xml|vite\.config\.js|README\.md)$ - [F,L]
+
+    # /public/about-us/ -> /about-us/ (one URL per page)
+    RewriteCond %{THE_REQUEST} \s/public/([^\s?]*) [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # Everything else is handled by public/
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Extra safety if mod_rewrite is ever off
+<FilesMatch "^\.(env|git|gitignore|gitattributes|editorconfig)">
+    Require all denied
+</FilesMatch>

@@ -21,7 +21,9 @@ class SiteAssetController extends Controller
         }
 
         $candidate = $root . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, urldecode($relative));
-        if (!is_file($candidate) && !$this->fetchFromOrigin($relative, $candidate)) {
+        // Missing files may be pulled from the old WordPress site, but only when ASSET_FALLBACK=true.
+        // It must stay off once this app *is* multitechpos.com, or it would call itself.
+        if (!is_file($candidate) && !(config('site.asset_fallback') && $this->fetchFromOrigin($relative, $candidate))) {
             abort(404);
         }
 

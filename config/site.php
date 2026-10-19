@@ -19,6 +19,9 @@ return [
         'https://www.linkedin.com/company/multitechpos/',
     ],
 
+    // Fetch images missing from storage/site-assets from the old WordPress site (local development only).
+    'asset_fallback' => (bool) env('ASSET_FALLBACK', false),
+
     // Where "Book a Free Demo" / quote form requests are emailed.
     'lead_email' => env('LEAD_EMAIL', 'support@multitechpos.com'),
 
