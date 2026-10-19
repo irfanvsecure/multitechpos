@@ -15,6 +15,13 @@ class SiteAssetController extends Controller
             abort(404);
         }
 
+        // Only public media is served. Plugin folders such as form uploads or file-manager
+        // backups (copied along with the WordPress uploads) must never be reachable.
+        if (preg_match('#^wp-content/uploads/(wpforms|wp-file-manager-pro|wp-file-manager|backup|backups|wpcf7_uploads|gravity_forms)(/|$)#i', $relative)
+            || !preg_match('#\.(jpe?g|png|gif|webp|svg|ico|avif|woff2?|ttf|eot|otf|pdf|mp4|webm|css|js|json|map)$#i', $relative)) {
+            abort(404);
+        }
+
         $root = realpath(storage_path('site-assets'));
         if ($root === false) {
             abort(404);
