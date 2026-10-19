@@ -2,7 +2,7 @@
 
 @section('title', 'Gaming Store POS Software in UAE | MultiTech POS')
 @section('description', 'Looking for the best Gaming Store POS Software in UAE? MultiTech offers fast billing, inventory control, & real-time reports. Book a Free Demo Today!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/gaming-store-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/gaming-store-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Can it manage multiple store branches?', 'a' => 'Yes, multi-branch management allows centralized monitoring and reporting.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Gaming Store POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Gaming Store POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -36,7 +36,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/gaming-store-pos-1.webp" alt="Gaming Store POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/gaming-store-pos-1.webp" alt="Gaming Store POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -54,21 +54,21 @@
     <p class="title text-center">Explore All Features</p>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Advanced Inventory Management</p>
           <p class="icon-box__text">Track consoles, games, accessories, and digital products with real-time stock updates.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Barcode &amp; SKU Management</p>
           <p class="icon-box__text">Speed up billing and reduce errors with barcode scanning and detailed SKU tracking.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">UAE VAT-Compliant Billing</p>
           <p class="icon-box__text">Automatically calculate VAT and generate compliant tax invoices for every sale.</p>
@@ -77,21 +77,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Trade-In &amp; Exchange Management</p>
           <p class="icon-box__text">Easily manage used game trade-ins, console exchanges, and price adjustments.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Product Variants &amp; Bundles</p>
           <p class="icon-box__text">Handle different editions, models, storage capacities, and combo offers efficiently.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Branch Management</p>
           <p class="icon-box__text">Manage multiple gaming stores from a centralized dashboard with consolidated reports.</p>
@@ -124,7 +124,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/gaming-store-pos-2.webp" alt="Gaming Store POS Software In UAE" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/gaming-store-pos-2.webp" alt="Gaming Store POS Software In UAE" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -203,7 +203,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/gaming-store-pos-3.webp" alt="Gaming Store POS Software In UAE" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/gaming-store-pos-3.webp" alt="Gaming Store POS Software In UAE" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -229,7 +229,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/gaming-store-pos-4.webp" alt="Gaming Store POS Software In UAE" class="img r-30" width="643" height="478" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/gaming-store-pos-4.webp" alt="Gaming Store POS Software In UAE" class="img r-30" width="643" height="478" loading="lazy">
       </div>
     </div>
   </div>

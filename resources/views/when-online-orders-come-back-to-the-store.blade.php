@@ -2,13 +2,13 @@
 
 @section('title', 'Cross-Channel Returns for UAE Retailers | MultiTech POS')
 @section('description', 'Online returns run higher than in-store. How UAE retailers should handle cross-channel returns, refunds, exchanges and restocking when orders come back to the counter.')
-@section('og_image', $base . '/wp-content/uploads/2026/09/omnichannel-returns-uae.jpg')
+@section('og_image', $base . '/images/2026/09/omnichannel-returns-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Returns and Refunds Across Channels: Handling Online Orders at the Counter', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Returns and Refunds Across Channels: Handling Online Orders at the Counter', 'image' => '/wp-content/uploads/2026/09/omnichannel-returns-uae.jpg', 'published' => '2026-09-03', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Returns and Refunds Across Channels: Handling Online Orders at the Counter', 'image' => '/images/2026/09/omnichannel-returns-uae.jpg', 'published' => '2026-09-03', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / September 3, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/omnichannel-returns-uae.webp" alt="omnichannel returns UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/omnichannel-returns-uae.webp" alt="omnichannel returns UAE" width="1024" height="683"></p>
         <p>A customer walks into your Sharjah branch holding a dress they bought on your website nine days ago. They want to exchange it for a different size. The item was never in that branch, the payment went through an online gateway, and the staff member at the counter has never seen this order before.</p>
         <p>What happens in the next two minutes determines whether that customer buys from you again. In most UAE stores, what happens is a phone call to someone else, a few minutes of searching, and an improvised decision that may or may not match what a colleague would have done yesterday.</p>
         <p>This is the fifth post in our WooCommerce series, following <a href="{{ $base }}/woocommerce-integration-for-uae-retailers-how-multitech-pos-keeps-every-sale-in-sync/">what integration does</a>, <a href="{{ $base }}/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/">inventory sync</a>, <a href="{{ $base }}/how-click-and-collect-works/">click and collect</a>, and <a href="{{ $base }}/why-store-and-online-prices-drift/">pricing across channels</a>. Returns are the mirror image of everything covered so far, and they are handled worse than any of it.</p>
@@ -27,7 +27,7 @@
         <div class="callout"><p><strong>The principle:</strong> a return should be as easy to process as a sale, at any branch, by any staff member, without a phone call.</p>
         </div>
         <h2><strong>What UAE Law Actually Requires</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/customer-unpacking-online-order-return.webp" alt="omnichannel returns UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/customer-unpacking-online-order-return.webp" alt="omnichannel returns UAE" width="1024" height="683"></p>
         <p>It helps to separate legal obligation from commercial policy, because retailers frequently confuse the two. Consumer protection in the UAE sits under Federal Law No. 15 of 2020 and its later amendment, summarised on the government’s own <a href="https://u.ae/en/information-and-services/justice-safety-and-the-law/consumer-protection" target="_blank" rel="noopener">consumer protection page</a>. The framework covers goods and services across the mainland and free zones, and it explicitly extends to goods sold through ecommerce platforms registered in the UAE.</p>
         <p>The practical distinction is this. Where an item is defective, not as described, or otherwise faulty, the customer has a genuine legal entitlement to a remedy. Where the customer has simply changed their mind about a working product, UAE law does not grant a blanket right of return in the way some European rules do. Whatever window you offer in that case is your own commercial promise.</p>
         <p>That is precisely why your policy needs to be written down and displayed, rather than left to individual judgement at the counter. A published policy is enforceable against you, so it is worth deciding deliberately rather than discovering it a customer at a time. If you are unsure where your specific category or licence sits, this is a question for a UAE-qualified advisor rather than a blog post.</p>
@@ -57,7 +57,7 @@
         <div class="callout callout--warning"><p><strong>Decide in advance:</strong> can a customer return an online order to any branch, or only to selected ones? Both are defensible. Not having decided is what leaves staff improvising in front of a queue.</p>
         </div>
         <h2><strong>Where the Returned Item Goes</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/returned-item-restocking-counter.webp" alt="omnichannel returns UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/returned-item-restocking-counter.webp" alt="omnichannel returns UAE" width="1024" height="683"></p>
         <p>The refund is only half the transaction. The item itself is now physically in a branch, and your stock records need to reflect that accurately or the counts drift.</p>
         <p>A returned item should go back into sellable stock at the branch that received it, not at whichever location originally fulfilled the order. This sounds obvious and is very often wrong in practice, particularly when the return is processed as a simple reversal of the original sale. The result is a unit that exists on a shelf in Sharjah while the system believes it is in Dubai.</p>
         <p>Items that come back damaged or unsellable need their own handling. Returning them to available stock means the website can sell something no customer will accept, so a separate quarantine or write-off state is worth having from the start. This connects directly to the counting discipline that keeps <a href="{{ $base }}/retail-inventory-shrinkage-uae/">retail inventory shrinkage</a> under control, since returns processed loosely are a steady source of phantom stock.</p>

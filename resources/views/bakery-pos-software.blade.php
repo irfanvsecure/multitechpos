@@ -14,7 +14,7 @@
     ['q' => 'How long does it take to set up and is local support available?', 'a' => 'Most bakeries are live within 48 hours. Our UAE-based support team is available via phone, WhatsApp, and email, ready to help whenever your bakery needs assistance.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Bakery POS Software in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Bakery POS Software in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -35,7 +35,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/bakery-pos-1.webp" alt="Bakery POS Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/bakery-pos-1.webp" alt="Bakery POS Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -49,21 +49,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Inventory &amp; Ingredient Management</h3>
           <p class="icon-box__text">Track daily stock levels of bakery items, ingredients, and supplies. Get low-stock alerts and reduce waste by managing ingredient usage efficiently.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">VAT-Compliant Billing &amp; Sales</h3>
           <p class="icon-box__text">Quick and smooth checkout for customers with support for cash, card, digital wallets and UAE VAT-ready invoicing. Custom-label receipts and printing options are included too.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Custom Order &amp; Pre-Order Management</h3>
           <p class="icon-box__text">Manage walk-ins, cake orders, wholesale, and deliveries from one screen. Assign staff, schedule pickups, collect deposits, and track every order in real time.</p>
@@ -72,21 +72,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Customer Management &amp; Loyalty Programs</h3>
           <p class="icon-box__text">Store purchase history and reward repeat customers with points, birthday discounts, and targeted offers, key to growth in the UAE’s competitive bakery market.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Reporting &amp; Business Analytics</h3>
           <p class="icon-box__text">Generate sales reports, track bestselling items, monitor daily revenue, and view performance data to understand business trends and make smarter decisions.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Employee &amp; Shift Management</h3>
           <p class="icon-box__text">Set role-based access for cashiers, supervisors, and managers. Track shift times, monitor performance, and control permissions, ideal for bakeries running morning and evening rotations.</p>
@@ -119,7 +119,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request a Free Demo Today! <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/bakery-pos-2.webp" alt="Bakery POS Software in UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/bakery-pos-2.webp" alt="Bakery POS Software in UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -198,7 +198,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/bakery-pos-3.webp" alt="Bakery POS Software in UAE" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/bakery-pos-3.webp" alt="Bakery POS Software in UAE" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>

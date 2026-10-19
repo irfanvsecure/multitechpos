@@ -2,13 +2,13 @@
 
 @section('title', 'Essential Restaurant POS Features You Need')
 @section('description', 'Discover the must-have restaurant POS features—from order management to kitchen displays—that boost efficiency and improve guest experience.')
-@section('og_image', $base . '/wp-content/uploads/2026/07/Waiter_using_touchscreen_POS_system_202607192339-1.jpeg')
+@section('og_image', $base . '/images/2026/07/Waiter_using_touchscreen_POS_system_202607192339-1.jpeg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Essential Features Every Restaurant Point-of-Sale System Should Have', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Essential Features Every Restaurant Point-of-Sale System Should Have', 'image' => '/wp-content/uploads/2026/07/Waiter_using_touchscreen_POS_system_202607192339-1.jpeg', 'published' => '2026-07-19', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Essential Features Every Restaurant Point-of-Sale System Should Have', 'image' => '/images/2026/07/Waiter_using_touchscreen_POS_system_202607192339-1.jpeg', 'published' => '2026-07-19', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">

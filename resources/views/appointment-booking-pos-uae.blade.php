@@ -13,7 +13,7 @@
     ['q' => 'Is Your POS system UAE VAT compliant and secure?', 'a' => 'MultiTech POS is fully UAE VAT-compliant, audit-ready, and offers high security with data backup and encryption.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Appointment Booking POS In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Features', 'url' => '/features/']])
+@include('partials.page-hero', ['title' => 'Appointment Booking POS In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Features', 'url' => '/features/']])
 
 <section class="section section--light">
   <div class="container">
@@ -35,7 +35,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Best-Appointment-Booking-POS-In-UAE.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Best-Appointment-Booking-POS-In-UAE.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -99,7 +99,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Smart-Appointment-Booking-POS-Software-for-Businesses-in-UAE.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Smart-Appointment-Booking-POS-Software-for-Businesses-in-UAE.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -237,7 +237,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/pos-software-2.jpg" alt="" class="img img-frame ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/pos-software-2.jpg" alt="" class="img img-frame ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -307,7 +307,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Get-Started-with-Our-Appointment-Booking-System-Today.jpg" alt="" class="img img-frame ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Get-Started-with-Our-Appointment-Booking-System-Today.jpg" alt="" class="img img-frame ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -400,12 +400,12 @@
     <div class="stack p-10">
       <div class="logo-slider" data-slider style="--show:4;--show-tablet:4;--show-mobile:1">
         <div class="logo-slider__track">
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
         </div>
       </div>
     </div>

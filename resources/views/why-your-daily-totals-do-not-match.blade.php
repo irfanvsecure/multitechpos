@@ -2,13 +2,13 @@
 
 @section('title', 'Reconciling Online and In-Store Payments | MultiTech POS')
 @section('description', 'Why POS, gateway and bank totals never agree, and how UAE retailers should reconcile online and in-store payments, settlements, refunds and cash on delivery.')
-@section('og_image', $base . '/wp-content/uploads/2026/09/reconciling-payments-uae-retail.jpg')
+@section('og_image', $base . '/images/2026/09/reconciling-payments-uae-retail.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Reconciling Online and In-Store Payments: Making the Daily Close Work', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Reconciling Online and In-Store Payments: Making the Daily Close Work', 'image' => '/wp-content/uploads/2026/09/reconciling-payments-uae-retail.jpg', 'published' => '2026-09-10', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Reconciling Online and In-Store Payments: Making the Daily Close Work', 'image' => '/images/2026/09/reconciling-payments-uae-retail.jpg', 'published' => '2026-09-10', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / September 10, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/reconciling-payments-uae-retail.webp" alt="reconciling online and in-store payments UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/reconciling-payments-uae-retail.webp" alt="reconciling online and in-store payments UAE" width="1024" height="683"></p>
         <p>Your POS says you took 47,320 dirhams yesterday. Your bank shows something else. Your payment gateway dashboard shows a third number. Nobody has stolen anything and nothing is broken, but somebody now has to spend an hour working out which figure is real.</p>
         <p>This is the most common frustration retailers hit after adding an online channel, and it is rarely a sign of a problem. It is usually the predictable result of three systems measuring different things at different moments.</p>
         <p>This is the seventh post in our WooCommerce series, following <a href="{{ $base }}/woocommerce-integration-for-uae-retailers-how-multitech-pos-keeps-every-sale-in-sync/">integration basics</a>, <a href="{{ $base }}/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/">inventory sync</a>, <a href="{{ $base }}/how-click-and-collect-works/">click and collect</a>, <a href="{{ $base }}/why-store-and-online-prices-drift/">pricing</a>, <a href="{{ $base }}/when-online-orders-come-back-to-the-store/">returns</a>, and <a href="{{ $base }}/one-customer-two-records/">the single customer view</a>. Stock and customers are covered. This one is about the money.</p>
@@ -27,7 +27,7 @@
         <div class="callout"><p><strong>The principle:</strong> your POS answers what you sold. Your bank answers what you have been paid. A healthy business needs both, and they will never be the same number on the same day.</p>
         </div>
         <h2><strong>Where the Gaps Come From</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/card-payment-settlement-timing.webp" alt="reconciling online and in-store payments UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/card-payment-settlement-timing.webp" alt="reconciling online and in-store payments UAE" width="1024" height="683"></p>
         <p>Most differences trace to a small number of causes, and knowing them turns an hour of investigation into a few minutes of checking.</p>
         <table>
         <thead>
@@ -57,7 +57,7 @@
         <div class="callout callout--warning"><p><strong>Worth confirming:</strong> which WooCommerce order statuses your POS counts as revenue. If pending or failed orders are included, your sales figures are overstated and no amount of reconciliation will fix that.</p>
         </div>
         <h2><strong>A Daily Close That Actually Works</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/counter-payment-terminal-daily-close.webp" alt="reconciling online and in-store payments UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/counter-payment-terminal-daily-close.webp" alt="reconciling online and in-store payments UAE" width="1024" height="683"></p>
         <p>The daily close should confirm that what happened today is recorded correctly. It should not attempt to prove that money has arrived, because for online orders it has not yet.</p>
         <p>In practice that means counting the physical cash drawer against recorded cash sales, checking the card terminal batch total against recorded card sales, and confirming that online orders for the day are present with the right statuses. Three quick checks, each comparing like with like.</p>
         <p>Settlement reconciliation is a separate exercise, done when payouts arrive rather than daily. You take each deposit, match it to the orders it covers, and confirm that the difference is accounted for by fees and refunds. Doing this weekly is usually enough, and it is far less painful than attempting it once a quarter.</p>

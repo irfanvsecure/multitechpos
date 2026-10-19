@@ -2,7 +2,7 @@
 
 @section('title', 'Best Nail Salon POS Software in UAE | MultiTech POS')
 @section('description', 'Simplify bookings, billing & inventory with MultiTech POS – the smart nail salon POS built for UAE beauty businesses. Book a free demo!')
-@section('og_image', $base . '/wp-content/uploads/2026/06/nail-salon-pos-1.webp')
+@section('og_image', $base . '/images/2026/06/nail-salon-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Is nail salon POS software scalable for growing salons in UAE?', 'a' => 'Yes, it is fully scalable, allowing salons to add branches, users, and services easily. It grows with your business while maintaining performance, data accuracy, and centralized management control.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Nail Salon POS Software in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Nail Salon POS Software in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/nail-salon-pos-1.webp" alt="Nail Salon POS Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/nail-salon-pos-1.webp" alt="Nail Salon POS Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -53,21 +53,21 @@
     <h2 class="title text-center">Explore All Features</h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Appointment &amp; Calendar Management</p>
           <p class="icon-box__text">Book appointments, handle walk-ins, and avoid double bookings easily.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Service &amp; Retail Product Inventory</p>
           <p class="icon-box__text">Track nail polishes, gels, lotions, accessories, and more with automatic updates.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customer Profiles &amp; History</p>
           <p class="icon-box__text">Save customer details, service preferences, and visit history.</p>
@@ -76,21 +76,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Payment &amp; Quick Billing</p>
           <p class="icon-box__text">Accept cash, card, digital wallets, and contactless payments with smooth checkout.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Staff Rostering &amp; Commission Tracking</p>
           <p class="icon-box__text">Manage technicians, shifts, and performance accurately.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Loyalty Programs &amp; Gift Cards</p>
           <p class="icon-box__text">Create rewards, discounts, and promotions to boost repeat visits.</p>
@@ -129,7 +129,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request a Free Demo Today! <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/nail-salon-pos-2.webp" alt="Nail Salon POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/nail-salon-pos-2.webp" alt="Nail Salon POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -213,7 +213,7 @@
         <a href="tel:+971588979925" class="btn btn--sm"><i class="fas fa-phone-alt"></i> Talk to Our Sales Team</a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/nail-salon-pos-3.webp" alt="Nail Salon POS Software in UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/nail-salon-pos-3.webp" alt="Nail Salon POS Software in UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -233,7 +233,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request a Free Demo Today! <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/nail-salon-pos-4.webp" alt="Nail Salon POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/nail-salon-pos-4.webp" alt="Nail Salon POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>

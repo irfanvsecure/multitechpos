@@ -2,13 +2,13 @@
 
 @section('title', 'Click and Collect for UAE Retailers | MultiTech POS')
 @section('description', 'Click and collect fails on operations, not software. How the pick, hold and handover steps should work for UAE retailers running WooCommerce alongside a POS.')
-@section('og_image', $base . '/wp-content/uploads/2026/08/click-and-collect-uae-handover.jpg')
+@section('og_image', $base . '/images/2026/08/click-and-collect-uae-handover.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Click and Collect for UAE Retailers: Making the Handover Work', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Click and Collect for UAE Retailers: Making the Handover Work', 'image' => '/wp-content/uploads/2026/08/click-and-collect-uae-handover.jpg', 'published' => '2026-08-29', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Click and Collect for UAE Retailers: Making the Handover Work', 'image' => '/images/2026/08/click-and-collect-uae-handover.jpg', 'published' => '2026-08-29', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / August 29, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/click-and-collect-uae-handover.webp" alt="click and collect UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/click-and-collect-uae-handover.webp" alt="click and collect UAE" width="1024" height="683"></p>
         <p>Click and collect looks like the easiest thing an omnichannel retailer can offer. The customer pays online, walks in, and takes the bag. No delivery cost, no courier, no packaging beyond a paper bag. Yet it is the feature that generates the most complaints in UAE retail, and almost never because the software failed.</p>
         <p>It fails on operations. The order arrives but nobody picks it. The item is picked but sits behind the counter with no label. The customer turns up and three staff members search the stockroom while a queue builds behind them. None of that is a sync problem, and none of it gets fixed by better integration alone.</p>
         <p>This is the third post in our WooCommerce series. The <a href="{{ $base }}/woocommerce-integration-for-uae-retailers-how-multitech-pos-keeps-every-sale-in-sync/">first covered what integration does</a> and the <a href="{{ $base }}/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/">second went into inventory sync</a>. This one is about what happens between the order landing and the customer leaving with it.</p>
@@ -45,12 +45,12 @@
         <div class="callout"><p><strong>A useful test:</strong> ask a cashier to show you every collection order waiting right now. If they have to open a laptop or ask someone else, your click and collect will fail under pressure.</p>
         </div>
         <h2><strong>Picking Against the Order, Not From Memory</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/staff-picking-collection-order.webp" alt="click and collect UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/staff-picking-collection-order.webp" alt="click and collect UAE" width="1024" height="683"></p>
         <p>Picking is where variant errors creep in. A customer orders a medium in navy, staff pull a medium in black because that is what was on the front rail, and nobody notices until handover. The customer is now standing in your store holding the wrong item, which is worse than a delivery error because it happens in front of everyone.</p>
         <p>Scanning the item against the order at pick time removes this entirely. The barcode either matches the ordered variation or it does not, so the check happens before the bag is sealed rather than after the customer arrives. This is the operational reason the variation level barcoding covered in the previous post matters, since without a barcode per variation there is nothing specific to scan against.</p>
         <p>For orders with several lines, picking should also confirm completeness. A partially picked order that gets bagged and labelled looks identical to a complete one, and the gap only surfaces at the counter.</p>
         <h2><strong>The Holding Area Nobody Plans</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/collection-orders-holding-area.webp" alt="click and collect UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/collection-orders-holding-area.webp" alt="click and collect UAE" width="1024" height="683"></p>
         <p>Most retailers set up click and collect without deciding where picked orders physically live, and the default becomes a corner behind the till. That works for three orders a day and collapses at fifteen, particularly across shift changes when the person who picked the order is no longer in the building.</p>
         <p>Two things fix this cheaply. First, every bag carries a printed label with the order number and customer name, not a handwritten note. Second, the holding location is recorded against the order, even if it is as simple as shelf A, B or C. The staff member at handover then reads the location from the order rather than searching.</p>
         <p>It is also worth setting an expiry policy from the start. Orders that are never collected need a defined point at which they are unpacked and returned to sellable stock, otherwise that stock stays committed indefinitely and slowly corrupts your available counts.</p>
@@ -61,7 +61,7 @@
         <p>Marking collection at the counter closes the loop properly. Stock moves from committed to sold, the order leaves the pending queue, and the sale appears in the same day’s figures alongside walk-in transactions. It also gives you the one number that tells you whether click and collect is working, which is the time between order placed and order collected.</p>
         <p>Handover is also a commercial moment worth using. The customer is physically in your store, already committed, and holding something they wanted. Retailers who track it usually find a meaningful share of collection customers add something at the counter, which is the main reason click and collect tends to outperform home delivery on margin even before you subtract courier costs.</p>
         <h2><strong>Multi-Branch Collection</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/collection-point-order-handover-desk.webp" alt="click and collect UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/collection-point-order-handover-desk.webp" alt="click and collect UAE" width="1024" height="683"></p>
         <p>Once you offer collection at more than one location, the customer picks a branch at checkout and that choice has to reach the right store. The order should appear only in the queue of the selected branch, and the stock should be reserved at that branch specifically rather than against a pooled total.</p>
         <p>Offering collection from a branch that does not hold the item is possible, but it needs an honest transfer time shown at checkout rather than a same day promise you cannot keep. Retailers running <a href="{{ $base }}/multi-location-integration/">multi-location integration</a> can see branch level stock at the point of the promise, which is what makes the difference between a realistic collection window and an apology the next morning.</p>
         <p>The reporting side matters too. Collection volume and fulfilment times vary sharply between branches, and comparing them is usually how you find the one store where the process has quietly stopped being followed. This is the same branch level visibility that <a href="{{ $base }}/multi-branch-business-pos-uae/">multi branch businesses</a> use for the rest of their operations.</p>

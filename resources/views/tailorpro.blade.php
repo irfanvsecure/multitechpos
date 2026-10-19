@@ -5,7 +5,7 @@
 
 @section('content')
 
-@include('partials.page-hero', ['title' => 'Tailorpro', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Downloads', 'url' => '/downloads/']])
+@include('partials.page-hero', ['title' => 'Tailorpro', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Downloads', 'url' => '/downloads/']])
 
 @include('partials.clients-band')
 

@@ -2,7 +2,7 @@
     <div class="wrap footer-main">
         <div class="footer-brand">
             <a href="{{ $base }}/" class="footer-logo">
-                <img src="{{ $base }}/wp-content/uploads/2025/12/multitechpos-logo-e1781947344295.png" alt="MultiTech POS" width="170" height="79">
+                <img src="{{ $base }}/images/2025/12/multitechpos-logo-e1781947344295.png" alt="MultiTech POS" width="170" height="79">
             </a>
             <p>Smart, VAT-compliant POS and ERP solutions for retail, restaurants, salons, pharmacies and growing businesses across the UAE.</p>
             <ul class="footer-badges">

@@ -2,7 +2,7 @@
 
 @section('title', 'Best Hotel POS Software in UAE | MultiTech POS')
 @section('description', 'Streamline F&B, room billing & guest orders with MultiTech POS – the smart hotel POS built for UAE hospitality. Book a free demo today!')
-@section('og_image', $base . '/wp-content/uploads/2026/06/hotel-pos-1.webp')
+@section('og_image', $base . '/images/2026/06/hotel-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -14,7 +14,7 @@
     ['q' => 'Can it integrate with accounting and CRM systems?', 'a' => 'Yes — integrations with accounting, ERP and CRM systems help streamline bookings and financial reconciliation.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Hotel POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Hotel POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -32,7 +32,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/hotel-pos-1.webp" alt="Hotel POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/hotel-pos-1.webp" alt="Hotel POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -50,21 +50,21 @@
     <h2 class="title text-center">Explore All Features</h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Front Desk &amp; Reservation Billing</p>
           <p class="icon-box__text">Automate guest check-ins/check-outs, room charges, advanced billing and payments with full support for UAE VAT requirements.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Restaurant &amp; Room Service Integration</p>
           <p class="icon-box__text">Connect all hotel dining points — lounges, cafes, restaurants and in-room dining — into the POS for centralized order tracking &amp; smart billing.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Property &amp; Multi-Outlet Support</p>
           <p class="icon-box__text">Manage multiple properties, outlets, departments and billing points from a single dashboard — ideal for hotel chains and large resorts.</p>
@@ -73,21 +73,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory &amp; Resource Control</p>
           <p class="icon-box__text">Track stock for restaurants, minibar supplies, housekeeping, spa, and retail outlets in real time — reduce waste and optimize replenishment.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Real-Time Reports &amp; Analytics</p>
           <p class="icon-box__text">Get instant, VAT-ready reports covering revenue, occupancy, sales by outlet and performance insights to make smarter business decisions.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Guest Profiles, Loyalty &amp; Promotions</p>
           <p class="icon-box__text">Build detailed guest profiles, loyalty programs and customized offers to boost repeat stays and personalized guest experiences.</p>
@@ -118,7 +118,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/hotel-pos-2.webp" alt="Hotel POS Software In UAE" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/hotel-pos-2.webp" alt="Hotel POS Software In UAE" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -195,7 +195,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/hotel-pos-3.webp" alt="Hotel POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/hotel-pos-3.webp" alt="Hotel POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>

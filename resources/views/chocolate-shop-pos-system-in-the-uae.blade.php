@@ -13,7 +13,7 @@
     ['q' => 'Can it generate real-time analytics and sales reports?', 'a' => 'Yes. The built-in analytics dashboard gives you live visibility into top-selling products, revenue trends, peak hours and staff performance, helping you make faster, smarter decisions for your chocolate business.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Chocolate Shop POS System in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Chocolate Shop POS System in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -28,7 +28,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/chocolate-pos-1.webp" alt="Chocolate Shop POS System in UAE" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/chocolate-pos-1.webp" alt="Chocolate Shop POS System in UAE" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -97,7 +97,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/chocolate-pos-2.webp" alt="Chocolate Shop POS System in UAE" class="img img-frame" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/chocolate-pos-2.webp" alt="Chocolate Shop POS System in UAE" class="img img-frame" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -232,7 +232,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/chocolate-pos-3.webp" alt="Chocolate Shop POS System in UAE" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/chocolate-pos-3.webp" alt="Chocolate Shop POS System in UAE" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>

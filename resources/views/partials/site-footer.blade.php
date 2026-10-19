@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4">
-                <img class="footer-logo" src="{{ $base }}/wp-content/uploads/2025/12/multitechpos-logo-e1781947344295.png" alt="MultiTech POS">
+                <img class="footer-logo" src="{{ $base }}/images/2025/12/multitechpos-logo-e1781947344295.png" alt="MultiTech POS">
                 <p>Leading provider of smart POS solutions for businesses across the UAE and Middle East. Empowering retail, restaurants, supermarkets, and pharmacies with cutting-edge technology.</p>
                 <a href="https://www.facebook.com/multitechposale/" target="_blank" rel="noopener">Facebook</a>
                 <span aria-hidden="true"> · </span>

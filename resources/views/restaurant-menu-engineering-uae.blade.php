@@ -2,13 +2,13 @@
 
 @section('title', 'Restaurant Menu Engineering in the UAE | MultiTech POS')
 @section('description', 'Restaurant menu engineering for UAE owners: price and place every dish using contribution margin, VAT-adjusted costs and POS sales data. Book a free demo.')
-@section('og_image', $base . '/wp-content/uploads/2026/09/restaurant-menu-engineering-uae.jpg')
+@section('og_image', $base . '/images/2026/09/restaurant-menu-engineering-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Menu Engineering for UAE Restaurants: Using POS Data to Price and Place Every Dish', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Menu Engineering for UAE Restaurants: Using POS Data to Price and Place Every Dish', 'image' => '/wp-content/uploads/2026/09/restaurant-menu-engineering-uae.jpg', 'published' => '2026-09-26', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Menu Engineering for UAE Restaurants: Using POS Data to Price and Place Every Dish', 'image' => '/images/2026/09/restaurant-menu-engineering-uae.jpg', 'published' => '2026-09-26', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / September 26, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/restaurant-menu-engineering-uae.webp" alt="restaurant menu engineering UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/restaurant-menu-engineering-uae.webp" alt="restaurant menu engineering UAE" width="1024" height="683"></p>
         <p>Most restaurant owners in the UAE can name their best-selling dish without thinking. Far fewer can name their most profitable one, and the two are rarely the same plate. That gap is where a surprising amount of margin disappears, quietly, one order at a time.</p>
         <p>Restaurant menu engineering is the discipline that closes it. It is not about redesigning your menu to look nicer or adding trendy dishes. It is a structured way of reading your own sales data so that every item on the menu earns its place, is priced correctly, and sits where guests are most likely to order it. The method is decades old, but it has only become practical for most operators now that a modern POS records every sale, every modifier and every recipe cost automatically.</p>
         <p>This guide walks through how the method works, the UAE-specific details that trip people up, and how to run it with the data your <a href="{{ $base }}/food-restaurant-pos-software-uae/">restaurant POS software</a> already holds.</p>
@@ -53,7 +53,7 @@
         </table>
         <p>Look at the shawarma plate. At 26 percent it has the best food cost percentage on the section, and most owners would call it a winner. Yet it contributes the least cash of any dish. The mixed grill runs a food cost above 36 percent, a number that would normally prompt a stern conversation with the chef, and it earns twice as much per plate. Judged by percentage, you would push the wrong dish.</p>
         <h2><strong>What to Do With Each Group</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/menu-items-profitability-analysis.webp" alt="restaurant menu engineering UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/menu-items-profitability-analysis.webp" alt="restaurant menu engineering UAE" width="1024" height="683"></p>
         <p><strong>Stars</strong> need protection rather than change. Keep the recipe and portion consistent, give them the best position on the menu, and make sure servers know to recommend them. Resist the urge to raise their price sharply, since their popularity is doing a lot of the work.</p>
         <p><strong>Plowhorses</strong> are where most of the quick wins live, because volume multiplies any improvement. In the example, adding AED 2 to the biryani across 560 plates a month adds more than AED 1,000 in margin, and regular guests are unlikely to notice. Other levers include tightening portions, swapping a costly garnish, or pairing the dish with a high-margin side or drink as a set.</p>
         <p><strong>Puzzles</strong> are profitable but hidden. The answer is almost never a price cut, which would erode the very margin that makes them valuable. Instead, move them to a more visible position, rewrite the description, rename the dish, or have servers suggest it. The hammour in the example is a strong candidate for a better spot on the page and a line of staff training.</p>
@@ -63,7 +63,7 @@
         <h2><strong>Menu Design Turns Analysis Into Orders</strong></h2>
         <p>Classification only pays off when guests actually change what they order, and that happens on the menu itself. Placement matters: the first and last items in a section, and anything given a box or a little extra space, tend to draw attention. That is where Stars and repositioned Puzzles belong.</p>
         <p>Price presentation matters too. A study from the Cornell School of Hotel Administration on <a href="https://ecommons.cornell.edu/entities/publication/1ca7d603-ee0c-4721-9003-91ca4f87cfa2" target="_blank" rel="noopener">menu price formats and restaurant checks</a> found that guests given menus showing plain numerals spent noticeably more than those whose menus used a currency symbol or wrote prices out in words. The researchers were careful to note that the findings came from one restaurant at lunch, so treat it as a sensible default to test rather than a guaranteed uplift. Avoiding long dotted lines that lead the eye straight down a column of prices is a related habit many operators adopt.</p>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/menu-layout-cafe-table.webp" alt="restaurant menu engineering UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/menu-layout-cafe-table.webp" alt="restaurant menu engineering UAE" width="1024" height="683"></p>
         <p>Digital menus make all of this faster. With QR ordering and <a href="{{ $base }}/digital-dining-pos-software/">digital dining menus</a>, you can reorder a section, feature a Puzzle, or change a price without reprinting anything. Delivery listings deserve their own review, since the margin picture there changes once commission is deducted, which we explored in our post on <a href="{{ $base }}/restaurant-delivery-app-integration-uae/">delivery app integration</a>.</p>
         <h2><strong>Where the POS Does the Heavy Lifting</strong></h2>
         <p>The reason many restaurants never run this analysis is not the maths. It is gathering the inputs. Accurate menu engineering needs three things that are painful to assemble by hand: sales counts per item for a defined period, a current ingredient cost for every recipe, and a way to separate channels and branches.</p>

@@ -15,12 +15,12 @@
     <div class="header-main">
         <div class="wrap header-main__inner">
             <a href="{{ $base }}/" class="header-logo" aria-label="MultiTech POS home">
-                <img src="{{ $base }}/wp-content/uploads/2025/12/logo4.png" alt="MultiTech POS" width="122" height="50">
+                <img src="{{ $base }}/images/2025/12/logo4.png" alt="MultiTech POS" width="122" height="50">
             </a>
 
             <nav class="main-nav" id="main-nav" aria-label="Main menu">
                 <div class="main-nav__head">
-                    <img src="{{ $base }}/wp-content/uploads/2025/12/logo4.png" alt="MultiTech POS" width="100" height="41">
+                    <img src="{{ $base }}/images/2025/12/logo4.png" alt="MultiTech POS" width="100" height="41">
                     <button class="nav-close" type="button" aria-label="Close menu"><i class="fas fa-times"></i></button>
                 </div>
 

@@ -2,7 +2,7 @@
 
 @section('title', 'Inventory Management Software in UAE | MultiTech')
 @section('description', 'Take control of inventory with MultiTech inventory management software in UAE. Real-time tracking, low-stock alerts & analytics. Get a Free Demo!')
-@section('og_image', $base . '/wp-content/uploads/2026/06/stock-management-1.webp')
+@section('og_image', $base . '/images/2026/06/stock-management-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'Does it support barcode scanning and printing?', 'a' => 'Yes — full barcode generation, printing, and scanning are built in, making stock-takes and check-outs fast and accurate.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Inventory Management Software in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
+@include('partials.page-hero', ['title' => 'Inventory Management Software in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
 
 <section class="section section--light">
   <div class="container">
@@ -196,7 +196,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get A Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/stock-management-1.webp" alt="Inventory Management Software in UAE​" class="img img-frame" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/stock-management-1.webp" alt="Inventory Management Software in UAE​" class="img img-frame" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -208,12 +208,12 @@
       <p class="title text-center">Our Clients</p>
       <div class="logo-slider" data-slider style="--show:5;--show-tablet:5;--show-mobile:1">
         <div class="logo-slider__track">
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
         </div>
       </div>
     </div>
@@ -290,7 +290,7 @@
         <a href="tel:+971588979925" class="btn btn--sm"><i class="fas fa-phone-alt"></i> Speak With Expert</a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/stock-management-2.webp" alt="Inventory Management Software in UAE​" class="img img-frame" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/stock-management-2.webp" alt="Inventory Management Software in UAE​" class="img img-frame" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
 
 @section('title', 'Best Music Store POS Software in UAE | MultiTech')
 @section('description', 'From guitars to grand pianos – MultiTech’s Music Store POS handles it all. The go-to music retail POS for UAE. Get started Today for free!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/music-store-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/music-store-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Does it track customer loyalty and profiles?', 'a' => 'Yes. Create customer accounts, track purchase history and run loyalty rewards programs.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Music Store POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Music Store POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -33,7 +33,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/music-store-pos-1.webp" alt="Music Store POS Software In UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/music-store-pos-1.webp" alt="Music Store POS Software In UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -51,21 +51,21 @@
     <h2 class="title text-center">Explore All Features</h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Smart Sales &amp; Checkout</p>
           <p class="icon-box__text">Quick scanning, custom pricing, layaway, returns, exchange handling, multiple tender types and secure checkout.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory &amp; Product Variants</p>
           <p class="icon-box__text">Manage stock for strings, amplifiers, keyboards, drums, accessories, spare parts and more — including variants like size, color, brand and model.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Rental &amp; Repair Management</p>
           <p class="icon-box__text">Track instrument rentals, deposits, return dates and repair orders with ease.</p>
@@ -74,21 +74,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">UAE VAT &amp; Tax Compliance</p>
           <p class="icon-box__text">Generate FTA-compliant receipts and tax invoices automatically in both Arabic &amp; English — fully tracking UAE VAT.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customer Accounts &amp; Loyalty</p>
           <p class="icon-box__text">Create customer profiles, track purchases, issue loyalty rewards and build repeat business.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multiple Payment Support</p>
           <p class="icon-box__text">Accept cash, card, gift cards, UAE payment gateways, and mobile wallets.</p>
@@ -116,7 +116,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/music-store-pos-2.webp" alt="Music Store POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/music-store-pos-2.webp" alt="Music Store POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -184,7 +184,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/music-store-pos-3.webp" alt="Music Store POS Software In UAE​" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/music-store-pos-3.webp" alt="Music Store POS Software In UAE​" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>

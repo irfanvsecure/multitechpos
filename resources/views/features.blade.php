@@ -5,7 +5,7 @@
 
 @section('content')
 
-@include('partials.page-hero', ['title' => 'Our POS Features', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg'])
+@include('partials.page-hero', ['title' => 'Our POS Features', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg'])
 
 @include('partials.clients-band')
 
@@ -23,7 +23,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/magnifying-glass-with-graphics-flat-style_23-2147784204.jpg" alt="" class="img img-frame" width="648" height="648" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/magnifying-glass-with-graphics-flat-style_23-2147784204.jpg" alt="" class="img img-frame" width="648" height="648" loading="lazy">
       </div>
     </div>
   </div>
@@ -39,21 +39,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Inventory Management</h3>
           <p class="icon-box__text">With our inventory movement, you can keep track of your products, from purchase, return, damage to sa</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Register Management</p>
           <p class="icon-box__text">Keep track of your payments (Cash, Credit Card, Cheque etc.) as each cashier have separate register accounts.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Easy to Setup</p>
           <p class="icon-box__text">With provided documentation, now it is very easy to setup. Although our support is always there to assist.</p>
@@ -62,21 +62,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Purchase Management</p>
           <p class="icon-box__text">Purchase orders and bill are fully managed with their associated suppliers as well as their payments.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Employee Management</p>
           <p class="icon-box__text">Each user have their login details with their access levels (Owner, Sale, Purchase) to keep proceeding under control.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi Company / Multi Location</p>
           <p class="icon-box__text">With this, you can manage multi companies and multi locations.</p>
@@ -85,21 +85,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customers &amp; Suppliers</p>
           <p class="icon-box__text">Add customers and suppliers, manage credits and collect essential information like email and phone numbers.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/web-design.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/web-design.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Mobile Reporting</p>
           <p class="icon-box__text">Now you always connected with your business from anywhere and through any device connected with internet.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/bill.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/bill.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customisable Receipts</p>
           <p class="icon-box__text">With lot of flexibility, we allows end user to customize their receipt as per their needs.</p>
@@ -123,7 +123,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/1.png" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/1.png" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>
@@ -149,7 +149,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/home_software_slide2.png" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/home_software_slide2.png" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>
@@ -173,7 +173,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/2.png" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/2.png" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>

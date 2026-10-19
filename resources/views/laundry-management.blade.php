@@ -14,7 +14,7 @@
     ['q' => 'What features should I look for in laundry POS System?', 'a' => 'The best laundry management system should include order tracking, POS billing, delivery management, customer notifications, reporting dashboards, barcode scanning, and cloud access for efficient business control.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Laundry Management System In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
+@include('partials.page-hero', ['title' => 'Laundry Management System In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
 
 @include('partials.clients-band')
 
@@ -38,7 +38,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Laundry-Management-Software-Solutions-For-UAE-Businesses.jpg" alt="" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Laundry-Management-Software-Solutions-For-UAE-Businesses.jpg" alt="" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -52,21 +52,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory Management</p>
           <p class="icon-box__text">Track all stock movements in real time, purchases, returns, damages, and sales, with complete inventory visibility across your operation.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Register Management</p>
           <p class="icon-box__text">Record all payment types (cash, card, and cheque) with separate register accounts per cashier for accurate, accountable transaction tracking.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Easy to Setup</p>
           <p class="icon-box__text">Get running fast with clear setup documentation. Our 24-hour support team is always available to guide you through every step.</p>
@@ -75,21 +75,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Purchase Management</p>
           <p class="icon-box__text">Handle purchase orders, supplier bills, and payments in one place, keeping procurement organized and outstanding balances always under control.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Employee Management</p>
           <p class="icon-box__text">Give each team member individual login credentials with role-based access levels (Owner, Sales, or Purchasing) for secure operational control.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi Company / Multi Location</p>
           <p class="icon-box__text">Run multiple branches or company entities from a single multi-location laundry pos system.</p>
@@ -98,21 +98,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-1-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-1-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customers &amp; Suppliers</p>
           <p class="icon-box__text">Store complete customer and supplier profiles, contact details, credit balances, and transaction records, for faster billing and stronger relationships.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/web-design-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/web-design-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Mobile Reporting</p>
           <p class="icon-box__text">Monitor your business performance in real time from any internet-connected device, keeping you informed whether you're on-site or off.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/bill-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/bill-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customisable Receipts</p>
           <p class="icon-box__text">Tailor receipt layouts to suit your brand and VAT requirements, with flexible formatting options that put you fully in control.</p>
@@ -139,7 +139,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get A Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/Receptionist_checking_out_client_202606031524-1.webp" alt="salon POS Software in UAE" class="img img-frame" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/Receptionist_checking_out_client_202606031524-1.webp" alt="salon POS Software in UAE" class="img img-frame" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -150,12 +150,12 @@
     <h2 class="title text-center">LaundryPro   Screenshots</h2>
     <div class="slider" data-carousel style="height:530px">
       <div class="slider__track">
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2019-09-26_12-02-06-1536x825-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2019-09-26_12-02-43-1536x825-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2019-09-26_12-03-12-1600x860-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2019-09-26_12-03-34-1600x860-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2019-09-26_12-05-14-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2019-09-26_12-05-38.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2019-09-26_12-02-06-1536x825-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2019-09-26_12-02-43-1536x825-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2019-09-26_12-03-12-1600x860-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2019-09-26_12-03-34-1600x860-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2019-09-26_12-05-14-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2019-09-26_12-05-38.png');background-size:contain"></div>
       </div>
       <button class="slider__prev" type="button" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
       <button class="slider__next" type="button" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>

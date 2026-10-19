@@ -2,7 +2,7 @@
 
 @section('title', 'Bike Shop POS Software in UAE | MultiTech POS')
 @section('description', 'Boost your bike shop efficiency with MultiTech Bike Shop POS in UAE. Simplify billing, inventory, repairs, and customer management. Get started today!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/bike-shop-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/bike-shop-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'Does the bike inventory management software track spare parts?', 'a' => 'Yes. It tracks bicycles, spare parts, and accessories in real time with barcode scanning, low-stock alerts, supplier purchase orders, and serial-number tracking for warranties and special orders.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Bike Shop POS Software in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Bike Shop POS Software in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -34,7 +34,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/bike-shop-pos-1.webp" alt="Bike Shop POS Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/bike-shop-pos-1.webp" alt="Bike Shop POS Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -48,21 +48,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Inventory &amp; Spare Parts Stock Control</h3>
           <p class="icon-box__text">Track stock levels, variant items (size, model, colour), and critical spare parts with barcode scanning and low-stock alerts, so you never run out of best-sellers or essentials.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Repair, Service &amp; Work Orders</h3>
           <p class="icon-box__text">Create and manage service tickets and repair job cards easily, from a quick tune-up to a full rebuild, giving technicians clear visibility into pending jobs, parts used, and billing.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Fast Sales &amp; Checkout</h3>
           <p class="icon-box__text">Process sales quickly with an intuitive POS interface, accept cash, card, and mobile wallets, and generate accurate VAT invoices in English or Arabic in a single tap.</p>
@@ -71,21 +71,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Customer Profiles &amp; Loyalty</h3>
           <p class="icon-box__text">Store customer histories, service records, and purchase preferences, then reward repeat riders with loyalty programs, service reminders, and targeted promotions.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Real-Time Reporting &amp; Analytics</h3>
           <p class="icon-box__text">Get actionable insights on sales trends, popular products, technician performance, and peak service hours, from any device, anytime.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Multi-Outlet &amp; Cloud Support</h3>
           <p class="icon-box__text">Centralize multiple shop locations in one dashboard and access your business data securely from the cloud, ideal for expanding bike shop chains in the UAE.</p>
@@ -118,7 +118,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/bike-shop-pos-2.webp" alt="Bike Shop POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/bike-shop-pos-2.webp" alt="Bike Shop POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -204,7 +204,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/bike-shop-pos-3.webp" alt="Bike Shop POS Software in UAE" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/bike-shop-pos-3.webp" alt="Bike Shop POS Software in UAE" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -227,7 +227,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/bike-shop-pos-4.webp" alt="Bike Shop POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/bike-shop-pos-4.webp" alt="Bike Shop POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>

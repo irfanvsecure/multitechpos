@@ -2,13 +2,13 @@
 
 @section('title', 'WooCommerce Inventory Sync for UAE Retailers | MultiTech')
 @section('description', 'How WooCommerce inventory sync handles product variations, bundles and multi-branch stock, plus the setup mistakes that cause UAE retailers to oversell online.')
-@section('og_image', $base . '/wp-content/uploads/2026/08/woocommerce-inventory-sync-uae.jpg')
+@section('og_image', $base . '/images/2026/08/woocommerce-inventory-sync-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'WooCommerce Inventory Sync: How Variations, Bundles and Multi-Branch Stock Actually Work', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'WooCommerce Inventory Sync: How Variations, Bundles and Multi-Branch Stock Actually Work', 'image' => '/wp-content/uploads/2026/08/woocommerce-inventory-sync-uae.jpg', 'published' => '2026-08-28', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'WooCommerce Inventory Sync: How Variations, Bundles and Multi-Branch Stock Actually Work', 'image' => '/images/2026/08/woocommerce-inventory-sync-uae.jpg', 'published' => '2026-08-28', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / August 28, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/woocommerce-inventory-sync-uae.webp" alt="WooCommerce inventory sync UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/woocommerce-inventory-sync-uae.webp" alt="WooCommerce inventory sync UAE" width="1024" height="683"></p>
         <p>Most retailers who connect WooCommerce to their POS expect inventory sync to be the easy part. One product, one number, updated in both places. That holds true right up until the moment your catalogue contains a shirt in four sizes and three colours, a gift hamper made of six separate items, and stock sitting in two different branches. That is where the simple picture stops working.</p>
         <p>In the <a href="{{ $base }}/woocommerce-integration-for-uae-retailers-how-multitech-pos-keeps-every-sale-in-sync/">first post in this series</a> we covered what WooCommerce integration does at a high level. This one goes a layer deeper into the part that causes the most confusion in practice, which is how stock counts behave once your products stop being simple single units.</p>
         <h2><strong>Why Simple Stock Counts Stop Being Simple</strong></h2>
@@ -25,7 +25,7 @@
         <div class="callout"><p><strong>The core principle:</strong> stock should always be tracked at the level of the physical item you actually count on a shelf, never at the level of the listing a customer clicks on.</p>
         </div>
         <h2><strong>Product Variations: Stock Lives at the Variant, Not the Product</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/product-variations-size-colour-stock.webp" alt="WooCommerce inventory sync UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/product-variations-size-colour-stock.webp" alt="WooCommerce inventory sync UAE" width="1024" height="683"></p>
         <p>In WooCommerce, a shirt available in small, medium and large across three colours is one variable product with nine variations. Your customer sees a single page with two dropdowns. Your stockroom, however, contains nine genuinely different items, each with its own barcode and its own count.</p>
         <p>Correct sync means each of those nine variations maps to its own record in your POS and carries its own stock number. When a customer buys a medium in navy, only the medium navy count drops. The product page stays live because the other eight variations still have stock, but that one option greys out at checkout.</p>
         <p>The failure mode worth knowing about is what happens when a system syncs at parent product level instead. The site shows the shirt as in stock because the combined total across all variations is still positive, so a customer orders a medium navy that sold out in store that morning. This is the single most common cause of cancelled online orders in apparel retail, and it is a configuration problem rather than a software limitation. A <a href="{{ $base }}/fashion-pos-system-in-uae/">fashion POS system</a> built around a size and colour matrix handles this natively because the matrix is how it stores stock in the first place.</p>
@@ -36,7 +36,7 @@
         <div class="callout callout--warning"><p><strong>Worth checking:</strong> before a seasonal promotion, confirm your bundles are calculating availability from components rather than carrying their own manually entered stock number. Manually set bundle stock is where most festive season overselling comes from.</p>
         </div>
         <h2><strong>Multi-Branch Stock: Deciding What Online Is Allowed to See</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/multi-branch-stock-warehouse-shelves.webp" alt="WooCommerce inventory sync UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/multi-branch-stock-warehouse-shelves.webp" alt="WooCommerce inventory sync UAE" width="1024" height="683"></p>
         <p>Once you run more than one location, every SKU has several stock numbers rather than one, and you need to decide which of them your website is allowed to sell from. There is no universally correct answer here, only a choice that should match how you actually fulfil orders.</p>
         <p>Some retailers point the online store at a single fulfilment location, usually a warehouse or the largest branch. This is the simplest arrangement and the easiest to keep accurate, though it means stock sitting in other branches is invisible to online shoppers even when it is available.</p>
         <p>Others pool stock across all branches so the website shows combined availability. This sells more, but it only works if you can genuinely move stock between locations or fulfil from whichever branch holds the item. Pooling stock you cannot actually reach is how orders end up cancelled a day later.</p>
@@ -64,7 +64,7 @@
         <p>There is one more case that catches retailers out, and it sits in the window between an online order being placed and it being packed. During that period the unit is committed but still physically on the shelf, which means a walk-in customer can buy it at the counter.</p>
         <p>The fix is for a WooCommerce order to reserve its stock the moment it is placed rather than when it ships. The unit leaves available stock immediately and moves into a committed state, so the counter no longer sees it as sellable. Without this, click and collect and next-day delivery both become unreliable during busy periods, precisely when you can least afford it.</p>
         <h2><strong>Getting the Setup Right the First Time</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/stock-reconciliation-reporting-desk.webp" alt="WooCommerce inventory sync UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/stock-reconciliation-reporting-desk.webp" alt="WooCommerce inventory sync UAE" width="1024" height="683"></p>
         <p>Most of the problems above are decided during configuration rather than discovered later, which is why the setup conversation is worth having properly. Before going live, it helps to confirm three things: that every variation carries its own barcode and count, that bundles derive availability from components, and that your branch model matches how you genuinely fulfil orders.</p>
         <p>It is also worth running a deliberate reconciliation in the first few weeks. Pick a category, count it physically, and compare against both your POS and your website. Any mismatch at that stage is a configuration issue you can still fix cheaply. The same discipline that reduces <a href="{{ $base }}/retail-inventory-shrinkage-uae/">retail inventory shrinkage</a> applies here, since an online channel simply gives stock one more place to go missing from.</p>
         <p>MultiTech POS supports variations, component-based bundles, branch-level stock, and order reservation as part of the standard <a href="{{ $base }}/woocommerce-pos/">WooCommerce POS integration</a>, with the underlying counts held in the same <a href="{{ $base }}/stock-management/">stock management system</a> your counter already uses.</p>

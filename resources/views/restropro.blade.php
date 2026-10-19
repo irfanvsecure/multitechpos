@@ -5,7 +5,7 @@
 
 @section('content')
 
-@include('partials.page-hero', ['title' => 'Restropro', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Downloads', 'url' => '/downloads/']])
+@include('partials.page-hero', ['title' => 'Restropro', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Downloads', 'url' => '/downloads/']])
 
 @include('partials.clients-band')
 
@@ -22,10 +22,10 @@
           <div class="stack py-10 mw-1366 mx-auto">
             <div class="slider" data-carousel style="height:530px">
               <div class="slider__track">
-                <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/6-1440x860-1.png');background-size:contain"></div>
-                <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/5-1-1440x860-1.png');background-size:contain"></div>
-                <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/4-1-1440x860-1.png');background-size:contain"></div>
-                <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2-3-1440x860-1.png');background-size:contain"></div>
+                <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/6-1440x860-1.png');background-size:contain"></div>
+                <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/5-1-1440x860-1.png');background-size:contain"></div>
+                <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/4-1-1440x860-1.png');background-size:contain"></div>
+                <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2-3-1440x860-1.png');background-size:contain"></div>
               </div>
               <button class="slider__prev" type="button" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
               <button class="slider__next" type="button" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>

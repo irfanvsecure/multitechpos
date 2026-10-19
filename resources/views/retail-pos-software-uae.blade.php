@@ -14,7 +14,7 @@
     ['q' => 'Can your Retail POS Software in UAE integrate with an online store?', 'a' => 'Yes. Our Retail POS software syncs seamlessly with eCommerce platforms, keeping inventory, orders and pricing updated in real time across both your physical store and online store from one centralized dashboard.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Retail POS Software in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
+@include('partials.page-hero', ['title' => 'Retail POS Software in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
 
 @include('partials.clients-band')
 
@@ -80,7 +80,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get Your Quote <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/retail-pos-multitech.webp" alt="Retail POS Software in UAE" class="img img-frame" width="626" height="352" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/retail-pos-multitech.webp" alt="Retail POS Software in UAE" class="img img-frame" width="626" height="352" loading="lazy">
       </div>
     </div>
   </div>
@@ -180,7 +180,7 @@
         <a href="tel:+971588979925" class="btn btn--sm"><i class="fas fa-phone-alt"></i> Speak With Expert</a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/female-staff-using-credit-card-terminal-cash-counter-50kb.webp" alt="Retail POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/female-staff-using-credit-card-terminal-cash-counter-50kb.webp" alt="Retail POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -252,7 +252,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/3d-rendering-point-sale-system-store-management_493806-1407.webp" alt="Retail POS Software in UAE" class="img img-frame" width="626" height="417" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/3d-rendering-point-sale-system-store-management_493806-1407.webp" alt="Retail POS Software in UAE" class="img img-frame" width="626" height="417" loading="lazy">
       </div>
     </div>
   </div>

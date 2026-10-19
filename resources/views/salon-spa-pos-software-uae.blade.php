@@ -2,7 +2,7 @@
 
 @section('title', 'Salon POS Software UAE | Booking, Billing & Commissions')
 @section('description', 'Salon POS software for UAE hair, nail and beauty salons: booking with automated reminders, staff commissions, client history and VAT billing.')
-@section('og_image', $base . '/wp-content/uploads/2026/06/Receptionist_checking_out_client_202606031524-1.webp')
+@section('og_image', $base . '/images/2026/06/Receptionist_checking_out_client_202606031524-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'What is the difference between a Salon POS and a regular POS system?', 'a' => 'A salon POS software includes beauty-specific tools like commission tracking, treatment scheduling, and loyalty programs. A generic POS lacks these, making a dedicated beauty system is essential for salons and spas.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Salon POS Software in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
+@include('partials.page-hero', ['title' => 'Salon POS Software in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
 
 @include('partials.clients-band')
 
@@ -81,7 +81,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get A Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/Receptionist_checking_out_client_202606031524-1.webp" alt="salon POS Software in UAE" class="img img-frame" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/Receptionist_checking_out_client_202606031524-1.webp" alt="salon POS Software in UAE" class="img img-frame" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -175,7 +175,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get A Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/istockphoto-2172888369-612x612-1.webp" alt="salon POS Software in UAE" class="img img-frame" width="612" height="408" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/istockphoto-2172888369-612x612-1.webp" alt="salon POS Software in UAE" class="img img-frame" width="612" height="408" loading="lazy">
       </div>
     </div>
   </div>

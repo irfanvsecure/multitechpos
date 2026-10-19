@@ -2,14 +2,14 @@
 
 @section('title', 'Best POS System for Salons & Spas in UAE (2026)')
 @section('description', 'Discover the best software for UAE salons and spas in 2026. Compare features like VAT compliance, appointment booking, commissions, and client management.')
-@section('og_image', $base . '/wp-content/uploads/2026/04/Receptionist_and_client_202604111200-1.jpeg')
+@section('og_image', $base . '/images/2026/04/Receptionist_and_client_202604111200-1.jpeg')
 @section('og_type', 'article')
 
 @section('content')
 
 <section class="section section--white section--p10">
   <div class="container">
-    <img src="{{ $base }}/wp-content/uploads/2026/04/Receptionist_and_client_202604111200-1-1024x765.webp" alt="Salon receptionist using POS software at UAE spa desk" class="img" loading="lazy">
+    <img src="{{ $base }}/images/2026/04/Receptionist_and_client_202604111200-1-1024x765.webp" alt="Salon receptionist using POS software at UAE spa desk" class="img" loading="lazy">
     <h1 class="title fs-36 lh-1_4 fw-600 c-navy">Best Point-of-Sale System for Salons &amp; Spas (2026)</h1>
     <div class="text fs-16 c-grey">
       <p>The UAE beauty and wellness industry is booming. From boutique blowout bars in Dubai Marina to full-service medical spas in Abu Dhabi, salon and spa owners face the same growing challenge: the tools they started with simply cannot keep up with the pace of the business anymore.</p>
@@ -19,11 +19,11 @@
       <p>A standard <a href="{{ $base }}/retail-pos-software-uae/">retail billing terminal</a> handles none of that. The gap between what a general-purpose checkout tool does and what a beauty business actually needs is wide enough to create real operational problems: double bookings, commission disputes, stock running out mid-week, and client history that lives in a staff member’s head rather than the system. Purpose-built beauty business management software closes that gap by connecting the booking, billing, inventory, and client management layers into a single workflow.</p>
       <h2>Features That Actually Matter in 2026</h2>
       <h3>Seamless Appointment-to-Checkout Flow</h3>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/04/Booking_to_billing_202604111204-1024x765.webp" width="1024" height="765" alt="Paper appointment book versus digital salon booking software tablet"></figure>
+      <figure><img src="{{ $base }}/images/2026/04/Booking_to_billing_202604111204-1024x765.webp" width="1024" height="765" alt="Paper appointment book versus digital salon booking software tablet"></figure>
       <p>The biggest time drain at most salon front desks is the gap between a completed service and a generated bill. In businesses using separate booking and billing tools, staff must manually re-enter service details every single time. The best platforms in 2026 eliminate this entirely. When a service is marked complete in the calendar, the bill builds itself: correct service, assigned staff member, any add-ons, and applicable taxes. Checkout becomes a confirmation, not a data-entry task.</p>
       <h3>Detailed Client Profiles and Visit History</h3>
       <p>In a competitive market like the UAE, personalised service is one of the most effective retention tools a beauty business has. Knowing that a client prefers a specific stylist, had a reaction to a particular product, or is overdue for a maintenance treatment allows staff to act at the right moment. A solid client management module stores service history, product preferences, allergy notes, and communication preferences, making every interaction feel considered rather than transactional.</p>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/04/Stylist_referencing_tablet_202604111207-1024x765.webp" width="1024" height="765" alt="Stylist viewing client profile on salon management software tablet"></figure>
+      <figure><img src="{{ $base }}/images/2026/04/Stylist_referencing_tablet_202604111207-1024x765.webp" width="1024" height="765" alt="Stylist viewing client profile on salon management software tablet"></figure>
       <h3>Dual Inventory Management</h3>
       <p>UAE beauty businesses typically carry two very different types of stock: retail products available for sale to clients, and professional supplies consumed during services. These need to be tracked separately, and professional product usage should ideally be linked to specific services so that consumption is automatically deducted when a treatment is completed. Without this, backbar stock becomes a guessing game.</p>
       <h3>Commission and Payroll Reporting</h3>
@@ -31,7 +31,7 @@
       <h3>Membership and Package Management</h3>
       <p>Subscription and package-based revenue is increasingly common in the UAE wellness market. Monthly facial memberships, prepaid massage packages, and loyalty tier programs drive repeat visits and improve cash flow predictability. Look for a platform that handles recurring billing, tracks package redemptions, and applies membership benefits automatically at checkout.</p>
       <h3>VAT Compliance for the UAE</h3>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/04/Tablet_screen_displaying_202604111214-1024x765.webp" width="1024" height="765" alt="UAE VAT compliant salon invoice displayed on tablet screen"></figure>
+      <figure><img src="{{ $base }}/images/2026/04/Tablet_screen_displaying_202604111214-1024x765.webp" width="1024" height="765" alt="UAE VAT compliant salon invoice displayed on tablet screen"></figure>
       <p>This is non-negotiable. Your billing platform must generate VAT-compliant invoices, apply the correct 5% VAT to applicable services and products, and produce the reports needed for quarterly FTA filing. Platforms designed for other markets and retrofitted for UAE compliance often have gaps here, so verify this thoroughly during evaluation.</p>
       <h2>What to Watch Out For</h2>
       <p>Overpaying for features you do not need is a common mistake. Enterprise-grade platforms built for large hotel spas come with pricing and complexity that does not make sense for a single-location studio. Match the platform to your actual scale.</p>

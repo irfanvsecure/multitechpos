@@ -2,13 +2,13 @@
 
 @section('title', 'How to Manage Salon Appointments & Reduce No-Shows')
 @section('description', 'Struggling with no-shows at your UAE salon? Discover proven appointment management strategies and the right POS tools to boost bookings and protect revenue.')
-@section('og_image', $base . '/wp-content/uploads/2026/04/image-6.png')
+@section('og_image', $base . '/images/2026/04/image-6.png')
 @section('og_type', 'article')
 
 @section('content')
 
 <section class="section section--white section--p10 section--full">
-  <img src="{{ $base }}/wp-content/uploads/2026/04/image-6-1024x572.webp" alt="salon appointment management" class="img" loading="lazy">
+  <img src="{{ $base }}/images/2026/04/image-6-1024x572.webp" alt="salon appointment management" class="img" loading="lazy">
   <h1 class="title fs-36 lh-1_4 fw-600 c-navy">How to Manage Salon Appointments Efficiently (and Reduce No-Shows)</h1>
   <div class="text fs-16 c-grey">
     <p>Running a salon in the UAE is exciting, but let’s be honest, managing appointments can feel like a full-time job on its own. Between walk-ins, WhatsApp bookings, phone calls, and last-minute cancellations, it’s easy for things to slip through the cracks. If you’ve ever had a stylist sitting idle because a client forgot their booking, you already know how costly poor <a href="{{ $base }}/salon-spa-pos-software-uae/">salon appointment management</a> can be.</p>
@@ -17,14 +17,14 @@
     <p>No-shows are not just annoying; they directly impact your revenue. In a market as competitive as Dubai, Abu Dhabi, or Sharjah, every empty chair is money left on the table. A single missed appointment can cost a salon anywhere from AED 80 to AED 500+ depending on the service. Multiply that across a week and the numbers become hard to ignore.</p>
     <p>Beyond revenue, no-shows affect staff morale, disrupt your workflow, and make it nearly impossible to maintain an accurate daily schedule. The root causes are usually the same: clients forget, they feel no urgency to cancel, or the booking process was so informal that the appointment never felt “official” to begin with.</p>
     <p>This is where investing in a reliable appointment booking system makes a measurable difference.</p>
-    <figure><img src="{{ $base }}/wp-content/uploads/2026/04/image-7-1024x765.webp" width="1024" height="765" alt="salon appointment management"></figure>
+    <figure><img src="{{ $base }}/images/2026/04/image-7-1024x765.webp" width="1024" height="765" alt="salon appointment management"></figure>
     <h2>Why a POS System Is the Answer for Appointment Management</h2>
     <p>Many salon owners in the UAE still rely on paper diaries or generic calendar apps for scheduling. While these tools might work at a small scale, they don’t grow with your business, and they certainly don’t send automated reminders.</p>
     <p>A dedicated point-of-sale solution designed for beauty businesses does far more than just process payments. It acts as the operational backbone of your salon. With an integrated client scheduling tool, you can manage bookings, assign staff, track service durations, and collect deposits, all from one place.</p>
     <p>At MultitechPOS, we’ve seen UAE salon owners transform their daily operations simply by switching to a system that brings bookings, billing, and customer communication together. If you’re still unsure whether this kind of tool is right for you, take a look at how to <a href="{{ $base }}/how-to-choose-a-point-of-sale-system-for-your-beauty-business/">choose a POS for salon</a>, it breaks down exactly what to look for based on your salon’s size and service type.</p>
     <h2>Key Strategies to Reduce No-Shows</h2>
     <h3>1. Automate Your Appointment Reminders</h3>
-    <figure><img src="{{ $base }}/wp-content/uploads/2026/04/image-8-1024x765.webp" width="1024" height="765" alt="salon appointment management"></figure>
+    <figure><img src="{{ $base }}/images/2026/04/image-8-1024x765.webp" width="1024" height="765" alt="salon appointment management"></figure>
     <p>One of the most effective ways to cut no-shows is through automated SMS and WhatsApp reminders. In the UAE, WhatsApp is practically a national communication channel; your clients are already on it. A smart salon scheduling software can send reminders 24 hours and 2 hours before an appointment automatically, without your receptionist lifting a finger.</p>
     <p>This single feature alone can reduce no-shows by up to 30–40% for most salons.</p>
     <h3>2. Require Deposits for High-Value Services</h3>
@@ -46,7 +46,7 @@
     <li>Loyalty and retention tools to reward repeat customers</li>
     <li>Multi-branch support for growing businesses across the UAE</li></ul>
     <p>If you’re in the process of upgrading, reading about the <a href="{{ $base }}/best-point-of-sale-system-for-salons-spas-2026/">best billing software for salons</a> will give you a clear market overview and help you compare solutions confidently.</p>
-    <figure><img src="{{ $base }}/wp-content/uploads/2026/04/image-9-1024x765.webp" width="1024" height="765" alt="salon appointment management"></figure>
+    <figure><img src="{{ $base }}/images/2026/04/image-9-1024x765.webp" width="1024" height="765" alt="salon appointment management"></figure>
     <h2>Final Thoughts</h2>
     <p>Efficient salon appointment management isn’t just a nice-to-have. In the UAE’s fast-moving beauty market, it’s what separates thriving salons from those constantly playing catch-up. By automating reminders, collecting deposits, and centralizing your bookings through the right platform, you can dramatically cut no-shows and give your team the structure they need to perform at their best.</p>
     <p><a href="{{ $base }}/">MultitechPOS</a> is built with UAE beauty businesses in mind, from single-chair studios in Sharjah to multi-branch luxury spas in Dubai. If you’re ready to take control of your bookings, your revenue, and your client experience, the right system is closer than you think.</p>

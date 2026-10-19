@@ -2,7 +2,7 @@
 
 @section('title', 'Best Hemp POS Software in UAE | MultiTech POS')
 @section('description', 'Looking for reliable hemp store POS software in UAE? MultiTech POS streamlines billing & stock for UAE Hemp stores. Book a demo today!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/hemp-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/hemp-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'What payment methods does it accept?', 'a' => 'Cash, credit/debit cards, mobile wallets and UAE payment integrations.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Hemp POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Hemp POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -30,7 +30,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/hemp-pos-1.webp" alt="Hemp POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/hemp-pos-1.webp" alt="Hemp POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -48,21 +48,21 @@
     <h2 class="title text-center">Explore All Features</h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Easy Checkout &amp; Sales</p>
           <p class="icon-box__text">Fast and intuitive checkout with product scanning, custom pricing, discounts, returns and multi-payment support.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">VAT &amp; FTA Compliance</p>
           <p class="icon-box__text">Generate FTA-compliant tax invoices automatically in Arabic &amp; English, with accurate 5% VAT applied to eligible items.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customer Profiles &amp; Loyalty</p>
           <p class="icon-box__text">Build customer accounts, assign loyalty points, send rewards, and analyze purchase patterns to increase repeat business.</p>
@@ -71,21 +71,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Reporting &amp; Analytics</p>
           <p class="icon-box__text">Get detailed sales reports — best-selling products, peak hours, revenue trends and staff performance.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multiple Payment Methods</p>
           <p class="icon-box__text">Support for cash, card payments, digital wallets, and UAE payment gateways at checkout.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Location Support</p>
           <p class="icon-box__text">Manage inventory, pricing, reporting and staff roles across multiple stores from a centralized system.</p>
@@ -113,7 +113,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/hemp-pos-2.webp" alt="Hemp POS Software In UAE" class="img r-30" width="643" height="479" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/hemp-pos-2.webp" alt="Hemp POS Software In UAE" class="img r-30" width="643" height="479" loading="lazy">
       </div>
     </div>
   </div>
@@ -181,7 +181,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/hemp-pos-3.webp" alt="Hemp POS Software In UAE" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/hemp-pos-3.webp" alt="Hemp POS Software In UAE" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@
     ['q' => 'Does the system support multiple jewelry variants and custom items?', 'a' => 'Absolutely. It can handle product variants, custom designs, made-to-order items, and unique SKUs with detailed attributes such as size, weight, purity, and gemstone details.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Jewelry Store POS System in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Jewelry Store POS System in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -32,7 +32,7 @@ Store POS System in UAE</h2>
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/jewelry-pos-1.webp" alt="Jewelry Store POS System in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/jewelry-pos-1.webp" alt="Jewelry Store POS System in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -46,21 +46,21 @@ Store POS System in UAE</h2>
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory Management</p>
           <p class="icon-box__text">With our inventory movement, you can keep track of your products, from purchase, return, damage to sa</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Register Management</p>
           <p class="icon-box__text">Keep track of your payments (Cash, Credit Card, Cheque etc.) as each cashier have separate register accounts.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Easy to Setup</p>
           <p class="icon-box__text">With provided documentation, now it is very easy to setup. Although our support is always there to assist.</p>
@@ -69,21 +69,21 @@ Store POS System in UAE</h2>
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Purchase Management</p>
           <p class="icon-box__text">Purchase orders and bill are fully managed with their associated suppliers as well as their payments.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Employee Management</p>
           <p class="icon-box__text">Each user have their login details with their access levels (Owner, Sale, Purchase) to keep proceeding under control.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi Company / Multi Location</p>
           <p class="icon-box__text">With this, you can manage multi companies and multi locations.</p>
@@ -92,21 +92,21 @@ Store POS System in UAE</h2>
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-1-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-1-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customers &amp; Suppliers</p>
           <p class="icon-box__text">Add customers and suppliers, manage credits and collect essential information like email and phone numbers.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/web-design-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/web-design-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Mobile Reporting</p>
           <p class="icon-box__text">Now you always connected with your business from anywhere and through any device connected with internet.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/bill-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/bill-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customisable Receipts</p>
           <p class="icon-box__text">With lot of flexibility, we allows end user to customize their receipt as per their needs.</p>
@@ -218,7 +218,7 @@ Store POS System in UAE</h2>
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request a Free Demo Today! <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/jewelry-pos-2.webp" alt="Jewelry Store POS System in UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/jewelry-pos-2.webp" alt="Jewelry Store POS System in UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
     <div class="cols cols-2 gap-10 m-reverse p-10">
@@ -233,7 +233,7 @@ Store POS System in UAE</h2>
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/jewelry-pos-3.webp" alt="Jewelry Store POS System in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/jewelry-pos-3.webp" alt="Jewelry Store POS System in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>

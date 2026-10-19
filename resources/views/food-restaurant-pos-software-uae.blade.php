@@ -2,7 +2,7 @@
 
 @section('title', 'Restaurant POS Software in UAE | KOT & VAT Billing')
 @section('description', 'Looking for restaurant POS software in UAE? Speed up orders, manage tables, kitchen tickets & VAT billing in one system. Trusted by UAE eateries. Get a demo.')
-@section('og_image', $base . '/wp-content/uploads/2026/06/pexels-imin-technology-276315592-12935084.webp')
+@section('og_image', $base . '/images/2026/06/pexels-imin-technology-276315592-12935084.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'Is this POS system suitable for QSRs and fine dining alike?', 'a' => 'Yes. Our POS system for restaurants is tailored for every format, quick-service, fine dining, food trucks, and cloud kitchens, with flexible features adapting to each unique F&amp;B operation.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Restaurant POS Software in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
+@include('partials.page-hero', ['title' => 'Restaurant POS Software in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
 
 @include('partials.clients-band')
 
@@ -92,7 +92,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/pexels-imin-technology-276315592-12935084.webp" alt="Restaurant POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/pexels-imin-technology-276315592-12935084.webp" alt="Restaurant POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -115,7 +115,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/pexels-imin-technology-276315592-12935041.webp" alt="Restaurant POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/pexels-imin-technology-276315592-12935041.webp" alt="Restaurant POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>

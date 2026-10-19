@@ -2,7 +2,7 @@
 
 @section('title', 'How Salon POS Systems Help UAE Salons Increase Revenue')
 @section('description', 'Discover how salon POS systems in the UAE boost revenue by reducing no-shows, improving upselling, managing inventory, loyalty, and staff performance.')
-@section('og_image', $base . '/wp-content/uploads/2026/05/image.png')
+@section('og_image', $base . '/images/2026/05/image.png')
 @section('og_type', 'article')
 
 @section('content')
@@ -10,23 +10,23 @@
 <section class="section section--white section--p10">
   <div class="container">
     <h1 class="title fs-36 fw-600 c-navy">How Salon POS Systems Help UAE Salons Increase Revenue</h1>
-    <img src="{{ $base }}/wp-content/uploads/2026/05/image-1024x572.webp" alt="point of sale system for salons" class="img" loading="lazy">
+    <img src="{{ $base }}/images/2026/05/image-1024x572.webp" alt="point of sale system for salons" class="img" loading="lazy">
     <div class="text fs-16 c-grey">
       <p>The UAE beauty industry is booming, and with salons competing everywhere from Dubai Marina to Abu Dhabi’s residential neighborhoods, efficiency has become just as important as skill. Many owners are now upgrading their operations with modern tools like <a href="{{ $base }}/salon-spa-pos-software-uae/">point of sale system for salons</a>, which helps them manage bookings, track payments, and simplify daily operations without the usual manual hassle. This shift is quietly reshaping how salons run, and how profitable they can become.</p>
       <h2>The Revenue Problem Most UAE Salons Face</h2>
       <p>Many salon owners in the UAE believe their revenue challenges are rooted in foot traffic or pricing. In reality, most losses happen quietly, through missed appointments, manual billing errors, untapped upselling opportunities, and poor inventory control. A well-integrated appointment scheduling and billing platform addresses all of these pressure points simultaneously.</p>
       <p>Whether you run a boutique nail studio in Sharjah or a full-service wellness center in Downtown Dubai, unmanaged operations bleed money every day.</p>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/05/image-1-1024x572.webp" width="1024" height="572" alt="point of sale system for salons"></figure>
+      <figure><img src="{{ $base }}/images/2026/05/image-1-1024x572.webp" width="1024" height="572" alt="point of sale system for salons"></figure>
       <h2>How the Right Tools Drive Real Revenue Growth</h2>
       <h3>1. Reducing No-Shows with Automated Booking Management</h3>
       <p>Empty appointment slots are pure revenue loss. Modern client booking management tools send automated SMS and WhatsApp reminders, dramatically cutting no-show rates. When clients confirm or reschedule in advance, salons can fill gaps with walk-in clients rather than losing time entirely.</p>
       <p>For a deeper look at this topic, check out our guide on <a href="{{ $base }}/salon-appointment-management-reduce-no-shows-uae/">managing salon appointments</a>. It covers practical techniques that UAE salon owners are already using.</p>
       <p><strong>Start reducing no-shows today, <a href="https://api.whatsapp.com/send?phone=971588979925&amp;text=Hello%2C+I+need+some+information+regarding+POS+Software.">talk to us on WhatsApp</a> to see how automated reminders can work for your salon.</strong></p>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/05/image-2-1024x572.webp" width="1024" height="572" alt="point of sale system for salons"></figure>
+      <figure><img src="{{ $base }}/images/2026/05/image-2-1024x572.webp" width="1024" height="572" alt="point of sale system for salons"></figure>
       <h3>2. Smarter Upselling at Checkout</h3>
       <p>When your front desk team is juggling walk-ins, calls, and payments manually, upselling gets forgotten. Integrated checkout and retail management software can display service add-ons, complementary products, and upgrade prompts right at the payment screen. This nudges staff to recommend and clients to spend more, without any hard selling.</p>
       <p>Studies in the beauty industry consistently show that customers who purchase retail products alongside services are worth significantly more over their lifetime.</p>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/05/image-3-1024x572.webp" width="1024" height="572" alt="point of sale system for salons"></figure>
+      <figure><img src="{{ $base }}/images/2026/05/image-3-1024x572.webp" width="1024" height="572" alt="point of sale system for salons"></figure>
       <h3>3. Loyalty Programs That Actually Work</h3>
       <p>UAE clients are loyal, but only if they feel rewarded. Salons using digital loyalty and membership management tools see measurable increases in repeat visits. These systems track client spending automatically, award points, and send personalized offers. You don’t need a separate app; it all runs through your billing workflow.</p>
       <h3>4. Inventory Control That Prevents Retail Losses</h3>
@@ -38,7 +38,7 @@
       <p>Not all solutions are created equal. UAE salons increasingly prefer cloud-based salon management platforms because they allow remote monitoring of multiple branches, real-time reporting, and seamless software updates without expensive on-site IT support.</p>
       <p>If you’re evaluating your options, our detailed comparison on <a href="{{ $base }}/cloud-vs-traditional-pos-for-salons/">cloud vs traditional POS</a> breaks down exactly what each approach costs and delivers for beauty businesses in today’s market.</p>
       <h2>Choosing the Right Fit for Your Business</h2>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/05/image-4-1024x572.webp" width="1024" height="572" alt="point of sale system for salons"></figure>
+      <figure><img src="{{ $base }}/images/2026/05/image-4-1024x572.webp" width="1024" height="572" alt="point of sale system for salons"></figure>
       <p>Before investing in any salon billing and operations platform, it’s worth auditing what your business actually needs. A single-chair studio has very different requirements compared to a multi-location spa chain. For a structured approach to making this decision, refer to our comprehensive post on <a href="{{ $base }}/best-point-of-sale-system-for-salons-spas-2026/">best salon software in 2026</a>. It covers everything from feature checklists to pricing expectations.</p>
       <p>MultiTech POS offers UAE-specific configurations that support Arabic interfaces, VAT-compliant billing, and integrations with local payment gateways, addressing real pain points unique to the region.</p>
       <h2>Frequently Asked Questions</h2>

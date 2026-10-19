@@ -2,13 +2,13 @@
 
 @section('title', 'WooCommerce POS Integration for UAE Retailers | MultiTech')
 @section('description', 'See how MultiTech POS syncs WooCommerce inventory, orders and customers with your till in real time. First in our WooCommerce integration series.')
-@section('og_image', $base . '/wp-content/uploads/2026/08/woocommerce-pos-integration-uae.jpg')
+@section('og_image', $base . '/images/2026/08/woocommerce-pos-integration-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'WooCommerce Integration for UAE Retailers: How MultiTech POS Keeps Every Sale in Sync', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'WooCommerce Integration for UAE Retailers: How MultiTech POS Keeps Every Sale in Sync', 'image' => '/wp-content/uploads/2026/08/woocommerce-pos-integration-uae.jpg', 'published' => '2026-08-28', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'WooCommerce Integration for UAE Retailers: How MultiTech POS Keeps Every Sale in Sync', 'image' => '/images/2026/08/woocommerce-pos-integration-uae.jpg', 'published' => '2026-08-28', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / August 28, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/woocommerce-pos-integration-uae.webp" alt="WooCommerce integration UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/woocommerce-pos-integration-uae.webp" alt="WooCommerce integration UAE" width="1024" height="683"></p>
         <p>A shopper in Dubai might browse your catalogue on their phone during a commute, add two items to cart, then walk into your Abu Dhabi store the same afternoon to pick up a third item in person. If your online store and your till are not reading from the same inventory and order records, one of those two sales is going to cause a problem, either a product that sells out online while it still shows in stock, or an in-store sale that never makes it into your WooCommerce reports.</p>
         <p>This is the first post in a series we are building around WooCommerce integration for UAE retailers. Rather than trying to cover everything in one long guide, we will use this post to lay out what the integration actually does, then follow up with deeper posts on inventory sync, click and collect, pricing, returns, customer records and payment reconciliation. For now, here is the foundation every retailer running WooCommerce should understand before going further.</p>
         <h2><strong>Why Online and In-Store Sales Cannot Run on Separate Systems</strong></h2>
@@ -49,18 +49,18 @@
         </table>
         <p>That sync log matters more than it sounds. Most retailers only think about it after a mismatch shows up in a stock count, but having a place to check what failed to sync and why saves a lot of guesswork compared to manually reconciling two spreadsheets.</p>
         <h2><strong>How the MultiTech POS and WooCommerce Connection Works</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/retailer-managing-online-orders.webp" alt="WooCommerce integration UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/retailer-managing-online-orders.webp" alt="WooCommerce integration UAE" width="1024" height="683"></p>
         <p>Setting this up is meant to take minutes rather than days. You link your WooCommerce store to your MultiTech POS account, then choose which part of your inventory should appear online, whether that is your entire catalogue or a specific range you want to sell on the web first.</p>
         <p>From there, the two systems talk to each other continuously. A sale, a purchase order, or a stock adjustment made anywhere in your <a href="{{ $base }}/stock-management/">stock management system</a> updates both channels at once. Any order placed on your WooCommerce store is pulled into your sales dashboard right away, so staff working the counter can see and manage online orders alongside walk-in sales without switching between two separate screens.</p>
         <p>If you run more than one branch, the same connection extends across locations through <a href="{{ $base }}/multi-location-integration/">multi-location integration</a>, so your online store can draw from combined stock across branches rather than being tied to whichever outlet happens to hold the inventory record.</p>
         <div class="callout callout--warning"><p><strong>Worth checking first:</strong> before you go live, confirm which product ranges you want visible online. Many UAE retailers start with a smaller category rather than their full catalogue, then expand once the sync is proven out.</p>
         </div>
         <h2><strong>What This Looks Like for a Real Store</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/woocommerce-order-packing-inventory-sync.webp" alt="WooCommerce integration UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/woocommerce-order-packing-inventory-sync.webp" alt="WooCommerce integration UAE" width="1024" height="683"></p>
         <p>Picture a boutique running a <a href="{{ $base }}/fashion-pos-system-in-uae/">fashion POS system</a> across two branches, with a WooCommerce store handling online orders on the side. Before integration, a popular jacket might sell out at one branch while the website still shows it available, leading to a cancelled online order and an apology email to the customer.</p>
         <p>After integration, the moment that jacket sells at either branch or online, the stock count drops everywhere at once. If a customer buys online and wants to collect in person, staff can see the order the moment it lands rather than hearing about it from a phone call. Returns, exchanges, and store credit follow the same customer record no matter which channel the original purchase came through.</p>
         <h2><strong>The Rest of This Series</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/omnichannel-checkout-sync.webp" alt="WooCommerce integration UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/omnichannel-checkout-sync.webp" alt="WooCommerce integration UAE" width="1024" height="683"></p>
         <p>This post is the groundwork. The rest of the series goes deeper into the specific places where running WooCommerce alongside a physical store tends to come apart:</p>
         <ul>
         <li><a href="{{ $base }}/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/">WooCommerce inventory sync</a>: how product variations, bundles and multi-branch stock actually behave</li>

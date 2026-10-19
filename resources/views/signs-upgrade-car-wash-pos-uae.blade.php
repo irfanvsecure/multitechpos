@@ -2,13 +2,13 @@
 
 @section('title', '7 Signs to Upgrade Your Car Wash POS in UAE | MultiTech')
 @section('description', 'Trusted by UAE car washes: spot 7 warning signs your POS is costing you sales, from slow billing to missing reports. Book a free demo with MultiTech today!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/image-6.png')
+@section('og_image', $base . '/images/2026/07/image-6.png')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => '7 Signs It’s Time to Upgrade Your Car Wash POS in UAE', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => '7 Signs It’s Time to Upgrade Your Car Wash POS in UAE', 'image' => '/wp-content/uploads/2026/07/image-6.png', 'published' => '2026-07-29', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => '7 Signs It’s Time to Upgrade Your Car Wash POS in UAE', 'image' => '/images/2026/07/image-6.png', 'published' => '2026-07-29', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">

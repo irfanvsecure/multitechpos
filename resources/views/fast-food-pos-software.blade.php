@@ -2,7 +2,7 @@
 
 @section('title', 'Fast Food POS Software in UAE | MultiTech POS')
 @section('description', 'Fast Food POS Software in UAE by MultiTech POS helps manage billing, orders, inventory, and reporting. Increase speed and profits. Book a free demo!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/fast-food-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/fast-food-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Can it track inventory and ingredients?', 'a' => 'Yes, the software monitors stock levels in real time and sends alerts for low inventory.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Fast Food POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Fast Food POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -36,7 +36,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/fast-food-pos-1.webp" alt="Fast Food POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/fast-food-pos-1.webp" alt="Fast Food POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -54,21 +54,21 @@
     <p class="title text-center">Explore All Features</p>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Quick Order Processing</h3>
           <p class="icon-box__text">Process high volumes of orders rapidly using an intuitive interface designed for speed.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Kitchen Display System (KDS) Integration</h3>
           <p class="icon-box__text">Send orders directly to the kitchen for faster food preparation and minimal errors.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Multi-Device Support</h3>
           <p class="icon-box__text">Take orders from POS terminals, tablets, or handheld devices for flexibility and speed.</p>
@@ -77,21 +77,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Smart Billing &amp; UAE VAT Compliance</h3>
           <p class="icon-box__text">Generate accurate invoices with VAT calculation and support for split bills and promotions.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Inventory &amp; Stock Management</h3>
           <p class="icon-box__text">Track ingredients and menu items, set reorder alerts, and prevent shortages.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Promotions &amp; Combo Management</h3>
           <p class="icon-box__text">Easily create meal combos, happy hour offers, and discounts to boost sales.</p>
@@ -124,7 +124,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/fast-food-pos-2.webp" alt="Fast Food POS Software In UAE" class="img r-30" width="643" height="479" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/fast-food-pos-2.webp" alt="Fast Food POS Software In UAE" class="img r-30" width="643" height="479" loading="lazy">
       </div>
     </div>
   </div>
@@ -200,7 +200,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/fast-food-pos-3.webp" alt="Fast Food POS Software In UAE" class="img r-30 ar-3-2" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/fast-food-pos-3.webp" alt="Fast Food POS Software In UAE" class="img r-30 ar-3-2" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>

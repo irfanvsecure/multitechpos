@@ -2,13 +2,13 @@
 
 @section('title', 'Why UAE Salons Need VAT-Compliant POS Software')
 @section('description', 'UAE salons face strict FTA rules. Learn why VAT-compliant POS software keeps invoices audit-ready, dual-language, and penalty-free. Read the full guide.')
-@section('og_image', $base . '/wp-content/uploads/2026/05/Receptionist_processing_customer…_202605231504.jpeg')
+@section('og_image', $base . '/images/2026/05/Receptionist_processing_customer…_202605231504.jpeg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Why UAE Salons Need VAT-Compliant POS Software', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Why UAE Salons Need VAT-Compliant POS Software', 'image' => '/wp-content/uploads/2026/05/Receptionist_processing_customer…_202605231504.jpeg', 'published' => '2026-05-23', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Why UAE Salons Need VAT-Compliant POS Software', 'image' => '/images/2026/05/Receptionist_processing_customer…_202605231504.jpeg', 'published' => '2026-05-23', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -21,12 +21,12 @@
         <p>The standard VAT rate of 5% applies to the vast majority of salon and spa services in the UAE. Haircuts, coloring treatments, manicures, facials, waxing, massage therapies, and retail products sold on-site are all taxable. Exemptions within the beauty space are narrow, so the practical assumption for most salons is that VAT applies to virtually every transaction you process.</p>
         <p>If your annual taxable turnover reaches AED 375,000, FTA registration is mandatory. Businesses earning over AED 187,500 may choose to register voluntarily, which allows them to reclaim input tax on professional purchases. For a growing salon buying products, equipment, and supplies regularly, voluntary registration can offer a meaningful financial advantage.</p>
         <h3>Which Salon Services Fall Under VAT?</h3>
-        <figure><img width="1024" height="572" src="{{ $base }}/wp-content/uploads/2026/05/Infographic_for_UAE_salon_owners_202605231512-1024x572.webp" alt="VAT requirements UAE salons compliance guide"></figure>
+        <figure><img width="1024" height="572" src="{{ $base }}/images/2026/05/Infographic_for_UAE_salon_owners_202605231512-1024x572.webp" alt="VAT requirements UAE salons compliance guide"></figure>
         <p>Hair services, nail treatments, skin care procedures, waxing, threading, and body therapies are all standard-rated at 5%. Retail product sales carry the same obligation. The one area that requires careful attention is medical aesthetics. Certain dermatological or clinical procedures may qualify for exemption or zero-rating, but that classification must be confirmed directly with the FTA and supported by clear documentation. Assuming an exemption without that confirmation is a compliance risk in itself.</p>
         <h3>Penalties for Non-Compliance</h3>
         <p>The FTA’s penalty framework is clear and unforgiving. Failure to register when turnover qualifies carries a fine of AED 20,000. Issuing an incorrect tax invoice, or failing to issue one at all, can result in a penalty of AED 5,000 per invoice. For a salon processing 40 or 50 transactions a day, even a small recurring billing error accumulates into a serious financial liability very quickly. That risk does not diminish over time. It compounds.</p>
         <h2>What a Valid UAE VAT Invoice Must Contain</h2>
-        <figure><img src="{{ $base }}/wp-content/uploads/2026/05/Receipt_printer_printing_salon_i…_202605231504-1024x572.webp" width="1024" height="572" alt="bilingual Arabic English VAT invoice salon printer closeup"></figure>
+        <figure><img src="{{ $base }}/images/2026/05/Receipt_printer_printing_salon_i…_202605231504-1024x572.webp" width="1024" height="572" alt="bilingual Arabic English VAT invoice salon printer closeup"></figure>
         <p>The FTA specifies exactly what information must appear on every tax invoice. Missing even one required field can render an invoice non-compliant during an audit, regardless of whether the VAT itself was calculated correctly.</p>
         <figure><table>
         <thead>
@@ -61,7 +61,7 @@
         <h3>Common Mistakes That Trigger FTA Issues</h3>
         <p>The most frequent billing errors in beauty businesses include applying the wrong VAT rate, omitting the TRN from the invoice, issuing duplicate or non-sequential invoice numbers, and failing to include Arabic on customer-facing documents. Some salons also bundle taxable and potentially exempt services without separating them clearly on the bill. Each of these may look like a minor administrative oversight, but during an FTA review, recurring patterns of error are treated as systemic non-compliance.</p>
         <h2>What VAT-Ready Salon Billing Software Does Differently</h2>
-        <figure><img src="{{ $base }}/wp-content/uploads/2026/05/Salon_owner_reviewing_financial_…_202605231504-1024x572.webp" width="1024" height="572" alt="salon owner reviewing VAT reports POS dashboard UAE"></figure>
+        <figure><img src="{{ $base }}/images/2026/05/Salon_owner_reviewing_financial_…_202605231504-1024x572.webp" width="1024" height="572" alt="salon owner reviewing VAT reports POS dashboard UAE"></figure>
         <p>A purpose-built salon billing system removes human judgment from the compliance process entirely. Tax is calculated the moment a service is added to a transaction. Invoices are generated with every required field already populated. Sequential numbering is handled automatically in the background. Nothing depends on a staff member remembering a rule, checking a reference sheet, or manually entering a TRN.</p>
         <p>This is the core difference between a generic billing tool and VAT-compliant salon billing software built for the UAE market. One leaves compliance to chance. The other makes it the default.</p>
         <h3>Bilingual Invoicing Built for UAE Standards</h3>

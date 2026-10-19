@@ -1,15 +1,11 @@
 <?php
 
 use App\Http\Controllers\LeadController;
-use App\Http\Controllers\SiteAssetController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-// Images and other files from the old WordPress uploads folder
-Route::get('/{path}', [SiteAssetController::class, 'show'])
-    ->where('path', 'wp-(?:content|includes)/.*');
 
 // SEO
 Route::get('/sitemap.xml', SitemapController::class);
@@ -35,6 +31,11 @@ Route::get('/blog', $moved('/our-blogs/'));
 Route::get('/category/{any}', $moved('/our-blogs/'))->where('any', '.*');
 Route::get('/author/multitech_admin/page/{n}', $moved('/author/multitech_admin/'));
 Route::get('/download/restropro', $moved('/restropro/'));
+
+// Images moved from /wp-content/uploads/... to /images/...
+Route::get('/wp-content/uploads/{path}', fn (Request $request, string $path) => new RedirectResponse(
+    $request->getSchemeAndHttpHost().$request->getBaseUrl().'/images/'.$path, 301
+))->where('path', '.*');
 
 // ---------------------------------------------------------------------------
 // Pages (one route per page, grouped like the header menu).

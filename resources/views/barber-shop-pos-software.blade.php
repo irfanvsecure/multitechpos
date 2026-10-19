@@ -2,7 +2,7 @@
 
 @section('title', 'Best Barber Shop POS Software in UAE | MultiTech POS')
 @section('description', 'Manage bookings, billing & staff commissions with MultiTech POS – the smart barber shop POS built for UAE salons. Book a free demo today!')
-@section('og_image', $base . '/wp-content/uploads/2026/06/barber-shop-pos-1.webp')
+@section('og_image', $base . '/images/2026/06/barber-shop-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Can I access my barber shop data from anywhere?', 'a' => 'Yes. Cloud-based barber shop POS software allows you to securely access sales reports, appointments, inventory, and customer information from any device with an internet connection.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Barber Shop POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Barber Shop POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -36,7 +36,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Your Free Demo Today! <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/barber-shop-pos-1.webp" alt="Barber Shop POS Software In UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/barber-shop-pos-1.webp" alt="Barber Shop POS Software In UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -50,21 +50,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Appointment &amp; Queue Management</h3>
           <p class="icon-box__text">Schedule services, manage walk-ins, and prevent double bookings.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Point-of-Sale &amp; Quick Billing</h3>
           <p class="icon-box__text">Process payments fast with streamlined checkout.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Inventory &amp; Retail Tracking</h3>
           <p class="icon-box__text">Track hair products, grooming supplies, and retail sales in real time.</p>
@@ -73,21 +73,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Customer Profiles &amp; History</h3>
           <p class="icon-box__text">Maintain detailed records of services, preferences, and visits.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Multi-Payment Options</h3>
           <p class="icon-box__text">Accept cash, card, QR, and mobile wallet payments.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Staff Scheduling &amp; Commission</h3>
           <p class="icon-box__text">Assign chairs, manage shifts, and calculate commissions automatically.</p>
@@ -115,7 +115,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/barber-shop-pos-2.webp" alt="Barber Shop POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/barber-shop-pos-2.webp" alt="Barber Shop POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -199,7 +199,7 @@
         <a href="tel:+971588979925" class="btn btn--sm"><i class="fas fa-phone-alt"></i> Talk to Our Sales Team</a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/barber-shop-pos-3.webp" alt="Barber Shop POS Software In UAE​" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/barber-shop-pos-3.webp" alt="Barber Shop POS Software In UAE​" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -225,7 +225,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/barber-shop-pos-4.webp" alt="Barber Shop POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/barber-shop-pos-4.webp" alt="Barber Shop POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>

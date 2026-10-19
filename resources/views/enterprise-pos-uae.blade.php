@@ -13,7 +13,7 @@
     ['q' => 'Can Enterprise POS Software integrate with ERP and accounting systems?', 'a' => 'Absolutely, it connects seamlessly with ERP, accounting software, CRM and e-commerce platforms for unified enterprise management.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Enterprise POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
+@include('partials.page-hero', ['title' => 'Enterprise POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
 
 <section class="section section--white">
   <div class="container">
@@ -164,7 +164,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/enterprise-pos-1.webp" alt="Enterprise POS Software in UAE" class="img img-frame" width="648" height="482" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/enterprise-pos-1.webp" alt="Enterprise POS Software in UAE" class="img img-frame" width="648" height="482" loading="lazy">
       </div>
     </div>
   </div>
@@ -239,7 +239,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/enterprise-pos-2.webp" alt="" class="img img-frame" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/enterprise-pos-2.webp" alt="" class="img img-frame" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -316,7 +316,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/enterprise-pos-3.webp" alt="" class="img img-frame" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/enterprise-pos-3.webp" alt="" class="img img-frame" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -405,12 +405,12 @@ In UAE</h2>
       <p class="title text-center">Our Clients</p>
       <div class="logo-slider" data-slider style="--show:5;--show-tablet:5;--show-mobile:1">
         <div class="logo-slider__track">
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
         </div>
       </div>
     </div>

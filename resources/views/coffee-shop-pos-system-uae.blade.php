@@ -2,7 +2,7 @@
 
 @section('title', 'Coffee Shop POS System in UAE | MultiTech POS')
 @section('description', 'Coffee shop POS for the UAE: fast queues, loyalty, inventory and VAT-ready receipts. Built for cafés in Dubai, Abu Dhabi and Sharjah.')
-@section('og_image', $base . '/wp-content/uploads/2026/07/coffee-shop-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/coffee-shop-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'Do you provide training and support after installation?', 'a' => 'Yes. We provide complete onboarding, hands-on staff training, and 24/7 technical support to ensure your coffee shop POS system runs without interruption from day one.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Coffee Shop POS System in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Coffee Shop POS System in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -37,7 +37,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/coffee-shop-pos-1.webp" alt="Coffee Shop POS System in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/coffee-shop-pos-1.webp" alt="Coffee Shop POS System in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -51,21 +51,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Fast Order Management</h3>
           <p class="icon-box__text">Take dine-in, takeaway, and delivery orders instantly with an intuitive interface that reduces wait times and keeps your coffee shop running at full speed.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Multiple Payment Options</h3>
           <p class="icon-box__text">Accept cash, credit/debit cards, Apple Pay, and popular UAE digital wallets — giving every customer a seamless, flexible checkout experience they'll appreciate.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Real-Time Inventory Tracking</h3>
           <p class="icon-box__text">Monitor coffee beans, milk, syrups, and supplies in real time. Get low-stock alerts before you run out and avoid disruptions during busy hours.</p>
@@ -74,21 +74,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Customer Loyalty Programs</h3>
           <p class="icon-box__text">Reward returning customers with points, discounts, and special offers. Build lasting relationships that keep your café busy day after day.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Sales Reports &amp; Analytics</h3>
           <p class="icon-box__text">Access detailed daily, weekly, and monthly sales reports. Make smarter business decisions with clear insights into your best-selling items and peak hours.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Multi-Branch Management</h3>
           <p class="icon-box__text">Running multiple café locations across Dubai, Abu Dhabi, or Sharjah? Manage all branches from one centralized dashboard effortlessly.</p>
@@ -103,7 +103,7 @@
   <div class="container container--1280 row gap-0">
     <div class="cols cols-2 gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/coffee-shop-pos-2.webp" alt="Coffee Shop POS System in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/coffee-shop-pos-2.webp" alt="Coffee Shop POS System in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title fs-36 lh-1_33">Coffee POS System built for Every Cafe Across the Emirates</h2>
@@ -126,7 +126,7 @@
   <div class="container container--1280 gap-0">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/coffee-shop-pos-3.webp" alt="Coffee Shop POS System in UAE" class="img r-30" width="605" height="452" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/coffee-shop-pos-3.webp" alt="Coffee Shop POS System in UAE" class="img r-30" width="605" height="452" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title fs-36 lh-1_33">Benefits of Our Coffee Shop POS Software</h2>
@@ -147,7 +147,7 @@
     </div>
     <div class="cols cols-2 gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/coffee-shop-pos-4.webp" alt="Coffee Shop POS System in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/coffee-shop-pos-4.webp" alt="Coffee Shop POS System in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title fs-36 lh-1_33">What Makes Us the Right Coffee Shop POS Partner in UAE</h2>
@@ -189,7 +189,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/coffee-shop-pos-5.webp" alt="Coffee Shop POS System in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/coffee-shop-pos-5.webp" alt="Coffee Shop POS System in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>

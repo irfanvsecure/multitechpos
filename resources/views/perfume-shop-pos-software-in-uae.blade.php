@@ -2,7 +2,7 @@
 
 @section('title', 'Perfume POS Software In UAE | VAT-Compliant POS - MultiTech')
 @section('description', 'Looking For The Best Perfume POS Software In UAE? MultiTech POS Offers VAT-Compliant Billing, Smart Inventory, Cloud Access & More. Get Now!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/perfume-shop-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/perfume-shop-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'What features should perfume POS software include?', 'a' => 'Essential features include barcode scanning, CRM for customer loyalty, detailed sales reports, VAT billing, inventory tracking, and integration with accounting tools for efficient perfume store management.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Perfume Shop POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Perfume Shop POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -37,7 +37,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/perfume-shop-pos-1.webp" alt="Perfume Shop POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/perfume-shop-pos-1.webp" alt="Perfume Shop POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -58,21 +58,21 @@
     <p class="title text-center">Explore All Features</p>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Inventory Management</h3>
           <p class="icon-box__text">Track every bottle and fragrance variant, from purchase and returns to damage and sales, with real-time stock visibility.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Register Management</h3>
           <p class="icon-box__text">Manage cash, card, and cheque payments with ease. Each cashier operates a separate register account, ensuring end-of-shift accuracy.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Easy to Setup</h3>
           <p class="icon-box__text">Get up and running quickly with step-by-step setup guides and dedicated onboarding support from our UAE-based technical team.</p>
@@ -81,21 +81,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Purchase Management</h3>
           <p class="icon-box__text">Purchase orders and bill are fully managed with their associated suppliers as well as their payments.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Employee Management</h3>
           <p class="icon-box__text">Each user have their login details with their access levels (Owner, Sale, Purchase) to keep proceeding under control.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Multi Company / Multi Location</h3>
           <p class="icon-box__text">Manage multiple perfume stores and brands from one centralized dashboard, ideal for retailers operating across different emirates or malls.</p>
@@ -104,21 +104,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-1-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-1-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Customers &amp; Suppliers</h3>
           <p class="icon-box__text">Add customers and suppliers, manage credits and collect essential information like email and phone numbers.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/web-design-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/web-design-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Mobile Reporting</h3>
           <p class="icon-box__text">Monitor sales, stock, and performance from anywhere using any internet-connected device, stay in control even when you're away from the store.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/bill-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/bill-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Customisable Receipts</h3>
           <p class="icon-box__text">Design branded receipts that reflect your store's identity, add logos, promotional messages, and VAT details with full layout flexibility.</p>
@@ -146,7 +146,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/perfume-shop-pos-2.webp" alt="Perfume Shop POS Software In UAE" class="img r-30 ar-648-403" width="648" height="403" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/perfume-shop-pos-2.webp" alt="Perfume Shop POS Software In UAE" class="img r-30 ar-648-403" width="648" height="403" loading="lazy">
       </div>
     </div>
   </div>
@@ -247,7 +247,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/perfume-shop-pos-3.webp" alt="Perfume Shop POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/perfume-shop-pos-3.webp" alt="Perfume Shop POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -270,7 +270,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/perfume-shop-pos-4.webp" alt="Perfume Shop POS Software In UAE" class="img r-30 ar-648-403" width="648" height="403" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/perfume-shop-pos-4.webp" alt="Perfume Shop POS Software In UAE" class="img r-30 ar-648-403" width="648" height="403" loading="lazy">
       </div>
     </div>
   </div>

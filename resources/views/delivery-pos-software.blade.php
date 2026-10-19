@@ -2,7 +2,7 @@
 
 @section('title', 'Delivery POS Software in UAE | MultiTech POS')
 @section('description', 'Boost delivery efficiency with MultiTech delivery POS in UAE. Simplify order management, billing, driver tracking, and reporting. Get a free demo now!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/delivery-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/delivery-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Is it suitable for small businesses?', 'a' => 'Yes. Whether you run a small delivery setup or a large multi-city operation, the system is scalable and customizable based on your needs.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Delivery POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Delivery POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -33,7 +33,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/delivery-pos-1.webp" alt="Delivery POS Software In UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/delivery-pos-1.webp" alt="Delivery POS Software In UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -51,21 +51,21 @@
     <p class="title text-center">Explore All Features</p>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Centralized Order Management</h3>
           <p class="icon-box__text">Manage all incoming orders from multiple channels — website, app, phone, or third-party platforms — through a unified dashboard. Orders are queued, processed and tracked in real time for fast dispatch.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Dispatch &amp; Route Optimization</h3>
           <p class="icon-box__text">Assign orders to delivery personnel efficiently and optimize delivery routes to cut travel time, reduce fuel costs, and improve delivery turnaround — ideal for high-volume delivery businesses.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Real-Time Driver Tracking</h3>
           <p class="icon-box__text">Monitor delivery drivers live through GPS tracking and view their status, location, and estimated arrival times for full operational visibility.</p>
@@ -74,21 +74,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Instant Customer Updates</h3>
           <p class="icon-box__text">Keep your customers informed with automated notifications — from order confirmation to driver departure and delivery completion — boosting transparency and satisfaction.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Digital Payments &amp; UAE VAT</h3>
           <p class="icon-box__text">Support multiple payment methods including cash, card and digital wallets. All billing and invoicing are fully compliant with UAE VAT requirements, simplifying accounting and audits.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Detailed Reporting &amp; Analytics</h3>
           <p class="icon-box__text">Receive actionable insights on delivery performance, driver efficiency, peak order hours, and sales trends — enabling smarter business decisions and better planning.</p>
@@ -120,7 +120,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/delivery-pos-2.webp" alt="Delivery POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/delivery-pos-2.webp" alt="Delivery POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -193,7 +193,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/delivery-pos-3.webp" alt="Delivery POS Software In UAE​" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/delivery-pos-3.webp" alt="Delivery POS Software In UAE​" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>

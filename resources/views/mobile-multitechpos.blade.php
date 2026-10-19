@@ -2,12 +2,12 @@
 
 @section('title', 'Mobile POS System UAE | MultiTech On-The-Go Sales Solution')
 @section('description', 'Sell Anywhere With MultiTech Mobile POS In UAE. Fast Billing, Offline Support & Real-Time Sync For Retailers & Field Teams. Try A Free Demo Today!')
-@section('og_image', $base . '/wp-content/uploads/2025/12/1.png')
+@section('og_image', $base . '/images/2025/12/1.png')
 @section('og_type', 'article')
 
 @section('content')
 
-@include('partials.page-hero', ['title' => 'Mobile POS System In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Features', 'url' => '/features/']])
+@include('partials.page-hero', ['title' => 'Mobile POS System In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Features', 'url' => '/features/']])
 
 <section class="section section--light">
   <div class="container">
@@ -183,7 +183,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/1.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/1.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>
@@ -209,7 +209,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/home_software_slide2.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/home_software_slide2.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>
@@ -232,7 +232,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/2.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/2.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>
@@ -243,12 +243,12 @@
     <div class="stack p-10">
       <div class="logo-slider" data-slider style="--show:5;--show-tablet:5;--show-mobile:1">
         <div class="logo-slider__track">
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
         </div>
       </div>
     </div>

@@ -2,13 +2,13 @@
 
 @section('title', 'Retail Inventory Shrinkage in the UAE | MultiTech POS')
 @section('description', 'Learn where UAE retail stores lose stock to shrinkage and how POS stock tracking, void logs, and receiving controls cut those losses. Practical guide plus free demo.')
-@section('og_image', $base . '/wp-content/uploads/2026/08/retail-inventory-shrinkage-uae.jpg')
+@section('og_image', $base . '/images/2026/08/retail-inventory-shrinkage-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Inventory Shrinkage: Where UAE Retail Stores Quietly Lose Stock and Money', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Inventory Shrinkage: Where UAE Retail Stores Quietly Lose Stock and Money', 'image' => '/wp-content/uploads/2026/08/retail-inventory-shrinkage-uae.jpg', 'published' => '2026-08-12', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Inventory Shrinkage: Where UAE Retail Stores Quietly Lose Stock and Money', 'image' => '/images/2026/08/retail-inventory-shrinkage-uae.jpg', 'published' => '2026-08-12', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / August 12, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/retail-inventory-shrinkage-uae.webp" alt="retail inventory shrinkage" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/retail-inventory-shrinkage-uae.webp" alt="retail inventory shrinkage" width="1024" height="683"></p>
         <p>There is a particular kind of frustration that every retailer in the UAE recognises. The system says you have twelve units on the shelf. You count them and find nine. Nobody stole them in front of you, no alarm went off, and nothing looks obviously wrong. Three units simply vanished somewhere between the supplier’s van and the customer’s bag.</p>
         <p>That gap has a name. Shrinkage is the difference between the stock your records say you own and the stock actually sitting in your store. It is one of the least discussed and most damaging problems in retail, because it never announces itself. It shows up as a slightly disappointing month, then another one, until an owner starts wondering why a store that seems busy is not making the money it should. The good news is that shrinkage is measurable, and once you can measure it you can shrink it.</p>
         <h2><strong>What Shrinkage Actually Costs</strong></h2>
@@ -34,7 +34,7 @@
         <li><strong>Damage and expiry:</strong> breakage, spoilage, and products that quietly age out on the shelf</li></ul>
         <p>In most stores the first two categories are larger than the last three combined, which surprises owners who assumed theft was the whole story. Paperwork and process errors are undramatic and easy to ignore, which is exactly why they accumulate.</p>
         <h2><strong>Why Manual Stock Control Cannot Catch It</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/retail-stock-counting-shelves.webp" alt="retail inventory shrinkage" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/retail-stock-counting-shelves.webp" alt="retail inventory shrinkage" width="1024" height="683"></p>
         <p>A store running on manual counts or a basic till has no way to detect shrinkage in time to act. The full stock count happens once or twice a year, and by then the losses are months old and impossible to trace. Nobody remembers which shift, which supplier delivery, or which week the gap appeared.</p>
         <p>A proper <a href="{{ $base }}/stock-management/">stock management system</a> changes the timeline completely. Every sale, return, purchase, and transfer updates stock in real time, which means the expected count is always current. When you spot check a category and find a discrepancy, you can look at exactly what happened to that item since the last verified count. Shrinkage stops being an annual mystery and becomes a weekly, traceable number.</p>
         <h2><strong>Catching Losses at the Counter</strong></h2>
@@ -67,7 +67,7 @@
         </tbody>
         </table>
         <h2><strong>Cycle Counting Instead of Annual Chaos</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/retail-checkout-barcode-scanning-uae.webp" alt="retail inventory shrinkage" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/retail-checkout-barcode-scanning-uae.webp" alt="retail inventory shrinkage" width="1024" height="683"></p>
         <p>The single most effective habit a retailer can build is cycle counting. Rather than shutting the store for a painful full inventory once a year, staff count a small section every week. High value and fast moving categories get counted more often, slow moving shelves less often, and over a quarter everything has been verified at least once.</p>
         <p>Because the counts are small and frequent, discrepancies surface while the trail is still warm. You know the count was correct three weeks ago, so whatever went wrong happened inside a three week window with a manageable number of transactions to review. Retailers who adopt cycle counting typically see their shrink rate fall noticeably within a couple of quarters, not because they caught a thief, but because every process around the stock tightened up.</p>
         <h2><strong>Getting Control Across One Store or Many</strong></h2>

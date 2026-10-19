@@ -2,7 +2,7 @@
 
 @section('title', 'Spa POS Software UAE | Spa Point of Sale & Booking')
 @section('description', 'Spa point of sale software for UAE spas and wellness centres: bookings with reminders, therapist commissions, loyalty and VAT receipts. Free demo.')
-@section('og_image', $base . '/wp-content/uploads/2026/07/spa-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/spa-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'Is training provided for my spa staff?', 'a' => 'Yes. We provide thorough onboarding and staff training as part of our setup process, ensuring your entire team feels confident using the software from day one.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Spa Point Of Sale Software in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Spa Point Of Sale Software in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -37,7 +37,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/spa-pos-1.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/spa-pos-1.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -51,21 +51,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Appointment &amp; Booking Management</p>
           <p class="icon-box__text">Effortlessly schedule, reschedule, and manage client appointments in real time, reducing no-shows with automated reminders and keeping your team fully organized.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Integrated Payment Processing</p>
           <p class="icon-box__text">Accept cash, cards, and digital wallets with VAT-compliant receipts. Our spa POS system ensures fast, secure, and hassle-free checkouts for every client.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Staff &amp; Commission Tracking</p>
           <p class="icon-box__text">Monitor therapist performance, manage shift schedules, and automate commission calculations, giving you complete control over your team's productivity and payroll.</p>
@@ -74,21 +74,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory &amp; Product Management</p>
           <p class="icon-box__text">Track retail products and treatment supplies in real time. Get low-stock alerts and reduce waste with smart inventory tools built for spa environments</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Client Profile &amp; Loyalty Management</p>
           <p class="icon-box__text">Maintain detailed client histories, preferences, and visit records. Reward repeat customers with built-in loyalty programs that boost retention and lifetime value.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Real-Time Reports &amp; Analytics</p>
           <p class="icon-box__text">Access powerful business insights with one click. Monitor revenue, staff performance, and peak hours, helping you make smarter decisions to grow your spa.</p>
@@ -103,7 +103,7 @@
   <div class="container container--1280 row gap-0">
     <div class="cols cols-2 gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/spa-pos-2.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/spa-pos-2.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title lh-1_4">Our Spa POS Software Works for Every Spa Across The Emirates</h2>
@@ -126,7 +126,7 @@
   <div class="container container--1280 gap-0">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/spa-pos-3.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30" width="605" height="452" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/spa-pos-3.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30" width="605" height="452" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title lh-1_4">Benefits Of MultiTech’s Management Software For Spas</h2>
@@ -150,7 +150,7 @@
     </div>
     <div class="cols cols-2 gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/spa-pos-4.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/spa-pos-4.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title lh-1_4">Why Choose Our Spa POS System in UAE</h2>
@@ -183,21 +183,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Luxury &amp; Resort Spas</h3>
           <p class="icon-box__text">Manage high-end client experiences, complex service menus, and large teams seamlessly from one powerful platform.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Medical &amp; Wellness Centers</h3>
           <p class="icon-box__text">Handle patient appointments, treatment records, billing, and compliance requirements with a system built for professional wellness environments.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Hair &amp; Beauty Salons</h3>
           <p class="icon-box__text">Simplify bookings, staff commissions, and retail product management for busy salons serving high volumes of daily clients.</p>
@@ -206,21 +206,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Nail &amp; Grooming Studios</h3>
           <p class="icon-box__text">Streamline walk-in appointments, quick checkouts, and loyalty rewards for clients who visit your studio regularly.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Hotel &amp; Resort Wellness Facilities</h3>
           <p class="icon-box__text">Integrate spa operations smoothly within a hospitality environment, managing guest bookings, packages, and billing effortlessly.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Fitness &amp; Yoga Studios</h3>
           <p class="icon-box__text">Schedule group classes, manage memberships, track attendance, and process payments all through one easy-to-use system.</p>
@@ -251,7 +251,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/spa-pos-5.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/spa-pos-5.webp" alt="Spa Point Of Sale Software in UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
 
 @section('title', 'Tailor Management Software UAE | MultiTech POS')
 @section('description', 'Manage orders, measurements & billing with MultiTech POS Tailor Management System. Built for UAE tailor shops. VAT-compliant. Book your FREE demo today!')
-@section('og_image', $base . '/wp-content/uploads/2026/06/tailor-management-1.webp')
+@section('og_image', $base . '/images/2026/06/tailor-management-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'Is the custom tailoring software difficult to set up?', 'a' => 'No. Clear documentation makes setup simple, and our local support team assists with installation and training so your shop is running smoothly with minimal downtime or disruption.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Tailor Management System In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
+@include('partials.page-hero', ['title' => 'Tailor Management System In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
 
 @include('partials.clients-band')
 
@@ -37,7 +37,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/tailor-management-1.webp" alt="Tailor Management System In UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/tailor-management-1.webp" alt="Tailor Management System In UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -51,14 +51,14 @@
     </div>
     <div class="cols cols-2">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="126" height="126" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="126" height="126" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Inventory &amp; Fabric Management</h3>
           <p class="icon-box__text">Track every roll of fabric, lining, button and accessory from purchase and returns to damage and sales. Low-stock alerts mean you reorder before a popular cloth runs out mid-season.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="126" height="126" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="126" height="126" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Register &amp; Purchase Management</h3>
           <p class="icon-box__text">Keep payments organised across cash, card and cheque, with separate register accounts per cashier. Purchase orders and supplier bills are fully managed alongside their payments for clean, auditable records.</p>
@@ -67,14 +67,14 @@
     </div>
     <div class="cols cols-2">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-1-1.webp" alt="" class="img" width="126" height="126" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-1-1.webp" alt="" class="img" width="126" height="126" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Employee Access &amp; Mobile Reporting</h3>
           <p class="icon-box__text">Give each user role-based login access, owner, sales or purchase, to keep operations under control. Owners stay connected from anywhere, viewing live reports on any internet-connected device.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/web-design-1.webp" alt="" class="img" width="126" height="126" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/web-design-1.webp" alt="" class="img" width="126" height="126" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Customisable Receipts &amp; Customer Records</h3>
           <p class="icon-box__text">Add customers and suppliers, store contact details, and tailor receipts to your branding. Centralised customer profiles make personalised service and repeat orders effortless.</p>
@@ -89,22 +89,22 @@
     <p class="title text-center">TailorPro Screen Shots</p>
     <div class="slider" data-carousel style="height:530px">
       <div class="slider__track">
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-29-15-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-30-28-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-30-59-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-31-30-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-33-01-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-34-36-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-50-54-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-51-21-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-51-54-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-52-46-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-53-18-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-53-45-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-54-14-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-54-40-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-55-07-1536x826-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2024-07-07_21-55-47-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-29-15-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-30-28-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-30-59-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-31-30-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-33-01-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-34-36-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-50-54-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-51-21-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-51-54-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-52-46-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-53-18-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-53-45-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-54-14-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-54-40-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-55-07-1536x826-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2024-07-07_21-55-47-1536x826-1.png');background-size:contain"></div>
       </div>
       <button class="slider__prev" type="button" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
       <button class="slider__next" type="button" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
@@ -129,7 +129,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/tailor-management-2.webp" alt="Tailor Management System In UAE" class="img r-30" width="643" height="478" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/tailor-management-2.webp" alt="Tailor Management System In UAE" class="img r-30" width="643" height="478" loading="lazy">
       </div>
     </div>
   </div>
@@ -200,7 +200,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/tailor-management-3.webp" alt="Tailor Management System In UAE" class="img r-30" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/tailor-management-3.webp" alt="Tailor Management System In UAE" class="img r-30" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -223,7 +223,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/tailor-management-4.webp" alt="Tailor Management System In UAE" class="img r-30" width="643" height="478" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/tailor-management-4.webp" alt="Tailor Management System In UAE" class="img r-30" width="643" height="478" loading="lazy">
       </div>
     </div>
   </div>

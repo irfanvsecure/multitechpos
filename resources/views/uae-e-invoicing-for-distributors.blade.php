@@ -2,13 +2,13 @@
 
 @section('title', 'UAE E-Invoicing for Distributors: 2027 Van Sales Guide')
 @section('description', 'UAE e-invoicing for distributors: ASP deadlines, 2027 go-live dates, van returns as credit notes and the buyer gap period, plus a 90-day action plan.')
-@section('og_image', $base . '/wp-content/uploads/2026/10/uae-e-invoicing-for-distributors.jpg')
+@section('og_image', $base . '/images/2026/10/uae-e-invoicing-for-distributors.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'UAE E-Invoicing 2027: What Distributors and Van Sales Teams Must Do Now', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'UAE E-Invoicing 2027: What Distributors and Van Sales Teams Must Do Now', 'image' => '/wp-content/uploads/2026/10/uae-e-invoicing-for-distributors.jpg', 'published' => '2026-10-14', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'UAE E-Invoicing 2027: What Distributors and Van Sales Teams Must Do Now', 'image' => '/images/2026/10/uae-e-invoicing-for-distributors.jpg', 'published' => '2026-10-14', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / October 14, 2026</div>
     </header>
     <div class="post__content prose">
-        <figure><img src="{{ $base }}/wp-content/uploads/2026/10/uae-e-invoicing-for-distributors.webp" width="1280" height="854" alt="UAE e-invoicing for distributors: white delivery van parked in a distribution warehouse before its sales route"></figure>
+        <figure><img src="{{ $base }}/images/2026/10/uae-e-invoicing-for-distributors.webp" width="1280" height="854" alt="UAE e-invoicing for distributors: white delivery van parked in a distribution warehouse before its sales route"></figure>
         <p>UAE e-invoicing for distributors starts with one question: how big is your business? If annual revenue is AED 50 million or more, you must appoint an Accredited Service Provider by 30 October 2026 and go live on 1 January 2027. Smaller distributors must appoint one by 31 March 2027 and go live on 1 July 2027.</p>
         <p>The deadline is the easy part. The hard part is invoices printed in a van, returns collected at the shop door and customer tax details typed in years ago. If your field team runs on <a href="{{ $base }}/van-sales-management-system-in-uae/">van sales software built for UAE routes</a>, this is the moment to check that every invoice it produces can become structured data.</p>
         <h4>Key takeaways</h4>
@@ -45,7 +45,7 @@
         <p>The penalties make the dates real. Cabinet Decision No. 106 of 2025 sets a fine of AED 5,000 per month for failing to implement the system, plus AED 100 for each e-invoice or credit note not issued on time, capped at AED 5,000 a month.</p>
         <strong>Quick check:</strong> Pull ten random customer accounts from your van sales system right now. Does each one have the correct legal name, a valid TRN where the customer is registered, and a full address? If even two are wrong, your data cleanup should start this week, well before your ASP asks for it.<h2>The gap period: selling to shops that are not live yet</h2>
         <p>This is the problem most guides skip. A large distributor goes live on 1 January 2027, but many of its customers, such as small groceries and cafeterias, have until 1 July 2027. For about six months, you will be sending e-invoices to buyers who cannot receive them yet.</p>
-        <p>The official <a href="https://mof.gov.ae/wp-content/uploads/2026/06/UAE-Electronic-Invoicing-Guidelines_V-1.1-01June2026.pdf" target="_blank" rel="noopener">UAE Electronic Invoicing Guidelines (v1.1)</a> deal with this directly. Where the buyer has not yet implemented e-invoicing and has no participant identifier, the supplier must put a predefined placeholder endpoint on the e-invoice. A regular tax invoice, for example a PDF or printed copy, is still required in addition.</p>
+        <p>The official <a href="https://mof.gov.ae/images/2026/06/UAE-Electronic-Invoicing-Guidelines_V-1.1-01June2026.pdf" target="_blank" rel="noopener">UAE Electronic Invoicing Guidelines (v1.1)</a> deal with this directly. Where the buyer has not yet implemented e-invoicing and has no participant identifier, the supplier must put a predefined placeholder endpoint on the e-invoice. A regular tax invoice, for example a PDF or printed copy, is still required in addition.</p>
         <p>In practice, the driver still prints a tax invoice for the shop, while the same sale goes out as a structured e-invoice through your ASP.</p>
         <p>So your system has to know, customer by customer, who is live and who is not. The guidelines also say a customer’s onboarding status or tax registration status does not change your obligations for the transaction. A small customer is never a reason to skip the e-invoice.</p>
         <h2>What changes on the van route</h2>

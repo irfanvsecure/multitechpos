@@ -2,13 +2,13 @@
 
 @section('title', 'Gold Jewelry Pricing UAE: Gold Rate, Making Charges & VAT')
 @section('description', 'Gold jewelry pricing in the UAE explained: daily gold rate, making charges, 5% VAT and reverse charge rules, plus a POS setup checklist for jewelry shops.')
-@section('og_image', $base . '/wp-content/uploads/2026/10/gold-jewelry-pricing-uae.jpg')
+@section('og_image', $base . '/images/2026/10/gold-jewelry-pricing-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Gold Jewelry Pricing in Your POS: Daily Gold Rate, Making Charges and VAT', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Gold Jewelry Pricing in Your POS: Daily Gold Rate, Making Charges and VAT', 'image' => '/wp-content/uploads/2026/10/gold-jewelry-pricing-uae.jpg', 'published' => '2026-10-14', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Gold Jewelry Pricing in Your POS: Daily Gold Rate, Making Charges and VAT', 'image' => '/images/2026/10/gold-jewelry-pricing-uae.jpg', 'published' => '2026-10-14', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / October 14, 2026</div>
     </header>
     <div class="post__content prose">
-        <figure><img src="{{ $base }}/wp-content/uploads/2026/10/gold-jewelry-pricing-uae.webp" width="1280" height="1024" alt="Gold jewelry pricing in the UAE: gold rings and necklace priced by weight, karat and making charge"></figure>
+        <figure><img src="{{ $base }}/images/2026/10/gold-jewelry-pricing-uae.webp" width="1280" height="1024" alt="Gold jewelry pricing in the UAE: gold rings and necklace priced by weight, karat and making charge"></figure>
         <p>Gold jewelry pricing in the UAE comes down to three numbers: the item’s gold weight multiplied by today’s rate for its karat, the making charge, and 5% VAT on the total for a retail buyer. Your POS should hold all three, apply them the same way every time, and print them clearly on the invoice.</p>
         <p>That sounds simple until the rate moves twice before lunch, a customer wants to lock a price for a custom bangle, or a trade buyer hands you a reverse charge declaration. This guide shows how to set up pricing so the counter, the invoice and the books always agree. If you are still choosing software, see how a <a href="{{ $base }}/jewelry-pos-system-in-uae/">point of sale built for jewelry shops in the UAE</a> handles weight and purity.</p>
         <h4>Key takeaways</h4>

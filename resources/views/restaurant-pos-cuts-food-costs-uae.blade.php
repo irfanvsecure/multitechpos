@@ -2,13 +2,13 @@
 
 @section('title', 'How Restaurant POS Cuts Food Costs in the UAE | MultiTech')
 @section('description', 'Learn how UAE restaurants use POS recipe tracking, waste logs, and smarter purchasing to cut food costs by several points. Practical guide plus a free demo.')
-@section('og_image', $base . '/wp-content/uploads/2026/08/restaurant-food-cost-control-pos-uae.jpg')
+@section('og_image', $base . '/images/2026/08/restaurant-food-cost-control-pos-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'How Restaurant POS Software Cuts Food Costs and Waste in the UAE', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'How Restaurant POS Software Cuts Food Costs and Waste in the UAE', 'image' => '/wp-content/uploads/2026/08/restaurant-food-cost-control-pos-uae.jpg', 'published' => '2026-08-06', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'How Restaurant POS Software Cuts Food Costs and Waste in the UAE', 'image' => '/images/2026/08/restaurant-food-cost-control-pos-uae.jpg', 'published' => '2026-08-06', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / August 6, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/restaurant-food-cost-control-pos-uae.webp" alt="restaurant food cost control" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/restaurant-food-cost-control-pos-uae.webp" alt="restaurant food cost control" width="1024" height="683"></p>
         <p>Ask any restaurant owner in Dubai, Abu Dhabi, or Sharjah what keeps them up at night and the answer is rarely the cooking. It is the numbers. Rent is fixed, salaries are fixed, but food cost moves every single week, and it moves quietly. A few grams of over portioning here, a spoiled crate of vegetables there, a dish sold at last year’s price with this year’s ingredients, and suddenly a restaurant that feels busy is barely breaking even.</p>
         <p>Most operators try to fix this with spreadsheets and stern talks in the kitchen. Both help for about two weeks. What actually changes the game is connecting your menu, your kitchen, and your purchasing to the till, because the moment every sale automatically tells you what it consumed, food cost stops being a mystery. That is exactly what modern <a href="{{ $base }}/food-restaurant-pos-software-uae/">restaurant POS software</a> is built to do, and in this article we break down how it works in practice for UAE food businesses.</p>
         <h2><strong>Why Food Cost Is the Hardest Number in the Restaurant</strong></h2>
@@ -27,7 +27,7 @@
         <h2><strong>Recipe Level Tracking: Every Sale Updates Your Stock</strong></h2>
         <p>The core idea is simple. Each menu item in the POS carries a recipe: 180 grams of chicken, 90 grams of rice, 40 grams of sauce, one piece of bread. When a waiter punches in the order, the system deducts those exact quantities from inventory. Sell 60 plates of biryani on a Friday and your stock of rice, chicken, and spices updates automatically, without anyone touching a spreadsheet.</p>
         <p>Once that link exists, the reports become genuinely useful. You can see theoretical usage, which is what your sales say you should have consumed, against actual usage, which is what physically left the store room. The gap between the two is your leakage: over portioning, spillage, theft, or unrecorded freebies. Restaurants that track this gap weekly almost always find two to five points of food cost hiding in it. A connected <a href="{{ $base }}/stock-management/">stock management system</a> makes this comparison automatic instead of a monthly accounting project.</p>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/chef-portioning-ingredients-restaurant.webp" alt="restaurant food cost control" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/chef-portioning-ingredients-restaurant.webp" alt="restaurant food cost control" width="1024" height="683"></p>
         <h2><strong>Portion Control and Menu Engineering</strong></h2>
         <p>Recipes in the POS do more than track stock. They quietly standardize the kitchen. When every chef works from the same defined portions, the shawarma in your Deira branch tastes and costs the same as the one in Marina. Guests get consistency, and you get a cost per dish that actually means something.</p>
         <p>That cost per dish is where menu engineering starts. The POS shows you exactly which items sell in volume and what margin each one carries. Some dishes turn out to be stars, popular and profitable. Others are quietly losing money on every order, usually because ingredient prices crept up while the menu price stayed frozen. With real numbers in front of you, repricing, reworking a recipe, or retiring a dish becomes a decision instead of a guess. Owners reviewing this monthly routinely lift overall margin by several points without adding a single new customer.</p>
@@ -37,7 +37,7 @@
         <div class="callout callout--warning"><p><strong>Did you know?</strong> For a restaurant running AED 200,000 in monthly revenue, trimming food cost by just three percentage points returns AED 6,000 every month. That is AED 72,000 a year recovered without selling one extra plate.</p>
         </div>
         <h2><strong>Keeping Every Branch Honest</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/restaurant-kitchen-operations-uae.webp" alt="restaurant food cost control" width="1024" height="768"></p>
+        <p><img src="{{ $base }}/images/2026/08/restaurant-kitchen-operations-uae.webp" alt="restaurant food cost control" width="1024" height="768"></p>
         <p>Food cost discipline gets harder with every location you open. One branch runs tight while another leaks, and from the outside both just look busy. A centralized POS puts every branch on the same recipes, the same portions, and the same reports, so you can compare food cost percentage across locations line by line. The branch that suddenly drifts two points higher gets a visit and a conversation, backed by numbers nobody can argue with. This is the same control we build for <a href="{{ $base }}/multi-branch-business-pos-uae/">multi branch businesses</a> across retail and food service in the UAE.</p>
         <h2><strong>Where the Money Leaks, and How the POS Plugs It</strong></h2>
         <table>

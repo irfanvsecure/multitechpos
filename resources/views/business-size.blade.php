@@ -2,12 +2,12 @@
 
 @section('title', 'POS Software for Every Business Size in UAE | MultiTech POS')
 @section('description', 'Scalable POS software for small businesses, multi-branch chains and enterprises in the UAE. Start with the essentials and add modules as you grow.')
-@section('og_image', $base . '/wp-content/uploads/2026/01/magnifying-glass-with-graphics-flat-style_23-2147784204.jpg')
+@section('og_image', $base . '/images/2026/01/magnifying-glass-with-graphics-flat-style_23-2147784204.jpg')
 @section('og_type', 'article')
 
 @section('content')
 
-@include('partials.page-hero', ['title' => 'POS Solutions by Business Size', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
+@include('partials.page-hero', ['title' => 'POS Solutions by Business Size', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
 
 @include('partials.clients-band')
 
@@ -22,7 +22,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/magnifying-glass-with-graphics-flat-style_23-2147784204.webp" alt="" class="img img-frame ar-324-163" width="648" height="326" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/magnifying-glass-with-graphics-flat-style_23-2147784204.webp" alt="" class="img img-frame ar-324-163" width="648" height="326" loading="lazy">
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/1.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/1.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>
@@ -92,7 +92,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/home_software_slide2.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/home_software_slide2.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>
@@ -127,7 +127,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/2.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/2.webp" alt="" class="img r-30" width="476" height="461" loading="lazy">
       </div>
     </div>
   </div>

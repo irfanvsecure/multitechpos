@@ -2,13 +2,13 @@
 
 @section('title', 'Product Data Ready for WooCommerce | MultiTech POS')
 @section('description', 'Your POS catalogue was built for scanning, not selling. What UAE retailers need to fix in product names, images, attributes and identifiers before syncing to WooCommerce.')
-@section('og_image', $base . '/wp-content/uploads/2026/09/product-data-ready-for-woocommerce.jpg')
+@section('og_image', $base . '/images/2026/09/product-data-ready-for-woocommerce.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Getting Your Product Data Ready for WooCommerce', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Getting Your Product Data Ready for WooCommerce', 'image' => '/wp-content/uploads/2026/09/product-data-ready-for-woocommerce.jpg', 'published' => '2026-09-12', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Getting Your Product Data Ready for WooCommerce', 'image' => '/images/2026/09/product-data-ready-for-woocommerce.jpg', 'published' => '2026-09-12', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / September 12, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/product-data-ready-for-woocommerce.webp" alt="product data for WooCommerce UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/product-data-ready-for-woocommerce.webp" alt="product data for WooCommerce UAE" width="1024" height="683"></p>
         <p>Open your POS catalogue and look at an actual product name. There is a fair chance it reads something like BLK SHRT L or SAM A15 128 BLU. That is not sloppiness. Somebody chose those names deliberately, because at a counter the only job a product name has is to let staff find the right item in three seconds.</p>
         <p>Push that same catalogue onto a website and every one of those names becomes a problem. Nobody searches for BLK SHRT L. Nobody clicks it. Google has nothing to work with. The data was built for a different job.</p>
         <p>This is the eighth post in our WooCommerce series, following <a href="{{ $base }}/woocommerce-integration-for-uae-retailers-how-multitech-pos-keeps-every-sale-in-sync/">integration basics</a> and posts on <a href="{{ $base }}/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/">inventory sync</a>, <a href="{{ $base }}/how-click-and-collect-works/">click and collect</a>, <a href="{{ $base }}/why-store-and-online-prices-drift/">pricing</a>, <a href="{{ $base }}/when-online-orders-come-back-to-the-store/">returns</a>, <a href="{{ $base }}/one-customer-two-records/">customer records</a>, and <a href="{{ $base }}/why-your-daily-totals-do-not-match/">payment reconciliation</a>. Those covered what happens once you are running. This one is about the work that should happen before you switch anything on.</p>
@@ -51,12 +51,12 @@
         <div class="callout"><p><strong>The principle:</strong> your POS catalogue answers which item is this. Your web catalogue has to answer why should I buy this. Those need different words.</p>
         </div>
         <h2><strong>Images Are Not Optional</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/store-window-product-listings.webp" alt="product data for WooCommerce UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/store-window-product-listings.webp" alt="product data for WooCommerce UAE" width="1024" height="683"></p>
         <p>Most POS catalogues carry no images at all, because nothing at the counter needs them. Online they carry the entire product page, and a listing without one will not sell no matter how good the item is.</p>
         <p>The practical standard is a consistent plain background as the main image, a few supporting angles, and at least one shot showing the product in use or worn. Consistency across the catalogue matters more than any single photograph being perfect, because inconsistent images make a store look improvised.</p>
         <p>Two details that are easy to get wrong. File sizes straight from a phone or a camera are far larger than a web page needs, and a page full of them will be slow, which costs you both customers and rankings. And every image needs alt text describing the product, which serves visually impaired shoppers and gives search engines something to read.</p>
         <h2><strong>Attributes Decide Whether Anyone Can Find Anything</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/product-variants-rack-attributes.webp" alt="product data for WooCommerce UAE" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/product-variants-rack-attributes.webp" alt="product data for WooCommerce UAE" width="1024" height="683"></p>
         <p>Attributes are the structured facts about a product: size, colour, material, capacity. In a POS they exist mainly so staff can pick the right variant. Online they also drive the filters shoppers use to narrow a category down to something manageable.</p>
         <p>Consistency is what makes filters work, and inconsistency is extremely common in catalogues that grew over years. If the same colour appears as Navy, navy blue, NVY and Dark Blue across different products, a shopper filtering for navy sees a fraction of what you actually stock. Standardising those values is unglamorous work with a direct effect on sales.</p>
         <p>Attribute quality also connects to the variation structure covered in the <a href="{{ $base }}/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/">inventory sync post</a>. Clean, consistent attributes are what let a variable product behave properly rather than becoming nine unrelated listings. Retailers running a <a href="{{ $base }}/fashion-pos-system-in-uae/">fashion POS system</a> usually have the underlying matrix already, which is a strong head start.</p>

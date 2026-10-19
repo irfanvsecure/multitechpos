@@ -2,13 +2,13 @@
 
 @section('title', 'Gym Membership Management Software in the UAE | MultiTech')
 @section('description', 'See how UAE gyms use membership POS software to stop revenue leaking from expired access, missed renewals, and untracked retail sales. Guide plus a free demo.')
-@section('og_image', $base . '/wp-content/uploads/2026/08/gym-membership-management-pos-uae.jpg')
+@section('og_image', $base . '/images/2026/08/gym-membership-management-pos-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'How Gym Management Software Stops Membership Revenue Leaking Away in the UAE', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'How Gym Management Software Stops Membership Revenue Leaking Away in the UAE', 'image' => '/wp-content/uploads/2026/08/gym-membership-management-pos-uae.jpg', 'published' => '2026-08-28', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'How Gym Management Software Stops Membership Revenue Leaking Away in the UAE', 'image' => '/images/2026/08/gym-membership-management-pos-uae.jpg', 'published' => '2026-08-28', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / August 28, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/gym-membership-management-pos-uae.webp" alt="gym membership management" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/gym-membership-management-pos-uae.webp" alt="gym membership management" width="1024" height="683"></p>
         <p>A gym in the UAE can look completely full and still be losing money every month. The treadmills are busy, the classes have waitlists, and the front desk never stops buzzing people in. Yet at the end of the month the owner looks at the numbers and cannot explain why revenue does not match the energy in the room. Almost always, the answer is sitting in the membership system, not the gym floor.</p>
         <p>Fitness is a subscription business at heart, and subscription businesses live or die on the boring administrative details: who is paid up, who has frozen their membership, who quietly stopped renewing three months ago and nobody noticed. A spreadsheet or a front desk book cannot keep up with that in real time, which is exactly why a proper <a href="{{ $base }}/pos-software-uae/">gym POS and membership system</a> pays for itself faster than most owners expect.</p>
         <h2><strong>Where Gyms Actually Lose Revenue</strong></h2>
@@ -27,7 +27,7 @@
         <h2><strong>Access Control Tied to Payment Status</strong></h2>
         <p>The single most effective fix is connecting entry to payment status directly. When a member’s card is scanned or tapped at the door, the system checks whether their membership is active before letting them in. An expired membership gets flagged at the entrance, not discovered by accident three weeks later when someone finally checks the books.</p>
         <p>This does more than stop revenue leakage. It removes an awkward job from your staff, who no longer have to chase people down on the gym floor about a lapsed payment. The conversation happens at the front desk in thirty seconds, calmly, before the member has already used the facility they have not paid for.</p>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/gym-front-desk-check-in-uae.webp" alt="gym membership management" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/gym-front-desk-check-in-uae.webp" alt="gym membership management" width="1024" height="683"></p>
         <h2><strong>Renewals: The Difference Between Chasing and Reminding</strong></h2>
         <p>Most gyms lose members not because people are unhappy with the service, but because renewal simply falls through the cracks. The member meant to renew, got busy, and by the time anyone follows up they have mentally already left. A membership system that tracks expiry dates and sends automatic SMS or WhatsApp reminders a week before, and again on the day, catches the majority of these before they lapse.</p>
         <p>The tone matters here too. A reminder that arrives before expiry feels like good service. A phone call two weeks after someone has stopped coming feels like being chased, and it rarely wins the member back. Getting ahead of the date with automated reminders is what turns renewal from a sales problem into a simple administrative one.</p>
@@ -59,7 +59,7 @@
         </tbody>
         </table>
         <h2><strong>Running Multiple Locations Without Losing Visibility</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/gym-training-session-members.webp" alt="gym membership management" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/gym-training-session-members.webp" alt="gym membership management" width="1024" height="683"></p>
         <p>For gym owners running more than one branch, a member who joined at one location should be recognisable at every other location the gym operates, especially if memberships include multi-branch access. Centralised reporting also shows management which branch is retaining members well and which one is quietly bleeding them, long before it shows up as an obvious drop in revenue. This is the same consolidated control we describe for <a href="{{ $base }}/multi-branch-business-pos-uae/">multi branch businesses</a> across retail, food service, and fitness in the UAE.</p>
         <h2><strong>Getting Started Without Disrupting Members</strong></h2>
         <p>Gym owners often worry that a new system means confusing loyal members with a complicated new process. In practice, the change is mostly invisible to members. Check in still takes a tap or a scan, classes still get booked the same way, and the difference is entirely in what happens behind the counter: accurate expiry tracking, automatic reminders, and reports that finally match what is happening on the gym floor.</p>

@@ -13,7 +13,7 @@
     ['q' => 'Does MultiTech POS offer a hospital inventory management system in Dubai?', 'a' => 'Yes. Our hospital inventory management system in Dubai tracks medicines, supplies, and equipment in real time, preventing shortages and ensuring full compliance with DHA and MOH requirements.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'ERP Hospital Management System In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
+@include('partials.page-hero', ['title' => 'ERP Hospital Management System In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
 
 @include('partials.clients-band')
 
@@ -37,7 +37,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Best-Hospital-Management-System-Software-in-UAE.jpg" alt="" class="img r-30" width="648" height="648" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Best-Hospital-Management-System-Software-in-UAE.jpg" alt="" class="img r-30" width="648" height="648" loading="lazy">
       </div>
     </div>
   </div>
@@ -62,21 +62,21 @@
   of Our Hospital Management Software</h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/document_971549-removebg-preview-min-e1705045802261.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/document_971549-removebg-preview-min-e1705045802261.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Electronic Health Records</h3>
           <p class="icon-box__text">Digitize patient medical records for secure paperless storage and access</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/schedule_4148598-removebg-preview-min-e1705045954883.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/schedule_4148598-removebg-preview-min-e1705045954883.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Patient Portal and Self-Scheduling</h3>
           <p class="icon-box__text">Enable patients to book appointments and pay bills online.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/continuity_12376707-removebg-preview-min-e1705046346200.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/continuity_12376707-removebg-preview-min-e1705046346200.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Revenue Cycle Management</h3>
           <p class="icon-box__text">Automate billing, streamline claims processing workflows for efficiency and accuracy.</p>
@@ -85,21 +85,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/printer-cartridges_5755137-min-1-e1705128684549.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/printer-cartridges_5755137-min-1-e1705128684549.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Medical Billing and Insurance Claims Processing</h3>
           <p class="icon-box__text">Streamline insurance verification and claims submissions</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/checklist_9279554-removebg-preview-min-e1705129305713.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/checklist_9279554-removebg-preview-min-e1705129305713.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Hospital Inventory Management System</h3>
           <p class="icon-box__text">Efficiently oversee pharmaceutical inventory and process prescription requests seamlessly.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/report_2877751-removebg-preview-min-e1705129497416.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/report_2877751-removebg-preview-min-e1705129497416.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Laboratory Information System</h3>
           <p class="icon-box__text">Efficiently manage and monitor lab tests, results through electronic tracking</p>
@@ -108,21 +108,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/computer_4377782-removebg-preview-min-e1705130660786.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/computer_4377782-removebg-preview-min-e1705130660786.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Administration Software and Analytics</h3>
           <p class="icon-box__text">Centralize data for actionable insights, enhancing informed decision-making processes effectively.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/webpage_5865702-removebg-preview-min-e1705131256104.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/webpage_5865702-removebg-preview-min-e1705131256104.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Custom Reporting and Dashboards</h3>
           <p class="icon-box__text">Create KPI reports for effective performance monitoring and analysis</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/deadline_7890943-removebg-preview-min-e1705134484970.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/deadline_7890943-removebg-preview-min-e1705134484970.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Appointment Reminders and Waitlist Management</h3>
           <p class="icon-box__text">Efficiently send reminders, manage patient waitlists for streamlined appointments.</p>
@@ -151,7 +151,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get A Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Salon-Spa-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Salon-Spa-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -161,10 +161,10 @@
   <div class="container">
     <div class="slider" data-carousel style="height:530px">
       <div class="slider__track">
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/Users-min.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/Report-Form-min.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/Receipts-min.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/Patient-min.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/Users-min.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/Report-Form-min.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/Receipts-min.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/Patient-min.png');background-size:contain"></div>
       </div>
       <button class="slider__prev" type="button" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
       <button class="slider__next" type="button" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
@@ -229,7 +229,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Best-Hospital-Management-System-Software-in-UAE.jpg" alt="" class="img r-30" width="648" height="648" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Best-Hospital-Management-System-Software-in-UAE.jpg" alt="" class="img r-30" width="648" height="648" loading="lazy">
       </div>
     </div>
   </div>

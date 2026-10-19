@@ -2,7 +2,7 @@
 
 @section('title', 'Dates Shop POS System UAE | Dry Fruits & Nuts POS - MultiTech')
 @section('description', 'MultiTech Dates Shop POS in UAE: weight billing, expiry tracking, VAT invoices & festive order management for UAE dry fruit stores. Book a Free Demo!')
-@section('og_image', $base . '/wp-content/uploads/2026/06/dates-shop-pos-1.webp')
+@section('og_image', $base . '/images/2026/06/dates-shop-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Does the system support barcode scanning and labeling?', 'a' => 'Yes. The software supports barcode scanning and can print custom labels for products, weights, prices, and batch information.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Dates Shop POS System in the UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Dates Shop POS System in the UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -33,7 +33,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/dates-shop-pos-1.webp" alt="Dates Shop POS System in the UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/dates-shop-pos-1.webp" alt="Dates Shop POS System in the UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -113,7 +113,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/dates-shop-pos-2.webp" alt="Dates Shop POS System in the UAE​" class="img r-30 ar-18-11" width="648" height="396" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/dates-shop-pos-2.webp" alt="Dates Shop POS System in the UAE​" class="img r-30 ar-18-11" width="648" height="396" loading="lazy">
       </div>
     </div>
   </div>

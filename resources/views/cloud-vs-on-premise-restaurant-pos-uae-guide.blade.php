@@ -2,13 +2,13 @@
 
 @section('title', 'Cloud vs On-Premise Restaurant POS UAE 2026 - MultiTech')
 @section('description', 'Compare cloud vs on-premise restaurant POS systems in the UAE. Learn the pros, cons, costs, and best option for your restaurant in 2026.')
-@section('og_image', $base . '/wp-content/uploads/2026/07/image.png')
+@section('og_image', $base . '/images/2026/07/image.png')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Cloud vs On-Premise Restaurant POS in UAE: Which Should You Choose in 2026?', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Cloud vs On-Premise Restaurant POS in UAE: Which Should You Choose in 2026?', 'image' => '/wp-content/uploads/2026/07/image.png', 'published' => '2026-07-27', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Cloud vs On-Premise Restaurant POS in UAE: Which Should You Choose in 2026?', 'image' => '/images/2026/07/image.png', 'published' => '2026-07-27', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -47,7 +47,7 @@
         </table>
         </figure>
         <h2><strong>Where Cloud POS Wins</strong></h2>
-        <figure><img width="1024" height="576" src="{{ $base }}/wp-content/uploads/2026/07/image-2-1024x576.webp" alt=""></figure>
+        <figure><img width="1024" height="576" src="{{ $base }}/images/2026/07/image-2-1024x576.webp" alt=""></figure>
         <p><strong>Multi-branch visibility.</strong> If you operate, or plan to operate, more than one outlet, cloud is difficult to argue against. Menu changes, price updates, and promotions push to every branch instantly, and you compare branch performance on one dashboard instead of collecting reports outlet by outlet.</p>
         <p><strong>Lower entry cost.</strong> With no server to buy and no license to pay upfront, cloud systems let a new café or cloud kitchen start with little more than a tablet and a receipt printer. That matters when your fit-out budget is already stretched.</p>
         <p><strong>Real-time decisions.</strong> Seeing live sales during Friday rush from your phone, spotting a void pattern the same day it happens, adjusting stock orders based on this morning’s numbers, this immediacy is where cloud systems quietly pay for themselves.</p>
@@ -57,12 +57,12 @@
         <p><strong>Data control.</strong> Some owners simply prefer their transaction history on hardware they own. If your accountant, your landlord agreements, or your own comfort level demand local data custody, on-premise delivers it, though the backup discipline then falls entirely on you.</p>
         <p><strong>Long-term cost at a single site.</strong> For one established outlet that will never expand, a one-time license can work out cheaper over five to seven years than a perpetual subscription. Run the math for your own horizon rather than assuming either way.</p>
         <p><strong>Payment security posture.</strong> Whichever model you pick, confirm your provider and payment hardware follow<a href="https://www.pcisecuritystandards.org/"> PCI security standards</a>, card data handling rules apply equally to both deployment types.</p>
-        <figure><img src="{{ $base }}/wp-content/uploads/2026/07/image-3-1024x576.webp" width="1024" height="576" alt=""></figure>
+        <figure><img src="{{ $base }}/images/2026/07/image-3-1024x576.webp" width="1024" height="576" alt=""></figure>
         <h2><strong>The Hybrid Middle Ground</strong></h2>
         <p>The cloud-versus-local debate is increasingly settled by systems that do both: software installed locally for speed and offline resilience, syncing to the cloud whenever a connection is available. Providers like<a href="{{ $base }}/"> MultiTech POS</a> build on this model, the terminal keeps billing through an outage, then pushes data to the cloud automatically once connectivity returns, giving you remote dashboards without surrendering offline stability. For most UAE restaurants, this hybrid approach removes the hardest trade-off from the decision entirely.</p>
         <p>The advantage compounds once you pass a single outlet. Two branches running independent local systems means two sets of reports, two menu updates, and no reliable way to compare them; a synced setup gives you one view of the whole operation, which is the same principle behind<a href="{{ $base }}/enterprise-pos-uae/"> POS built for larger chains</a> across the Emirates.</p>
         <h2><strong>How to Decide: A Simple Framework</strong></h2>
-        <figure><img src="{{ $base }}/wp-content/uploads/2026/07/image-1-1024x576.webp" width="1024" height="576" alt=""></figure>
+        <figure><img src="{{ $base }}/images/2026/07/image-1-1024x576.webp" width="1024" height="576" alt=""></figure>
         <p>Ask yourself four questions:</p>
         <ol>
         <li><strong>How many locations will you have in three years?</strong> More than one → cloud or hybrid.</li>

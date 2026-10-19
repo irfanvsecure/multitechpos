@@ -2,13 +2,13 @@
 
 @section('title', 'How Salon POS Cuts No-Shows in the UAE | MultiTech')
 @section('description', 'Discover how UAE salons use POS reminders, deposits, and client history to cut no-shows and build repeat client loyalty. Practical guide plus a free demo.')
-@section('og_image', $base . '/wp-content/uploads/2026/08/salon-booking-no-show-uae.jpg')
+@section('og_image', $base . '/images/2026/08/salon-booking-no-show-uae.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'How Salon POS Software Cuts No-Shows and Builds Client Loyalty in the UAE', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'How Salon POS Software Cuts No-Shows and Builds Client Loyalty in the UAE', 'image' => '/wp-content/uploads/2026/08/salon-booking-no-show-uae.jpg', 'published' => '2026-08-10', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'How Salon POS Software Cuts No-Shows and Builds Client Loyalty in the UAE', 'image' => '/images/2026/08/salon-booking-no-show-uae.jpg', 'published' => '2026-08-10', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / August 10, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/salon-booking-no-show-uae.webp" alt="salon no-show prevention" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/salon-booking-no-show-uae.webp" alt="salon no-show prevention" width="1024" height="683"></p>
         <p>Every salon owner in the UAE knows the feeling. The 4pm slot is booked, the stylist is free and waiting, and the client simply does not show up. No call, no message, just an empty chair that could have earned revenue and a stylist standing around instead of serving someone else. Multiply that across a busy week in Dubai or Abu Dhabi and it adds up to real money walking away without ever setting foot in the salon.</p>
         <p>No-shows are not just an inconvenience. Industry research on the beauty and wellness sector, including studies referenced by <a href="https://www.forbes.com/sites/forbesbusinesscouncil/2023/09/12/how-appointment-based-businesses-can-reduce-no-shows/" target="_blank" rel="noopener">Forbes Business Council</a>, consistently shows that appointment based businesses lose a meaningful share of monthly revenue to missed bookings alone. The good news is that most of this leakage is preventable, and the fix does not require chasing clients or hoping they remember. It starts with how your salon books, confirms, and remembers its clients in the first place, which is exactly where a proper <a href="{{ $base }}/salon-spa-pos-software-uae/">salon POS software</a> earns its keep.</p>
         <h2><strong>Why Clients Forget, and Why That Is Not the Real Problem</strong></h2>
@@ -27,7 +27,7 @@
         <h2><strong>Automated Reminders That Actually Get Read</strong></h2>
         <p>The single biggest lever against no-shows is also the simplest. An <a href="{{ $base }}/appointment-booking-pos-uae/">appointment booking system</a> that sends automatic reminders by SMS or WhatsApp a day before and a couple of hours before the visit catches most forgetful clients before they become a problem. People do not ignore a message asking them to confirm a hair appointment the way they might miss a call.</p>
         <p>Confirmation replies matter just as much as the reminder itself. When a client taps to confirm, the front desk knows the slot is safe. When there is no reply by a set cutoff, staff get a clear signal to call and check, or to offer the slot to someone on a waiting list. That single workflow, invisible to the client but powerful for the business, is often enough to cut no-shows by a significant margin within the first month.</p>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/stylist-serving-client-salon.webp" alt="salon no-show prevention" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/stylist-serving-client-salon.webp" alt="salon no-show prevention" width="1024" height="683"></p>
         <h2><strong>Deposits and Cancellation Policies Without the Awkward Conversation</strong></h2>
         <p>Many salons hesitate to ask for deposits because it feels confrontational, especially for regular clients. A POS with integrated online booking removes that friction entirely. The policy lives in the booking flow itself: book online, pay a small deposit or full prepayment for premium services, and the terms are visible before the client ever confirms. Nobody has to have an uncomfortable phone call about it.</p>
         <p>This works especially well for high demand slots like weekend bridal packages or peak evening hours, where a no-show is most costly. Clients who have already paid something are simply far less likely to skip, and if they do cancel outside the allowed window, the deposit is retained automatically according to your policy rather than becoming another argument at the front desk.</p>
@@ -37,7 +37,7 @@
         <div class="callout callout--warning"><p><strong>Did you know?</strong> Salons that combine automated reminders with a simple loyalty program typically see repeat visit rates climb noticeably within a few months, without spending anything extra on advertising.</p>
         </div>
         <h2><strong>Filling Gaps Instead of Losing Them</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/modern-salon-interior-uae.webp" alt="salon no-show prevention" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/modern-salon-interior-uae.webp" alt="salon no-show prevention" width="1024" height="683"></p>
         <p>Even with reminders and deposits, cancellations will still happen occasionally, and that is fine as long as the gap does not sit empty. A modern booking system can hold a short waiting list for popular time slots and notify the next client automatically the moment a spot opens up. What used to be a wasted hour becomes another paying appointment with almost no extra effort from the front desk.</p>
         <p>This same visibility helps with staff planning too. When management can see booking density by hour and by stylist, it becomes obvious where extra chairs are needed on a Friday evening and where a quiet Tuesday morning could use a promotion to fill the calendar. For salons running more than one branch, the same booking and loyalty data rolls up into a single view, similar to the setup we describe for <a href="{{ $base }}/multi-branch-business-pos-uae/">multi branch businesses</a> across the UAE.</p>
         <h2><strong>Where the Revenue Actually Comes From</strong></h2>

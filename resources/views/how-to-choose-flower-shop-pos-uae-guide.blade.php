@@ -2,13 +2,13 @@
 
 @section('title', 'How to Choose a Florist POS in UAE | 7 Checks - MultiTech')
 @section('description', 'Trusted by UAE florists: the 7 checks that matter before buying a flower shop POS, from perishable stock alerts to VAT invoicing. Book your free demo today.')
-@section('og_image', $base . '/wp-content/uploads/2026/07/image-4.png')
+@section('og_image', $base . '/images/2026/07/image-4.png')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'How to Choose a Flower Shop POS in UAE: 7 Things Florists Should Check', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'How to Choose a Flower Shop POS in UAE: 7 Things Florists Should Check', 'image' => '/wp-content/uploads/2026/07/image-4.png', 'published' => '2026-07-28', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'How to Choose a Flower Shop POS in UAE: 7 Things Florists Should Check', 'image' => '/images/2026/07/image-4.png', 'published' => '2026-07-28', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -44,7 +44,7 @@
         <p>This is the check that separates florist software from everything else. A standard retail system counts units; it does not know that a Colombian rose has a vase life of about a week while a carnation lasts two. Look for expiry dates at batch level, automatic alerts when stock approaches its sell-by window, and reports that show exactly how much value you wrote off to wastage each week.</p>
         <p>The best systems pair this with<a href="{{ $base }}/stock-management/"> smart stock management tools</a> that trigger reorder reminders based on real sales velocity, so you buy what actually moves instead of guessing before every weekend. If a vendor cannot show you a wastage report in the demo, keep shopping.</p>
         <h2><strong>2. Pre-Orders, Deposits, and Event Scheduling</strong></h2>
-        <figure><img width="1024" height="576" src="{{ $base }}/wp-content/uploads/2026/07/image-5-1024x576.webp" alt="POS for florists"></figure>
+        <figure><img width="1024" height="576" src="{{ $base }}/images/2026/07/image-5-1024x576.webp" alt="POS for florists"></figure>
         <p>Walk-in bouquet sales keep the lights on, but weddings, corporate events, and Eid gifting are where UAE florists make their margin. Those orders arrive weeks in advance, involve deposits, and have zero tolerance for a missed date.</p>
         <p>Your POS should let you take a partial payment today, schedule the balance, attach preparation notes, and surface a production calendar so the team knows what must be ready on which morning. Systems with built-in<a href="{{ $base }}/appointment-booking-pos-uae/"> advance booking and scheduling</a> handle this natively, you should never be managing event orders in a separate diary that the till knows nothing about.</p>
         <h2><strong>3. FTA-Compliant VAT Invoicing</strong></h2>

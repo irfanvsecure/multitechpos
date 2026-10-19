@@ -2,7 +2,7 @@
 
 @section('title', 'Best Golf POS Software in UAE | MultiTech POS')
 @section('description', 'Manage tee times, pro shop sales & memberships with MultiTech POS – the smart golf course POS built for UAE clubs. Book a free demo today!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/golf-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/golf-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Can I manage memberships and loyalty programs?', 'a' => 'Yes — track member profiles, recurring billing, special pricing, and loyalty points directly within the system.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Golf POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Golf POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -33,7 +33,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/golf-pos-1.webp" alt="Golf POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/golf-pos-1.webp" alt="Golf POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -51,21 +51,21 @@
     <p class="title text-center">Explore All Features</p>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Tee Time &amp; Booking Management</h3>
           <p class="icon-box__text">Easily check in players, assign carts, apply discounts, and track bookings in real time.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Pro Shop Inventory &amp; Sales</h3>
           <p class="icon-box__text">Manage equipment and apparel stock, barcode scanning, seasonal pricing, and promotional offers.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Clubhouse &amp; F&amp;B Ordering</h3>
           <p class="icon-box__text">Fast, ticketless ordering for restaurants, cafes and lounges with table management, kitchen routing and bill splitting.</p>
@@ -74,21 +74,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Membership &amp; Loyalty</h3>
           <p class="icon-box__text">Track member accounts, memberships, special pricing, recurring billing and loyalty rewards.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">UAE VAT-Compliant Billing</h3>
           <p class="icon-box__text">Generate FTA-approved tax invoices automatically in Arabic &amp; English.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Analytics &amp; Reporting</h3>
           <p class="icon-box__text">Get daily sales dashboards, product performance, membership reports and financial insights across your facility.</p>
@@ -116,7 +116,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/golf-pos-2.webp" alt="Golf POS Software In UAE" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/golf-pos-2.webp" alt="Golf POS Software In UAE" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -194,7 +194,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/golf-pos-3.webp" alt="Golf POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/golf-pos-3.webp" alt="Golf POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>

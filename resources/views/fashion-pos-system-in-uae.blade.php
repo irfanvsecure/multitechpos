@@ -14,7 +14,7 @@
     ['q' => 'Can the fashion retail management system sync with my online store?', 'a' => 'Yes. Omnichannel sync keeps in-store and eCommerce inventory aligned in real time, so stock levels, prices, and orders stay accurate across every sales channel automatically.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Fashion Store POS System in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Fashion Store POS System in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/fashio-pos-1.webp" alt="Fashion Store POS System in UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/fashio-pos-1.webp" alt="Fashion Store POS System in UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
     <a href="tel:+971588979925" class="btn btn--sm"><i class="fas fa-phone-alt"></i> Speak With Us</a>
@@ -49,21 +49,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory Management</p>
           <p class="icon-box__text">Track every garment by size, color, and SKU, from purchase and stock transfer to returns and damage, with live multi-store visibility.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Register Management</p>
           <p class="icon-box__text">Keep track of your payments (Cash, Credit Card, Cheque etc.) as each cashier have separate register accounts.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Easy to Setup</p>
           <p class="icon-box__text">With provided documentation, now it is very easy to setup. Although our support is always there to assist.</p>
@@ -72,21 +72,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Purchase Management</p>
           <p class="icon-box__text">Purchase orders and bill are fully managed with their associated suppliers as well as their payments.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Size &amp; Color Matrix</p>
           <p class="icon-box__text">Manage one design across every size, color, and style variant from a single product screen, with stock counts per variant.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi Company / Multi Location</p>
           <p class="icon-box__text">With this, you can manage multi companies and multi locations.</p>
@@ -95,21 +95,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-1-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-1-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customers &amp; Suppliers</p>
           <p class="icon-box__text">Add customers and suppliers, manage credits and collect essential information like email and phone numbers.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/web-design-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/web-design-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Mobile Reporting</p>
           <p class="icon-box__text">Now you always connected with your business from anywhere and through any device connected with internet.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/bill-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/bill-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customisable Receipts</p>
           <p class="icon-box__text">With lot of flexibility, we allows end user to customize their receipt as per their needs.</p>
@@ -135,7 +135,7 @@ Sale System with CRM Tools</h2>
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request a Free Demo Today! <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/fashio-pos-2.webp" alt="Fashion Store POS System in UAE​" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/fashio-pos-2.webp" alt="Fashion Store POS System in UAE​" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -211,7 +211,7 @@ Sale System with CRM Tools</h2>
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/fashio-pos-3.webp" alt="Fashion Store POS System in UAE​" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/fashio-pos-3.webp" alt="Fashion Store POS System in UAE​" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>

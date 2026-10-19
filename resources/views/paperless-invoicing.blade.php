@@ -14,7 +14,7 @@
     ['q' => 'Which businesses can use this invoicing solution?', 'a' => 'Retail shops, restaurants, salons, and service businesses across the UAE use our system. It’s scalable and industry-tuned, suiting both small single-store operations and multi-branch enterprises.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Paperless Invoicing System in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'POS Features', 'url' => '/features/']])
+@include('partials.page-hero', ['title' => 'Paperless Invoicing System in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'POS Features', 'url' => '/features/']])
 
 <section class="section section--white">
   <div class="container">
@@ -134,7 +134,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/02/Gold-Shop-POS-Software-3.jpg" alt="" class="img r-30" width="643" height="429" loading="lazy">
+        <img src="{{ $base }}/images/2026/02/Gold-Shop-POS-Software-3.jpg" alt="" class="img r-30" width="643" height="429" loading="lazy">
       </div>
     </div>
   </div>
@@ -202,7 +202,7 @@
         <a href="tel:+971588979925" class="btn btn--sm"><i class="fas fa-phone-alt"></i> Speak With Expert</a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/pos-software-2.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/pos-software-2.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -298,12 +298,12 @@
     <div class="stack p-10">
       <div class="logo-slider" data-slider style="--show:5;--show-tablet:5;--show-mobile:1">
         <div class="logo-slider__track">
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
-          <div class="logo-slider__item"><img src="{{ $base }}/wp-content/uploads/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/theivy-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="theivy" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="bazaar" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/brain-games-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="brain-games" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/candadian-pizza-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="candadian-pizza" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/emd-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="emd" loading="lazy"></div>
+          <div class="logo-slider__item"><img src="{{ $base }}/images/elementor/thumbs/maras-turka-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="maras-turka" loading="lazy"></div>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@
     ['q' => 'How can a POS system enhance customer loyalty in the UAE?', 'a' => 'POS systems improve loyalty through personalized promotions, reward programs and faster service.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Custom POS Software Company in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
+@include('partials.page-hero', ['title' => 'Custom POS Software Company in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'POS Software', 'url' => '/pos-software-uae/']])
 
 @include('partials.clients-band')
 
@@ -77,7 +77,7 @@ In UAE</h2>
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/custom-pos-1.webp" alt="custom POS software in UAE" class="img img-frame" width="661" height="493" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/custom-pos-1.webp" alt="custom POS software in UAE" class="img img-frame" width="661" height="493" loading="lazy">
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@ Solutions in UAE?</h3>
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/custom-pos-2.webp" alt="custom POS software in UAE" class="img img-frame" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/custom-pos-2.webp" alt="custom POS software in UAE" class="img img-frame" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -239,7 +239,7 @@ POS Service</h2>
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Demo Call <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/custom-pos-3.webp" alt="custom POS software in UAE" class="img img-frame" width="648" height="481" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/custom-pos-3.webp" alt="custom POS software in UAE" class="img img-frame" width="648" height="481" loading="lazy">
       </div>
     </div>
   </div>

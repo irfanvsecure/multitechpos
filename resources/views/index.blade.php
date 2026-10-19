@@ -2,7 +2,7 @@
 
 @section('title', '#1 POS Software & ERP Systems Company In UAE - MultiTech')
 @section('description', 'MultiTech POS Is A Leading POS Software & ERP Systems Company In UAE. Get Scalable, VAT-Compliant Solutions With Local Support. Book A Free Demo Today!')
-@section('og_image', $base . '/wp-content/uploads/2026/01/pos-software.jpg')
+@section('og_image', $base . '/images/2026/01/pos-software.jpg')
 
 @section('content')
 
@@ -38,7 +38,7 @@
         </div>
 
         <div class="home-hero__media">
-            <img src="{{ $base }}/wp-content/uploads/2026/01/pos-software.webp" alt="POS Software in UAE" width="580" height="388">
+            <img src="{{ $base }}/images/2026/01/pos-software.webp" alt="POS Software in UAE" width="580" height="388">
             <div class="float-card float-card--top">
                 <span class="float-card__icon"><i class="fas fa-file-invoice"></i></span>
                 <span><strong>VAT-ready invoices</strong><small>FTA compliant, every sale</small></span>
@@ -190,7 +190,7 @@
 <section class="home-section">
     <div class="wrap feature-split">
         <div class="feature-split__media">
-            <img src="{{ $base }}/wp-content/uploads/2026/06/3d-rendering-point-sale-system-store-management_493806-1407.webp" alt="Retail POS Software in UAE" width="626" height="626" loading="lazy">
+            <img src="{{ $base }}/images/2026/06/3d-rendering-point-sale-system-store-management_493806-1407.webp" alt="Retail POS Software in UAE" width="626" height="626" loading="lazy">
         </div>
         <div class="feature-split__content">
             <span class="tag">Built for the UAE</span>
@@ -258,7 +258,7 @@
 <section class="home-section">
     <div class="wrap feature-split feature-split--reverse">
         <div class="feature-split__media">
-            <img src="{{ $base }}/wp-content/uploads/2026/06/female-staff-using-credit-card-terminal-cash-counter-50kb.webp" alt="Retail POS Software in UAE" width="648" height="432" loading="lazy">
+            <img src="{{ $base }}/images/2026/06/female-staff-using-credit-card-terminal-cash-counter-50kb.webp" alt="Retail POS Software in UAE" width="648" height="432" loading="lazy">
         </div>
         <div class="feature-split__content">
             <span class="tag">Scalable</span>
@@ -276,7 +276,7 @@
 <section class="home-section home-section--light">
     <div class="wrap feature-split">
         <div class="feature-split__media">
-            <img src="{{ $base }}/wp-content/uploads/2026/01/pos-software.webp" alt="POS Software in UAE" width="580" height="388" loading="lazy">
+            <img src="{{ $base }}/images/2026/01/pos-software.webp" alt="POS Software in UAE" width="580" height="388" loading="lazy">
         </div>
         <div class="feature-split__content">
             <span class="tag">Made for UAE Businesses</span>

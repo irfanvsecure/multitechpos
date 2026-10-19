@@ -2,14 +2,14 @@
 
 @section('title', 'How to Choose a POS System for Your Beauty Business')
 @section('description', 'A practical guide to choosing a POS for salons and spas: the features that matter, what to avoid, and the questions to ask before you buy.')
-@section('og_image', $base . '/wp-content/uploads/2026/04/Hairstylist_and_client_202604132211.jpeg')
+@section('og_image', $base . '/images/2026/04/Hairstylist_and_client_202604132211.jpeg')
 @section('og_type', 'article')
 
 @section('content')
 
 <section class="section section--white section--p10">
   <div class="container">
-    <img src="{{ $base }}/wp-content/uploads/2026/04/Hairstylist_and_client_202604132211-1024x765.webp" alt="" class="img" loading="lazy">
+    <img src="{{ $base }}/images/2026/04/Hairstylist_and_client_202604132211-1024x765.webp" alt="" class="img" loading="lazy">
     <h1 class="title fs-36 lh-1_4 fw-600 c-navy">How to Choose a Point-of-Sale System for Your Beauty Business</h1>
     <div class="text fs-16 c-grey">
       <p>There are dozens of POS options on the market right now, and most of them claim to be perfect for salons and spas. Some of them actually are. Many of them aren’t. The difference between a good choice and a costly one usually comes down to how well you understand your own business before you start comparing software.</p>
@@ -24,7 +24,7 @@
       <li>Do you have visibility into which services and staff members are most profitable?</li>
       <li>Are your client records scattered across different tools?</li></ul>
       <p>Your answers to these questions should shape every decision that follows. A solo esthetician has very different needs from a five-chair hair salon running retail. And both of those are different from a med spa managing memberships, packages, and tiered pricing.</p>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/04/image-1024x765.webp" width="1024" height="765" alt="POS For beauty Business."></figure>
+      <figure><img src="{{ $base }}/images/2026/04/image-1024x765.webp" width="1024" height="765" alt="POS For beauty Business."></figure>
       <h2>Know Which Type of Business You’re Running</h2>
       <p>Beauty businesses vary more than people realize, and the right system depends heavily on your model. Before evaluating anything, place yourself in one of these categories:</p>
       <h3>Appointment-first businesses</h3>
@@ -36,7 +36,7 @@
       <h3>Multi-location businesses</h3>
       <p>need centralized control; one dashboard for all locations, consolidated reporting, and the ability to manage staff across branches without logging into separate accounts.</p>
       <p>Once you know your category, you can immediately filter out systems that aren’t designed for your model. This alone will cut your shortlist in half.</p>
-      <figure><img src="{{ $base }}/wp-content/uploads/2026/04/image-1-1024x765.webp" width="1024" height="765" alt=""></figure>
+      <figure><img src="{{ $base }}/images/2026/04/image-1-1024x765.webp" width="1024" height="765" alt=""></figure>
       <h2>The 5 Questions to Ask Every Vendor</h2>
       <p>When you’re evaluating a platform, whether it’s a demo, a free trial, or a sales call, these five questions will tell you more than any feature checklist:</p>
       <p><strong>1. What does the full monthly cost look like for a business my size?</strong> The headline price is rarely the real price. Ask for a breakdown that includes per-user fees, transaction fees, SMS charges, hardware costs, and any add-on modules you’d actually need. If a vendor can’t give you a clear number, that’s a warning sign.</p>

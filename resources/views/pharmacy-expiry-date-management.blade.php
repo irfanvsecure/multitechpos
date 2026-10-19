@@ -2,13 +2,13 @@
 
 @section('title', 'Pharmacy Expiry Date Management: FEFO Guide for UAE')
 @section('description', 'Pharmacy expiry date management with FEFO: what UAE rules say about expired medicines, near-expiry windows and a monthly routine that cuts write-offs.')
-@section('og_image', $base . '/wp-content/uploads/2026/10/pharmacy-expiry-date-management.jpg')
+@section('og_image', $base . '/images/2026/10/pharmacy-expiry-date-management.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'Pharmacy Expiry Management: How FEFO Stock Rotation Cuts Write-Offs', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'Pharmacy Expiry Management: How FEFO Stock Rotation Cuts Write-Offs', 'image' => '/wp-content/uploads/2026/10/pharmacy-expiry-date-management.jpg', 'published' => '2026-10-14', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'Pharmacy Expiry Management: How FEFO Stock Rotation Cuts Write-Offs', 'image' => '/images/2026/10/pharmacy-expiry-date-management.jpg', 'published' => '2026-10-14', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / October 14, 2026</div>
     </header>
     <div class="post__content prose">
-        <figure><img src="{{ $base }}/wp-content/uploads/2026/10/pharmacy-expiry-date-management.webp" width="1280" height="854" alt="Pharmacy expiry date management: pharmacist reaching for medication on a pharmacy shelf"></figure>
+        <figure><img src="{{ $base }}/images/2026/10/pharmacy-expiry-date-management.webp" width="1280" height="854" alt="Pharmacy expiry date management: pharmacist reaching for medication on a pharmacy shelf"></figure>
         <p>Pharmacy expiry date management comes down to two habits: knowing which batch of each medicine expires first, and selling or returning that batch before the date arrives. The method that makes this work is FEFO, short for first expired, first out. Done well, it turns expired stock from a monthly surprise into a short, predictable list.</p>
         <p>Most write-offs do not come from bad luck. They come from batches nobody saw coming. A <a href="{{ $base }}/pharmacy-pos-system-in-the-uae/">pharmacy POS that records batch numbers and expiry dates</a> at receiving gives you that visibility, and the routine below shows how to use it.</p>
         <h4>Key takeaways</h4>

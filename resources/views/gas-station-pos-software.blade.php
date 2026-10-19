@@ -2,7 +2,7 @@
 
 @section('title', 'Best Gas Station POS Software in UAE | MultiTech POS')
 @section('description', 'Run your fuel station smarter with MultiTech POS – real-time sales, fuel tracking & multi-branch control. Trusted UAE gas station POS. Get a demo!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/gas-station-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/gas-station-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'What payment methods are supported?', 'a' => 'The POS supports cash, credit/debit cards, fleet cards, and popular UAE digital payment options.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Gas Station POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Gas Station POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -36,7 +36,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/gas-station-pos-1.webp" alt="Gas Station POS Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/gas-station-pos-1.webp" alt="Gas Station POS Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -54,21 +54,21 @@
     <p class="title text-center">Explore All Features</p>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Fuel Sales &amp; Pump Integration</p>
           <p class="icon-box__text">Automate fuel billing and pump tracking, sync sales with meters, and eliminate manual errors for faster checkout.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Convenience Store Management</p>
           <p class="icon-box__text">Control inventory, pricing, promotions and product categories easily — ideal for high-velocity retail environments inside fuel stations.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customer Loyalty &amp; Rewards</p>
           <p class="icon-box__text">Build repeat business with tailored loyalty programs, fleet discounts and reward points — all managed directly from the POS.</p>
@@ -77,21 +77,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Flexible Invoicing &amp; VAT Bills</p>
           <p class="icon-box__text">Generate VAT-compliant tax invoices in Arabic &amp; English with UAE Federal Tax Authority (FTA) standards fully supported.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Device Compatibility</p>
           <p class="icon-box__text">Use on touch screen terminals, tablets or mobile devices — works seamlessly across hardware for quick service everywhere.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Branch Management</p>
           <p class="icon-box__text">Manage multiple gaming stores from a centralized dashboard with consolidated reports.</p>
@@ -119,7 +119,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/gas-station-pos-2.webp" alt="Gas Station POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/gas-station-pos-2.webp" alt="Gas Station POS Software in UAE" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -195,7 +195,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/gas-station-pos-3.webp" alt="Gas Station POS Software in UAE" class="img r-30" width="648" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/gas-station-pos-3.webp" alt="Gas Station POS Software in UAE" class="img r-30" width="648" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -221,7 +221,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/gas-station-pos-4.webp" alt="Gas Station POS Software in UAE" class="img r-30" width="643" height="478" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/gas-station-pos-4.webp" alt="Gas Station POS Software in UAE" class="img r-30" width="643" height="478" loading="lazy">
       </div>
     </div>
   </div>

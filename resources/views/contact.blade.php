@@ -5,7 +5,7 @@
 
 @section('content')
 
-@include('partials.page-hero', ['title' => 'Contact', 'image' => '/wp-content/uploads/2026/02/Gold-Shop-POS-Software-2.jpg', 'actions' => false])
+@include('partials.page-hero', ['title' => 'Contact', 'image' => '/images/2026/02/Gold-Shop-POS-Software-2.jpg', 'actions' => false])
 
 @include('partials.clients-band')
 

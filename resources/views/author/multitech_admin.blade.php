@@ -14,7 +14,7 @@
     </header>
     <div class="archive__grid">
     <article class="archive-card">
-        <a href="{{ $base }}/gold-jewelry-pricing-uae/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/10/gold-jewelry-pricing-uae-1024x819.jpg" alt="Gold Jewelry Pricing in Your POS: Daily Gold Rate, Making Charges and VAT" loading="lazy"></a>
+        <a href="{{ $base }}/gold-jewelry-pricing-uae/" class="archive-card__img"><img src="{{ $base }}/images/2026/10/gold-jewelry-pricing-uae-1024x819.jpg" alt="Gold Jewelry Pricing in Your POS: Daily Gold Rate, Making Charges and VAT" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">Jewelry POS</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/gold-jewelry-pricing-uae/">Gold Jewelry Pricing in Your POS: Daily Gold Rate, Making Charges and VAT</a></h2>
@@ -23,7 +23,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/pharmacy-expiry-date-management/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/10/pharmacy-expiry-date-management-1024x683.jpg" alt="Pharmacy Expiry Management: How FEFO Stock Rotation Cuts Write-Offs" loading="lazy"></a>
+        <a href="{{ $base }}/pharmacy-expiry-date-management/" class="archive-card__img"><img src="{{ $base }}/images/2026/10/pharmacy-expiry-date-management-1024x683.jpg" alt="Pharmacy Expiry Management: How FEFO Stock Rotation Cuts Write-Offs" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">Pharmacy POS</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/pharmacy-expiry-date-management/">Pharmacy Expiry Management: How FEFO Stock Rotation Cuts Write-Offs</a></h2>
@@ -32,7 +32,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/uae-e-invoicing-for-distributors/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/10/uae-e-invoicing-for-distributors-1024x683.jpg" alt="UAE E-Invoicing 2027: What Distributors and Van Sales Teams Must Do Now" loading="lazy"></a>
+        <a href="{{ $base }}/uae-e-invoicing-for-distributors/" class="archive-card__img"><img src="{{ $base }}/images/2026/10/uae-e-invoicing-for-distributors-1024x683.jpg" alt="UAE E-Invoicing 2027: What Distributors and Van Sales Teams Must Do Now" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">VAT &amp; E-Invoicing</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/uae-e-invoicing-for-distributors/">UAE E-Invoicing 2027: What Distributors and Van Sales Teams Must Do Now</a></h2>
@@ -41,7 +41,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/restaurant-menu-engineering-uae/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/09/restaurant-menu-engineering-uae.jpg" alt="Menu Engineering for UAE Restaurants: Using POS Data to Price and Place Every Dish" loading="lazy"></a>
+        <a href="{{ $base }}/restaurant-menu-engineering-uae/" class="archive-card__img"><img src="{{ $base }}/images/2026/09/restaurant-menu-engineering-uae.jpg" alt="Menu Engineering for UAE Restaurants: Using POS Data to Price and Place Every Dish" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">Restaurant POS, Uncategorized</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/restaurant-menu-engineering-uae/">Menu Engineering for UAE Restaurants: Using POS Data to Price and Place Every Dish</a></h2>
@@ -50,7 +50,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/what-makes-a-tax-invoice-valid/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/09/uae-tax-invoice-requirements-receipt-1024x683.jpg" alt="UAE Tax Invoice Requirements: What Your POS Receipt Must Show" loading="lazy"></a>
+        <a href="{{ $base }}/what-makes-a-tax-invoice-valid/" class="archive-card__img"><img src="{{ $base }}/images/2026/09/uae-tax-invoice-requirements-receipt-1024x683.jpg" alt="UAE Tax Invoice Requirements: What Your POS Receipt Must Show" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">VAT &amp; E-Invoicing</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/what-makes-a-tax-invoice-valid/">UAE Tax Invoice Requirements: What Your POS Receipt Must Show</a></h2>
@@ -59,7 +59,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/uae-e-invoicing-guide-for-retailers/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/09/uae-e-invoicing-what-it-means-for-pos-1024x683.jpg" alt="UAE E-Invoicing: What the 2027 Mandate Means for Your POS System" loading="lazy"></a>
+        <a href="{{ $base }}/uae-e-invoicing-guide-for-retailers/" class="archive-card__img"><img src="{{ $base }}/images/2026/09/uae-e-invoicing-what-it-means-for-pos-1024x683.jpg" alt="UAE E-Invoicing: What the 2027 Mandate Means for Your POS System" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">VAT &amp; E-Invoicing</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/uae-e-invoicing-guide-for-retailers/">UAE E-Invoicing: What the 2027 Mandate Means for Your POS System</a></h2>
@@ -68,7 +68,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/your-pos-data-is-not-web-ready/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/09/product-data-ready-for-woocommerce-1024x682.jpg" alt="Getting Your Product Data Ready for WooCommerce" loading="lazy"></a>
+        <a href="{{ $base }}/your-pos-data-is-not-web-ready/" class="archive-card__img"><img src="{{ $base }}/images/2026/09/product-data-ready-for-woocommerce-1024x682.jpg" alt="Getting Your Product Data Ready for WooCommerce" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">WooCommerce Integration</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/your-pos-data-is-not-web-ready/">Getting Your Product Data Ready for WooCommerce</a></h2>
@@ -77,7 +77,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/why-your-daily-totals-do-not-match/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/09/reconciling-payments-uae-retail-1024x684.jpg" alt="Reconciling Online and In-Store Payments: Making the Daily Close Work" loading="lazy"></a>
+        <a href="{{ $base }}/why-your-daily-totals-do-not-match/" class="archive-card__img"><img src="{{ $base }}/images/2026/09/reconciling-payments-uae-retail-1024x684.jpg" alt="Reconciling Online and In-Store Payments: Making the Daily Close Work" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">WooCommerce Integration</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/why-your-daily-totals-do-not-match/">Reconciling Online and In-Store Payments: Making the Daily Close Work</a></h2>
@@ -86,7 +86,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/one-customer-two-records/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/09/single-customer-view-uae-retail-1024x683.jpg" alt="The Single Customer View: Connecting Loyalty Across Store and WooCommerce" loading="lazy"></a>
+        <a href="{{ $base }}/one-customer-two-records/" class="archive-card__img"><img src="{{ $base }}/images/2026/09/single-customer-view-uae-retail-1024x683.jpg" alt="The Single Customer View: Connecting Loyalty Across Store and WooCommerce" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">WooCommerce Integration</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/one-customer-two-records/">The Single Customer View: Connecting Loyalty Across Store and WooCommerce</a></h2>
@@ -95,7 +95,7 @@
         </div>
     </article>
     <article class="archive-card">
-        <a href="{{ $base }}/when-online-orders-come-back-to-the-store/" class="archive-card__img"><img src="{{ $base }}/wp-content/uploads/2026/09/omnichannel-returns-uae-683x1024.jpg" alt="Returns and Refunds Across Channels: Handling Online Orders at the Counter" loading="lazy"></a>
+        <a href="{{ $base }}/when-online-orders-come-back-to-the-store/" class="archive-card__img"><img src="{{ $base }}/images/2026/09/omnichannel-returns-uae-683x1024.jpg" alt="Returns and Refunds Across Channels: Handling Online Orders at the Counter" loading="lazy"></a>
         <div class="archive-card__body">
             <span class="archive-card__cat">WooCommerce Integration</span>
             <h2 class="archive-card__title"><a href="{{ $base }}/when-online-orders-come-back-to-the-store/">Returns and Refunds Across Channels: Handling Online Orders at the Counter</a></h2>

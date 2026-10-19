@@ -2,7 +2,7 @@
 
 @section('title', 'Cafeteria POS Software in UAE | MultiTech POS')
 @section('description', 'POS software for UAE cafeterias, cafés and quick-service eateries: fast checkout, inventory tracking, table management, loyalty and VAT compliance.')
-@section('og_image', $base . '/wp-content/uploads/2026/01/Best-Fashion-POS-System-in-UAE.jpg')
+@section('og_image', $base . '/images/2026/01/Best-Fashion-POS-System-in-UAE.jpg')
 @section('og_type', 'article')
 
 @section('content')
@@ -25,7 +25,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Best-Fashion-POS-System-in-UAE.webp" alt="" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Best-Fashion-POS-System-in-UAE.webp" alt="" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -43,21 +43,21 @@
     <h2 class="title text-center">Explore All <span class="text-gradient">Features</span></h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Fast &amp; Accurate Checkout</p>
           <p class="icon-box__text">Process orders quickly with touchscreen screens, barcode readers, handheld order takers, and support for cash, card, or digital wallets — ideal for peak hours and busy weekends.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory &amp; Ingredient Control</p>
           <p class="icon-box__text">Track inventory by ingredients and products to reduce waste and avoid unexpected stockouts. Automated alerts ensure you reorder key supplies like coffee beans, syrups, pastries, and packaged drinks.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Powerful Reporting &amp; Analytics</p>
           <p class="icon-box__text">Understand best-selling drinks, peak hour performance, cashier summaries, and profitability reports — all helping you optimize menu pricing and business strategy.</p>
@@ -66,21 +66,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Payment &amp; Integration Ready</p>
           <p class="icon-box__text">Accept UAE popular payment methods including credit/debit, contactless wallets, and in-app pay. Integrate with kitchen printers, scanners, and optional online ordering platforms.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Loyalty, Offers &amp; CRM</p>
           <p class="icon-box__text">Create loyalty programs, promo bundles (e.g., “Buy 5 coffees — get 1 free”), and track customer preferences for personalized offers.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Branch &amp; Cloud Sync</p>
           <p class="icon-box__text">Manage multiple cafés or branches across the Emirates from one central dashboard — synchronized in real time.</p>
@@ -102,7 +102,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/convenient-sales.webp" alt="" class="img r-30" width="643" height="493" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/convenient-sales.webp" alt="" class="img r-30" width="643" height="493" loading="lazy">
       </div>
     </div>
   </div>
@@ -173,7 +173,7 @@
       <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
     </div>
     <div class="stack justify-center p-10">
-      <img src="{{ $base }}/wp-content/uploads/2026/01/Transform-Your-Retail-Operations-with-MultiTechs-Fashion-POS-System.webp" alt="" class="img r-30" width="658" height="438" loading="lazy">
+      <img src="{{ $base }}/images/2026/01/Transform-Your-Retail-Operations-with-MultiTechs-Fashion-POS-System.webp" alt="" class="img r-30" width="658" height="438" loading="lazy">
     </div>
   </div>
 </section>

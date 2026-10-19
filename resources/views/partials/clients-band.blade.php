@@ -23,7 +23,7 @@
                     <ul class="marquee__group" @if ($copy) aria-hidden="true" @endif>
                         @foreach ($clients as [$file, $name])
                             <li class="client-logo">
-                                <img src="{{ $base }}/wp-content/uploads/elementor/thumbs/{{ $file }}-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="{{ $copy ? '' : $name }}" width="150" height="150" loading="lazy">
+                                <img src="{{ $base }}/images/elementor/thumbs/{{ $file }}-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg" alt="{{ $copy ? '' : $name }}" width="150" height="150" loading="lazy">
                             </li>
                         @endforeach
                     </ul>

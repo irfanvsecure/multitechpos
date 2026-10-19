@@ -2,7 +2,7 @@
 
 @section('title', 'Best Pet Shop POS Software in UAE | MultiTech POS')
 @section('description', 'Automate inventory, grooming bookings & sales with MultiTech POS – UAE’s trusted pet shop POS. Try a free demo now!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/pet-shop-pos-1-1.webp')
+@section('og_image', $base . '/images/2026/07/pet-shop-pos-1-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -15,7 +15,7 @@
     ['q' => 'Can the software manage multiple store locations?', 'a' => 'Yes. The software allows you to manage multiple branches from a centralized dashboard, giving you access to consolidated sales reports, inventory data, and business performance insights.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Pet Shop POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Pet Shop POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -36,7 +36,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/pet-shop-pos-1-1.webp" alt="Pet Shop POS Software In UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/pet-shop-pos-1-1.webp" alt="Pet Shop POS Software In UAE​" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -57,21 +57,21 @@
     <h2 class="title text-center">Explore All Features</h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Fast &amp; Easy Pet Checkout</p>
           <p class="icon-box__text">Process sales quickly with barcode scanning, multiple payment support (cash, card, digital wallets), and FTA-compliant VAT invoices.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory &amp; Stock Management</p>
           <p class="icon-box__text">Track thousands of pet products, manage stock levels in real time, auto-alert for low stock, and transfer stock between branches.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Barcode &amp; Label Support</p>
           <p class="icon-box__text">Generate and print barcode labels for products, accessories, food, grooming packages and service items for faster checkout and organized stock control.</p>
@@ -80,21 +80,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customer &amp; Loyalty Management</p>
           <p class="icon-box__text">Create customer profiles, track purchase history, manage loyalty points, and send promotions to regular buyers to increase repeat business.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Reporting &amp; Analytics</p>
           <p class="icon-box__text">Get real-time sales reports, revenue trends, service performance, product bestsellers, and tax summaries to make informed decisions.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Appointment &amp; Service Billing</p>
           <p class="icon-box__text">Manage grooming appointments, boarding slots, training sessions, and bundle services with product sales — all from the same POS software.</p>
@@ -125,7 +125,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/pet-shop-pos-2-1.webp" alt="Pet Shop POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/pet-shop-pos-2-1.webp" alt="Pet Shop POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>
@@ -204,7 +204,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/pet-shop-pos-3-1.webp" alt="Pet Shop POS Software In UAE​" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/pet-shop-pos-3-1.webp" alt="Pet Shop POS Software In UAE​" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -227,7 +227,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/pet-shop-pos-4-1.webp" alt="Pet Shop POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/pet-shop-pos-4-1.webp" alt="Pet Shop POS Software In UAE​" class="img r-30" width="643" height="480" loading="lazy">
       </div>
     </div>
   </div>

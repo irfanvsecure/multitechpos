@@ -2,13 +2,13 @@
 
 @section('title', 'UAE Tax Invoice Requirements for POS Receipts | MultiTech')
 @section('description', 'What a UAE tax invoice must legally show under Article 59, when a simplified invoice is allowed, the AED 10,000 rule, and the fields POS receipts most often miss.')
-@section('og_image', $base . '/wp-content/uploads/2026/09/uae-tax-invoice-requirements-receipt.jpg')
+@section('og_image', $base . '/images/2026/09/uae-tax-invoice-requirements-receipt.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'UAE Tax Invoice Requirements: What Your POS Receipt Must Show', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'UAE Tax Invoice Requirements: What Your POS Receipt Must Show', 'image' => '/wp-content/uploads/2026/09/uae-tax-invoice-requirements-receipt.jpg', 'published' => '2026-09-22', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'UAE Tax Invoice Requirements: What Your POS Receipt Must Show', 'image' => '/images/2026/09/uae-tax-invoice-requirements-receipt.jpg', 'published' => '2026-09-22', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / September 22, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/uae-tax-invoice-requirements-receipt.webp" alt="UAE tax invoice requirements on a POS receipt" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/uae-tax-invoice-requirements-receipt.webp" alt="UAE tax invoice requirements on a POS receipt" width="1024" height="683"></p>
         <p>The slip your till prints is not a receipt in the casual sense. For a VAT-registered business in the UAE it is a tax invoice, it is a legal document, and the law is specific about what has to appear on it.</p>
         <p>This is where a lot of otherwise well-run shops quietly carry a compliance gap. The system was configured once, years ago, by whoever installed it. Nobody has looked at the printed output against the regulations since. The invoice looks professional, customers accept it without complaint, and it may still be missing a mandatory particular.</p>
         <p>This post sets out exactly what the law requires, in both forms a tax invoice can take. It follows our guide to the <a href="{{ $base }}/uae-e-invoicing-guide-for-retailers/">UAE e-invoicing mandate</a>, and the two are connected: structured e-invoicing validates automatically, so fields your staff currently work around by hand will start being rejected outright.</p>
@@ -50,7 +50,7 @@
         <p>The first row is the single most common defect in UAE retail. A slip headed RECEIPT, INVOICE, BILL or the shop’s own name is not displaying the words the regulation asks for. It is a one-line fix in most POS systems and it is worth checking today.</p>
         <p>The last row deserves care too. On a simplified invoice the tax is worked back out of the gross total rather than added on top, because the displayed price already includes VAT. A common error is showing a total that includes tax while also presenting the VAT figure as though it were added, which makes the arithmetic on the slip inconsistent.</p>
         <h2><strong>What a Full Tax Invoice Must Show</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/full-tax-invoice-b2b-checking.webp" alt="UAE tax invoice requirements on a POS receipt" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/full-tax-invoice-b2b-checking.webp" alt="UAE tax invoice requirements on a POS receipt" width="1024" height="683"></p>
         <p>The full form is considerably longer. Article 59(1) sets out the particulars, and the practical list runs as follows.</p>
         <p>The words "Tax Invoice" clearly displayed. The name, address and TRN of the supplier. The name, address and TRN of the recipient, where the recipient is registered. A sequential or unique invoice number. The date of issue, and the date of supply where that differs from the issue date. A description of the goods or services.</p>
         <p>Then, for each line: the unit price, the quantity or volume, the rate of tax, and the amount payable in AED. Any discount offered. The gross amount payable in AED. The tax amount payable in AED, together with the rate of exchange applied and its source where the amount was converted from another currency. And a statement referring to the reverse charge mechanism where that applies. Jewelers meet that last point most often, because trade sales of gold and diamonds can fall under the reverse charge, as our guide to <a href="{{ $base }}/gold-jewelry-pricing-uae/">gold jewelry pricing in the UAE</a> explains.</p>
@@ -62,11 +62,11 @@
         <p>Corrections follow the same discipline. A refund or adjustment to a taxable supply needs a tax credit note referencing the original invoice, not an informal note or a reversed line. This is the same requirement that makes a loosely handled returns process a compliance problem as well as an inventory one, a point we covered in the post on <a href="{{ $base }}/when-online-orders-come-back-to-the-store/">returns and refunds across channels</a>.</p>
         <p>Records must also be retained. Whether your invoices are paper, electronic or both, the underlying transaction data needs to be available for the periods the law prescribes, in a form that can actually be produced during an audit. A system that prints a slip but does not retain a queryable copy is not sufficient.</p>
         <h2><strong>What Getting It Wrong Costs</strong></h2>
-        <p>Administrative penalties for tax violations are set out in Cabinet Decision No. 40 of 2017 and its amendments, published in consolidated form by the <a href="https://mof.gov.ae/wp-content/uploads/2025/11/Cabinet-Decision-No.-40-of-2017-and-its-amendments-v14.11.25.pdf" target="_blank" rel="noopener">Ministry of Finance</a>. Failure to issue a tax invoice or an alternative document carries a penalty applied per detected case, and failure to keep the required records carries its own higher penalty, increasing on repetition.</p>
+        <p>Administrative penalties for tax violations are set out in Cabinet Decision No. 40 of 2017 and its amendments, published in consolidated form by the <a href="https://mof.gov.ae/images/2025/11/Cabinet-Decision-No.-40-of-2017-and-its-amendments-v14.11.25.pdf" target="_blank" rel="noopener">Ministry of Finance</a>. Failure to issue a tax invoice or an alternative document carries a penalty applied per detected case, and failure to keep the required records carries its own higher penalty, increasing on repetition.</p>
         <p>Note that the penalty table has been amended more than once, most recently with effect during 2026, so the specific figure applicable to your situation should be read from the current consolidated text rather than from any summary, this one included.</p>
         <p>There is a second cost that does not appear in any penalty table. A business customer who cannot recover input VAT because your invoice was defective will ask you to reissue it, and will remember. For wholesale and corporate accounts, invoice quality is a commercial matter as much as a regulatory one.</p>
         <h2><strong>Where the POS Comes In</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/pos-counter-issuing-tax-invoice.webp" alt="UAE tax invoice requirements on a POS receipt" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/pos-counter-issuing-tax-invoice.webp" alt="UAE tax invoice requirements on a POS receipt" width="1024" height="683"></p>
         <p>Almost everything above is a configuration question rather than a daily operational one, which is good news. It is decided once and then applies to every transaction.</p>
         <p>The capabilities that matter are a receipt template carrying all five simplified particulars, the ability to switch to a full invoice when the customer is a registered business, customer records with a TRN field that is actually populated, sequential numbering that does not restart or collide, proper tax credit notes, and retained records you can query later. For operators running several outlets, numbering consistency across branches matters too, which is where <a href="{{ $base }}/multi-branch-business-pos-uae/">multi-branch POS</a> earns its place rather than each till keeping its own sequence.</p>
         <p>MultiTech POS produces compliant tax invoices and credit notes at the counter through <a href="{{ $base }}/paperless-invoicing/">paperless invoicing</a>, tied to the same <a href="{{ $base }}/accounting-software/">accounting software</a> that holds your records, across <a href="{{ $base }}/retail-pos-software-uae/">retail POS software</a> and <a href="{{ $base }}/food-restaurant-pos-software-uae/">restaurant POS</a> alike. The broader VAT groundwork is covered in our guide to <a href="{{ $base }}/vat-compliant-pos-software-uae-salons/">VAT-compliant POS software</a>.</p>

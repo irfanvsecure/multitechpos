@@ -2,7 +2,7 @@
 
 @section('title', 'Book Store POS Software in UAE | MultiTech POS')
 @section('description', 'Grow your bookstore with MultiTech Book Store POS software in UAE. Streamline billing, inventory, customer management, and reporting. Request a demo today!')
-@section('og_image', $base . '/wp-content/uploads/2026/07/book-store-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/book-store-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -13,7 +13,7 @@
     ['q' => 'Is MultiTech POS suitable for multi-location bookstores?', 'a' => 'Yes — the system supports multi-branch management, giving you real-time visibility of each outlet.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Book Store POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Book Store POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -35,7 +35,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/book-store-pos-1.webp" alt="Book Store POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/book-store-pos-1.webp" alt="Book Store POS Software In UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -53,21 +53,21 @@
     <h3 class="title text-center">Explore All Features</h3>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Intuitive Checkout &amp; Sales Management</h3>
           <p class="icon-box__text">Process sales rapidly with barcode scanning, touch-friendly POS screens, and support for cash, card, and digital wallet payments — ensuring quick turnover during busy times.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Real-Time Inventory Control</h3>
           <p class="icon-box__text">Track stock levels across categories and variants. Automate reorder alerts to avoid running out of best-sellers. Manage special pricing like “Buy 2 Get 1” or bundle discounts for stationery and book sets.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Customer Engagement Tools</h3>
           <p class="icon-box__text">Build detailed customer profiles, manage loyalty rewards, and create targeted promotions to grow repeat sales.</p>
@@ -76,21 +76,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Analytics &amp; Business Intelligence</h3>
           <p class="icon-box__text">Get sales insights by author, genre, day of week, and peak hours — helping you make smarter buying and merchandising decisions.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">E-Commerce &amp; Online Integration</h3>
           <p class="icon-box__text">Connect your POS to online stores (e.g., WooCommerce or other platforms) so inventory and orders are synchronized between your physical store and web shop.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Multi-Branch &amp; Cloud Support</h3>
           <p class="icon-box__text">Manage multiple bookstores or retail locations with centralized dashboards, real-time data, and secure cloud backup.</p>
@@ -122,7 +122,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/book-store-pos-2.webp" alt="Book Store POS Software In UAE" class="img r-30 ar-437-478" width="437" height="478" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/book-store-pos-2.webp" alt="Book Store POS Software In UAE" class="img r-30 ar-437-478" width="437" height="478" loading="lazy">
       </div>
     </div>
   </div>
@@ -198,7 +198,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/book-store-pos-3.webp" alt="Book Store POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/book-store-pos-3.webp" alt="Book Store POS Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -224,7 +224,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/book-store-pos-4.webp" alt="Book Store POS Software In UAE" class="img r-30 ar-437-478" width="437" height="478" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/book-store-pos-4.webp" alt="Book Store POS Software In UAE" class="img r-30 ar-437-478" width="437" height="478" loading="lazy">
       </div>
     </div>
   </div>

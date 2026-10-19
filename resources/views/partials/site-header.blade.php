@@ -56,7 +56,7 @@
 </div>
 <header class="mtp-header">
     <div class="mtp-wrap mtp-header-in">
-        <a class="mtp-logo" href="{{ $base }}/"><img src="{{ $base }}/wp-content/uploads/2025/12/logo4.png" alt="MultiTech POS" width="194" height="80"></a>
+        <a class="mtp-logo" href="{{ $base }}/"><img src="{{ $base }}/images/2025/12/logo4.png" alt="MultiTech POS" width="194" height="80"></a>
         <nav class="mtp-nav" id="mtp-nav">
             <a href="{{ $base }}/" @class(['active' => $isHere('/')])>Home</a>
             <a href="{{ $base }}/about-us/" @class(['active' => $isHere('/about-us/')])>About Us</a>

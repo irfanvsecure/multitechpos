@@ -2,13 +2,13 @@
 
 @section('title', 'UAE E-Invoicing 2027: What It Means for Your POS | MultiTech')
 @section('description', 'UAE e-invoicing becomes mandatory from 2027 under Ministerial Decisions 243 and 244. Deadlines, penalties, and what retailers must fix in their POS before go-live.')
-@section('og_image', $base . '/wp-content/uploads/2026/09/uae-e-invoicing-what-it-means-for-pos.jpg')
+@section('og_image', $base . '/images/2026/09/uae-e-invoicing-what-it-means-for-pos.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'UAE E-Invoicing: What the 2027 Mandate Means for Your POS System', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'UAE E-Invoicing: What the 2027 Mandate Means for Your POS System', 'image' => '/wp-content/uploads/2026/09/uae-e-invoicing-what-it-means-for-pos.jpg', 'published' => '2026-09-22', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'UAE E-Invoicing: What the 2027 Mandate Means for Your POS System', 'image' => '/images/2026/09/uae-e-invoicing-what-it-means-for-pos.jpg', 'published' => '2026-09-22', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / September 22, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/uae-e-invoicing-what-it-means-for-pos.webp" alt="UAE e-invoicing for POS users" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/uae-e-invoicing-what-it-means-for-pos.webp" alt="UAE e-invoicing for POS users" width="1024" height="683"></p>
         <p>Most UAE retailers who have heard about e-invoicing have reached the same conclusion: we sell to walk-in customers, the mandate covers business-to-business transactions, so it does not apply to us. That is half right, and the half that is wrong tends to be the expensive half.</p>
         <p>The UAE is rolling out a national Electronic Invoicing System in phases, with the first mandatory wave starting in January 2027. Almost every retailer issues some invoices that fall inside scope, usually without thinking of them as anything special. This post covers what the system actually is, when each deadline lands, and what it means for the software sitting behind your counter.</p>
         <h2><strong>What the UAE Is Actually Building</strong></h2>
@@ -46,7 +46,7 @@
         <p>One nuance worth knowing. The ASP appointment deadline for the first wave was originally 31 July 2026 and was later extended to 30 October 2026. The go-live date of 1 January 2027 did not move. An extension to the preparation deadline is not a postponement of the mandate, and reading it as one would leave a business with a much shorter runway than it thinks.</p>
         <p>For most independent retailers, restaurants and salons in the UAE, the relevant row is the second one: appoint a provider by March 2027, live by July 2027. That sounds distant. It is roughly two VAT quarters of preparation time once you account for testing.</p>
         <h2><strong>Why B2C Exclusion Does Not Mean You Are Exempt</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/b2b-wholesale-stock-e-invoicing.webp" alt="UAE e-invoicing for POS users" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/b2b-wholesale-stock-e-invoicing.webp" alt="UAE e-invoicing for POS users" width="1024" height="683"></p>
         <p>This is the assumption worth testing against your own sales ledger rather than your instinct. Consumer sales are currently outside scope, but very few UAE retailers sell exclusively to consumers.</p>
         <p>Run through the invoices you issue in a normal month. A supermarket supplying a nearby cafe. A salon invoicing a hotel for staff grooming services. A uniform shop billing a school. A flower shop with corporate accounts for weekly office arrangements. A restaurant handling corporate catering. An electronics retailer selling in bulk to an office fit-out. Every one of those is a business-to-business transaction, and any invoice to a government body is business-to-government.</p>
         <p>These transactions are usually a small share of transaction count and a meaningful share of revenue, which is exactly why they get overlooked operationally while mattering financially. The question to answer is not whether your business is a retailer. It is whether you issue any invoices to businesses or government entities, and the answer is very often yes.</p>
@@ -61,7 +61,7 @@
         <p>Cabinet Decision No. 106 of 2025 sets out administrative fines for breaches of the e-invoicing rules. According to the Ministry of Finance’s <a href="https://mof.gov.ae/en/news/ministry-of-finance-announces-the-issuance-of-cabinet-resolution-on-administrative-fines-related-to-electronic-invoicing-system/" target="_blank" rel="noopener">announcement of the resolution</a>, these include AED 5,000 per month for failing to implement the system, and AED 1,000 for each day of delay for failing to notify the Federal Tax Authority of a system malfunction within the specified timeframe, with a similar daily fine for failing to notify your appointed service provider of changes to registered data.</p>
         <p>One detail is genuinely useful for planning. The Ministry states that businesses applying the system voluntarily are exempt from these fines until they become mandatorily subject to it. In other words, the voluntary phase is a period where you can test, get things wrong, and fix them without financial exposure. Businesses that wait until their mandatory date are choosing to do their debugging under penalty conditions instead.</p>
         <h2><strong>A Sensible Order of Work</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/e-invoicing-readiness-planning-meeting.webp" alt="UAE e-invoicing for POS users" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/e-invoicing-readiness-planning-meeting.webp" alt="UAE e-invoicing for POS users" width="1024" height="683"></p>
         <p>You do not need to solve this in one go, but the sequence matters.</p>
         <p>Start by confirming whether you issue B2B or B2G invoices at all, and how many. Then check your revenue against the AED 50 million threshold, because that decides which wave you are in. Next, clean up counterparty data, since that work is slow, entirely within your control, and needed regardless of which provider you eventually appoint. After that, ask your software vendor a direct question: what is your e-invoicing roadmap, and will you connect through an Accredited Service Provider? The Ministry publishes the list of accredited and pre-approved providers on its portal.</p>
         <p>Finally, consider joining voluntarily before your mandatory date, for the reason above.</p>

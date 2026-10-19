@@ -2,13 +2,13 @@
 
 @section('title', 'Single Customer View for UAE Retailers | MultiTech POS')
 @section('description', 'Most UAE retailers hold the same shopper as two unrelated records. What the split costs, how to match and merge safely, and what UAE data protection law expects.')
-@section('og_image', $base . '/wp-content/uploads/2026/09/single-customer-view-uae-retail.jpg')
+@section('og_image', $base . '/images/2026/09/single-customer-view-uae-retail.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'The Single Customer View: Connecting Loyalty Across Store and WooCommerce', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'The Single Customer View: Connecting Loyalty Across Store and WooCommerce', 'image' => '/wp-content/uploads/2026/09/single-customer-view-uae-retail.jpg', 'published' => '2026-09-04', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'The Single Customer View: Connecting Loyalty Across Store and WooCommerce', 'image' => '/images/2026/09/single-customer-view-uae-retail.jpg', 'published' => '2026-09-04', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / September 4, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/single-customer-view-uae-retail.webp" alt="single customer view UAE retail" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/single-customer-view-uae-retail.webp" alt="single customer view UAE retail" width="1024" height="683"></p>
         <p>A regular customer has spent around twelve thousand dirhams with you over two years. Roughly half of that was online under one email address, and the other half at your Dubai counter under a phone number. As far as your systems are concerned, these are two different people, neither of whom looks especially valuable.</p>
         <p>So when your loyalty tier kicks in at eight thousand dirhams, she qualifies for nothing. When your team pulls a list of top customers for a private sale, she is not on it. She is one of your best customers and you cannot see her.</p>
         <p>This is the sixth post in our WooCommerce series, after <a href="{{ $base }}/woocommerce-integration-for-uae-retailers-how-multitech-pos-keeps-every-sale-in-sync/">integration basics</a>, <a href="{{ $base }}/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/">inventory sync</a>, <a href="{{ $base }}/how-click-and-collect-works/">click and collect</a>, <a href="{{ $base }}/why-store-and-online-prices-drift/">pricing across channels</a>, and <a href="{{ $base }}/when-online-orders-come-back-to-the-store/">cross-channel returns</a>. Stock and money have been dealt with. This one is about the customer record underneath all of it.</p>
@@ -27,7 +27,7 @@
         <div class="callout"><p><strong>The principle:</strong> a customer is a person, not a channel. One record should follow them from the website to the counter and back, whichever way they arrive.</p>
         </div>
         <h2><strong>The Matching Problem</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/customer-recognised-at-the-counter.webp" alt="single customer view UAE retail" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/customer-recognised-at-the-counter.webp" alt="single customer view UAE retail" width="1024" height="683"></p>
         <p>Connecting the two sides sounds simple until you try it. Online, the identifier is almost always an email address, because that is what checkout requires. In store, staff capture a mobile number if they capture anything at all, since asking for an email at a busy counter slows the queue.</p>
         <p>In the UAE the mobile number is usually the stronger identifier of the two. People change email addresses and often keep separate ones for shopping, but the mobile number tends to be stable and is the thing customers actually remember. The practical approach for most retailers is to treat the phone number as the primary key and the email as secondary, then match on either.</p>
         <p>Number formatting deserves a mention because it silently breaks matching. The same phone can be stored as 050 followed by the local digits, or with the country code, with or without spaces. Unless numbers are normalised into one format on the way in, the same customer generates a fresh record every time the format differs. It is a small detail that accounts for a surprising share of duplicates.</p>
@@ -36,7 +36,7 @@
         <p>The realistic version is a single field, a phone number, entered in a few seconds. If the number is already known, the existing record loads and the sale attaches to it. If it is new, a minimal record is created and can be enriched later. Anything more elaborate than that tends not to survive a Saturday afternoon.</p>
         <p>It also helps if staff have a reason to ask beyond the retailer’s convenience. A loyalty balance, a warranty record, or a receipt sent by message gives the customer something in exchange for the number, which makes the request feel less like data collection for its own sake.</p>
         <h2><strong>What the Unified Record Actually Enables</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/09/customer-purchase-history-boutique.webp" alt="single customer view UAE retail" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/09/customer-purchase-history-boutique.webp" alt="single customer view UAE retail" width="1024" height="683"></p>
         <p>Once both channels write to one record, several things that were previously awkward become straightforward.</p>
         <table>
         <thead>

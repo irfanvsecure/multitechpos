@@ -2,13 +2,13 @@
 
 @section('title', 'How a POS System Transforms Car Wash Operations | MultiTech')
 @section('description', 'See how UAE car washes cut queues, track wash packages, and stay VAT compliant with MultiTech POS. Practical fixes, staff tracking, and a free demo offer.')
-@section('og_image', $base . '/wp-content/uploads/2026/08/car-wash-pos-software-uae-guide.jpg')
+@section('og_image', $base . '/images/2026/08/car-wash-pos-software-uae-guide.jpg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'How the Right POS System Transforms Car Wash Operations in the UAE', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'How the Right POS System Transforms Car Wash Operations in the UAE', 'image' => '/wp-content/uploads/2026/08/car-wash-pos-software-uae-guide.jpg', 'published' => '2026-08-05', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'How the Right POS System Transforms Car Wash Operations in the UAE', 'image' => '/images/2026/08/car-wash-pos-software-uae-guide.jpg', 'published' => '2026-08-05', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -16,7 +16,7 @@
         <div class="post__meta">By <a href="{{ $base }}/author/multitech_admin/">multitech_admin</a> / August 5, 2026</div>
     </header>
     <div class="post__content prose">
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/car-wash-pos-software-uae-guide.webp" alt="car wash POS system" width="1024" height="576"></p>
+        <p><img src="{{ $base }}/images/2026/08/car-wash-pos-software-uae-guide.webp" alt="car wash POS system" width="1024" height="576"></p>
         <p>Walk into a busy car wash in Dubai or Sharjah on a Friday afternoon and you will see the same scene almost everywhere. Cars lined up past the entrance, a supervisor scribbling plate numbers on a notepad, and a cashier trying to remember whether the white Land Cruiser paid for a full detail or just an exterior wash. The service itself might be excellent, but the way it is managed often belongs to a different decade.</p>
         <p>That gap between good service and poor management is exactly where most car washes lose money. The demand is clearly there. Industry analysts at <a href="https://www.grandviewresearch.com/industry-analysis/car-wash-services-market" target="_blank" rel="noopener">Grand View Research</a> track steady global growth in car wash services year after year, and the UAE, with its dusty climate and car loving culture, is one of the busiest markets you will find. The businesses that capture that demand are the ones that run their operations on a proper system rather than memory and paper. This guide walks through what actually changes when a car wash moves to a modern POS, based on what we see across the UAE businesses that run on MultiTech POS.</p>
         <h2><strong>Where Car Washes Lose Money Without a System</strong></h2>
@@ -25,7 +25,7 @@
         <div class="callout"><p><strong>A quick test:</strong> if you cannot see today’s wash count, revenue by service, and remaining stock from your phone right now, your car wash is running on trust, not data.</p>
         </div>
         <h2><strong>What a POS Actually Changes at the Wash Bay</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/automated-car-wash-tunnel-uae.webp" alt="car wash POS system" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/automated-car-wash-tunnel-uae.webp" alt="car wash POS system" width="1024" height="683"></p>
         <p>A purpose built <a href="{{ $base }}/car-wash-pos-software/">car wash POS software</a> replaces the notepad with a simple flow. The attendant enters the plate number, selects the service, and the ticket appears instantly at the counter. When the car is done, checkout takes seconds because the order already exists in the system. No shouting across the yard, no asking the customer what they ordered, no disputes about the price.</p>
         <p>Queue management improves almost immediately. Staff can see every vehicle currently in service, which bay it is in, and how long it has been there. Customers waiting in line can be quoted realistic times instead of hopeful guesses. For washes that take bookings, an integrated <a href="{{ $base }}/appointment-booking-pos-uae/">appointment booking system</a> lets regulars reserve a slot in advance, which smooths out the Friday rush and fills quiet weekday mornings.</p>
         <p>Payments become cleaner too. Cash, card, and digital wallets all land in the same daily report, and the end of day close takes minutes instead of an hour of counting and reconciling. When the drawer is short, you know exactly which shift and which cashier to ask.</p>
@@ -38,7 +38,7 @@
         <p>Every registered business in the UAE has to charge, record, and report VAT correctly, and the requirements are published clearly by the <a href="https://tax.gov.ae/en/taxes/vat.aspx" target="_blank" rel="noopener">Federal Tax Authority</a>. Doing that from handwritten receipts is painful at best and risky at worst. A modern POS calculates VAT on every transaction, prints compliant tax invoices, and keeps a complete digital record you can hand to your accountant without a single shoebox of paper.</p>
         <p>Many of our car wash clients also switch to <a href="{{ $base }}/paperless-invoicing/">paperless invoicing</a>, sending receipts by SMS or WhatsApp instead of printing them. Customers prefer it, the wash saves on printer rolls, and every invoice remains searchable years later.</p>
         <h2><strong>Running Staff, Stock, and Multiple Branches</strong></h2>
-        <p><img src="{{ $base }}/wp-content/uploads/2026/08/car-wash-staff-serving-customer.webp" alt="car wash POS system" width="1024" height="683"></p>
+        <p><img src="{{ $base }}/images/2026/08/car-wash-staff-serving-customer.webp" alt="car wash POS system" width="1024" height="683"></p>
         <p>Car washes run on people, and a POS gives you an honest picture of how each person performs. Wash counts per attendant, upsells per cashier, and shift wise revenue are all visible without standing over anyone’s shoulder. Commission based pay becomes easy to calculate and impossible to dispute.</p>
         <p>Consumables are the other silent cost. Shampoo, wax, polish, microfiber towels, and air fresheners all disappear faster than owners expect. A built in <a href="{{ $base }}/stock-management/">stock management module</a> ties usage to services sold, so you can spot waste, set reorder alerts, and stop running out of supplies during peak hours.</p>
         <p>For owners with more than one location, the difference is even bigger. Instead of calling each site every evening for numbers, a centralized dashboard shows live sales, stock, and staff activity across every branch. This is the same approach we deliver for <a href="{{ $base }}/multi-branch-business-pos-uae/">multi branch businesses</a> in retail and food service, applied to the wash yard.</p>

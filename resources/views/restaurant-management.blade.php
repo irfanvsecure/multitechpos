@@ -13,7 +13,7 @@
     ['q' => 'How do I get pricing or a demo of your restaurant POS software?', 'a' => 'Contact our team at +971 58 897 9925 or request a free live demo through our website. We’ll walk you through every feature and provide tailored pricing for your specific F&amp;B setup.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Restaurant Management Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
+@include('partials.page-hero', ['title' => 'Restaurant Management Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
 
 @include('partials.clients-band')
 
@@ -35,7 +35,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/restaurant-management-1.webp" alt="Restaurant Management Software In UAE" class="img img-frame ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/restaurant-management-1.webp" alt="Restaurant Management Software In UAE" class="img img-frame ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -45,10 +45,10 @@
   <div class="container">
     <div class="slider" data-carousel style="height:530px">
       <div class="slider__track">
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/6-1440x860-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/5-1-1440x860-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/4-1-1440x860-1.png');background-size:contain"></div>
-        <div class="slider__slide" style="background-image:url('{{ $base }}/wp-content/uploads/2025/12/2-3-1440x860-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/6-1440x860-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/5-1-1440x860-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/4-1-1440x860-1.png');background-size:contain"></div>
+        <div class="slider__slide" style="background-image:url('{{ $base }}/images/2025/12/2-3-1440x860-1.png');background-size:contain"></div>
       </div>
       <button class="slider__prev" type="button" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
       <button class="slider__next" type="button" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
@@ -69,7 +69,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/restaurant-management-2.webp" alt="Restaurant Management Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/restaurant-management-2.webp" alt="Restaurant Management Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/restaurant-management-3.webp" alt="Restaurant Management Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/restaurant-management-3.webp" alt="Restaurant Management Software In UAE" class="img r-30" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -102,21 +102,21 @@
     <h2 class="title text-center">Complete Restaurant Management System Features</h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Order &amp; Billing Management</p>
           <p class="icon-box__text">Take dine-in, takeaway, and counter orders, split bills, apply discounts, and process multiple payment modes from one screen.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">KOT &amp; Kitchen Printing</p>
           <p class="icon-box__text">Send Kitchen Order Tickets directly to printers in the kitchen and beverage stations to eliminate verbal miscommunication.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Recipe &amp; Food Inventory Control</p>
           <p class="icon-box__text">Map raw ingredients to menu items, auto-deduct stock on each sale, and monitor wastage in real time.</p>
@@ -125,21 +125,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Purchase Management</p>
           <p class="icon-box__text">Record supplier purchases, manage payables, and reconcile inventory against goods received notes.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Production Management</p>
           <p class="icon-box__text">Set up production units for kitchen prep items and centralized commissaries serving multiple outlets.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Sales &amp; Profit Reports</p>
           <p class="icon-box__text">Generate daily, weekly, and monthly reports covering sales, costs, margins, and item-level performance.</p>
@@ -148,21 +148,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-1-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-1-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customer &amp; Loyalty Management</p>
           <p class="icon-box__text">Capture customer details, run loyalty programs, and re-engage repeat diners.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/web-design-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/web-design-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Register Control</p>
           <p class="icon-box__text">Operate several billing counters on one license with separate cashier accountability.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/bill-1.png" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/bill-1.png" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Customisable Receipts</p>
           <p class="icon-box__text">With lot of flexibility, we allows end user to customize their receipt as per their needs.</p>
@@ -202,7 +202,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Download Now <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/restaurant-management-4.webp" alt="Restaurant Management Software In UAE" class="img img-frame" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/restaurant-management-4.webp" alt="Restaurant Management Software In UAE" class="img img-frame" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>

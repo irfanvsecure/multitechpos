@@ -14,7 +14,7 @@
     ['q' => 'Is this employee management system suitable for small businesses in UAE?', 'a' => 'Definitely. Whether you run a single salon, restaurant, or retail shop, our system scales from five employees to enterprise level with flexible pricing and quick onboarding support.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Employee Management System In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
+@include('partials.page-hero', ['title' => 'Employee Management System In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Business ERPs', 'url' => '/business-erps/']])
 
 @include('partials.clients-band')
 
@@ -35,7 +35,7 @@
         <a href="tel:+971588979925" class="btn btn--sm">Talk To Expert <i class="fas fa-phone-alt"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/employee-management-1.webp" alt="Employee Management System In UAE" class="img r-30" width="648" height="867" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/employee-management-1.webp" alt="Employee Management System In UAE" class="img r-30" width="648" height="867" loading="lazy">
       </div>
     </div>
   </div>
@@ -104,7 +104,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get A Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/employee-management-2.webp" alt="Employee Management System In UAE" class="img img-frame" width="648" height="483" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/employee-management-2.webp" alt="Employee Management System In UAE" class="img img-frame" width="648" height="483" loading="lazy">
       </div>
     </div>
   </div>
@@ -124,7 +124,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get A Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/employee-management-3.webp" alt="Employee Management System In UAE" class="img img-frame" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/employee-management-3.webp" alt="Employee Management System In UAE" class="img img-frame" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>
@@ -195,7 +195,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get A Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/employee-management-4.webp" alt="Employee Management System In UAE" class="img img-frame" width="648" height="484" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/employee-management-4.webp" alt="Employee Management System In UAE" class="img img-frame" width="648" height="484" loading="lazy">
       </div>
     </div>
   </div>

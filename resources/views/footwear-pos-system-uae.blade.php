@@ -2,7 +2,7 @@
 
 @section('title', 'Footwear POS System for Shoe Stores UAE | MultiTech POS')
 @section('description', 'MultiTech POS offers VAT-compliant footwear POS for UAE shoe stores. Manage sizes, colors & brands, speed up billing. Book a free demo today.')
-@section('og_image', $base . '/wp-content/uploads/2026/06/van-sales-software-1.webp')
+@section('og_image', $base . '/images/2026/06/van-sales-software-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'How long does it take to set up the footwear POS?', 'a' => 'Setup is quick and guided by our team, with training included, so your store can start billing and tracking inventory within days.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Footwear POS System In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg'])
+@include('partials.page-hero', ['title' => 'Footwear POS System In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg'])
 
 @include('partials.clients-band')
 
@@ -37,7 +37,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/van-sales-software-1.webp" alt="Van Sales Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/van-sales-software-1.webp" alt="Van Sales Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -130,7 +130,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/van-sales-software-2.webp" alt="Van Sales Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/van-sales-software-2.webp" alt="Van Sales Software in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -153,7 +153,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/pexels-imin-technology-276315592-12935041.webp" alt="Restaurant POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/pexels-imin-technology-276315592-12935041.webp" alt="Restaurant POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -218,7 +218,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/06/pexels-imin-technology-276315592-12935084.webp" alt="Restaurant POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/06/pexels-imin-technology-276315592-12935084.webp" alt="Restaurant POS Software in UAE" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>

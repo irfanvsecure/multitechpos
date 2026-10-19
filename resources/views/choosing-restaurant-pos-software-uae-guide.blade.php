@@ -2,13 +2,13 @@
 
 @section('title', 'How to Choose Restaurant POS Software in UAE (2026)')
 @section('description', 'Not sure which restaurant POS to pick in UAE? Compare must-have features, cloud vs. on-premise, VAT compliance tips & what to ask before you buy.')
-@section('og_image', $base . '/wp-content/uploads/2026/06/Restaurant_owner_using_POS_system_202606031737.jpeg')
+@section('og_image', $base . '/images/2026/06/Restaurant_owner_using_POS_system_202606031737.jpeg')
 @section('og_type', 'article')
 @section('body_class', 'page-post')
 
 @section('content')
 @include('partials.schema-breadcrumb', ['items' => [['name' => 'Home', 'url' => '/'], ['name' => 'Blog', 'url' => '/our-blogs/'], ['name' => 'A Beginner’s Guide to Choosing Restaurant POS Software in UAE', 'url' => $current]]])
-@include('partials.schema-article', ['headline' => 'A Beginner’s Guide to Choosing Restaurant POS Software in UAE', 'image' => '/wp-content/uploads/2026/06/Restaurant_owner_using_POS_system_202606031737.jpeg', 'published' => '2026-06-03', 'author' => 'multitech_admin'])
+@include('partials.schema-article', ['headline' => 'A Beginner’s Guide to Choosing Restaurant POS Software in UAE', 'image' => '/images/2026/06/Restaurant_owner_using_POS_system_202606031737.jpeg', 'published' => '2026-06-03', 'author' => 'multitech_admin'])
 
 <article class="post">
     <header class="post__header">
@@ -22,7 +22,7 @@
         <p>On top of that, UAE restaurants must deal with VAT compliance. Since the introduction of 5% VAT, every invoice needs to be accurate and properly formatted for Federal Tax Authority requirements. A billing system that does not handle VAT correctly is not just an inconvenience; it is a compliance risk. Any point of sale system you consider should produce FTA-compliant receipts and maintain clean transaction records for audit purposes.</p>
         <p>Multilingual operations are another local reality. Many restaurants in the UAE serve a mix of Arabic-speaking, English-speaking, and South Asian customers, and kitchen staff often come from a variety of backgrounds. A system that supports Arabic display and can print kitchen order tickets in a language the kitchen team understands reduces errors significantly.</p>
         <h2>Core Features to Look For</h2>
-        <figure><img width="1024" height="576" src="{{ $base }}/wp-content/uploads/2026/06/image-1024x576.webp" alt="core features of restaurant POS software"></figure>
+        <figure><img width="1024" height="576" src="{{ $base }}/images/2026/06/image-1024x576.webp" alt="core features of restaurant POS software"></figure>
         <p>Before you start comparing vendors, it helps to know which features are genuinely essential versus which ones are nice to have on a brochure.</p>
         <p><strong>Table management</strong> is critical for sit-down restaurants. You need to see which tables are occupied, how long they have been seated, and which orders are pending. A visual floor map with live status updates saves your front-of-house team a lot of back-and-forth. <a href="{{ $base }}/table-management-pos-uae/">Effective table management</a> also helps staff turn tables efficiently, reduce wait times, and provide a smoother dining experience for guests.</p>
         <p><strong>Kitchen display systems (KDS)</strong> replace the old paper ticket system. Orders placed at the counter or via table service show up directly on a screen in the kitchen. This eliminates lost tickets, reduces verbal miscommunication, and speeds up preparation time.</p>

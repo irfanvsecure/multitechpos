@@ -2,7 +2,7 @@
 
 @section('title', 'Digital Dining POS Software in UAE | MultiTech POS')
 @section('description', 'Digital dining POS for UAE restaurants, cafés and fine dining: table ordering, kitchen display and fast, VAT-compliant billing in one system.')
-@section('og_image', $base . '/wp-content/uploads/2026/01/Best-Fashion-POS-System-in-UAE.jpg')
+@section('og_image', $base . '/images/2026/01/Best-Fashion-POS-System-in-UAE.jpg')
 @section('og_type', 'article')
 
 @section('content')
@@ -33,7 +33,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Book Your Free Demo Today <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Best-Fashion-POS-System-in-UAE.webp" alt="" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Best-Fashion-POS-System-in-UAE.webp" alt="" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -51,21 +51,21 @@
     <h2 class="title text-center">Explore All <span class="text-gradient">Features</span></h2>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Digital Table Management</p>
           <p class="icon-box__text">Easily manage table layouts, reservations, and real-time table status to optimize seating efficiency.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Tablet &amp; Handheld Order Taking</p>
           <p class="icon-box__text">Staff can take orders digitally at the table and send them directly to the kitchen, reducing mistakes and saving time.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Kitchen Display System (KDS) Integration</p>
           <p class="icon-box__text">Orders appear instantly in the kitchen, improving coordination and speeding up food preparation.</p>
@@ -74,21 +74,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Smart Billing &amp; UAE VAT Compliance</p>
           <p class="icon-box__text">Generate accurate invoices with automatic VAT calculation, split bills, and multiple payment options including cash, card, and digital wallets.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Inventory &amp; Stock Management</p>
           <p class="icon-box__text">Track ingredient usage in real time and get alerts for low stock to avoid shortages.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="80" height="80" loading="lazy">
         <div class="icon-box text-center">
           <p class="icon-box__title">Multi-Branch Management</p>
           <p class="icon-box__text">Manage multiple restaurant branches across the UAE from one centralized dashboard.</p>
@@ -120,7 +120,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/convenient-sales.webp" alt="" class="img r-30" width="643" height="493" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/convenient-sales.webp" alt="" class="img r-30" width="643" height="493" loading="lazy">
       </div>
     </div>
   </div>
@@ -197,7 +197,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Get a Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Transform-Your-Retail-Operations-with-MultiTechs-Fashion-POS-System.webp" alt="" class="img r-30" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Transform-Your-Retail-Operations-with-MultiTechs-Fashion-POS-System.webp" alt="" class="img r-30" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>

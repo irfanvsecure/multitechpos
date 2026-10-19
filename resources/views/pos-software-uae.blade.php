@@ -14,7 +14,7 @@
     ['q' => 'How much does POS software cost for businesses in Dubai?', 'a' => 'POS software pricing varies by business size and features. Multi Tech POS offers affordable POS system UAE packages with transparent pricing, free training and 24/7 support included for Dubai businesses.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'POS Software In UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg.jpeg'])
+@include('partials.page-hero', ['title' => 'POS Software In UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg.jpeg'])
 
 @include('partials.clients-band')
 
@@ -141,7 +141,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Retail-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Retail-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -175,7 +175,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Restaurant-Food-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Restaurant-Food-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -209,7 +209,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Ecommerce-Integration.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Ecommerce-Integration.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -243,7 +243,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/pos-software-1.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/pos-software-1.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -277,7 +277,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Service-Business-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Service-Business-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>
@@ -311,7 +311,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/01/Salon-Spa-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
+        <img src="{{ $base }}/images/2026/01/Salon-Spa-POS.jpg" alt="" class="img img-frame" width="648" height="432" loading="lazy">
       </div>
     </div>
   </div>

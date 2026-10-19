@@ -2,7 +2,7 @@
 
 @section('title', 'Beauty Clinic POS Software in UAE | MultiTech POS')
 @section('description', 'POS software for UAE beauty clinics: appointments, staff schedules, inventory, VAT-compliant billing and client records in one easy-to-use system.')
-@section('og_image', $base . '/wp-content/uploads/2026/07/beauty-clinic-pos-1.webp')
+@section('og_image', $base . '/images/2026/07/beauty-clinic-pos-1.webp')
 @section('og_type', 'article')
 
 @section('content')
@@ -16,7 +16,7 @@
     ['q' => 'What kind of support do you offer after setup?', 'a' => 'We provide 24/7 local support across the UAE, assisting with troubleshooting, updates, and ongoing system optimization to keep your beauty clinic running smoothly.'],
 ]])
 
-@include('partials.page-hero', ['title' => 'Beauty Clinic POS in UAE', 'image' => '/wp-content/uploads/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
+@include('partials.page-hero', ['title' => 'Beauty Clinic POS in UAE', 'image' => '/images/2025/12/freepik-export-20240628023510yeGg-1.jpeg', 'parent' => ['name' => 'Industries', 'url' => '/more-pos-industries/']])
 
 @include('partials.clients-band')
 
@@ -37,7 +37,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/beauty-clinic-pos-1.webp" alt="Beauty Clinic POS in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/beauty-clinic-pos-1.webp" alt="Beauty Clinic POS in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
     </div>
   </div>
@@ -51,21 +51,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/barcode-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/barcode-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Smart Appointment Scheduling</h3>
           <p class="icon-box__text">Manage bookings effortlessly with an intuitive calendar system that reduces no-shows, syncs staff availability, and keeps your clinic running smoothly every day.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/cash-register-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/cash-register-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">VAT-Compliant Billing &amp; Invoicing</h3>
           <p class="icon-box__text">Generate accurate, FTA-compliant invoices instantly, apply UAE VAT automatically, and simplify checkout with a fast, error-free billing process for every client.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/dollar-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/dollar-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Client Profile &amp; History Management</h3>
           <p class="icon-box__text">Store detailed client records, treatment history, and preferences securely, enabling personalized service, better retention, and stronger relationships across every visit.</p>
@@ -74,21 +74,21 @@
     </div>
     <div class="cols cols-3">
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/shopping-basket-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/shopping-basket-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Real-Time Inventory Tracking</h3>
           <p class="icon-box__text">Monitor beauty products, consumables, and stock levels automatically, receive low-stock alerts, and prevent wastage across single or multi-branch clinic locations.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/network-2.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/network-2.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Multi-Branch Management</h3>
           <p class="icon-box__text">Oversee multiple clinic locations from one centralized dashboard, tracking sales, staff performance, and inventory across all your UAE branches seamlessly.</p>
         </div>
       </div>
       <div class="stack justify-center card p-20">
-        <img src="{{ $base }}/wp-content/uploads/2025/12/company-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
+        <img src="{{ $base }}/images/2025/12/company-1.webp" alt="" class="img" width="74" height="74" loading="lazy">
         <div class="icon-box text-center">
           <h3 class="icon-box__title">Staff Performance &amp; Commission Tracking</h3>
           <p class="icon-box__text">Track therapist productivity, service commissions, and attendance accurately, motivating your team while giving management clear insight into daily clinic performance.</p>
@@ -103,7 +103,7 @@
   <div class="container container--1280 row gap-0">
     <div class="cols cols-2 gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/beauty-clinic-pos-2.webp" alt="Beauty Clinic POS in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/beauty-clinic-pos-2.webp" alt="Beauty Clinic POS in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title fs-36 lh-1_33">One POS Solution for Every Beauty Clinic in the UAE</h2>
@@ -126,7 +126,7 @@
   <div class="container container--1280 gap-0">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/beauty-clinic-pos-3.webp" alt="Beauty Clinic POS in UAE" class="img r-30" width="605" height="452" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/beauty-clinic-pos-3.webp" alt="Beauty Clinic POS in UAE" class="img r-30" width="605" height="452" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title fs-36 lh-1_33">Benefits Of Our Aesthetic Clinic Software</h2>
@@ -144,7 +144,7 @@
     </div>
     <div class="cols cols-2 gap-10 m-reverse p-10">
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/beauty-clinic-pos-4.webp" alt="Beauty Clinic POS in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/beauty-clinic-pos-4.webp" alt="Beauty Clinic POS in UAE" class="img r-30 ar-121-100" width="605" height="500" loading="lazy">
       </div>
       <div class="stack gap-10 justify-center p-10">
         <h2 class="title fs-36 lh-1_33">Why Choose MultiTech for Your Beauty Clinic POS</h2>
@@ -216,7 +216,7 @@
         <a href="{{ $base }}/contact/" class="btn btn--sm">Request Free Demo <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="stack justify-center p-10">
-        <img src="{{ $base }}/wp-content/uploads/2026/07/beauty-clinic-pos-5.webp" alt="Beauty Clinic POS in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
+        <img src="{{ $base }}/images/2026/07/beauty-clinic-pos-5.webp" alt="Beauty Clinic POS in UAE" class="img r-30 ar-162-125" width="648" height="500" loading="lazy">
       </div>
     </div>
   </div>
