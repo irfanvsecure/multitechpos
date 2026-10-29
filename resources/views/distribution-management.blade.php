@@ -61,6 +61,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Distribution Management System In UAE'])
+
 <section class="section section--light">
   <div class="container">
     <h2 class="title text-center">Key Features of Our Sales &amp; Distribution
@@ -298,6 +300,8 @@ Software</h2>
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Distribution Management System In UAE'])
 
 @include('partials.cta-band')
 

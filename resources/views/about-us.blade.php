@@ -152,7 +152,7 @@
         <div class="stack gap-10 card card--sh4">
           <div class="icon-box text-center p-32">
             <span class="icon-tile icon-tile--44 icon-tile--whatsapp icon-tile--round"><i class="far fa-comment"></i></span>
-            <p class="icon-box__title"><a href="http://wa.me/+971588979925" target="_blank" rel="noopener">Whatsapp</a></p>
+            <p class="icon-box__title"><a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" target="_blank" rel="noopener">Whatsapp</a></p>
             <p class="icon-box__text">Quick Response</p>
           </div>
         </div>

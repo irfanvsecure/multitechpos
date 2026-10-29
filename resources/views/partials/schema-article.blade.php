@@ -1,4 +1,5 @@
 {{-- Article structured data for blog posts. $headline, $image (path), $published (Y-m-d), $author --}}
+@section('page_kind', 'post')
 @php
     $root = request()->getSchemeAndHttpHost().$base;
     $article = array_filter([

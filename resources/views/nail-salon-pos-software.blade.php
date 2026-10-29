@@ -48,6 +48,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Nail Salon POS Software in UAE'])
+
 <section class="section section--light">
   <div class="container">
     <h2 class="title text-center">Explore All Features</h2>
@@ -314,6 +316,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Nail Salon POS Software in UAE'])
 
 @include('partials.cta-band')
 

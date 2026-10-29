@@ -56,6 +56,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'ERP Hospital Management System In UAE'])
+
 <section class="section section--light">
   <div class="container">
     <h2 class="title text-center">Explore All  Features
@@ -278,6 +280,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'ERP Hospital Management System In UAE'])
 
 @include('partials.cta-band')
 

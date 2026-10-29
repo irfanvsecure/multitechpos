@@ -5,7 +5,7 @@
         <ul class="topbar__links">
             <li><a href="tel:+971588979925"><i class="fas fa-phone-alt"></i> +971 58 897 9925</a></li>
             <li><a href="mailto:support@multitechpos.com"><i class="far fa-envelope"></i> support@multitechpos.com</a></li>
-            <li><a href="http://wa.me/+971588979925" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
         </ul>
     </div>
 </div>
@@ -205,7 +205,7 @@
 
                 <div class="main-nav__cta">
                     <a href="{{ $base }}/contact/" class="btn btn--primary btn--block">Book a Free Demo</a>
-                    <a href="http://wa.me/+971588979925" class="btn btn--whatsapp btn--block" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" class="btn btn--whatsapp btn--block" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
                 </div>
             </nav>
 

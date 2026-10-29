@@ -6,6 +6,6 @@
     </div>
     <div class="post-cta__actions">
         <a href="{{ $base }}/contact/" class="btn btn--primary">Book a Free Demo <i class="fas fa-arrow-right"></i></a>
-        <a href="http://wa.me/+971588979925" class="btn btn--light" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" class="btn btn--light" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
 </aside>

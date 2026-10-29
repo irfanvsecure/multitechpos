@@ -84,6 +84,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Tailor Management System In UAE'])
+
 <section class="section section--white">
   <div class="container">
     <p class="title text-center">TailorPro Screen Shots</p>
@@ -275,6 +277,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Tailor Management System In UAE'])
 
 @include('partials.cta-band')
 

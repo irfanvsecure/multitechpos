@@ -121,6 +121,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Pharmacy POS System In the UAE'])
+
 <section class="section">
   <div class="container">
     <h2 class="title text-center m-text-left">Pharmacy Billing Software with Built-In VAT Compliance</h2>
@@ -331,6 +333,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Pharmacy POS System In the UAE'])
 
 @include('partials.cta-band')
 

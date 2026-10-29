@@ -83,6 +83,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Dates Shop POS System in the UAE'])
+
 <section class="section">
   <div class="container">
     <h2 class="title text-center m-text-left">Stop Losing Profit With Dates Store<br>Point Of Sale</h2>
@@ -315,6 +317,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Dates Shop POS System in the UAE'])
 
 @include('partials.cta-band')
 

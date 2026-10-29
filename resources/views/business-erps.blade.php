@@ -109,6 +109,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Business ERPs'])
+
 <section class="section section--white section--p16">
   <div class="container">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
@@ -550,6 +552,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Business ERPs'])
 
 @include('partials.cta-band')
 

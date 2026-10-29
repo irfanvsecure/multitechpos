@@ -43,10 +43,10 @@
             <input type="text" name="name" placeholder="Name" required>
           </div>
           <div class="form__field">
-            <input type="email" name="email" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email (optional)">
           </div>
           <div class="form__field">
-            <input type="tel" name="phone" placeholder="Phone Number">
+            <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required>
           </div>
           <div class="form__field">
             <input type="text" name="company" placeholder="Company Name">
@@ -147,6 +147,8 @@
     <div class="text-center"><a href="{{ $base }}/contact/" class="btn btn--sm">Contact Us <i class="fas fa-arrow-right"></i></a></div>
   </div>
 </section>
+
+@include('partials.service-why', ['service' => 'Multi-Branch Business POS In UAE'])
 
 <section class="section section--white">
   <div class="container">
@@ -519,6 +521,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Multi-Branch Business POS In UAE'])
 
 @include('partials.cta-band')
 

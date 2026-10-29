@@ -121,6 +121,8 @@
   </div>
 </section>
 
+@include('partials.service-quote', ['service' => 'Salonpro'])
+
 @include('partials.cta-band')
 
 @endsection

@@ -43,6 +43,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Hemp POS Software In UAE'])
+
 <section class="section section--light">
   <div class="container">
     <h2 class="title text-center">Explore All Features</h2>
@@ -262,6 +264,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Hemp POS Software In UAE'])
 
 @include('partials.cta-band')
 

@@ -77,7 +77,7 @@
         <p>Once a month, run the near-expiry report, act on each band and move any expired items to the quarantine area. In Dubai this lines up with the monthly check the DHA guideline asks for.</p>
         <h3>See FEFO and expiry alerts in action</h3>
         <p>Send us a message and we will show you how MultiTech tracks batches, flags expiring medicines and keeps your shelves in date order.</p>
-        <a href="https://wa.me/971588979925" target="_blank" rel="noopener">Chat With Us on WhatsApp</a><h2>What your pharmacy software should do</h2>
+        <a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" target="_blank" rel="noopener">Chat With Us on WhatsApp</a><h2>What your pharmacy software should do</h2>
         <p>Good software makes FEFO automatic rather than a matter of discipline. Use this list when you compare systems or review your current one:</p>
         <ul>
         <li>Batch number and expiry date stored for every received line</li>

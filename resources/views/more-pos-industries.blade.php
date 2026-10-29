@@ -265,6 +265,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'More POS Industries'])
+
 <section class="section">
   <div class="container">
     <h2 class="title text-center">Ready to Upgrade Your <span class="text-gradient"><br>Business Operations?</span></h2>
@@ -309,6 +311,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'More POS Industries'])
 
 @include('partials.cta-band')
 

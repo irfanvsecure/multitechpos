@@ -122,6 +122,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Van Sales Software in UAE'])
+
 <section class="section">
   <div class="container">
     <h2 class="title text-center m-text-left">A Complete Van Sales System<br>For Small &amp; Medium Fleets</h2>
@@ -342,6 +344,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Van Sales Software in UAE'])
 
 @include('partials.cta-band')
 

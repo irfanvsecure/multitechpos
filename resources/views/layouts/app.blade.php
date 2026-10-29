@@ -46,8 +46,9 @@
     <link rel="icon" href="{{ $base }}/images/2025/12/logo4.png" sizes="192x192">
     <link rel="apple-touch-icon" href="{{ $base }}/images/2025/12/logo4.png">
 
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="{{ $base }}/css/style.css?v=15">
+    <link rel="stylesheet" href="{{ $base }}/css/style.css?v=30">
 
     @include('partials.schema-site', ['siteUrl' => $siteUrl.$base])
     @stack('schema')
@@ -65,10 +66,18 @@
         @yield('content')
     </main>
 
+    {{-- Interactive sections (calculator, quiz, builder ...) picked for this page.
+         Pages set @section('page_kind'); @section('no_cro') leaves them out. --}}
+    @unless ($__env->hasSection('no_cro'))
+        @include('partials.cro.zone', ['kind' => $section('page_kind') ?: 'general', 'slug' => trim($current, '/') ?: 'home'])
+    @endunless
+
     @include('partials.footer')
     @include('partials.whatsapp')
+    @include('partials.mobile-cta')
+    <template id="inline-cta">@include('partials.inline-cta')</template>
 
-    <script src="{{ $base }}/js/main.js?v=3" defer></script>
+    <script src="{{ $base }}/js/main.js?v=11" defer></script>
     @stack('scripts')
 </body>
 </html>

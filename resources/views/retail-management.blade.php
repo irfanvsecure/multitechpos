@@ -51,6 +51,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Retail Management POS System in UAE'])
+
 <section class="section section--light">
   <div class="container">
     <h2 class="title text-center">Powerful Retail POS Software Features for Daily Operations</h2>
@@ -283,6 +285,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Retail Management POS System in UAE'])
 
 @include('partials.cta-band')
 

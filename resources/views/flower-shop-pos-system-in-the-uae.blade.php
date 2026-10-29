@@ -81,6 +81,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Flower Shop POS System in the UAE'])
+
 <section class="section">
   <div class="container">
     <h2 class="title text-center m-text-left">Best Florist POS System in UAE: Manage Custom Orders</h2>
@@ -314,6 +316,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Flower Shop POS System in the UAE'])
 
 @include('partials.cta-band')
 

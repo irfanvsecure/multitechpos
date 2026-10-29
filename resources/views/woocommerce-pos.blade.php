@@ -66,6 +66,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Woocommerce Integrated POS'])
+
 <section class="section section--white">
   <div class="container">
     <h2 class="title text-center">MultiTech POS + <span class="text-gradient">WooCommerce Integration</span></h2>
@@ -162,6 +164,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Woocommerce Integrated POS'])
 
 @include('partials.cta-band')
 

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('no_cro', '1')
+
 @section('title', 'Page Not Found | MultiTech POS')
 @section('robots', 'noindex, follow')
 

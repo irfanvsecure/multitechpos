@@ -45,10 +45,10 @@
             <input type="text" name="name" placeholder="Name" required>
           </div>
           <div class="form__field">
-            <input type="email" name="email" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email (optional)">
           </div>
           <div class="form__field">
-            <input type="tel" name="phone" placeholder="Phone Number">
+            <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required>
           </div>
           <div class="form__field">
             <input type="text" name="company" placeholder="Company Name">
@@ -99,6 +99,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-why', ['service' => 'Service Business POS Software in UAE'])
 
 <section class="section section--white">
   <div class="container">
@@ -349,6 +351,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Service Business POS Software in UAE'])
 
 @include('partials.cta-band')
 

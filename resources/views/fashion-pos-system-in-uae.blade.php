@@ -120,6 +120,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Fashion Store POS System in UAE'])
+
 <section class="section section--white">
   <div class="container">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
@@ -381,6 +383,8 @@ Sale System with CRM Tools</h2>
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Fashion Store POS System in UAE'])
 
 @include('partials.cta-band')
 

@@ -63,6 +63,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'POS Solutions by Business Size'])
+
 <section class="section section--light">
   <div class="container">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
@@ -152,6 +154,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'POS Solutions by Business Size'])
 
 @include('partials.cta-band')
 

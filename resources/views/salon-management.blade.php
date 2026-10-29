@@ -55,6 +55,8 @@ in UAE - SalonPro</h2>
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Salon Management System In UAE'])
+
 <section class="section">
   <div class="container">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
@@ -278,6 +280,8 @@ in UAE - SalonPro</h2>
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Salon Management System In UAE'])
 
 @include('partials.cta-band')
 

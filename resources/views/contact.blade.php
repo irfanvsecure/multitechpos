@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('no_cro', '1')
+
 @section('title', 'Contact Us | Book a Free POS Demo | MultiTech POS')
 @section('description', 'Contact MultiTech POS in Abu Dhabi for a free POS demo and consultation. Call or WhatsApp +971 58 897 9925 or email support@multitechpos.com.')
 
@@ -62,10 +64,10 @@ Friday: Closed</p>
             <input type="text" name="name" placeholder="Name" required>
           </div>
           <div class="form__field">
-            <input type="email" name="email" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email (optional)">
           </div>
           <div class="form__field">
-            <input type="tel" name="phone" placeholder="Phone Number">
+            <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required>
           </div>
           <div class="form__field">
             <input type="text" name="company" placeholder="Company Name">

@@ -121,6 +121,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Grocery Store POS System in UAE'])
+
 <section class="section">
   <div class="container">
     <h2 class="title text-center m-text-left">Best Grocery &amp; Supermarket POS Software For Growth</h2>
@@ -363,6 +365,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Grocery Store POS System in UAE'])
 
 @include('partials.cta-band')
 

@@ -117,6 +117,8 @@ Store POS System in UAE</h2>
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Jewelry Store POS System in UAE'])
+
 <section class="section">
   <div class="container">
     <h2 class="title text-center m-text-left">Our Comprehensive Jewelry Store <br>POS Software For All Size Business</h2>
@@ -318,6 +320,8 @@ in UAE</h2>
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Jewelry Store POS System in UAE'])
 
 @include('partials.cta-band')
 

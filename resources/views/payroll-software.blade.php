@@ -56,6 +56,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Payroll Software For Businesses In UAE'])
+
 <section class="section section--light">
   <div class="container">
     <h2 class="title text-center">Explore All  Features</h2>
@@ -218,6 +220,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Payroll Software For Businesses In UAE'])
 
 @include('partials.cta-band')
 

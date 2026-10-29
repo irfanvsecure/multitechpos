@@ -120,6 +120,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'FTA Approved Accounting Software In UAE'])
+
 <section class="section section--white">
   <div class="container">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
@@ -293,6 +295,8 @@ in UAE</h2>
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'FTA Approved Accounting Software In UAE'])
 
 @include('partials.cta-band')
 

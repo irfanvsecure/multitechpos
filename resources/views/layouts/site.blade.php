@@ -17,7 +17,7 @@
         @yield('content')
     </main>
     @include('partials.site-footer')
-    <a class="whatsapp-float" href="http://wa.me/+971588979925" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <a class="whatsapp-float" href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" target="_blank" rel="noopener" aria-label="WhatsApp">
         <span>Need Help?</span>
     </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -58,7 +58,7 @@
         <p>Structured invoices are validated line by line, and manual price overrides or improvised discounts can fail checks. Set customer price lists and promotions centrally.</p>
         <h3>Is your van billing ready for 2027?</h3>
         <p>Tell us how many vans and routes you run, and we will show you how MultiTech handles route invoicing, returns and customer data.</p>
-        <a href="https://wa.me/971588979925" target="_blank" rel="noopener">Chat With Us on WhatsApp</a><h2>A 90-day action plan for distribution teams</h2>
+        <a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" target="_blank" rel="noopener">Chat With Us on WhatsApp</a><h2>A 90-day action plan for distribution teams</h2>
         <p>Work in three blocks: decide, clean, then test. Adjust the timing below to your own go-live date.</p>
         <h4>Distributor e-invoicing readiness checklist</h4>
         <table>

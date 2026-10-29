@@ -113,6 +113,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'POS Software In UAE'])
+
 <section class="section">
   <div class="container">
     <div class="cols cols-2 gap-10 m-reverse p-10">
@@ -467,6 +469,8 @@
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'POS Software In UAE'])
 
 @include('partials.cta-band')
 

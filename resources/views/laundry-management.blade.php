@@ -122,6 +122,8 @@
   </div>
 </section>
 
+@include('partials.service-why', ['service' => 'Laundry Management System In UAE'])
+
 <section class="section">
   <div class="container">
     <div class="cols cols-2 cols--reverse gap-10 m-reverse p-10">
@@ -322,6 +324,8 @@ in UAE</h2>
     </div>
   </div>
 </section>
+
+@include('partials.service-quote', ['service' => 'Laundry Management System In UAE'])
 
 @include('partials.cta-band')
 
