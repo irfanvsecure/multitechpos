@@ -10,7 +10,8 @@
     if ($kind === 'landing' && preg_match('/^(about-us|customers|downloads|our-blogs)$/', $slug)) {
         $kind = 'general';
     }
-    $cro = config('cro');
+    // read the file directly when the server's cached config predates config/cro.php
+    $cro = config('cro') ?: require config_path('cro.php');
     $industry = $cro['default'];
     foreach ($cro['match'] as $pattern => $key) {
         if (preg_match('/('.$pattern.')/i', $slug)) {
