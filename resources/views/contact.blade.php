@@ -22,7 +22,7 @@
     </div>
     <div class="cols cols--30-70 p-10">
       <div class="stack pt-20 pr-20 pl-20">
-        <h2 class="title fs-36 m-text-center"> Contact <span class="text-gradient">Informatio
+        <h2 class="title fs-36 m-text-center"> Contact <span class="text-gradient">Information
 </span></h2>
         <div class="icon-box icon-box--left m-icon-top m-text-center">
           <span class="icon-tile icon-tile--24 icon-tile--plain ic-blue"><i class="fas fa-phone-alt"></i></span>
@@ -89,6 +89,8 @@ Friday: Closed</p>
     </div>
   </div>
 </section>
+
+@include('partials.contact-next')
 
 <section class="section section--p0 section--full">
   <div class="map"><iframe src="https://maps.google.com/maps?q=16%20Al%20Isayfir%202%20St%20-%20Musaffah%20-%20M33%20-%20Abu%20Dhabi&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="Map" loading="lazy" style="height:300px"></iframe></div>

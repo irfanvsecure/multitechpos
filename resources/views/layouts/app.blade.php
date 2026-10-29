@@ -48,7 +48,7 @@
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="{{ $base }}/css/style.css?v=30">
+    <link rel="stylesheet" href="{{ $base }}/css/style.css?v=36">
 
     @include('partials.schema-site', ['siteUrl' => $siteUrl.$base])
     @stack('schema')
@@ -70,6 +70,7 @@
          Pages set @section('page_kind'); @section('no_cro') leaves them out. --}}
     @unless ($__env->hasSection('no_cro'))
         @include('partials.cro.zone', ['kind' => $section('page_kind') ?: 'general', 'slug' => trim($current, '/') ?: 'home'])
+        @include('partials.callback')
     @endunless
 
     @include('partials.footer')
@@ -77,7 +78,7 @@
     @include('partials.mobile-cta')
     <template id="inline-cta">@include('partials.inline-cta')</template>
 
-    <script src="{{ $base }}/js/main.js?v=11" defer></script>
+    <script src="{{ $base }}/js/main.js?v=12" defer></script>
     @stack('scripts')
 </body>
 </html>

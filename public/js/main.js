@@ -142,9 +142,150 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('form[action$="/request-demo"]').forEach(function (form) {
         form.addEventListener('submit', function () {
-            track('form_submit', { form_location: form.closest('section') ? form.closest('section').className.split(' ')[0] : 'page' });
+            track('form_submit', { form_location: form.closest('section, aside') ? form.closest('section, aside').className.split(' ')[0] : 'page' });
         });
     });
+
+    // Small storage helpers (storage can be blocked in private windows)
+    function stored(area, key, value) {
+        try {
+            if (value === undefined) {
+                return window[area].getItem(key);
+            }
+            window[area].setItem(key, value);
+        } catch (e) {}
+        return null;
+    }
+
+    // The page the visitor read before the contact page goes with the request
+    var pageTopic = (function () {
+        var h1 = document.querySelector('#content h1');
+        return (h1 ? h1.textContent : document.title).replace(/\s+/g, ' ').trim();
+    })();
+    var onContact = /\/contact\/?$/.test(location.pathname);
+    if (!onContact && !document.querySelector('.message-page')) {
+        stored('sessionStorage', 'mtp_from', pageTopic + ' (' + location.pathname + ')');
+    }
+
+    document.querySelectorAll('form[action$="/request-demo"]').forEach(function (form) {
+        var button = form.querySelector('button[type="submit"]');
+
+        // Plain "Send" / "Submit" buttons say what the visitor gets
+        if (button && /^(send|submit)$/i.test(button.textContent.trim())) {
+            button.innerHTML = 'Get My Free Demo <i class="fas fa-arrow-right"></i>';
+        }
+        if (button && form.classList.contains('form') && !form.querySelector('.form__note')) {
+            var note = document.createElement('p');
+            note.className = 'form__note';
+            note.innerHTML = '<i class="fas fa-lock"></i> Free &middot; No obligation &middot; We reply by phone or WhatsApp';
+            button.after(note);
+        }
+
+        // Catch half-typed phone numbers before the form is sent
+        var phone = form.querySelector('input[name="phone"]');
+        if (phone) {
+            phone.addEventListener('input', function () {
+                var digits = phone.value.replace(/\D/g, '').length;
+                phone.setCustomValidity(phone.value && digits < 7 ? 'Please enter your full phone number, e.g. +971 50 123 4567' : '');
+            });
+        }
+
+        form.addEventListener('submit', function () {
+            var message = form.querySelector('textarea[name="message"]');
+            var from = stored('sessionStorage', 'mtp_from');
+            var notes = stored('sessionStorage', 'mtp_notes');
+            if (message && onContact && (from || notes)) {
+                message.value = (message.value ? message.value + '\n\n' : '') +
+                    (from ? 'Was reading: ' + from : '') + (notes ? '\n' + notes : '');
+            }
+            stored('localStorage', 'mtp_lead', Date.now());
+            // one click, one lead
+            if (button) {
+                setTimeout(function () {
+                    button.disabled = true;
+                    button.classList.add('is-sending');
+                    button.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Sending...';
+                }, 0);
+            }
+        });
+    });
+
+    // Coming back with the browser's back button: buttons work again
+    window.addEventListener('pageshow', function (event) {
+        if (event.persisted) {
+            document.querySelectorAll('button.is-sending').forEach(function (b) {
+                b.disabled = false;
+                b.classList.remove('is-sending');
+                b.innerHTML = 'Send Again <i class="fas fa-arrow-right"></i>';
+            });
+        }
+    });
+
+    // "Call me back" card: after half the page, or when the mouse heads for the tab bar.
+    // Not for people who already sent a form or closed it in the last few days.
+    var callback = document.getElementById('callback');
+    var day = 864e5;
+    if (callback &&
+        Date.now() - (+stored('localStorage', 'mtp_callback') || 0) > 3 * day &&
+        Date.now() - (+stored('localStorage', 'mtp_lead') || 0) > 30 * day) {
+        var cbForm = callback.querySelector('form');
+        var cbMessage = cbForm.querySelector('input[name="message"]');
+        var openedAt = Date.now();
+        var cbShown = false;
+        if (pageTopic.length <= 42 && !document.querySelector('.home-hero')) {
+            callback.querySelector('[data-callback-topic]').textContent = pageTopic;
+        }
+        cbForm.querySelector('input[name="service"]').value = pageTopic.slice(0, 95);
+        cbMessage.value = 'Call back request from the page: ' + pageTopic + ' (' + location.pathname + ')';
+
+        var onDepth = function () {
+            var depth = (scrollY + innerHeight) / document.documentElement.scrollHeight;
+            if (depth > .55) {
+                showCallback('scroll');
+            }
+        };
+        var onLeave = function (event) {
+            if (!event.relatedTarget && event.clientY <= 0) {
+                showCallback('exit');
+            }
+        };
+        var showCallback = function (trigger) {
+            var active = document.activeElement;
+            if (cbShown || Date.now() - openedAt < 8000 || (active && active.closest('form'))) {
+                return;
+            }
+            var notes = stored('sessionStorage', 'mtp_notes');
+            if (notes) {
+                cbMessage.value += ' | ' + notes;
+            }
+            cbShown = true;
+            callback.hidden = false;
+            requestAnimationFrame(function () { callback.classList.add('is-open'); });
+            document.body.classList.add('has-callback');
+            track('callback_shown', { trigger: trigger });
+            window.removeEventListener('scroll', onDepth);
+            document.removeEventListener('mouseout', onLeave);
+        };
+        var hideCallback = function () {
+            callback.classList.remove('is-open');
+            document.body.classList.remove('has-callback');
+            stored('localStorage', 'mtp_callback', Date.now());
+            setTimeout(function () { callback.hidden = true; }, 350);
+        };
+        window.addEventListener('scroll', onDepth, { passive: true });
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            document.addEventListener('mouseout', onLeave);
+        }
+        callback.querySelector('[data-callback-close]').addEventListener('click', hideCallback);
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && cbShown) {
+                hideCallback();
+            }
+        });
+        cbForm.addEventListener('submit', function () {
+            stored('localStorage', 'mtp_callback', Date.now());
+        });
+    }
 
     var main = document.getElementById('content');
     var heroForm = document.getElementById('hero-demo');
@@ -223,6 +364,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (heroMessage) {
             heroMessage.value = heroMessageBase + ' | ' + summary.replace(/\n/g, ' · ');
         }
+        stored('sessionStorage', 'mtp_notes', summary.replace(/\n/g, ' · '));
     }
     function waLink(widget, text) {
         return widget.getAttribute('data-wa') + encodeURIComponent(text);

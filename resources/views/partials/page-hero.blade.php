@@ -3,7 +3,7 @@
     $title  - page heading (h1)
     $image  - background image path (optional)
     $parent - ['name' => ..., 'url' => ...] for the breadcrumb (optional)
-    $text   - short intro under the heading (optional)
+    $text   - short intro under the heading (optional, defaults to the page's meta description)
     $actions - false hides the demo / WhatsApp buttons and the demo form (optional)
 --}}
 @include('partials.schema-breadcrumb', ['items' => array_values(array_filter([
@@ -11,7 +11,11 @@
     $parent ?? null,
     ['name' => $title, 'url' => $current],
 ]))])
-@php($withForm = $actions ?? true)
+@php
+    $withForm = $actions ?? true;
+    // inline @section values arrive escaped; decode so {{ }} escapes them only once
+    $text ??= trim(html_entity_decode($__env->yieldContent('description'), ENT_QUOTES | ENT_HTML5, 'UTF-8')) ?: null;
+@endphp
 @section('page_kind', 'landing')
 <section class="page-hero{{ $withForm ? ' page-hero--form' : '' }}" @isset($image) style="background-image:url('{{ $base }}{{ $image }}')" @endisset>
     <div class="hero-blobs" aria-hidden="true">
