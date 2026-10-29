@@ -78,7 +78,7 @@
     @include('partials.mobile-cta')
     <template id="inline-cta">@include('partials.inline-cta')</template>
 
-    <script src="{{ $base }}/js/main.js?v=12" defer></script>
+    <script src="{{ $base }}/js/main.js?v=13" defer></script>
     @stack('scripts')
 </body>
 </html>

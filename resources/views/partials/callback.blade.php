@@ -1,6 +1,6 @@
 {{--
-    Small "call me back" card. Hidden until main.js shows it: after the visitor reads
-    about half the page, or moves to leave the tab on desktop. Once per visit.
+    Small "call me back" card. Hidden until main.js shows it, 2.5 seconds after
+    every page loads (not for visitors who already sent a form).
 --}}
 <aside class="callback" id="callback" aria-label="Request a call back" hidden>
     <button type="button" class="callback__close" data-callback-close aria-label="Close"><i class="fas fa-times"></i></button>

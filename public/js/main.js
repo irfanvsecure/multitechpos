@@ -221,16 +221,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // "Call me back" card: after half the page, or when the mouse heads for the tab bar.
-    // Not for people who already sent a form or closed it in the last few days.
+    // "Call me back" card: opens 2.5 seconds after every page loads.
+    // Not for people who already sent a form.
     var callback = document.getElementById('callback');
-    var day = 864e5;
-    if (callback &&
-        Date.now() - (+stored('localStorage', 'mtp_callback') || 0) > 3 * day &&
-        Date.now() - (+stored('localStorage', 'mtp_lead') || 0) > 30 * day) {
+    if (callback && Date.now() - (+stored('localStorage', 'mtp_lead') || 0) > 30 * 864e5) {
         var cbForm = callback.querySelector('form');
         var cbMessage = cbForm.querySelector('input[name="message"]');
-        var openedAt = Date.now();
         var cbShown = false;
         if (pageTopic.length <= 42 && !document.querySelector('.home-hero')) {
             callback.querySelector('[data-callback-topic]').textContent = pageTopic;
@@ -238,20 +234,11 @@ document.addEventListener('DOMContentLoaded', function () {
         cbForm.querySelector('input[name="service"]').value = pageTopic.slice(0, 95);
         cbMessage.value = 'Call back request from the page: ' + pageTopic + ' (' + location.pathname + ')';
 
-        var onDepth = function () {
-            var depth = (scrollY + innerHeight) / document.documentElement.scrollHeight;
-            if (depth > .55) {
-                showCallback('scroll');
-            }
-        };
-        var onLeave = function (event) {
-            if (!event.relatedTarget && event.clientY <= 0) {
-                showCallback('exit');
-            }
-        };
-        var showCallback = function (trigger) {
+        var showCallback = function () {
+            // someone typing in another form: try again a little later
             var active = document.activeElement;
-            if (cbShown || Date.now() - openedAt < 8000 || (active && active.closest('form'))) {
+            if (active && active.closest('form') && !active.closest('#callback')) {
+                setTimeout(showCallback, 2000);
                 return;
             }
             var notes = stored('sessionStorage', 'mtp_notes');
@@ -262,28 +249,19 @@ document.addEventListener('DOMContentLoaded', function () {
             callback.hidden = false;
             requestAnimationFrame(function () { callback.classList.add('is-open'); });
             document.body.classList.add('has-callback');
-            track('callback_shown', { trigger: trigger });
-            window.removeEventListener('scroll', onDepth);
-            document.removeEventListener('mouseout', onLeave);
+            track('callback_shown', { trigger: 'timer' });
         };
         var hideCallback = function () {
             callback.classList.remove('is-open');
             document.body.classList.remove('has-callback');
-            stored('localStorage', 'mtp_callback', Date.now());
             setTimeout(function () { callback.hidden = true; }, 350);
         };
-        window.addEventListener('scroll', onDepth, { passive: true });
-        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-            document.addEventListener('mouseout', onLeave);
-        }
+        setTimeout(showCallback, 2500);
         callback.querySelector('[data-callback-close]').addEventListener('click', hideCallback);
         document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape' && cbShown) {
                 hideCallback();
             }
-        });
-        cbForm.addEventListener('submit', function () {
-            stored('localStorage', 'mtp_callback', Date.now());
         });
     }
 
