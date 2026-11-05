@@ -8463,3 +8463,92 @@ button.is-sending {
         margin: 0;
     }
 }
+
+/* ==========================================================================
+   17. "Email me this result" form on the calculator and the 30-second check
+   ========================================================================== */
+.cro-result-form {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(255, 255, 255, .2);
+    text-align: left;
+}
+
+.cro-result-form__title {
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.cro-result-form__title i {
+    margin-right: 6px;
+}
+
+.cro-result-form__fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.cro-result-form__fields label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.cro-result-form__fields span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #e2e8f0;
+}
+
+.cro-result-form__fields input {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 14px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #fff;
+    font: inherit;
+    font-size: 15px;
+    color: var(--ink);
+}
+
+.cro-result-form__fields input:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, .25);
+}
+
+.cro-result-form__note {
+    margin-top: 10px;
+    font-size: 12.5px;
+    color: #94a3b8;
+}
+
+.cro-result-form__note i {
+    margin-right: 4px;
+}
+
+/* every form on the page gets the errors; only the one that was sent shows them */
+.cro-result-form .form__errors {
+    display: none;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #fff4f4;
+    color: #a8040e;
+    font-size: 13.5px;
+}
+
+.cro-result-form.is-failed .form__errors {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .cro-result-form__fields {
+        grid-template-columns: 1fr;
+    }
+}

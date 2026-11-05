@@ -140,6 +140,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    var main = document.getElementById('content');
+
+    // The "mid" widget waits in a <template>; put it after the steps section or the 2nd section.
+    // This comes before the form code below because the widget can hold a form.
+    var croMid = document.getElementById('cro-mid');
+    if (croMid && main) {
+        var homeSteps = document.querySelector('.home-section .steps');
+        var anchor = document.querySelector('.svc-steps') ||
+            (homeSteps && homeSteps.closest('section')) ||
+            main.querySelectorAll(':scope > section.section')[1];
+        if (anchor) {
+            anchor.after(croMid.content.cloneNode(true));
+        }
+    }
+
     document.querySelectorAll('form[action$="/request-demo"]').forEach(function (form) {
         form.addEventListener('submit', function () {
             track('form_submit', { form_location: form.closest('section, aside') ? form.closest('section, aside').className.split(' ')[0] : 'page' });
@@ -265,7 +280,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    var main = document.getElementById('content');
     var heroForm = document.getElementById('hero-demo');
 
     // Inner pages: demo strip mid-page, reading progress, reveal / tilt hooks
@@ -321,18 +335,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ---- Interactive sections (partials/cro/*) ---------------------------------
 
-    // The "mid" widget waits in a <template>; put it after the steps section or the 2nd section
-    var croMid = document.getElementById('cro-mid');
-    if (croMid && main) {
-        var homeSteps = document.querySelector('.home-section .steps');
-        var anchor = document.querySelector('.svc-steps') ||
-            (homeSteps && homeSteps.closest('section')) ||
-            main.querySelectorAll(':scope > section.section')[1];
-        if (anchor) {
-            anchor.after(croMid.content.cloneNode(true));
-        }
-    }
-
     var aed = function (n) { return Math.round(n).toLocaleString('en-US'); };
 
     // What the visitor worked out goes with their demo request and WhatsApp message
@@ -346,6 +348,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     function waLink(widget, text) {
         return widget.getAttribute('data-wa') + encodeURIComponent(text);
+    }
+
+    // "Email me this result" forms: keep the visitor's inputs so a failed submit can bring them back.
+    // Returns the saved inputs when this form just failed validation.
+    function resultFormState(form, key, getState) {
+        form.addEventListener('submit', function () {
+            stored('sessionStorage', key, JSON.stringify(getState()));
+        });
+        if (!form.classList.contains('is-failed')) {
+            return null;
+        }
+        try {
+            return JSON.parse(stored('sessionStorage', key));
+        } catch (e) {
+            return null;
+        }
     }
 
     // Problem finder
@@ -459,6 +477,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var sliders = calc.querySelectorAll('input[type="range"]');
         var formula = formulas[calc.getAttribute('data-formula')];
         var totalEl = calc.querySelector('[data-total]');
+        var emailForm = calc.querySelector('.cro-result-form');
         var shown = 0;
         var animation;
 
@@ -494,10 +513,21 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             var text = 'Hi MultiTech, I used your calculator:\n' + lines.join('\n') + '\nResult: about AED ' + aed(total) + ' a year. How can MultiTech POS help me cut this?';
             calc.querySelector('[data-wa-out]').href = waLink(calc, text);
+            emailForm.querySelector('input[name="message"]').value = 'Please email this loss calculator result to the visitor\n' + lines.join('\n') + '\nResult: about AED ' + aed(total) + ' a year';
             remember('Calculator: ' + lines.join(', ') + ' = AED ' + aed(total) + '/year');
         }
         sliders.forEach(function (s) { s.addEventListener('input', update); });
+
+        var saved = resultFormState(emailForm, 'mtp_calc', function () {
+            return Array.prototype.map.call(sliders, function (s) { return s.value; });
+        });
+        if (saved) {
+            sliders.forEach(function (s, i) { s.value = saved[i]; });
+        }
         update();
+        if (emailForm.classList.contains('is-failed')) {
+            emailForm.scrollIntoView({ block: 'center' });
+        }
     });
 
     // 30-second check
@@ -506,6 +536,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var dashes = quiz.querySelectorAll('.cro-quiz__progress span');
         var result = quiz.querySelector('.cro-quiz__result');
         var place = quiz.getAttribute('data-place');
+        var emailForm = quiz.querySelector('.cro-result-form');
         var answers = [];
 
         function show(i) {
@@ -530,6 +561,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var issues = Array.prototype.filter.call(questions, function (q, n) { return answers[n]; }).map(function (q) { return '- ' + q.querySelector('.cro-quiz__text').textContent; });
             var text = 'Hi MultiTech, I scored ' + score + '/' + total + ' on your 30-second check.' + (issues.length ? '\nThese apply to us:\n' + issues.join('\n') : '') + '\nCan you show me a demo?';
             quiz.querySelector('[data-wa-out]').href = waLink(quiz, text);
+            emailForm.querySelector('input[name="message"]').value = 'Please email this 30-second check result to the visitor\nScore: ' + score + '/' + total + '\nResult: ' + verdicts[0] + (issues.length ? '\nThese apply to them:\n' + issues.join('\n') : '');
             remember('30-second check: ' + score + '/' + total);
             track('quiz_done', { score: score });
             show(questions.length);
@@ -551,6 +583,13 @@ document.addEventListener('DOMContentLoaded', function () {
             show(0);
         });
         show(0);
+
+        var saved = resultFormState(emailForm, 'mtp_quiz', function () { return answers; });
+        if (saved && saved.length === questions.length) {
+            answers = saved;
+            finish();
+            emailForm.scrollIntoView({ block: 'center' });
+        }
     });
 
     // Day timeline: arrow buttons scroll the track

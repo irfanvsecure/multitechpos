@@ -33,6 +33,7 @@
                         <a href="{{ config('site.whatsapp') }}" class="btn btn--ghost" target="_blank" rel="noopener" data-wa-out><i class="fab fa-whatsapp"></i> Ask on WhatsApp</a>
                         <button type="button" class="cro-link cro-link--light" data-restart>Start again</button>
                     </div>
+                    @include('partials.cro.result-form', ['service' => '30-second check result'])
                 </div>
             </div>
         </div>

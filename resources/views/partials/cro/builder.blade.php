@@ -4,6 +4,15 @@
         ['Retail Shop', 'fas fa-shopping-cart'], ['Restaurant / Cafe', 'fas fa-utensils'], ['Supermarket / Grocery', 'fas fa-shopping-basket'],
         ['Pharmacy', 'fas fa-pills'], ['Salon / Spa', 'fas fa-spa'], ['Other', 'fas fa-store'],
     ];
+    // After a failed submit, read the choices back from the message this form sent (main.js writes it)
+    $picked = [];
+    if (str_starts_with((string) old('service'), 'Setup builder:')) {
+        foreach (preg_split('/\R/', (string) old('message')) as $line) {
+            [$label, $choice] = array_pad(explode(': ', $line, 2), 2, '');
+            $picked[$label] = trim($choice);
+        }
+    }
+    $pickedModules = isset($picked['Modules']) ? explode(', ', $picked['Modules']) : null;
 @endphp
 <section class="cro cro-builder" data-cro="builder" data-wa="{{ $wa }}" data-old="{{ old('service') }}">
     <div class="wrap cro-builder__grid">
@@ -31,7 +40,7 @@
                 <div class="cro-builder__tiles cro-builder__tiles--3">
                     @foreach ($types as [$type, $icon])
                         <label class="cro-tile">
-                            <input type="radio" name="b_type" value="{{ $type }}" @checked($type === $ind['business'])>
+                            <input type="radio" name="b_type" value="{{ $type }}" @checked($type === ($picked['Business'] ?? $ind['business']))>
                             <span><i class="{{ $icon }}"></i>{{ $type }}</span>
                         </label>
                     @endforeach
@@ -41,14 +50,14 @@
             <div class="cro-builder__panel" data-step="2" hidden>
                 <p class="cro-builder__q">How many branches?</p>
                 <div class="cro-builder__tiles cro-builder__tiles--3">
-                    @foreach (['1 branch', '2 to 5 branches', '6 or more'] as $i => $v)
-                        <label class="cro-tile cro-tile--sm"><input type="radio" name="b_branches" value="{{ $v }}" @checked($i === 0)><span>{{ $v }}</span></label>
+                    @foreach (['1 branch', '2 to 5 branches', '6 or more'] as $v)
+                        <label class="cro-tile cro-tile--sm"><input type="radio" name="b_branches" value="{{ $v }}" @checked($v === ($picked['Branches'] ?? '1 branch'))><span>{{ $v }}</span></label>
                     @endforeach
                 </div>
                 <p class="cro-builder__q">How many tills or counters per branch?</p>
                 <div class="cro-builder__tiles cro-builder__tiles--3">
-                    @foreach (['1 counter', '2 to 3 counters', '4 or more'] as $i => $v)
-                        <label class="cro-tile cro-tile--sm"><input type="radio" name="b_counters" value="{{ $v }}" @checked($i === 0)><span>{{ $v }}</span></label>
+                    @foreach (['1 counter', '2 to 3 counters', '4 or more'] as $v)
+                        <label class="cro-tile cro-tile--sm"><input type="radio" name="b_counters" value="{{ $v }}" @checked($v === ($picked['Counters'] ?? '1 counter'))><span>{{ $v }}</span></label>
                     @endforeach
                 </div>
             </div>
@@ -58,7 +67,7 @@
                 <div class="cro-builder__tiles cro-builder__tiles--2">
                     @foreach ($cro['modules'] as $key => [$label, $icon])
                         <label class="cro-tile cro-tile--check">
-                            <input type="checkbox" name="b_modules" value="{{ $label }}" @checked(in_array($key, $ind['modules'], true))>
+                            <input type="checkbox" name="b_modules" value="{{ $label }}" @checked($pickedModules !== null ? in_array($label, $pickedModules, true) : in_array($key, $ind['modules'], true))>
                             <span><i class="{{ $icon }}"></i>{{ $label }}</span>
                         </label>
                     @endforeach

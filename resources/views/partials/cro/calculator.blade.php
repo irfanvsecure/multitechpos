@@ -26,6 +26,7 @@
             <a href="{{ config('site.whatsapp') }}" class="btn btn--primary btn--block" target="_blank" rel="noopener" data-wa-out><i class="fab fa-whatsapp"></i> Show me how to cut this</a>
             <a href="{{ $base }}/contact/" class="btn btn--ghost btn--block" data-focus-form>Book a free demo</a>
             <p class="cro-calc__note">Based only on the numbers you entered.</p>
+            @include('partials.cro.result-form', ['service' => 'Loss calculator result'])
         </div>
     </div>
 </section>
