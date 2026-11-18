@@ -5,17 +5,17 @@
 
     RewriteEngine On
 
-    # Redirect www to non-www
+    # Redirect www -> non-www
     RewriteCond %{HTTP_HOST} ^www\.multitechpos\.com [NC]
-    RewriteRule ^(.*)$ https://multitechpos.com$1 [R=301,L]
+    RewriteRule ^(.*)$ https://multitechpos.com/$1 [R=301,L]
 
-    # Redirect /public/ URLs to clean URLs (301)
-    RewriteCond %{THE_REQUEST} \s/+public(?:/|\?|\s) [NC]
-    RewriteRule ^public(?:/(.*))?$ /$1 [R=301,L]
+    # Strip /public from URL (when document root is public_html/public)
+    RewriteCond %{THE_REQUEST} \s/public(/[^\s?]*)? [NC]
+    RewriteRule ^public(/.*)?$ /$1 [R=301,L]
 
-    # Redirect old /index.php?item= URLs to home page (301)
-    RewriteCond %{QUERY_STRING} ^item= [NC]
-    RewriteRule ^index\.php$ / [R=301,L]
+    # Redirect any ?item... query string to home
+    RewriteCond %{QUERY_STRING} ^item [NC]
+    RewriteRule ^.*$ / [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -25,10 +25,7 @@
     RewriteCond %{HTTP:x-xsrf-token} .
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
-    # Page URLs keep their trailing slash (handled by App\Http\Middleware\AddTrailingSlash),
-    # so Laravel's default "remove trailing slash" redirect is not used here.
-
-    # Send Requests To Front Controller...
+    # Send all requests to Laravel front controller
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]

@@ -186,3 +186,6 @@ Route::view('/terms-of-service/', 'terms-of-service')->name('terms-of-service');
 
 // After a demo / quote form is sent (not indexed by search engines)
 Route::view('/thank-you/', 'thank-you')->name('thank-you');
+
+// Catch-all: any URL not matched above → home (301)
+Route::fallback(fn () => redirect('/', 301));
