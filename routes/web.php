@@ -43,7 +43,13 @@ Route::get('/wp-content/uploads/{path}', fn (Request $request, string $path) => 
 // ---------------------------------------------------------------------------
 
 // Company (3)
-Route::view('/', 'index')->name('home');
+Route::get('/', function (\Illuminate\Http\Request $request) {
+    // Redirect legacy ?item/... URLs (e.g. /?item/8109777586) to clean home
+    if (str_starts_with($request->server('QUERY_STRING', ''), 'item')) {
+        return redirect('/', 301);
+    }
+    return view('index');
+})->name('home');
 Route::view('/about-us/', 'about-us')->name('about-us');
 Route::view('/contact/', 'contact')->name('contact');
 

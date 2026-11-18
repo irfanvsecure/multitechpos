@@ -9,13 +9,17 @@
     RewriteCond %{HTTP_HOST} ^www\.multitechpos\.com [NC]
     RewriteRule ^(.*)$ https://multitechpos.com/$1 [R=301,L]
 
-    # Strip /public from URL (when document root is public_html/public)
+    # Strip /public from URL (document root is public_html/public)
     RewriteCond %{THE_REQUEST} \s/public(/[^\s?]*)? [NC]
     RewriteRule ^public(/.*)?$ /$1 [R=301,L]
 
-    # Redirect any ?item... query string to home
+    # Redirect ?item... (query string) to home
     RewriteCond %{QUERY_STRING} ^item [NC]
-    RewriteRule ^.*$ / [R=301,L]
+    RewriteRule ^ / [R=301,L]
+
+    # Redirect path-style ?item/... (e.g. /?item/123) to home
+    RewriteCond %{THE_REQUEST} \s/\?item [NC]
+    RewriteRule ^ / [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
