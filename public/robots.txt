@@ -1,8 +1,10 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 Disallow: /request-demo
 Disallow: /thank-you/
 Disallow: /?s=
+Disallow: /public/
+Disallow: /index.php?item=
 
 # --- OpenAI (ChatGPT) ---
 User-agent: OAI-SearchBot
