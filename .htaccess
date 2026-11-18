@@ -9,6 +9,10 @@ Options -Indexes
     # SSL certificate checks (cPanel AutoSSL / Let's Encrypt) must keep working
     RewriteRule ^\.well-known/ - [L]
 
+    # Redirect www to non-www
+    RewriteCond %{HTTP_HOST} ^www\.multitechpos\.com [NC]
+    RewriteRule ^(.*)$ https://multitechpos.com$1 [R=301,L]
+
     # Never serve hidden files (.env, .git, ...) or project folders/files directly
     RewriteRule (^|/)\. - [F,L]
     RewriteRule ^(app|bootstrap|config|database|resources|routes|scripts|storage|tests|vendor|node_modules)(/|$) - [F,L]
