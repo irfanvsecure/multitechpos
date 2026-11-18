@@ -13,7 +13,7 @@ Options -Indexes
     RewriteRule ^(.*)$ https://multitechpos.com/$1 [R=301,L]
 
     # Strip /public from the URL (redirect browser, keep same path)
-    RewriteCond %{THE_REQUEST} \s/public(/[^\s?]*)? [NC]
+    RewriteCond %{REQUEST_URI} ^/public(/.*)?$ [NC]
     RewriteRule ^public(/.*)?$ /$1 [R=301,L]
 
     # Block direct access to sensitive files and folders
