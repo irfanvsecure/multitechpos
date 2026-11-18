@@ -1,9 +1,21 @@
-<IfModule mod_rewrite.c>
+﻿<IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
 
     RewriteEngine On
+
+    # Redirect www to non-www
+    RewriteCond %{HTTP_HOST} ^www\.multitechpos\.com [NC]
+    RewriteRule ^(.*)$ https://multitechpos.com$1 [R=301,L]
+
+    # Redirect /public/ URLs to clean URLs (301)
+    RewriteCond %{THE_REQUEST} \s/+public(?:/|\?|\s) [NC]
+    RewriteRule ^public(?:/(.*))?$ /$1 [R=301,L]
+
+    # Redirect old /index.php?item= URLs to home page (301)
+    RewriteCond %{QUERY_STRING} ^item= [NC]
+    RewriteRule ^index\.php$ / [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
