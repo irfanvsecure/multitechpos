@@ -42,6 +42,11 @@ class CmsExtract extends Command
     public function handle(): int
     {
         $views = resource_path('views');
+        if (! file_exists($views.'/index.blade.php')) {
+            $this->error('The Blade page files were removed after the move; the content lives in the database (and database/content/site.json). Nothing to extract.');
+
+            return self::FAILURE;
+        }
         $routes = $this->routes();
         $out = [
             'generated_at' => now()->toIso8601String(),

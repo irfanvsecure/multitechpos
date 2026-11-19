@@ -218,7 +218,8 @@ class ImageTools extends ToolSet
             preg_match_all('#<img\s[^>]*>#i', $e['main'], $imgs);
             foreach ($imgs[0] as $i => $img) {
                 preg_match('#src="([^"]+)"#', $img, $s);
-                $src = isset($s[1]) ? rawurldecode((string) parse_url($s[1], PHP_URL_PATH)) : '';
+                $external = isset($s[1]) && preg_match('#^(https?:)?//#i', $s[1]) && \App\Mcp\Support\Html::internalPath($s[1]) === null;
+                $src = isset($s[1]) ? ($external ? $s[1] : rawurldecode((string) parse_url($s[1], PHP_URL_PATH))) : '';
                 $issues = [];
                 preg_match('/\salt="([^"]*)"/', $img, $alt);
                 $altText = html_entity_decode($alt[1] ?? '', ENT_QUOTES | ENT_HTML5);
@@ -237,7 +238,9 @@ class ImageTools extends ToolSet
                     $issues[] = 'below the fold but not lazy';
                 }
                 $file = public_path(ltrim($src, '/'));
-                if ($src && is_file($file)) {
+                if ($external) {
+                    // hosted elsewhere (e.g. Gravatar): size and format are not checked
+                } elseif ($src && is_file($file)) {
                     if (filesize($file) > 300 * 1024) {
                         $issues[] = round(filesize($file) / 1024).' KB';
                     }

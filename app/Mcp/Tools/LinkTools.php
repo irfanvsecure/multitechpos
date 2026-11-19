@@ -348,6 +348,14 @@ class LinkTools extends ToolSet
                         if ($this->resolves($path) || $path === '/') {
                             continue;
                         }
+                        // old WordPress forms that routes/web.php or the trailing-slash middleware redirect
+                        if (preg_match('#^/index\.php(/.*)$#', $path, $wp) || preg_match('#^(/author/multitech_admin/)page/\d+/?$#', $path, $wp)
+                            || preg_match('#^/(feed|blog|category/.*|wp-content/uploads/.*)$#', $path, $wp)) {
+                            $problems[] = ['page' => $e['path'], 'section_id' => $sid, 'section' => $key, 'link' => $path, 'anchor' => $l['anchor'],
+                                'problem' => 'old WordPress URL, works through a 301'.(isset($wp[1]) && str_starts_with($wp[1], '/') ? ' to '.rtrim($wp[1], '/').'/' : '').' (update the link)'];
+
+                            continue;
+                        }
                         $r = $redirects[$path] ?? $redirects[rtrim($path, '/').'/'] ?? null;
                         $problems[] = ['page' => $e['path'], 'section_id' => $sid, 'section' => $key, 'link' => $path, 'anchor' => $l['anchor'],
                             'problem' => $r ? ($r->status_code === 410 ? '410 Gone' : 'redirects to '.$r->to_url.' (update the link)') : 'no such page (falls to the 301-to-home catch-all)'];
