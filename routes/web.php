@@ -61,18 +61,6 @@ Route::view('/contact/', 'contact')->name('contact');
 // POS Features (8)
 
 // Business ERPs (12)
-Route::view('/accounting-software/', 'accounting-software')->name('accounting-software');
-Route::view('/business-erps/', 'business-erps')->name('business-erps');
-Route::view('/distribution-management/', 'distribution-management')->name('distribution-management');
-Route::view('/employee-management/', 'employee-management')->name('employee-management');
-Route::view('/hospital-management/', 'hospital-management')->name('hospital-management');
-Route::view('/laundry-management/', 'laundry-management')->name('laundry-management');
-Route::view('/payroll-software/', 'payroll-software')->name('payroll-software');
-Route::view('/restaurant-management/', 'restaurant-management')->name('restaurant-management');
-Route::view('/retail-management/', 'retail-management')->name('retail-management');
-Route::view('/salon-management/', 'salon-management')->name('salon-management');
-Route::view('/stock-management/', 'stock-management')->name('stock-management');
-Route::view('/tailor-management/', 'tailor-management')->name('tailor-management');
 
 // Downloads (5)
 Route::view('/downloads/', 'downloads')->name('downloads');
