@@ -9,6 +9,10 @@ return Application::configure(basePath: dirname(__DIR__))
         web: __DIR__.'/../routes/web.php',
         commands: __DIR__.'/../routes/console.php',
         health: '/up',
+        then: function () {
+            // MCP endpoint: outside the "web" group (no session, cookies, CSRF or trailing-slash redirects)
+            \Illuminate\Support\Facades\Route::group([], base_path('routes/mcp.php'));
+        },
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->web(prepend: [

@@ -20,6 +20,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // MCP endpoint rate limit (per IP)
+        \Illuminate\Support\Facades\RateLimiter::for('mcp', fn ($request) => \Illuminate\Cache\RateLimiting\Limit::perMinute(max(10, (int) config('cms.mcp.rate_limit')))->by($request->ip()));
+
         // Contact details, stats ... from the settings table into config('site.*')
         \App\Cms\Settings::applyToConfig();
 

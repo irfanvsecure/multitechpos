@@ -81,7 +81,7 @@ Route::get('/', function (\Illuminate\Http\Request $request) {
 
 // Pages and blog posts stored in the database (managed through the MCP server).
 // Unknown paths: a saved redirect / 410, else 301 to the home page (the old catch-all).
-Route::get('/{path}', [PageController::class, 'show'])->where('path', '.*')->name('page');
+Route::get('/{path}', [PageController::class, 'show'])->where('path', '(?!mcp(?:/|$)).*')->name('page');
 
 // Catch-all for other methods: any URL not matched above → home (301)
 Route::fallback(fn () => redirect('/', 301));
