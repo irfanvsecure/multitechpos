@@ -57,7 +57,6 @@ Route::view('/about-us/', 'about-us')->name('about-us');
 Route::view('/contact/', 'contact')->name('contact');
 
 // POS Software (11)
-Route::view('/by-industry/', 'by-industry')->name('by-industry');
 
 // POS Features (8)
 Route::view('/appointment-booking-pos-uae/', 'appointment-booking-pos-uae')->name('appointment-booking-pos-uae');
@@ -91,43 +90,6 @@ Route::view('/salonpro/', 'salonpro')->name('salonpro');
 Route::view('/tailorpro/', 'tailorpro')->name('tailorpro');
 
 // Industries (39)
-Route::view('/bakery-pos-software/', 'bakery-pos-software')->name('bakery-pos-software');
-Route::view('/barber-shop-pos-software/', 'barber-shop-pos-software')->name('barber-shop-pos-software');
-Route::view('/beauty-clinic-pos-software-uae/', 'beauty-clinic-pos-software-uae')->name('beauty-clinic-pos-software-uae');
-Route::view('/bike-shop-pos-software/', 'bike-shop-pos-software')->name('bike-shop-pos-software');
-Route::view('/book-store-pos-software/', 'book-store-pos-software')->name('book-store-pos-software');
-Route::view('/cafeteria-pos-software-systems/', 'cafeteria-pos-software-systems')->name('cafeteria-pos-software-systems');
-Route::view('/car-wash-pos-software/', 'car-wash-pos-software')->name('car-wash-pos-software');
-Route::view('/chocolate-shop-pos-system-in-the-uae/', 'chocolate-shop-pos-system-in-the-uae')->name('chocolate-shop-pos-system-in-the-uae');
-Route::view('/coffee-shop-pos-system-uae/', 'coffee-shop-pos-system-uae')->name('coffee-shop-pos-system-uae');
-Route::view('/dates-shop-pos-system-in-the-uae/', 'dates-shop-pos-system-in-the-uae')->name('dates-shop-pos-system-in-the-uae');
-Route::view('/delivery-pos-software/', 'delivery-pos-software')->name('delivery-pos-software');
-Route::view('/digital-dining-pos-software/', 'digital-dining-pos-software')->name('digital-dining-pos-software');
-Route::view('/dispensary-pos-software/', 'dispensary-pos-software')->name('dispensary-pos-software');
-Route::view('/fashion-pos-system-in-uae/', 'fashion-pos-system-in-uae')->name('fashion-pos-system-in-uae');
-Route::view('/fast-food-pos-software/', 'fast-food-pos-software')->name('fast-food-pos-software');
-Route::view('/flower-shop-pos-system-in-the-uae/', 'flower-shop-pos-system-in-the-uae')->name('flower-shop-pos-system-in-the-uae');
-Route::view('/food-truck-pos-software/', 'food-truck-pos-software')->name('food-truck-pos-software');
-Route::view('/footwear-pos-system-uae/', 'footwear-pos-system-uae')->name('footwear-pos-system-uae');
-Route::view('/furniture-store-pos-software/', 'furniture-store-pos-software')->name('furniture-store-pos-software');
-Route::view('/gaming-store-pos-software/', 'gaming-store-pos-software')->name('gaming-store-pos-software');
-Route::view('/gas-station-pos-software/', 'gas-station-pos-software')->name('gas-station-pos-software');
-Route::view('/gift-store-pos-system-in-the-uae/', 'gift-store-pos-system-in-the-uae')->name('gift-store-pos-system-in-the-uae');
-Route::view('/gold-shop-pos-software/', 'gold-shop-pos-software')->name('gold-shop-pos-software');
-Route::view('/golf-pos-software/', 'golf-pos-software')->name('golf-pos-software');
-Route::view('/gym-pos-software/', 'gym-pos-software')->name('gym-pos-software');
-Route::view('/hemp-pos-software/', 'hemp-pos-software')->name('hemp-pos-software');
-Route::view('/hotel-pos-software/', 'hotel-pos-software')->name('hotel-pos-software');
-Route::view('/jewelry-pos-system-in-uae/', 'jewelry-pos-system-in-uae')->name('jewelry-pos-system-in-uae');
-Route::view('/medical-spa-pos-software/', 'medical-spa-pos-software')->name('medical-spa-pos-software');
-Route::view('/more-pos-industries/', 'more-pos-industries')->name('more-pos-industries');
-Route::view('/music-store-pos-point-of-sale-software/', 'music-store-pos-point-of-sale-software')->name('music-store-pos-point-of-sale-software');
-Route::view('/nail-salon-pos-software/', 'nail-salon-pos-software')->name('nail-salon-pos-software');
-Route::view('/perfume-shop-pos-software-in-uae/', 'perfume-shop-pos-software-in-uae')->name('perfume-shop-pos-software-in-uae');
-Route::view('/pet-shop-pos-software/', 'pet-shop-pos-software')->name('pet-shop-pos-software');
-Route::view('/spa-pos-software-uae/', 'spa-pos-software-uae')->name('spa-pos-software-uae');
-Route::view('/toy-shop-pos-in-uae/', 'toy-shop-pos-in-uae')->name('toy-shop-pos-in-uae');
-Route::view('/van-sales-management-system-in-uae/', 'van-sales-management-system-in-uae')->name('van-sales-management-system-in-uae');
 
 // Blog (42)
 Route::view('/author/multitech_admin/', 'author.multitech_admin')->name('author.multitech_admin');
