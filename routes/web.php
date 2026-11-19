@@ -63,11 +63,6 @@ Route::view('/contact/', 'contact')->name('contact');
 // Business ERPs (12)
 
 // Downloads (5)
-Route::view('/downloads/', 'downloads')->name('downloads');
-Route::view('/laundrypro/', 'laundrypro')->name('laundrypro');
-Route::view('/restropro/', 'restropro')->name('restropro');
-Route::view('/salonpro/', 'salonpro')->name('salonpro');
-Route::view('/tailorpro/', 'tailorpro')->name('tailorpro');
 
 // Industries (39)
 
