@@ -53,8 +53,6 @@ Route::get('/', function (\Illuminate\Http\Request $request) {
     }
     return app(PageController::class)->show($request, '');
 })->name('home');
-Route::view('/about-us/', 'about-us')->name('about-us');
-Route::view('/contact/', 'contact')->name('contact');
 
 // POS Software (11)
 
