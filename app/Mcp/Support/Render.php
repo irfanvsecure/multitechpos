@@ -38,7 +38,8 @@ class Render
     /** Full HTML document of a page or post (drafts included). */
     public static function full(Model $owner): string
     {
-        $key = $owner::class.':'.$owner->getKey().':'.$owner->updated_at?->getTimestamp();
+        // the cache version changes on every write (updated_at has only second precision)
+        $key = $owner::class.':'.$owner->getKey().':'.$owner->updated_at?->getTimestamp().':'.\App\Cms\Cms::version();
         if (isset(self::$memo[$key])) {
             return self::$memo[$key];
         }

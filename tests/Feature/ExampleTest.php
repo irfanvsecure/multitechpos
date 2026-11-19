@@ -2,11 +2,19 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\Support\LoadsSiteContent;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
+    use LoadsSiteContent;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->loadSiteContent();
+    }
+
     /**
      * A basic test example.
      */

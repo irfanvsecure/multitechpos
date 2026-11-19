@@ -3,10 +3,20 @@
 namespace Tests\Feature;
 
 use Illuminate\Support\ViewErrorBag;
+use Tests\Support\LoadsSiteContent;
 use Tests\TestCase;
 
 class CroFormsTest extends TestCase
 {
+    // the home page (with the Setup Builder) now comes from the database
+    use LoadsSiteContent;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->loadSiteContent();
+    }
+
     public function test_builder_uses_defaults_without_a_failed_submit(): void
     {
         $this->get('/')

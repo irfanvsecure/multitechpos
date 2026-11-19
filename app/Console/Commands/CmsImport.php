@@ -45,7 +45,8 @@ class CmsImport extends Command
             return self::SUCCESS;
         }
 
-        $data = json_decode(File::get(base_path($this->option('file'))), true, 512, JSON_THROW_ON_ERROR);
+        $file = $this->option('file');
+        $data = json_decode(File::get(str_starts_with($file, '/') || preg_match('/^[A-Z]:/i', $file) ? $file : base_path($file)), true, 512, JSON_THROW_ON_ERROR);
 
         DB::transaction(function () use ($data) {
             if ($this->option('fresh')) {
@@ -107,7 +108,7 @@ class CmsImport extends Command
                 PricingPlan::query()->create($row);
             }
             foreach ($data['downloads'] as $row) {
-                $row['page_id'] = $ids[$row['page']] ?? null;
+                $row['page_id'] = $row['page'] ? ($ids[$row['page']] ?? null) : null;
                 unset($row['page']);
                 Download::query()->create($row);
             }

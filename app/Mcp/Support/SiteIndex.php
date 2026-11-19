@@ -14,12 +14,15 @@ class SiteIndex
 {
     private static ?array $all = null;
 
+    private static int $version = 0;
+
     /** @return array<string, array> path => entry */
     public static function all(bool $includeDrafts = false): array
     {
-        if (self::$all !== null && ! $includeDrafts) {
+        if (self::$all !== null && ! $includeDrafts && self::$version === \App\Cms\Cms::version()) {
             return self::$all;
         }
+        self::$version = \App\Cms\Cms::version();
         $out = [];
         $pages = Page::query()->with(['sections', 'seo'])->when(! $includeDrafts, fn ($q) => $q->where('status', 'published'))->get();
         foreach ($pages as $p) {
