@@ -51,7 +51,7 @@ Route::get('/', function (\Illuminate\Http\Request $request) {
     if (str_starts_with($request->server('QUERY_STRING', ''), 'item')) {
         return redirect('/', 301);
     }
-    return view('index');
+    return app(PageController::class)->show($request, '');
 })->name('home');
 Route::view('/about-us/', 'about-us')->name('about-us');
 Route::view('/contact/', 'contact')->name('contact');
@@ -59,14 +59,8 @@ Route::view('/contact/', 'contact')->name('contact');
 // POS Software (11)
 Route::view('/business-size/', 'business-size')->name('business-size');
 Route::view('/by-industry/', 'by-industry')->name('by-industry');
-Route::view('/custom-pos-software-uae/', 'custom-pos-software-uae')->name('custom-pos-software-uae');
 Route::view('/enterprise-pos-uae/', 'enterprise-pos-uae')->name('enterprise-pos-uae');
-Route::view('/food-restaurant-pos-software-uae/', 'food-restaurant-pos-software-uae')->name('food-restaurant-pos-software-uae');
 Route::view('/multi-branch-business-pos-uae/', 'multi-branch-business-pos-uae')->name('multi-branch-business-pos-uae');
-Route::view('/pos-software-uae/', 'pos-software-uae')->name('pos-software-uae');
-Route::view('/retail-pos-software-uae/', 'retail-pos-software-uae')->name('retail-pos-software-uae');
-Route::view('/salon-spa-pos-software-uae/', 'salon-spa-pos-software-uae')->name('salon-spa-pos-software-uae');
-Route::view('/service-business-pos-software-uae/', 'service-business-pos-software-uae')->name('service-business-pos-software-uae');
 Route::view('/small-business-pos-uae/', 'small-business-pos-uae')->name('small-business-pos-uae');
 
 // POS Features (8)
@@ -125,7 +119,6 @@ Route::view('/gas-station-pos-software/', 'gas-station-pos-software')->name('gas
 Route::view('/gift-store-pos-system-in-the-uae/', 'gift-store-pos-system-in-the-uae')->name('gift-store-pos-system-in-the-uae');
 Route::view('/gold-shop-pos-software/', 'gold-shop-pos-software')->name('gold-shop-pos-software');
 Route::view('/golf-pos-software/', 'golf-pos-software')->name('golf-pos-software');
-Route::view('/grocery-pos-system-in-uae/', 'grocery-pos-system-in-uae')->name('grocery-pos-system-in-uae');
 Route::view('/gym-pos-software/', 'gym-pos-software')->name('gym-pos-software');
 Route::view('/hemp-pos-software/', 'hemp-pos-software')->name('hemp-pos-software');
 Route::view('/hotel-pos-software/', 'hotel-pos-software')->name('hotel-pos-software');
@@ -136,7 +129,6 @@ Route::view('/music-store-pos-point-of-sale-software/', 'music-store-pos-point-o
 Route::view('/nail-salon-pos-software/', 'nail-salon-pos-software')->name('nail-salon-pos-software');
 Route::view('/perfume-shop-pos-software-in-uae/', 'perfume-shop-pos-software-in-uae')->name('perfume-shop-pos-software-in-uae');
 Route::view('/pet-shop-pos-software/', 'pet-shop-pos-software')->name('pet-shop-pos-software');
-Route::view('/pharmacy-pos-system-in-the-uae/', 'pharmacy-pos-system-in-the-uae')->name('pharmacy-pos-system-in-the-uae');
 Route::view('/spa-pos-software-uae/', 'spa-pos-software-uae')->name('spa-pos-software-uae');
 Route::view('/toy-shop-pos-in-uae/', 'toy-shop-pos-in-uae')->name('toy-shop-pos-in-uae');
 Route::view('/van-sales-management-system-in-uae/', 'van-sales-management-system-in-uae')->name('van-sales-management-system-in-uae');
