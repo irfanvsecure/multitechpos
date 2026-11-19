@@ -59,14 +59,6 @@ Route::view('/contact/', 'contact')->name('contact');
 // POS Software (11)
 
 // POS Features (8)
-Route::view('/appointment-booking-pos-uae/', 'appointment-booking-pos-uae')->name('appointment-booking-pos-uae');
-Route::view('/customers/', 'customers')->name('customers');
-Route::view('/features/', 'features')->name('features');
-Route::view('/mobile-multitechpos/', 'mobile-multitechpos')->name('mobile-multitechpos');
-Route::view('/multi-location-integration/', 'multi-location-integration')->name('multi-location-integration');
-Route::view('/paperless-invoicing/', 'paperless-invoicing')->name('paperless-invoicing');
-Route::view('/table-management-pos-uae/', 'table-management-pos-uae')->name('table-management-pos-uae');
-Route::view('/woocommerce-pos/', 'woocommerce-pos')->name('woocommerce-pos');
 
 // Business ERPs (12)
 Route::view('/accounting-software/', 'accounting-software')->name('accounting-software');
