@@ -47,9 +47,9 @@
                 </div>
             @endif
             <ul class="page-hero__trust">
-                <li><i class="fas fa-check-circle"></i> 500+ UAE businesses</li>
+                <li><i class="fas fa-check-circle"></i> {{ setting('stat_businesses') }} UAE businesses</li>
                 <li><i class="fas fa-check-circle"></i> VAT &amp; FTA compliant</li>
-                <li><i class="fas fa-check-circle"></i> 24/7 local support</li>
+                <li><i class="fas fa-check-circle"></i> {{ setting('stat_support') }} local support</li>
             </ul>
         </div>
 

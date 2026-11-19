@@ -13,7 +13,7 @@
         </div>
         <div class="home-cta__actions">
             <a href="{{ $base }}/contact/" class="btn btn--white btn--lg-pad">Request Free Demo <i class="fas fa-arrow-right"></i></a>
-            <a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" class="btn btn--ghost btn--lg-pad" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+            <a href="{{ config('site.whatsapp') }}" class="btn btn--ghost btn--lg-pad" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
         </div>
     </div>
 </section>

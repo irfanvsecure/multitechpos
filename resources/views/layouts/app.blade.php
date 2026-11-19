@@ -6,6 +6,16 @@
     $section = fn ($name, $default = '') => trim(html_entity_decode($__env->yieldContent($name, $default), ENT_QUOTES | ENT_HTML5, 'UTF-8'));
     $pageTitle = $section('title', config('site.name'));
     $pageDescription = $section('description');
+    // SEO overrides saved through the MCP (empty = the defaults below)
+    $canonical = $section('canonical') ?: $pageUrl;
+    if (str_starts_with($canonical, '/')) {
+        $canonical = $siteUrl.$base.$canonical;
+    }
+    $ogTitle = $section('og_title') ?: $pageTitle;
+    $ogDescription = $section('og_description') ?: $pageDescription;
+    $twitterCard = $section('twitter_card') ?: 'summary_large_image';
+    // SITE_NOINDEX (pre-launch) wins over every page's own robots value
+    $robots = \App\Cms\Cms::noindex() ? 'noindex, nofollow' : $section('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     $ogImage = $section('og_image') ?: $base.config('site.logo');
     if (str_starts_with($ogImage, '/')) {
         $ogImage = $siteUrl.$ogImage;
@@ -20,8 +30,8 @@
     @if ($pageDescription)
         <meta name="description" content="{{ $pageDescription }}">
     @endif
-    <meta name="robots" content="@yield('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')">
-    <link rel="canonical" href="{{ $pageUrl }}">
+    <meta name="robots" content="{{ $robots }}">
+    <link rel="canonical" href="{{ $canonical }}">
     @if (config('site.google_site_verification'))
         <meta name="google-site-verification" content="{{ config('site.google_site_verification') }}">
     @endif
@@ -29,16 +39,16 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="@yield('og_type', 'website')">
     <meta property="og:site_name" content="{{ config('site.name') }}">
-    <meta property="og:title" content="{{ $pageTitle }}">
-    @if ($pageDescription)
-        <meta property="og:description" content="{{ $pageDescription }}">
+    <meta property="og:title" content="{{ $ogTitle }}">
+    @if ($ogDescription)
+        <meta property="og:description" content="{{ $ogDescription }}">
     @endif
-    <meta property="og:url" content="{{ $pageUrl }}">
+    <meta property="og:url" content="{{ $canonical }}">
     <meta property="og:image" content="{{ $ogImage }}">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ $pageTitle }}">
-    @if ($pageDescription)
-        <meta name="twitter:description" content="{{ $pageDescription }}">
+    <meta name="twitter:card" content="{{ $twitterCard }}">
+    <meta name="twitter:title" content="{{ $ogTitle }}">
+    @if ($ogDescription)
+        <meta name="twitter:description" content="{{ $ogDescription }}">
     @endif
     <meta name="twitter:image" content="{{ $ogImage }}">
 

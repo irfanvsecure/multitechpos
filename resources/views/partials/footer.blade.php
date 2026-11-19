@@ -7,13 +7,14 @@
             <p>Smart, VAT-compliant POS and ERP solutions for retail, restaurants, salons, pharmacies and growing businesses across the UAE.</p>
             <ul class="footer-badges">
                 <li><i class="fas fa-check-circle"></i> UAE VAT &amp; FTA compliant</li>
-                <li><i class="fas fa-check-circle"></i> 15+ years experience</li>
-                <li><i class="fas fa-check-circle"></i> 24/7 local support</li>
+                <li><i class="fas fa-check-circle"></i> {{ setting('stat_years') }} years experience</li>
+                <li><i class="fas fa-check-circle"></i> {{ setting('stat_support') }} local support</li>
             </ul>
             <div class="footer-social">
-                <a href="https://www.facebook.com/multitechposale/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/multitechpos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                @foreach (\App\Cms\Content::socialLinks() as $social)
+                <a href="{{ $social['url'] }}" target="_blank" rel="noopener" aria-label="{{ $social['label'] }}"><i class="{{ $social['icon'] }}"></i></a>
+                @endforeach
+                <a href="{{ config('site.whatsapp') }}" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
 
@@ -57,9 +58,9 @@
         <div class="footer-col footer-contact">
             <h3>Get in Touch</h3>
             <ul class="footer-links">
-                <li><i class="fas fa-map-marker-alt"></i><span>16 Al Isayfir 2 St - Musaffah - M33 - Abu Dhabi</span></li>
-                <li><i class="fas fa-phone-alt"></i><a href="tel:+971588979925">+971 58 897 9925</a></li>
-                <li><i class="far fa-envelope"></i><a href="mailto:support@multitechpos.com">support@multitechpos.com</a></li>
+                <li><i class="fas fa-map-marker-alt"></i><span>{{ setting('address') }}</span></li>
+                <li><i class="fas fa-phone-alt"></i><a href="tel:{{ config('site.phone') }}">{{ config('site.phone_display') }}</a></li>
+                <li><i class="far fa-envelope"></i><a href="mailto:{{ config('site.email') }}">{{ config('site.email') }}</a></li>
                 <li><i class="far fa-clock"></i><span>Sat – Thu: 9:00 AM – 6:00 PM<br>Friday: Closed</span></li>
             </ul>
             <a href="{{ $base }}/contact/" class="btn btn--primary footer-cta">Book a Free Demo</a>

@@ -47,7 +47,7 @@
         <div class="home-head" data-reveal>
             <span class="tag">How It Works</span>
             <h2>From First Call to <span class="text-gradient">First Sale</span></h2>
-            <p>Our UAE team does the setup, so you can be selling in as little as 48 hours.</p>
+            <p>Our UAE team does the setup, so you can be selling in as little as {{ setting('stat_setup') }}.</p>
         </div>
 
         <ol class="svc-steps__list">

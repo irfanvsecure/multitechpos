@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\LeadController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\RobotsController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -9,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 
 // SEO
 Route::get('/sitemap.xml', SitemapController::class);
+Route::get('/robots.txt', RobotsController::class);
 
 // Demo / quote forms
 Route::post('/request-demo', [LeadController::class, 'store'])
@@ -193,5 +196,9 @@ Route::view('/terms-of-service/', 'terms-of-service')->name('terms-of-service');
 // After a demo / quote form is sent (not indexed by search engines)
 Route::view('/thank-you/', 'thank-you')->name('thank-you');
 
-// Catch-all: any URL not matched above → home (301)
+// Pages and blog posts stored in the database (managed through the MCP server).
+// Unknown paths: a saved redirect / 410, else 301 to the home page (the old catch-all).
+Route::get('/{path}', [PageController::class, 'show'])->where('path', '.*')->name('page');
+
+// Catch-all for other methods: any URL not matched above → home (301)
 Route::fallback(fn () => redirect('/', 301));

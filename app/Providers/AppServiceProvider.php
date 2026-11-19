@@ -20,6 +20,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Contact details, stats ... from the settings table into config('site.*')
+        \App\Cms\Settings::applyToConfig();
+
         // $base (sub-folder prefix) and $current (page path) for every view,
         // so Route::view() pages and error pages get them automatically.
         View::composer('*', function ($view) {

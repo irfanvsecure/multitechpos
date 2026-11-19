@@ -1,9 +1,7 @@
 {{-- Setup builder: business, size and modules in four short steps, then a summary to send --}}
 @php
-    $types = [
-        ['Retail Shop', 'fas fa-shopping-cart'], ['Restaurant / Cafe', 'fas fa-utensils'], ['Supermarket / Grocery', 'fas fa-shopping-basket'],
-        ['Pharmacy', 'fas fa-pills'], ['Salon / Spa', 'fas fa-spa'], ['Other', 'fas fa-store'],
-    ];
+    // option lists: form_options table (business_types, builder_branches, builder_counters)
+    $types = array_map(fn ($b) => [$b['name'], $b['icon'] ?? 'fas fa-store'], \App\Cms\FormOptions::list('business_types'));
     // After a failed submit, read the choices back from the message this form sent (main.js writes it)
     $picked = [];
     if (str_starts_with((string) old('service'), 'Setup builder:')) {
@@ -50,14 +48,14 @@
             <div class="cro-builder__panel" data-step="2" hidden>
                 <p class="cro-builder__q">How many branches?</p>
                 <div class="cro-builder__tiles cro-builder__tiles--3">
-                    @foreach (['1 branch', '2 to 5 branches', '6 or more'] as $v)
-                        <label class="cro-tile cro-tile--sm"><input type="radio" name="b_branches" value="{{ $v }}" @checked($v === ($picked['Branches'] ?? '1 branch'))><span>{{ $v }}</span></label>
+                    @foreach (\App\Cms\FormOptions::values('builder_branches') as $v)
+                        <label class="cro-tile cro-tile--sm"><input type="radio" name="b_branches" value="{{ $v }}" @checked($v === ($picked['Branches'] ?? (\App\Cms\FormOptions::values('builder_branches')[0] ?? '')))><span>{{ $v }}</span></label>
                     @endforeach
                 </div>
                 <p class="cro-builder__q">How many tills or counters per branch?</p>
                 <div class="cro-builder__tiles cro-builder__tiles--3">
-                    @foreach (['1 counter', '2 to 3 counters', '4 or more'] as $v)
-                        <label class="cro-tile cro-tile--sm"><input type="radio" name="b_counters" value="{{ $v }}" @checked($v === ($picked['Counters'] ?? '1 counter'))><span>{{ $v }}</span></label>
+                    @foreach (\App\Cms\FormOptions::values('builder_counters') as $v)
+                        <label class="cro-tile cro-tile--sm"><input type="radio" name="b_counters" value="{{ $v }}" @checked($v === ($picked['Counters'] ?? (\App\Cms\FormOptions::values('builder_counters')[0] ?? '')))><span>{{ $v }}</span></label>
                     @endforeach
                 </div>
             </div>

@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Faq extends Model
+{
+    use SoftDeletes;
+
+    protected $table = 'faqs';
+
+    protected $guarded = ['id'];
+
+    protected $casts = ['is_active' => 'boolean'];
+
+    public function page()
+    {
+        return $this->belongsTo(Page::class);
+    }
+}

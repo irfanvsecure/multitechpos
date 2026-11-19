@@ -3,9 +3,9 @@
     <div class="wrap topbar__inner">
         <p class="topbar__note"><i class="fas fa-shield-alt"></i> UAE VAT &amp; FTA compliant POS &amp; ERP solutions</p>
         <ul class="topbar__links">
-            <li><a href="tel:+971588979925"><i class="fas fa-phone-alt"></i> +971 58 897 9925</a></li>
-            <li><a href="mailto:support@multitechpos.com"><i class="far fa-envelope"></i> support@multitechpos.com</a></li>
-            <li><a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="tel:{{ config('site.phone') }}"><i class="fas fa-phone-alt"></i> {{ config('site.phone_display') }}</a></li>
+            <li><a href="mailto:{{ config('site.email') }}"><i class="far fa-envelope"></i> {{ config('site.email') }}</a></li>
+            <li><a href="{{ config('site.whatsapp') }}" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
         </ul>
     </div>
 </div>
@@ -205,14 +205,14 @@
 
                 <div class="main-nav__cta">
                     <a href="{{ $base }}/contact/" class="btn btn--primary btn--block">Book a Free Demo</a>
-                    <a href="https://wa.me/971588979925?text=Hi%20MultiTech%2C%20I%27d%20like%20a%20free%20POS%20demo" class="btn btn--whatsapp btn--block" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a href="{{ config('site.whatsapp') }}" class="btn btn--whatsapp btn--block" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
                 </div>
             </nav>
 
             <div class="header-actions">
-                <a href="tel:+971588979925" class="header-call">
+                <a href="tel:{{ config('site.phone') }}" class="header-call">
                     <span class="header-call__icon"><i class="fas fa-phone-alt"></i></span>
-                    <span class="header-call__text"><small>Call our experts</small>+971 58 897 9925</span>
+                    <span class="header-call__text"><small>Call our experts</small>{{ config('site.phone_display') }}</span>
                 </a>
                 <a href="{{ $base }}/contact/" class="btn btn--primary header-btn">Book Free Demo</a>
                 <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">

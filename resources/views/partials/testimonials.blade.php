@@ -1,5 +1,5 @@
-{{-- Customer testimonials from config/site.php. Hidden until real reviews are added there. --}}
-@php($testimonials = config('site.testimonials', []))
+{{-- Customer testimonials from the testimonials table. Hidden until real reviews are added there. --}}
+@php($testimonials = \App\Cms\Content::testimonials())
 @if (count($testimonials))
     <section class="home-section home-section--light">
         <div class="wrap">
