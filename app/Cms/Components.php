@@ -40,6 +40,7 @@ class Components
         'testimonials' => ['partials.testimonials', 'Customer testimonials from the testimonials table (hidden while empty).', [], 0, false],
         'contact-next' => ['partials.contact-next', 'Contact page: what happens after the form is sent.', [], 0, false],
         'post-cta' => ['partials.post-cta', 'Call-to-action card used at the end of blog posts.', [], 0, false],
+        'conversion-tracking' => ['cms.components.conversion-tracking', 'Thank-you page only: sends the "generate_lead" conversion to Google Tag Manager / Analytics (nothing visible).', [], 0, false],
         'post-grid' => ['cms.components.post-grid', 'Blog list cards from published posts (newest first).', ['limit' => 'integer, optional (default 6)'], 0, false],
         'quote-form' => ['cms.components.quote-form', '"Get your quote" lead form (CSRF protected). Embed only: place it in an html section with {{embed:N}}. Service options from form_options "quote_service".', [
             'variant' => 'string: "standard" (name, email, phone, company, service, message) or "names" (name + message, used on /pos-software-uae/)',

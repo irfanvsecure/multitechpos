@@ -67,15 +67,8 @@ Route::get('/', function (\Illuminate\Http\Request $request) {
 // Blog (42)
 
 // Legal & help (6)
-Route::view('/cookie-policy/', 'cookie-policy')->name('cookie-policy');
-Route::view('/frequently-asked-questions-multitech-pos/', 'frequently-asked-questions-multitech-pos')->name('frequently-asked-questions-multitech-pos');
-Route::view('/privacy-policy/', 'privacy-policy')->name('privacy-policy');
-Route::view('/security-policy/', 'security-policy')->name('security-policy');
-Route::view('/support-policy/', 'support-policy')->name('support-policy');
-Route::view('/terms-of-service/', 'terms-of-service')->name('terms-of-service');
 
 // After a demo / quote form is sent (not indexed by search engines)
-Route::view('/thank-you/', 'thank-you')->name('thank-you');
 
 // Pages and blog posts stored in the database (managed through the MCP server).
 // Unknown paths: a saved redirect / 410, else 301 to the home page (the old catch-all).

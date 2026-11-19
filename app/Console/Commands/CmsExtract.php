@@ -108,7 +108,8 @@ class CmsExtract extends Command
     {
         $group = 'Company';
         $routes = [['slug' => '', 'view' => 'index', 'group' => 'Company']];
-        foreach (file(base_path('routes/web.php')) as $line) {
+        // the Route::view list as it was before the move to the database
+        foreach (file(base_path('database/content/legacy-routes.php.txt')) as $line) {
             if (preg_match('#^// (.+?) \(\d+\)#', trim($line), $m)) {
                 $group = $m[1];
             }
@@ -390,6 +391,10 @@ class CmsExtract extends Command
             }
             unset($s);
         }
+        // conversion script pushed from outside the content section (thank-you page)
+        if (str_contains($src, "@push('scripts')") && str_contains($src, 'generate_lead')) {
+            $sections[] = ['type' => 'component', 'component' => 'conversion-tracking', 'attrs' => null, 'key' => 'conversion-tracking', 'sort_order' => count($sections)];
+        }
         if (isset(self::DOWNLOADS[$slug])) {
             $this->downloadPlaceholders($slug, $sections);
         }
@@ -661,7 +666,7 @@ class CmsExtract extends Command
 
     private function clientLogos(): array
     {
-        $src = File::get(resource_path('views/partials/clients-band.blade.php'));
+        $src = File::get(base_path('database/content/legacy-clients-band.blade.php.txt')); // the partial before logos moved to the DB
         preg_match_all("/\['([a-z-]+)', '([^']+)'\]/", $src, $m, PREG_SET_ORDER);
 
         return collect($m)->values()->map(fn ($x, $i) => [
