@@ -57,11 +57,7 @@ Route::view('/about-us/', 'about-us')->name('about-us');
 Route::view('/contact/', 'contact')->name('contact');
 
 // POS Software (11)
-Route::view('/business-size/', 'business-size')->name('business-size');
 Route::view('/by-industry/', 'by-industry')->name('by-industry');
-Route::view('/enterprise-pos-uae/', 'enterprise-pos-uae')->name('enterprise-pos-uae');
-Route::view('/multi-branch-business-pos-uae/', 'multi-branch-business-pos-uae')->name('multi-branch-business-pos-uae');
-Route::view('/small-business-pos-uae/', 'small-business-pos-uae')->name('small-business-pos-uae');
 
 // POS Features (8)
 Route::view('/appointment-booking-pos-uae/', 'appointment-booking-pos-uae')->name('appointment-booking-pos-uae');
