@@ -1,0 +1,1640 @@
+[
+    {
+        "from_path": "/author/mark/",
+        "to_url": "/our-blogs/",
+        "status_code": 301,
+        "note": "WordPress: old WP author with no posts on the new site \u2192 blog (confirm)"
+    },
+    {
+        "from_path": "/clients/",
+        "to_url": "/about-us/",
+        "status_code": 301,
+        "note": "WordPress: old client list \u2192 about us (confirm)"
+    },
+    {
+        "from_path": "/download/laundrypro/",
+        "to_url": "/laundrypro/",
+        "status_code": 301,
+        "note": "WordPress: WP Download Manager file page \u2192 product page"
+    },
+    {
+        "from_path": "/download/multitechpos-retailpro/",
+        "to_url": "/downloads/",
+        "status_code": 301,
+        "note": "WordPress: RetailPro has no page any more \u2192 downloads hub (confirm)"
+    },
+    {
+        "from_path": "/download/salonpro/",
+        "to_url": "/salonpro/",
+        "status_code": 301,
+        "note": "WordPress: WP Download Manager file page \u2192 product page"
+    },
+    {
+        "from_path": "/download/tailorpro/",
+        "to_url": "/tailorpro/",
+        "status_code": 301,
+        "note": "WordPress: WP Download Manager file page \u2192 product page"
+    },
+    {
+        "from_path": "/home/feed/",
+        "to_url": "/our-blogs/",
+        "status_code": 301,
+        "note": "WordPress: WP feed"
+    },
+    {
+        "from_path": "/image/video/about-us-video.webm",
+        "to_url": null,
+        "status_code": 410,
+        "note": "WordPress: old theme video, file no longer exists"
+    },
+    {
+        "from_path": "/login/",
+        "to_url": null,
+        "status_code": 410,
+        "note": "WordPress: old WooCommerce account page, no equivalent"
+    },
+    {
+        "from_path": "/my-account/",
+        "to_url": null,
+        "status_code": 410,
+        "note": "WordPress: old WooCommerce account page, no equivalent"
+    },
+    {
+        "from_path": "/one-time-pricing/",
+        "to_url": "/contact/",
+        "status_code": 301,
+        "note": "WordPress: old price list \u2192 quote request (the site shows no prices; confirm)"
+    },
+    {
+        "from_path": "/portfolio-types/international/",
+        "to_url": "/about-us/",
+        "status_code": 301,
+        "note": "WordPress: old client portfolio \u2192 about us (confirm)"
+    },
+    {
+        "from_path": "/portfolio-types/national/",
+        "to_url": "/about-us/",
+        "status_code": 301,
+        "note": "WordPress: old client portfolio \u2192 about us (confirm)"
+    },
+    {
+        "from_path": "/pricing-laundrypro/",
+        "to_url": "/laundrypro/",
+        "status_code": 301,
+        "note": "WordPress: old price page \u2192 product page (the site shows no prices)"
+    },
+    {
+        "from_path": "/pricing-restropro/",
+        "to_url": "/restropro/",
+        "status_code": 301,
+        "note": "WordPress: old price page \u2192 product page (the site shows no prices)"
+    },
+    {
+        "from_path": "/pricing-salonpro/",
+        "to_url": "/salonpro/",
+        "status_code": 301,
+        "note": "WordPress: old price page \u2192 product page (the site shows no prices)"
+    },
+    {
+        "from_path": "/pricing-tailorpro/",
+        "to_url": "/tailorpro/",
+        "status_code": 301,
+        "note": "WordPress: old price page \u2192 product page (the site shows no prices)"
+    },
+    {
+        "from_path": "/pricing/",
+        "to_url": "/contact/",
+        "status_code": 301,
+        "note": "WordPress: old price list \u2192 quote request (the site shows no prices; confirm)"
+    },
+    {
+        "from_path": "/register/",
+        "to_url": null,
+        "status_code": 410,
+        "note": "WordPress: old WooCommerce account page, no equivalent"
+    },
+    {
+        "from_path": "/reseller/",
+        "to_url": "/contact/",
+        "status_code": 301,
+        "note": "WordPress: old page \u2192 closest page (confirm)"
+    },
+    {
+        "from_path": "/restorantpro/",
+        "to_url": "/restropro/",
+        "status_code": 301,
+        "note": "WordPress: old misspelt RestroPro page \u2192 RestroPro"
+    },
+    {
+        "from_path": "/support/",
+        "to_url": "/support-policy/",
+        "status_code": 301,
+        "note": "WordPress: old page \u2192 closest page (confirm)"
+    },
+    {
+        "from_path": "/trackback/",
+        "to_url": null,
+        "status_code": 410,
+        "note": "WordPress: WP trackback endpoint, no content"
+    },
+    {
+        "from_path": "/vendors/linear-icon/fonts/Linearicons-Free.eot",
+        "to_url": null,
+        "status_code": 410,
+        "note": "WordPress: old theme font"
+    },
+    {
+        "from_path": "/vendors/themify-icon/fonts/themify.eot",
+        "to_url": null,
+        "status_code": 410,
+        "note": "WordPress: old theme font"
+    },
+    {
+        "from_path": "/?p=4414",
+        "to_url": "/about-us/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4414",
+        "to_url": "/about-us/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1181",
+        "to_url": "/accounting-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1181",
+        "to_url": "/accounting-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=612",
+        "to_url": "/appointment-booking-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=612",
+        "to_url": "/appointment-booking-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3023",
+        "to_url": "/bakery-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3023",
+        "to_url": "/bakery-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3099",
+        "to_url": "/barber-shop-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3099",
+        "to_url": "/barber-shop-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6564",
+        "to_url": "/beauty-clinic-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6564",
+        "to_url": "/beauty-clinic-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4641",
+        "to_url": "/best-point-of-sale-system-for-salons-spas-2026/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4641",
+        "to_url": "/best-point-of-sale-system-for-salons-spas-2026/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3199",
+        "to_url": "/bike-shop-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3199",
+        "to_url": "/bike-shop-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3219",
+        "to_url": "/book-store-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3219",
+        "to_url": "/book-store-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4970",
+        "to_url": "/business-erps/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4970",
+        "to_url": "/business-erps/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=5917",
+        "to_url": "/business-size/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=5917",
+        "to_url": "/business-size/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=5886",
+        "to_url": "/by-industry/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=5886",
+        "to_url": "/by-industry/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3254",
+        "to_url": "/cafeteria-pos-software-systems/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3254",
+        "to_url": "/cafeteria-pos-software-systems/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3125",
+        "to_url": "/car-wash-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3125",
+        "to_url": "/car-wash-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1373",
+        "to_url": "/chocolate-shop-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1373",
+        "to_url": "/chocolate-shop-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=5993",
+        "to_url": "/choosing-restaurant-pos-software-uae-guide/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=5993",
+        "to_url": "/choosing-restaurant-pos-software-uae-guide/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6930",
+        "to_url": "/cloud-vs-on-premise-restaurant-pos-uae-guide/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6930",
+        "to_url": "/cloud-vs-on-premise-restaurant-pos-uae-guide/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4791",
+        "to_url": "/cloud-vs-traditional-pos-for-salons/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4791",
+        "to_url": "/cloud-vs-traditional-pos-for-salons/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6543",
+        "to_url": "/coffee-shop-pos-system-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6543",
+        "to_url": "/coffee-shop-pos-system-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=389",
+        "to_url": "/contact/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=389",
+        "to_url": "/contact/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6472",
+        "to_url": "/cookie-policy/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6472",
+        "to_url": "/cookie-policy/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=327",
+        "to_url": "/custom-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=327",
+        "to_url": "/custom-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=555",
+        "to_url": "/customers/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=555",
+        "to_url": "/customers/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1380",
+        "to_url": "/dates-shop-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1380",
+        "to_url": "/dates-shop-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3288",
+        "to_url": "/delivery-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3288",
+        "to_url": "/delivery-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3319",
+        "to_url": "/digital-dining-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3319",
+        "to_url": "/digital-dining-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3356",
+        "to_url": "/dispensary-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3356",
+        "to_url": "/dispensary-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1112",
+        "to_url": "/distribution-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1112",
+        "to_url": "/distribution-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4959",
+        "to_url": "/downloads/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4959",
+        "to_url": "/downloads/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=932",
+        "to_url": "/employee-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=932",
+        "to_url": "/employee-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1709",
+        "to_url": "/enterprise-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1709",
+        "to_url": "/enterprise-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6916",
+        "to_url": "/essential-restaurant-pos-features/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6916",
+        "to_url": "/essential-restaurant-pos-features/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1208",
+        "to_url": "/fashion-pos-system-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1208",
+        "to_url": "/fashion-pos-system-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3380",
+        "to_url": "/fast-food-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3380",
+        "to_url": "/fast-food-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=385",
+        "to_url": "/features/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=385",
+        "to_url": "/features/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7009",
+        "to_url": "/florists-manage-multiple-locations-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7009",
+        "to_url": "/florists-manage-multiple-locations-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1390",
+        "to_url": "/flower-shop-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1390",
+        "to_url": "/flower-shop-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=192",
+        "to_url": "/food-restaurant-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=192",
+        "to_url": "/food-restaurant-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3425",
+        "to_url": "/food-truck-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3425",
+        "to_url": "/food-truck-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6969",
+        "to_url": "/footwear-pos-system-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6969",
+        "to_url": "/footwear-pos-system-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6483",
+        "to_url": "/frequently-asked-questions-multitech-pos/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6483",
+        "to_url": "/frequently-asked-questions-multitech-pos/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3450",
+        "to_url": "/furniture-store-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3450",
+        "to_url": "/furniture-store-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3464",
+        "to_url": "/gaming-store-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3464",
+        "to_url": "/gaming-store-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4094",
+        "to_url": "/gas-station-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4094",
+        "to_url": "/gas-station-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1393",
+        "to_url": "/gift-store-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1393",
+        "to_url": "/gift-store-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7192",
+        "to_url": "/gold-jewelry-pricing-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7192",
+        "to_url": "/gold-jewelry-pricing-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4255",
+        "to_url": "/gold-shop-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4255",
+        "to_url": "/gold-shop-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4136",
+        "to_url": "/golf-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4136",
+        "to_url": "/golf-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1307",
+        "to_url": "/grocery-pos-system-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1307",
+        "to_url": "/grocery-pos-system-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7070",
+        "to_url": "/gym-membership-management-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7070",
+        "to_url": "/gym-membership-management-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3148",
+        "to_url": "/gym-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3148",
+        "to_url": "/gym-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4155",
+        "to_url": "/hemp-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4155",
+        "to_url": "/hemp-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1057",
+        "to_url": "/hospital-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1057",
+        "to_url": "/hospital-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3175",
+        "to_url": "/hotel-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3175",
+        "to_url": "/hotel-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7084",
+        "to_url": "/how-click-and-collect-works/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7084",
+        "to_url": "/how-click-and-collect-works/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6913",
+        "to_url": "/how-mobile-pos-simplifies-salon-operations/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6913",
+        "to_url": "/how-mobile-pos-simplifies-salon-operations/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7012",
+        "to_url": "/how-pos-software-manages-car-wash-inventory/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7012",
+        "to_url": "/how-pos-software-manages-car-wash-inventory/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4649",
+        "to_url": "/how-to-choose-a-point-of-sale-system-for-your-beauty-business/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4649",
+        "to_url": "/how-to-choose-a-point-of-sale-system-for-your-beauty-business/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6998",
+        "to_url": "/how-to-choose-flower-shop-pos-uae-guide/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6998",
+        "to_url": "/how-to-choose-flower-shop-pos-uae-guide/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1260",
+        "to_url": "/jewelry-pos-system-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1260",
+        "to_url": "/jewelry-pos-system-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1019",
+        "to_url": "/laundry-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1019",
+        "to_url": "/laundry-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1763",
+        "to_url": "/laundrypro/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1763",
+        "to_url": "/laundrypro/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3188",
+        "to_url": "/medical-spa-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3188",
+        "to_url": "/medical-spa-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=725",
+        "to_url": "/mobile-multitechpos/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=725",
+        "to_url": "/mobile-multitechpos/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=5083",
+        "to_url": "/more-pos-industries/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=5083",
+        "to_url": "/more-pos-industries/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1706",
+        "to_url": "/multi-branch-business-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1706",
+        "to_url": "/multi-branch-business-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=487",
+        "to_url": "/multi-location-integration/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=487",
+        "to_url": "/multi-location-integration/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4190",
+        "to_url": "/music-store-pos-point-of-sale-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4190",
+        "to_url": "/music-store-pos-point-of-sale-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3054",
+        "to_url": "/nail-salon-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3054",
+        "to_url": "/nail-salon-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7108",
+        "to_url": "/one-customer-two-records/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7108",
+        "to_url": "/one-customer-two-records/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4676",
+        "to_url": "/our-blogs/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4676",
+        "to_url": "/our-blogs/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1712",
+        "to_url": "/paperless-invoicing/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1712",
+        "to_url": "/paperless-invoicing/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1145",
+        "to_url": "/payroll-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1145",
+        "to_url": "/payroll-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4599",
+        "to_url": "/perfume-shop-pos-software-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4599",
+        "to_url": "/perfume-shop-pos-software-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4234",
+        "to_url": "/pet-shop-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4234",
+        "to_url": "/pet-shop-pos-software/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7191",
+        "to_url": "/pharmacy-expiry-date-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7191",
+        "to_url": "/pharmacy-expiry-date-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1396",
+        "to_url": "/pharmacy-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1396",
+        "to_url": "/pharmacy-pos-system-in-the-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=15",
+        "to_url": "/pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=15",
+        "to_url": "/pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7024",
+        "to_url": "/pos-system-transforms-car-wash-operations-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7024",
+        "to_url": "/pos-system-transforms-car-wash-operations-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=3",
+        "to_url": "/privacy-policy/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=3",
+        "to_url": "/privacy-policy/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7043",
+        "to_url": "/restaurant-delivery-app-integration-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7043",
+        "to_url": "/restaurant-delivery-app-integration-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=823",
+        "to_url": "/restaurant-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=823",
+        "to_url": "/restaurant-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7176",
+        "to_url": "/restaurant-menu-engineering-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7176",
+        "to_url": "/restaurant-menu-engineering-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6919",
+        "to_url": "/restaurant-pos-buying-guide-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6919",
+        "to_url": "/restaurant-pos-buying-guide-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7029",
+        "to_url": "/restaurant-pos-cuts-food-costs-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7029",
+        "to_url": "/restaurant-pos-cuts-food-costs-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1757",
+        "to_url": "/restropro/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1757",
+        "to_url": "/restropro/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7051",
+        "to_url": "/retail-inventory-shrinkage-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7051",
+        "to_url": "/retail-inventory-shrinkage-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=906",
+        "to_url": "/retail-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=906",
+        "to_url": "/retail-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=40",
+        "to_url": "/retail-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=40",
+        "to_url": "/retail-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4660",
+        "to_url": "/salon-appointment-management-reduce-no-shows-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4660",
+        "to_url": "/salon-appointment-management-reduce-no-shows-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4654",
+        "to_url": "/salon-management-software-features-uae-2026/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4654",
+        "to_url": "/salon-management-software-features-uae-2026/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=946",
+        "to_url": "/salon-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=946",
+        "to_url": "/salon-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7034",
+        "to_url": "/salon-pos-reduces-no-shows-client-loyalty-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7034",
+        "to_url": "/salon-pos-reduces-no-shows-client-loyalty-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=4836",
+        "to_url": "/salon-pos-systems-uae-increase-revenue/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=4836",
+        "to_url": "/salon-pos-systems-uae-increase-revenue/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=146",
+        "to_url": "/salon-spa-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=146",
+        "to_url": "/salon-spa-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1760",
+        "to_url": "/salonpro/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1760",
+        "to_url": "/salonpro/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6474",
+        "to_url": "/security-policy/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6474",
+        "to_url": "/security-policy/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=254",
+        "to_url": "/service-business-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=254",
+        "to_url": "/service-business-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7002",
+        "to_url": "/signs-upgrade-car-wash-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7002",
+        "to_url": "/signs-upgrade-car-wash-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1653",
+        "to_url": "/small-business-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1653",
+        "to_url": "/small-business-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6487",
+        "to_url": "/spa-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6487",
+        "to_url": "/spa-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=804",
+        "to_url": "/stock-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=804",
+        "to_url": "/stock-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6481",
+        "to_url": "/support-policy/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6481",
+        "to_url": "/support-policy/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=667",
+        "to_url": "/table-management-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=667",
+        "to_url": "/table-management-pos-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=974",
+        "to_url": "/tailor-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=974",
+        "to_url": "/tailor-management/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1766",
+        "to_url": "/tailorpro/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1766",
+        "to_url": "/tailorpro/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6485",
+        "to_url": "/terms-of-service/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6485",
+        "to_url": "/terms-of-service/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6932",
+        "to_url": "/toy-shop-pos-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6932",
+        "to_url": "/toy-shop-pos-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7188",
+        "to_url": "/uae-e-invoicing-for-distributors/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7188",
+        "to_url": "/uae-e-invoicing-for-distributors/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7157",
+        "to_url": "/uae-e-invoicing-guide-for-retailers/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7157",
+        "to_url": "/uae-e-invoicing-guide-for-retailers/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=1363",
+        "to_url": "/van-sales-management-system-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=1363",
+        "to_url": "/van-sales-management-system-in-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7005",
+        "to_url": "/van-sales-pos-software-buying-guide-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7005",
+        "to_url": "/van-sales-pos-software-buying-guide-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=5849",
+        "to_url": "/vat-compliant-pos-software-uae-salons/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=5849",
+        "to_url": "/vat-compliant-pos-software-uae-salons/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7007",
+        "to_url": "/what-is-beauty-clinic-pos-system/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7007",
+        "to_url": "/what-is-beauty-clinic-pos-system/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6541",
+        "to_url": "/what-is-restaurant-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6541",
+        "to_url": "/what-is-restaurant-pos-software-uae/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7164",
+        "to_url": "/what-makes-a-tax-invoice-valid/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7164",
+        "to_url": "/what-makes-a-tax-invoice-valid/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7099",
+        "to_url": "/when-online-orders-come-back-to-the-store/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7099",
+        "to_url": "/when-online-orders-come-back-to-the-store/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=6255",
+        "to_url": "/why-salon-inventory-management-matters/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=6255",
+        "to_url": "/why-salon-inventory-management-matters/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7092",
+        "to_url": "/why-store-and-online-prices-drift/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7092",
+        "to_url": "/why-store-and-online-prices-drift/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7116",
+        "to_url": "/why-your-daily-totals-do-not-match/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7116",
+        "to_url": "/why-your-daily-totals-do-not-match/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7064",
+        "to_url": "/woocommerce-integration-for-uae-retailers-how-multitech-pos-keeps-every-sale-in-sync/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7064",
+        "to_url": "/woocommerce-integration-for-uae-retailers-how-multitech-pos-keeps-every-sale-in-sync/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7076",
+        "to_url": "/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7076",
+        "to_url": "/woocommerce-inventory-sync-how-variations-bundles-and-multi-branch-stock-actually-work/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=753",
+        "to_url": "/woocommerce-pos/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=753",
+        "to_url": "/woocommerce-pos/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?p=7134",
+        "to_url": "/your-pos-data-is-not-web-ready/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    },
+    {
+        "from_path": "/?page_id=7134",
+        "to_url": "/your-pos-data-is-not-web-ready/",
+        "status_code": 301,
+        "note": "WordPress short link"
+    }
+]

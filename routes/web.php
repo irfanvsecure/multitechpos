@@ -51,6 +51,15 @@ Route::get('/', function (\Illuminate\Http\Request $request) {
     if (str_starts_with($request->server('QUERY_STRING', ''), 'item')) {
         return redirect('/', 301);
     }
+    // WordPress short links /?p=123 and /?page_id=123 (rows in the redirects table)
+    foreach (['p', 'page_id'] as $key) {
+        if (ctype_digit((string) $request->query($key))) {
+            $redirect = \App\Models\Redirect::query()->where('from_path', '/?'.$key.'='.$request->query($key))->first();
+            if ($redirect && $redirect->to_url) {
+                return new RedirectResponse($request->getSchemeAndHttpHost().$request->getBaseUrl().$redirect->to_url, 301);
+            }
+        }
+    }
     return app(PageController::class)->show($request, '');
 })->name('home');
 
