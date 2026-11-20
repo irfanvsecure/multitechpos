@@ -19,7 +19,7 @@
         </div>
 
         <div class="footer-col">
-            <h3>POS Software</h3>
+            <p class="footer-title">POS Software</p>
             <ul class="footer-links">
                 <li><a href="{{ $base }}/retail-pos-software-uae/">Retail POS</a></li>
                 <li><a href="{{ $base }}/food-restaurant-pos-software-uae/">Restaurant POS</a></li>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="footer-col">
-            <h3>Industries</h3>
+            <p class="footer-title">Industries</p>
             <ul class="footer-links">
                 <li><a href="{{ $base }}/grocery-pos-system-in-uae/">Grocery &amp; Supermarket</a></li>
                 <li><a href="{{ $base }}/pharmacy-pos-system-in-the-uae/">Pharmacy POS</a></li>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="footer-col">
-            <h3>Company</h3>
+            <p class="footer-title">Company</p>
             <ul class="footer-links">
                 <li><a href="{{ $base }}/about-us/">About Us</a></li>
                 <li><a href="{{ $base }}/features/">POS Features</a></li>
@@ -56,7 +56,7 @@
         </div>
 
         <div class="footer-col footer-contact">
-            <h3>Get in Touch</h3>
+            <p class="footer-title">Get in Touch</p>
             <ul class="footer-links">
                 <li><i class="fas fa-map-marker-alt"></i><span>{{ setting('address') }}</span></li>
                 <li><i class="fas fa-phone-alt"></i><a href="tel:{{ config('site.phone') }}">{{ config('site.phone_display') }}</a></li>

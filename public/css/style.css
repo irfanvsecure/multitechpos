@@ -931,7 +931,7 @@ ul {
     background: var(--blue);
 }
 
-.footer-col h3 {
+.footer-col .footer-title {
     position: relative;
     margin-bottom: 18px;
     padding-bottom: 12px;
@@ -940,7 +940,7 @@ ul {
     color: #fff;
 }
 
-.footer-col h3::after {
+.footer-col .footer-title::after {
     content: '';
     position: absolute;
     left: 0;
