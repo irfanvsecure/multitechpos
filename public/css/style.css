@@ -6744,10 +6744,11 @@ main > .section--dark::after {
     transform: scale(1.1) rotate(-6deg);
 }
 
-.svc-steps__item h3 {
+.svc-steps__item .svc-steps__title {
     margin-bottom: 8px;
     font-size: 19px;
     font-weight: 800;
+    line-height: inherit;
     color: var(--ink);
 }
 

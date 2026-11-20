@@ -53,22 +53,22 @@
         <ol class="svc-steps__list">
             <li class="svc-steps__item" data-reveal>
                 <span class="svc-steps__dot">1</span>
-                <h3>Free demo</h3>
+                <p class="svc-steps__title">Free demo</p>
                 <p>Call, WhatsApp or fill in the form. We learn how you work and show you the system set up for your business.</p>
             </li>
             <li class="svc-steps__item" data-reveal>
                 <span class="svc-steps__dot">2</span>
-                <h3>Setup &amp; data move</h3>
+                <p class="svc-steps__title">Setup &amp; data move</p>
                 <p>We configure your products, VAT and devices, and move your data from spreadsheets or your old POS.</p>
             </li>
             <li class="svc-steps__item" data-reveal>
                 <span class="svc-steps__dot">3</span>
-                <h3>Staff training</h3>
+                <p class="svc-steps__title">Staff training</p>
                 <p>Hands-on training for cashiers and managers, so your team is confident from day one.</p>
             </li>
             <li class="svc-steps__item" data-reveal>
                 <span class="svc-steps__dot">4</span>
-                <h3>Sell &amp; grow</h3>
+                <p class="svc-steps__title">Sell &amp; grow</p>
                 <p>Track sales and stock in real time and add branches or modules whenever you need them.</p>
             </li>
         </ol>
