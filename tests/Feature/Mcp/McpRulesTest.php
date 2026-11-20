@@ -60,7 +60,7 @@ class McpRulesTest extends McpTestCase
         }
 
         $tools = $this->rpc('tools/list')->json('result.tools');
-        $this->assertCount(112, $tools);
+        $this->assertCount(114, $tools);
         $byName = collect($tools)->keyBy('name');
         foreach ($tools as $t) {
             $this->assertArrayHasKey('readOnlyHint', $t['annotations']);
@@ -239,6 +239,23 @@ class McpRulesTest extends McpTestCase
         $settings = $this->ok('get_settings');
         $this->refused('update_settings', ['values' => ['SITE_NOINDEX' => 'false'], 'expected_updated_at' => $settings['settings_updated_at']], 'Unknown setting');
         $this->refused('update_settings', ['values' => ['lead_email' => 'x@example.com'], 'expected_updated_at' => $settings['settings_updated_at']], 'Unknown setting');
+    }
+
+    public function test_upload_link_takes_only_images_and_expires(): void
+    {
+        $link = $this->ok('create_image_upload_link', ['purpose' => 'Test', 'alt' => 'A test image of a shop']);
+        $path = parse_url($link['upload_url'], PHP_URL_PATH);
+        $exe = \Illuminate\Http\UploadedFile::fake()->createWithContent('photo.png', "MZ\x90\x00 fake exe");
+        $this->post($path, ['images' => [$exe]])->assertStatus(422)->assertSee('executable or archive');
+        $svg = \Illuminate\Http\UploadedFile::fake()->createWithContent('x.png', '<svg xmlns="http://www.w3.org/2000/svg"><script>alert(1)</script></svg>');
+        $this->post($path, ['images' => [$svg]])->assertStatus(422)->assertSee('Only JPEG');
+        $this->post($path, [])->assertStatus(422)->assertSee('Choose an image');
+        $this->assertSame('waiting', $this->ok('get_image_upload_link', ['link_id' => $link['link_id']])['status']);
+
+        \App\Models\UploadLink::query()->whereKey($link['link_id'])->update(['expires_at' => now()->subMinute()]);
+        $this->get($path)->assertStatus(410)->assertSee('expired');
+        $this->assertSame('expired', $this->ok('get_image_upload_link', ['link_id' => $link['link_id']])['status']);
+        $this->assertStringContainsString('create_image_upload_link', $this->rpc('initialize', ['protocolVersion' => '2025-06-18', 'capabilities' => (object) [], 'clientInfo' => ['name' => 't', 'version' => '1']])->json('result.instructions'));
     }
 
     public function test_executables_and_archives_are_never_uploaded(): void

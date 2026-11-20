@@ -109,6 +109,27 @@ class Images
         return ['width' => $info[0], 'height' => $info[1], 'ext' => $types[$info[2]], 'mime' => $info['mime']];
     }
 
+    /** Full upload: check, store (WebP + variants), add to the media library, log. Used by upload_image and the upload page. */
+    public static function create(string $bytes, string $alt, ?string $filename = null, ?string $title = null): \App\Models\Media
+    {
+        $alt = trim(strip_tags($alt));
+        if (mb_strlen($alt) < 5) {
+            throw new ToolError('alt must describe the image (at least 5 characters).');
+        }
+        if ($filename !== null && $filename !== '') {
+            Validate::notExecutable($filename);
+        }
+        $info = self::inspect($bytes);
+        $stored = self::store($bytes, $info, self::slugName($filename ?: $alt));
+        $media = \App\Models\Media::query()->create($stored + [
+            'filename' => basename($stored['path']), 'mime' => 'image/webp', 'alt' => mb_substr($alt, 0, 250),
+            'title' => $title !== null ? strip_tags($title) : null,
+        ]);
+        Activity::log('create', $media, null, \App\Mcp\Tools\ImageTools::out($media), 'image '.$media->path);
+
+        return $media;
+    }
+
     public static function slugName(string $name): string
     {
         $stem = Str::slug(pathinfo($name, PATHINFO_FILENAME)) ?: 'image';

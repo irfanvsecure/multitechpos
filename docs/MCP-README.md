@@ -1,7 +1,7 @@
 # MultiTech POS website: content database + MCP server
 
 The whole public site (93 pages, 34 blog posts) now comes from the database. Claude can
-manage it A to Z through a remote **MCP server** built into this Laravel app (112 tools).
+manage it A to Z through a remote **MCP server** built into this Laravel app (114 tools).
 The design, HTML, CSS and JS are unchanged: all 140 public URLs rendered identically before
 and after the move (`docs/diff/`).
 
@@ -137,11 +137,11 @@ stay as Blade code. Their contact details, stats, logos and option lists come fr
 **`storage/app/convert-tool/tool/gen.mjs` no longer affects the site.** The database is the
 source of truth now.
 
-## 6. Tools (112): 42 read-only, 70 write/delete
+## 6. Tools (114): 43 read-only, 71 write/delete
 
 ⚠ = destructive (soft delete to the trash, except `purge_item`).
 
-| Group | Read-only (42) | Write / delete (70: 53 write, 17 delete) |
+| Group | Read-only (43) | Write / delete (71: 54 write, 17 delete) |
 |---|---|---|
 | Site | `get_site_info`, `get_settings`, `list_components`, `activity_log`, `audit_performance` | `update_settings`, `clear_cache` |
 | Pages & sections | `list_pages`, `get_page`, `get_page_sections`, `list_section_revisions`, `search_content` | `create_page`, `update_page`, `add_page_section`, `update_page_section`, `reorder_page_sections`, `toggle_section_visibility`, `restore_section_revision`, `replace_text` (dry run by default), `delete_page ⚠`, `delete_page_section ⚠` |
@@ -151,7 +151,7 @@ source of truth now.
 | Schema | `get_schema` | `update_schema`, `generate_schema`, `delete_schema ⚠` |
 | Redirects & indexing | `list_redirects`, `validate_sitemap_robots` | `save_redirect`, `update_robots`, `delete_redirect ⚠` |
 | Blog | `list_blogs`, `get_blog`, `list_stale_posts`, `list_categories`, `list_tags` | `create_blog`, `update_blog`, `publish_blog`, `unpublish_blog`, `schedule_blog`, `create_category`, `update_category`, `create_tag`, `update_tag`, `merge_tags`, `set_blog_taxonomies`, `delete_blog ⚠`, `delete_category ⚠`, `delete_tag ⚠` |
-| Images | `list_images`, `audit_images` | `upload_image`, `update_image`, `replace_image`, `bulk_update_alt`, `delete_image ⚠` |
+| Images | `list_images`, `audit_images`, `get_image_upload_link` | `create_image_upload_link`, `upload_image`, `update_image`, `replace_image`, `bulk_update_alt`, `delete_image ⚠` |
 | Business content | `list_faqs`, `list_testimonials`, `list_client_logos`, `list_hardware_items`, `list_pricing_plans`, `list_downloads`, `list_offices`, `list_form_options` | `create_/update_` + `delete_ ⚠` for faq, testimonial, client_logo, hardware_item, pricing_plan, download, office, form_option |
 | Leads | `list_enquiries` (read-only) | – |
 | Trash | `list_trash` | `restore_item`, `purge_item ⚠` (needs `confirm=true`) |
@@ -162,6 +162,23 @@ classes, inline styles, SVG, `data-*`, `aria-*` and Alpine attributes kept, and 
 existing sections and posts pass through it byte-identical), unique lowercase slugs, auto-301
 on slug change, no AggregateRating/Review schema, no price without `owner_provided_price`, no
 testimonial without `provided_by_owner`.
+
+### Images from the chat (upload link)
+
+Claude on claude.ai cannot pass an image shared in the chat to the server: `upload_image`
+only takes an https URL or base64, and typing out base64 by hand is not reliable. So:
+
+1. Claude calls `create_image_upload_link` and gives you a link such as
+   `https://multitechpos.com/mcp/upload/<43-character token>` (one-time, 1-10 images, 60 minutes by default).
+2. You open it (on a computer or a phone), choose the image, check the alt text and press **Upload**.
+   The image goes into the media library the same way as `upload_image` (WebP + 480/800/1200 versions).
+3. You tell Claude "uploaded". Claude calls `get_image_upload_link`, gets the new path and puts the image
+   on the page (`replace_image` or `update_page_section`).
+
+The token in the link is the only check, so the page takes images only (JPEG/PNG/GIF/WebP, never SVG,
+installers or archives), only as many as the link allows, and stops working when it expires or is used up.
+It sends `noindex` and `no-store`, and every upload is in `activity_log` (tool `upload_page`). The server's
+PHP `upload_max_filesize` / `post_max_size` limit the file size (15 MB at most).
 
 ## 7. Old WordPress URLs
 
@@ -206,4 +223,4 @@ testimonial without `provided_by_owner`.
 | `php artisan cms:extract` | One-off used for the move (read the Blade pages into `site.json`). It no longer works now that the Blade page files are gone. |
 | `php artisan cms:seo-carryover` | One-off: WordPress URL map, redirects, meta differences |
 | `php artisan site:snapshot <dir>` / `site:diff <a> <b>` | Save every public URL and compare two saves (used for the refactor diffs) |
-| `php artisan test` | 29 tests, 2,263 assertions (all 112 tools, auth, rules, sanitizer round trip) |
+| `php artisan test` | 30 tests, 2,315 assertions (all 114 tools, auth, rules, sanitizer round trip) |

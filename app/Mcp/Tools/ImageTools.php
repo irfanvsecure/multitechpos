@@ -11,7 +11,9 @@ use App\Mcp\Support\Validate;
 use App\Mcp\ToolError;
 use App\Mcp\ToolSet;
 use App\Models\Media;
+use App\Models\UploadLink;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class ImageTools extends ToolSet
 {
@@ -27,7 +29,19 @@ class ImageTools extends ToolSet
                 'offset' => self::i('Skip this many'),
             ], [], fn ($a) => $this->list($a)),
 
-            $this->write('upload_image', 'Add an image from an https URL or base64. Converted to WebP (max 1600px wide) with 480/800/1200 versions for srcset; the original is kept. alt is required. Only JPEG/PNG/GIF/WebP: installers, archives and SVG are refused. Returns the path and an <img> snippet for page HTML.', [
+            $this->write('create_image_upload_link', 'Make a one-time upload page link for the owner. Use this whenever the owner shares an image in the chat (or has it on their computer or phone) and it has no public https URL: files in the chat cannot be sent to upload_image, and base64 must never be typed out by hand. The owner opens the link, picks the file(s) and presses Upload; the images go into the media library (WebP + srcset, same as upload_image). Then call get_image_upload_link.', [
+                'purpose' => self::s('Shown on the upload page, e.g. "Image for the VAT-ready section of /pos-software-dubai/"'),
+                'alt' => self::s('Alt text to use (the owner can change it on the page)'),
+                'filename' => self::s('File name to use (default from the alt text)'),
+                'max_files' => self::i('How many images may be uploaded with this link (1-10, default 1)'),
+                'expires_minutes' => self::i('Link lifetime in minutes (5-1440, default 60)'),
+            ], [], fn ($a) => $this->createLink($a)),
+
+            $this->read('get_image_upload_link', 'Status of an upload link from create_image_upload_link (waiting / partly_uploaded / uploaded / expired) and the images uploaded through it, with path and <img> snippet.', [
+                'link_id' => self::i('link_id from create_image_upload_link'),
+            ], ['link_id'], fn ($a) => $this->readLink($a)),
+
+            $this->write('upload_image', 'Add an image from an https URL or base64 (for an image in the chat or on the owner\'s device, use create_image_upload_link instead). Converted to WebP (max 1600px wide) with 480/800/1200 versions for srcset; the original is kept. alt is required. Only JPEG/PNG/GIF/WebP: installers, archives and SVG are refused. Returns the path and an <img> snippet for page HTML.', [
                 'url' => self::s('https URL of the image'),
                 'base64' => self::s('Or the image as base64 / data URI'),
                 'alt' => self::s('Alt text: what the image shows (required)'),
@@ -93,24 +107,70 @@ class ImageTools extends ToolSet
 
     private function upload(array $a): array
     {
-        $alt = trim(strip_tags((string) $a['alt']));
-        if (mb_strlen($alt) < 5) {
+        if (mb_strlen(trim(strip_tags((string) $a['alt']))) < 5) {
             throw new ToolError('alt must describe the image (at least 5 characters).');
         }
         if (isset($a['filename'])) {
             Validate::notExecutable($a['filename']);
         }
-        [$bytes, $name] = Images::fetch($a['url'] ?? null, $a['base64'] ?? null);
-        $info = Images::inspect($bytes);
-        $stem = Images::slugName($a['filename'] ?? $alt);
-        $stored = Images::store($bytes, $info, $stem);
-        $media = Media::query()->create($stored + [
-            'filename' => basename($stored['path']), 'mime' => 'image/webp', 'alt' => $alt, 'title' => $a['title'] ?? null,
-        ]);
-        Activity::log('create', $media, null, self::out($media), 'image '.$media->path);
+        [$bytes] = Images::fetch($a['url'] ?? null, $a['base64'] ?? null);
+        $media = Images::create($bytes, (string) $a['alt'], $a['filename'] ?? null, $a['title'] ?? null);
 
         return ['image' => self::out($media), 'html' => Images::snippet($media),
             'note' => 'Use path in component attrs / cover_image, or put html into a section. {{base}} is filled in when shown.'];
+    }
+
+    private function createLink(array $a): array
+    {
+        if (isset($a['filename'])) {
+            Validate::notExecutable($a['filename']);
+        }
+        $alt = isset($a['alt']) ? mb_substr(trim(strip_tags($a['alt'])), 0, 250) : null;
+        $minutes = max(5, min(1440, (int) ($a['expires_minutes'] ?? 60)));
+        $token = Str::random(43);
+        $link = UploadLink::query()->create([
+            'token_hash' => hash('sha256', $token),
+            'purpose' => isset($a['purpose']) ? mb_substr(trim(strip_tags($a['purpose'])), 0, 250) : null,
+            'alt' => $alt ?: null,
+            'filename' => $a['filename'] ?? null,
+            'max_files' => max(1, min(10, (int) ($a['max_files'] ?? 1))),
+            'expires_at' => now()->addMinutes($minutes),
+        ]);
+        Activity::log('create', $link, null, ['purpose' => $link->purpose, 'max_files' => $link->max_files, 'expires_at' => $link->expires_at->toIso8601String()], 'image upload link #'.$link->id);
+        $url = rtrim((string) config('app.url'), '/').'/mcp/upload/'.$token;
+
+        return [
+            'link_id' => $link->id,
+            'upload_url' => $url,
+            'max_files' => $link->max_files,
+            'expires_at' => $link->expires_at->toIso8601String(),
+            'next' => 'Give upload_url to the owner as a clickable link and ask them to open it, choose the image(s) and press Upload '
+                .'(it works on a phone too). When they say it is done, call get_image_upload_link with link_id='.$link->id
+                .' to get the new image path, then use it (replace_image, update_page_section, cover_image ...). Never type base64 by hand.',
+        ];
+    }
+
+    private function readLink(array $a): array
+    {
+        $link = UploadLink::query()->find((int) ($a['link_id'] ?? 0)) ?? throw new ToolError('No such upload link. Make one with create_image_upload_link.');
+        $images = Media::query()->whereIn('id', $link->media_ids ?? [])->get()
+            ->map(fn ($m) => self::out($m) + ['html' => Images::snippet($m)])->values()->all();
+        $status = $link->status();
+
+        return [
+            'link_id' => $link->id,
+            'status' => $status,
+            'purpose' => $link->purpose,
+            'uploaded' => count($images),
+            'max_files' => $link->max_files,
+            'expires_at' => $link->expires_at->toIso8601String(),
+            'images' => $images,
+            'next' => match ($status) {
+                'waiting' => 'Nothing uploaded yet. Ask the owner to open the link, choose the image and press Upload, then check again.',
+                'expired' => 'The link expired before anything was uploaded. Make a new one with create_image_upload_link.',
+                default => 'Use images[].path: replace_image (old_path → path) to swap an image everywhere, or put images[].html into a section. Check the alt text and fix it with update_image if needed.',
+            },
+        ];
     }
 
     private function update(array $a): array

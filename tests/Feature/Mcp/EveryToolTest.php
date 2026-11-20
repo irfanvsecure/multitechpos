@@ -194,6 +194,21 @@ class EveryToolTest extends McpTestCase
         $this->ok('replace_image', ['old_path' => $img['path'], 'new_path' => '/images/2026/06/retail-pos-multitech.webp']);
         $this->ok('delete_image', ['id' => $img['id'], 'expected_updated_at' => $img['updated_at']]);
 
+        // ---- upload link: the owner uploads in a browser, then the MCP reads the result
+        $link = $this->ok('create_image_upload_link', ['purpose' => 'Dubai section image', 'alt' => 'Cashier using a POS in a Dubai shop', 'max_files' => 1]);
+        $this->assertSame('waiting', $this->ok('get_image_upload_link', ['link_id' => $link['link_id']])['status']);
+        $uploadPath = parse_url($link['upload_url'], PHP_URL_PATH);
+        $this->get($uploadPath)->assertOk()->assertSee('Dubai section image')->assertHeader('X-Robots-Tag', 'noindex, nofollow');
+        $file = \Illuminate\Http\UploadedFile::fake()->createWithContent('shop.png', base64_decode($this->png(1000, 600)));
+        $this->post($uploadPath, ['images' => [$file], 'alt' => 'Cashier using a POS in a Dubai shop'])->assertOk()->assertSee('Done');
+        $done = $this->ok('get_image_upload_link', ['link_id' => $link['link_id']]);
+        $this->assertSame('uploaded', $done['status']);
+        $this->assertSame('Cashier using a POS in a Dubai shop', $done['images'][0]['alt']);
+        $this->assertFileExists(public_path(ltrim($done['images'][0]['path'], '/')));
+        $this->post($uploadPath, ['images' => [$file]])->assertOk()->assertSee('Done');   // used up: nothing more is added
+        $this->assertCount(1, $this->ok('get_image_upload_link', ['link_id' => $link['link_id']])['images']);
+        $this->get('/mcp/upload/'.str_repeat('a', 43))->assertNotFound();
+
         // ---- business content: list, create, update, delete each
         $home = $this->pageId('');
         $logo = '/images/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg';
@@ -237,10 +252,10 @@ class EveryToolTest extends McpTestCase
         $all = array_map(fn ($t) => $t->name, Registry::tools());
         $missing = array_diff($all, array_keys($this->called));
         $this->assertSame([], array_values($missing), 'Tools without a test: '.implode(', ', $missing));
-        $this->assertCount(112, $all);
+        $this->assertCount(114, $all);
 
         // ---- only content tables (leads read-only)
-        $allowed = array_merge(\App\Console\Commands\CmsImport::TABLES, ['leads', 'sqlite_master', 'pragma_table_info', 'pragma_table_xinfo', 'main', 'migrations']);
+        $allowed = array_merge(\App\Console\Commands\CmsImport::TABLES, ['upload_links', 'leads', 'sqlite_master', 'pragma_table_info', 'pragma_table_xinfo', 'main', 'migrations']);
         $touched = array_keys($this->tables);
         $this->assertSame([], array_values(array_diff($touched, $allowed)), 'Unexpected tables: '.implode(', ', array_diff($touched, $allowed)));
         $this->assertSame([], array_values(array_diff(array_keys($this->tables['leads'] ?? []), ['select'])), 'leads must only be read');
@@ -252,8 +267,10 @@ class EveryToolTest extends McpTestCase
     protected function tearDown(): void
     {
         // uploaded test files
-        foreach (glob(public_path('images/uploads/'.date('Y/m').'/cafe*')) ?: [] as $f) {
-            @unlink($f);
+        foreach (['cafe*', 'cashier-using-a-pos-in-a-dubai-shop*'] as $pattern) {
+            foreach (glob(public_path('images/uploads/'.date('Y/m').'/'.$pattern)) ?: [] as $f) {
+                @unlink($f);
+            }
         }
         parent::tearDown();
     }

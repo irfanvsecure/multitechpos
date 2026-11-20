@@ -52,6 +52,12 @@ class Instructions
           dry_run=false. Changing a slug adds a 301 from the old URL automatically.
         - Downloads are links only: you can edit name, version, size, platform and download URL, but never upload or
           host installer/archive files (.exe, .msi, .apk, .zip, .dmg ...).
+        - IMAGES FROM THE OWNER: an image shared in the chat (or sitting on the owner's computer or phone) cannot be
+          passed to upload_image, which only takes an https URL or base64, and base64 must never be typed out by hand.
+          Do not ask the owner for Google Drive / ImgBB links. Call create_image_upload_link (purpose + alt, max_files
+          for several images), give the owner the upload_url as a link, and when they say it is done call
+          get_image_upload_link. Then use the new path: replace_image (old_path → new path) to swap an image wherever it
+          is used, or the returned html in update_page_section. Open the page afterwards to check it.
         - Enquiries (demo form, Setup Builder, contact form) are read-only (list_enquiries).
         - SITE_NOINDEX is {$noindex}. While it is on, every page says noindex and robots.txt disallows all, whatever
           a page's robots value says. Only the owner can change it in the server's .env (get_site_info shows it).
