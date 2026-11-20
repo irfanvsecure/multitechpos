@@ -35,7 +35,23 @@ class Components
         ], 0, false],
         'clients-band' => ['partials.clients-band', 'Client logo marquee from client_logos.', [], 0, false],
         'cta-band' => ['partials.cta-band', 'Demo call-to-action banner.', ['ctaTitle' => 'string, optional heading'], 0, false],
-        'service-why' => ['partials.service-why', 'Before/after + 4-step timeline block for service pages.', ['service' => 'string, the product name'], 0, false],
+        'service-why' => ['partials.service-why', 'Before/after card pair + 4-step timeline for service pages, in the site design. Every text is optional and per page (leave one out to keep the default copy); text is plain (no HTML), placeholders allowed. Change THIS component\'s attrs to tailor the section; never hide it and rebuild it as an html section.', [
+            'service' => 'string, the product name',
+            'compare_tag' => 'string, small pill above the heading (default "Why Businesses Switch")',
+            'compare_heading' => 'string, h2 of the before/after part (plain text)',
+            'compare_highlight' => 'string, optional words after the heading shown in the blue gradient',
+            'compare_text' => 'string, line under the heading',
+            'before_label' => 'string, red card title (default "Without the right POS")',
+            'before' => 'list of 3-6 strings, the red "without" points',
+            'after_label' => 'string, white card title (default "With MultiTech POS")',
+            'after' => 'list of 3-6 strings, the "with MultiTech POS" points',
+            'after_button' => 'string, button text (default "See it in a free demo")',
+            'steps_tag' => 'string, pill above the timeline heading (default "How It Works")',
+            'steps_heading' => 'string, h2 of the timeline (plain text)',
+            'steps_highlight' => 'string, optional gradient words after steps_heading',
+            'steps_text' => 'string, line under the timeline heading',
+            'steps' => 'list of exactly 4 {title, text} objects, the timeline steps',
+        ], 0, false],
         'service-quote' => ['partials.service-quote', '"Everything you need to get started" tiles + testimonials.', ['service' => 'string, the product name'], 0, false],
         'testimonials' => ['partials.testimonials', 'Customer testimonials from the testimonials table (hidden while empty).', [], 0, false],
         'contact-next' => ['partials.contact-next', 'Contact page: what happens after the form is sent.', [], 0, false],
@@ -97,9 +113,62 @@ class Components
         if ($name === 'quote-form' && isset($attrs['variant']) && ! in_array($attrs['variant'], ['standard', 'names'], true)) {
             $errors[] = 'quote-form variant must be "standard" or "names".';
         }
+        if ($name === 'service-why') {
+            $errors = array_merge($errors, self::validateServiceWhy($attrs ?? []));
+        }
         foreach ($attrs ?? [] as $value) {
             foreach (Placeholders::validate(is_string($value) ? $value : json_encode($value)) as $e) {
                 $errors[] = $e;
+            }
+        }
+
+        return $errors;
+    }
+
+    /** service-why texts must keep the shape the fixed layout expects. */
+    private static function validateServiceWhy(array $attrs): array
+    {
+        $errors = [];
+        foreach ($attrs as $key => $value) {
+            if (in_array($key, ['before', 'after', 'steps'], true)) {
+                continue;
+            }
+            if (! is_string($value)) {
+                $errors[] = "service-why '$key' must be a string.";
+            } elseif ($value !== strip_tags($value)) {
+                $errors[] = "service-why '$key' is plain text: no HTML.";
+            }
+        }
+        foreach (['before', 'after'] as $key) {
+            if (! array_key_exists($key, $attrs)) {
+                continue;
+            }
+            $list = $attrs[$key];
+            if (! is_array($list) || ! array_is_list($list) || count($list) < 3 || count($list) > 6) {
+                $errors[] = "service-why '$key' must be a list of 3 to 6 strings.";
+                continue;
+            }
+            foreach ($list as $item) {
+                if (! is_string($item) || trim($item) === '' || $item !== strip_tags($item)) {
+                    $errors[] = "service-why '$key' items must be non-empty plain text (no HTML).";
+                    break;
+                }
+            }
+        }
+        if (array_key_exists('steps', $attrs)) {
+            $steps = $attrs['steps'];
+            if (! is_array($steps) || ! array_is_list($steps) || count($steps) !== 4) {
+                $errors[] = "service-why 'steps' must be a list of exactly 4 {title, text} objects.";
+            } else {
+                foreach ($steps as $step) {
+                    if (! is_array($step) || array_diff(array_keys($step), ['title', 'text'])
+                        || ! is_string($step['title'] ?? null) || trim($step['title']) === ''
+                        || ! is_string($step['text'] ?? null) || trim($step['text']) === ''
+                        || $step['title'] !== strip_tags($step['title']) || $step['text'] !== strip_tags($step['text'])) {
+                        $errors[] = "service-why 'steps' items need a plain-text title and text (no other keys, no HTML).";
+                        break;
+                    }
+                }
             }
         }
 
