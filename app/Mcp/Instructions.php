@@ -58,6 +58,12 @@ class Instructions
           for several images), give the owner the upload_url as a link, and when they say it is done call
           get_image_upload_link. Then use the new path: replace_image (old_path → new path) to swap an image wherever it
           is used, or the returned html in update_page_section. Open the page afterwards to check it.
+        - CHANGING AN IMAGE ON A PAGE: find the current image path first (get_page_sections), then pass everything
+          up front so one upload does it all: alt (SEO alt text), title (SEO image description), geo ({lat, lng,
+          place} of the city/area the page targets, e.g. Sharjah 25.3463, 55.4209) and replace_path (the old image).
+          The site converts to WebP (variants keep well under 100 KB), writes description + GPS into the WebP EXIF and
+          swaps the image everywhere (src, srcset, width/height, alt). Do not resize or convert the file yourself.
+          The same fields work on upload_image for an https URL.
         - Enquiries (demo form, Setup Builder, contact form) are read-only (list_enquiries).
         - SITE_NOINDEX is {$noindex}. While it is on, every page says noindex and robots.txt disallows all, whatever
           a page's robots value says. Only the owner can change it in the server's .env (get_site_info shows it).

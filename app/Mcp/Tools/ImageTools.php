@@ -20,6 +20,11 @@ class ImageTools extends ToolSet
     public function tools(): array
     {
         $ref = ['id' => self::i('Image id (from list_images)'), 'path' => self::s('Or its path, e.g. /images/2026/06/x.webp')];
+        $geo = self::o('Geotag written into the WebP file (EXIF GPS) and kept in the library: the city/area the page is about, e.g. {"lat": 25.3463, "lng": 55.4209, "place": "Sharjah, UAE"}', [
+            'lat' => ['type' => 'number'], 'lng' => ['type' => 'number'], 'place' => ['type' => 'string'],
+        ]);
+        $title = self::s('SEO image description (also written into the file as EXIF ImageDescription)');
+        $replace = self::s('Path of the image this one replaces on the site (e.g. the image now in a section). After the upload it is swapped everywhere it is used: src, srcset, width/height and alt.');
 
         return [
             $this->read('list_images', 'Images in the media library with size, dimensions, alt text and where each is used.', [
@@ -29,12 +34,15 @@ class ImageTools extends ToolSet
                 'offset' => self::i('Skip this many'),
             ], [], fn ($a) => $this->list($a)),
 
-            $this->write('create_image_upload_link', 'Make a one-time upload page link for the owner. Use this whenever the owner shares an image in the chat (or has it on their computer or phone) and it has no public https URL: files in the chat cannot be sent to upload_image, and base64 must never be typed out by hand. The owner opens the link, picks the file(s) and presses Upload; the images go into the media library (WebP + srcset, same as upload_image). Then call get_image_upload_link.', [
+            $this->write('create_image_upload_link', 'Make a one-time upload page link for the owner. Use this whenever the owner shares an image in the chat (or has it on their computer or phone) and it has no public https URL: files in the chat cannot be sent to upload_image, and base64 must never be typed out by hand. The owner opens the link, picks the file(s) and presses Upload; the images go into the media library (WebP + srcset, same as upload_image). Pass alt, title, geo and replace_path up front: then the upload alone puts the image on the page with its alt, description and geotag. Then call get_image_upload_link to confirm.', [
                 'purpose' => self::s('Shown on the upload page, e.g. "Image for the VAT-ready section of /pos-software-dubai/"'),
                 'alt' => self::s('Alt text to use (the owner can change it on the page)'),
                 'filename' => self::s('File name to use (default from the alt text)'),
                 'max_files' => self::i('How many images may be uploaded with this link (1-10, default 1)'),
                 'expires_minutes' => self::i('Link lifetime in minutes (5-1440, default 60)'),
+                'title' => $title,
+                'geo' => $geo,
+                'replace_path' => $replace,
             ], [], fn ($a) => $this->createLink($a)),
 
             $this->read('get_image_upload_link', 'Status of an upload link from create_image_upload_link (waiting / partly_uploaded / uploaded / expired) and the images uploaded through it, with path and <img> snippet.', [
@@ -46,7 +54,9 @@ class ImageTools extends ToolSet
                 'base64' => self::s('Or the image as base64 / data URI'),
                 'alt' => self::s('Alt text: what the image shows (required)'),
                 'filename' => self::s('File name to use (default from the alt text)'),
-                'title' => self::s('Title (optional)'),
+                'title' => $title,
+                'geo' => $geo,
+                'replace_path' => $replace,
             ], ['alt'], fn ($a) => $this->upload($a), false, true),
 
             $this->write('update_image', 'Change alt, title or file name. A new alt is also written into every <img> that shows it (set_alt_in_pages=false to skip). Renaming moves the files, updates every reference and 301s the old URL.', $ref + [
@@ -89,7 +99,7 @@ class ImageTools extends ToolSet
     public static function out(Media $m, array $usage = []): array
     {
         return ['id' => $m->id, 'path' => $m->path, 'alt' => $m->alt, 'title' => $m->title, 'width' => $m->width, 'height' => $m->height,
-            'kb' => $m->size ? round($m->size / 1024) : null, 'variants' => $m->variants, 'original' => $m->original_path,
+            'kb' => $m->size ? round($m->size / 1024) : null, 'geo' => $m->geo, 'variants' => $m->variants, 'original' => $m->original_path,
             'used_in' => $usage, 'updated_at' => Guard::stamp($m)];
     }
 
@@ -113,11 +123,33 @@ class ImageTools extends ToolSet
         if (isset($a['filename'])) {
             Validate::notExecutable($a['filename']);
         }
+        $replace = self::replacePath($a['replace_path'] ?? null);
         [$bytes] = Images::fetch($a['url'] ?? null, $a['base64'] ?? null);
-        $media = Images::create($bytes, (string) $a['alt'], $a['filename'] ?? null, $a['title'] ?? null);
+        $media = Images::create($bytes, (string) $a['alt'], $a['filename'] ?? null, $a['title'] ?? null, $a['geo'] ?? null);
+        $out = ['image' => self::out($media), 'html' => Images::snippet($media)];
+        if ($replace) {
+            $out['replaced_in'] = Images::replaceEverywhere($replace, $media->path, false);
+            $out['note'] = 'The new image is now shown instead of '.$replace.' (src, srcset, size, alt). Check the page.';
+        } else {
+            $out['note'] = 'Use path in component attrs / cover_image, put html into a section, or replace_image to swap an old image. {{base}} is filled in when shown.';
+        }
 
-        return ['image' => self::out($media), 'html' => Images::snippet($media),
-            'note' => 'Use path in component attrs / cover_image, or put html into a section. {{base}} is filled in when shown.'];
+        return $out;
+    }
+
+    /** replace_path must be an image the site shows: checked before anything is uploaded. */
+    public static function replacePath(?string $path): ?string
+    {
+        if ($path === null || trim($path) === '') {
+            return null;
+        }
+        $path = '/'.ltrim(rawurldecode((string) parse_url(trim($path), PHP_URL_PATH)), '/');
+        $path = preg_replace('#^/\{\{base\}\}#', '', $path);
+        if (empty(Images::usage()[$path])) {
+            throw new ToolError("replace_path $path is not used on any page. Give the image path exactly as it appears in the section (get_page_sections / list_images).");
+        }
+
+        return $path;
     }
 
     private function createLink(array $a): array
@@ -126,6 +158,8 @@ class ImageTools extends ToolSet
             Validate::notExecutable($a['filename']);
         }
         $alt = isset($a['alt']) ? mb_substr(trim(strip_tags($a['alt'])), 0, 250) : null;
+        $geo = Images::geo($a['geo'] ?? null);
+        $replace = self::replacePath($a['replace_path'] ?? null);
         $minutes = max(5, min(1440, (int) ($a['expires_minutes'] ?? 60)));
         $token = Str::random(43);
         $link = UploadLink::query()->create([
@@ -133,7 +167,10 @@ class ImageTools extends ToolSet
             'purpose' => isset($a['purpose']) ? mb_substr(trim(strip_tags($a['purpose'])), 0, 250) : null,
             'alt' => $alt ?: null,
             'filename' => $a['filename'] ?? null,
-            'max_files' => max(1, min(10, (int) ($a['max_files'] ?? 1))),
+            'max_files' => $replace ? 1 : max(1, min(10, (int) ($a['max_files'] ?? 1))),
+            'title' => isset($a['title']) ? mb_substr(trim(strip_tags($a['title'])), 0, 500) : null,
+            'geo' => $geo,
+            'replace_path' => $replace,
             'expires_at' => now()->addMinutes($minutes),
         ]);
         Activity::log('create', $link, null, ['purpose' => $link->purpose, 'max_files' => $link->max_files, 'expires_at' => $link->expires_at->toIso8601String()], 'image upload link #'.$link->id);
@@ -144,9 +181,11 @@ class ImageTools extends ToolSet
             'upload_url' => $url,
             'max_files' => $link->max_files,
             'expires_at' => $link->expires_at->toIso8601String(),
+            'replaces' => $replace,
             'next' => 'Give upload_url to the owner as a clickable link and ask them to open it, choose the image(s) and press Upload '
                 .'(it works on a phone too). When they say it is done, call get_image_upload_link with link_id='.$link->id
-                .' to get the new image path, then use it (replace_image, update_page_section, cover_image ...). Never type base64 by hand.',
+                .($replace ? ': the image will already be swapped in for '.$replace.'; confirm it and check the page.' : ' to get the new image path, then use it (replace_image, update_page_section, cover_image ...).')
+                .' Never type base64 by hand.',
         ];
     }
 
@@ -165,9 +204,14 @@ class ImageTools extends ToolSet
             'max_files' => $link->max_files,
             'expires_at' => $link->expires_at->toIso8601String(),
             'images' => $images,
-            'next' => match ($status) {
-                'waiting' => 'Nothing uploaded yet. Ask the owner to open the link, choose the image and press Upload, then check again.',
-                'expired' => 'The link expired before anything was uploaded. Make a new one with create_image_upload_link.',
+            'replace_path' => $link->replace_path,
+            'replaced_in' => $link->replaced,
+            'replace_error' => $link->replace_error,
+            'next' => match (true) {
+                $status === 'waiting' => 'Nothing uploaded yet. Ask the owner to open the link, choose the image and press Upload, then check again.',
+                $status === 'expired' => 'The link expired before anything was uploaded. Make a new one with create_image_upload_link.',
+                $link->replace_path !== null && ! $link->replace_error => 'Done: the new image is shown instead of '.$link->replace_path.' (src, srcset, size and alt). Check the live page.',
+                $link->replace_path !== null => 'The upload worked but the swap did not ('.$link->replace_error.'). Use replace_image with old_path='.$link->replace_path.' and new_path=images[0].path.',
                 default => 'Use images[].path: replace_image (old_path → path) to swap an image everywhere, or put images[].html into a section. Check the alt text and fix it with update_image if needed.',
             },
         ];
@@ -236,22 +280,7 @@ class ImageTools extends ToolSet
     private function replace(array $a): array
     {
         $dry = $a['dry_run'] ?? true;
-        $old = '/'.ltrim($a['old_path'], '/');
-        $new = '/'.ltrim($a['new_path'], '/');
-        $file = public_path(ltrim($new, '/'));
-        if (! is_file($file)) {
-            throw new ToolError("$new does not exist (upload it first).");
-        }
-        $size = @getimagesize($file);
-        $tag = $size ? function (string $img) use ($size) {
-            $img = preg_replace('/\swidth="\d+"/', ' width="'.$size[0].'"', $img);
-
-            return preg_replace('/\sheight="\d+"/', ' height="'.$size[1].'"', $img);
-        } : null;
-        $changed = Images::rewrite($old, $new, $dry, $tag);
-        if (! $dry && $changed) {
-            Activity::log('update', Media::query()->where('path', $old)->first(), ['path' => $old], ['path' => $new], "image $old replaced by $new");
-        }
+        $changed = Images::replaceEverywhere($a['old_path'], $a['new_path'], $dry);
 
         return ['dry_run' => $dry, 'places' => count($changed), 'changed' => $changed, 'next' => $dry && $changed ? 'Run again with dry_run=false to apply.' : null];
     }

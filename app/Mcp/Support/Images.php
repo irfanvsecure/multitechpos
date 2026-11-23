@@ -110,7 +110,7 @@ class Images
     }
 
     /** Full upload: check, store (WebP + variants), add to the media library, log. Used by upload_image and the upload page. */
-    public static function create(string $bytes, string $alt, ?string $filename = null, ?string $title = null): \App\Models\Media
+    public static function create(string $bytes, string $alt, ?string $filename = null, ?string $title = null, ?array $geo = null): \App\Models\Media
     {
         $alt = trim(strip_tags($alt));
         if (mb_strlen($alt) < 5) {
@@ -119,15 +119,188 @@ class Images
         if ($filename !== null && $filename !== '') {
             Validate::notExecutable($filename);
         }
+        $geo = self::geo($geo);
+        $title = $title !== null && trim(strip_tags($title)) !== '' ? mb_substr(trim(strip_tags($title)), 0, 500) : null;
         $info = self::inspect($bytes);
         $stored = self::store($bytes, $info, self::slugName($filename ?: $alt));
+
+        // GD drops all metadata: write description + GPS back into every WebP file
+        $exif = self::exif($title ?: $alt, $geo);
+        foreach (array_unique(array_merge([$stored['path']], array_values($stored['variants']))) as $p) {
+            self::addExifToWebp(public_path(ltrim($p, '/')), $exif);
+        }
+        $stored['size'] = filesize(public_path(ltrim($stored['path'], '/')));
+
         $media = \App\Models\Media::query()->create($stored + [
             'filename' => basename($stored['path']), 'mime' => 'image/webp', 'alt' => mb_substr($alt, 0, 250),
-            'title' => $title !== null ? strip_tags($title) : null,
+            'title' => $title, 'geo' => $geo,
         ]);
         Activity::log('create', $media, null, \App\Mcp\Tools\ImageTools::out($media), 'image '.$media->path);
 
         return $media;
+    }
+
+    /** Check {lat, lng, place?}. Null when not given. */
+    public static function geo(?array $geo): ?array
+    {
+        if (! $geo || (! isset($geo['lat']) && ! isset($geo['lng']))) {
+            return null;
+        }
+        $lat = filter_var($geo['lat'] ?? null, FILTER_VALIDATE_FLOAT);
+        $lng = filter_var($geo['lng'] ?? null, FILTER_VALIDATE_FLOAT);
+        if ($lat === false || $lng === false || abs($lat) > 90 || abs($lng) > 180) {
+            throw new ToolError('geo needs lat (-90..90) and lng (-180..180) as numbers, e.g. {"lat": 25.3463, "lng": 55.4209, "place": "Sharjah, UAE"}.');
+        }
+        $place = isset($geo['place']) ? mb_substr(trim(strip_tags((string) $geo['place'])), 0, 120) : null;
+
+        return ['lat' => round($lat, 6), 'lng' => round($lng, 6)] + ($place ? ['place' => $place] : []);
+    }
+
+    /**
+     * Minimal EXIF (little-endian TIFF): ImageDescription + Artist + GPS latitude/longitude.
+     */
+    public static function exif(string $description, ?array $geo): string
+    {
+        $ascii = fn (string $s) => [2, strlen($s) + 1, $s."\0"];
+        $rational = function (float $v) {
+            $v = abs($v);
+            $d = (int) floor($v);
+            $m = (int) floor(($v - $d) * 60);
+            $s = (int) round((($v - $d) * 60 - $m) * 60 * 10000);
+
+            return [5, 3, pack('V6', $d, 1, $m, 1, $s, 10000)];
+        };
+        $desc = mb_substr(preg_replace('/[^\x20-\x7E]/', '', Str::ascii($description)), 0, 500);
+        $ifd0 = [0x010E => $ascii($desc), 0x013B => $ascii('MultiTech POS')];
+        $gps = null;
+        if ($geo) {
+            $gps = [
+                0x0000 => [1, 4, "\x02\x03\x00\x00"],
+                0x0001 => $ascii($geo['lat'] >= 0 ? 'N' : 'S'),
+                0x0002 => $rational($geo['lat']),
+                0x0003 => $ascii($geo['lng'] >= 0 ? 'E' : 'W'),
+                0x0004 => $rational($geo['lng']),
+            ];
+            $ifd0[0x8825] = [4, 1, pack('V', 0)];   // GPS IFD offset, filled in below
+        }
+        $ifdLength = fn (array $e) => 2 + 12 * count($e) + 4 + array_sum(array_map(fn ($x) => strlen($x[2]) > 4 ? strlen($x[2]) + (strlen($x[2]) % 2) : 0, $e));
+        if ($gps) {
+            $ifd0[0x8825][2] = pack('V', 8 + $ifdLength($ifd0));
+        }
+        $write = function (array $entries, int $offset) {
+            ksort($entries);
+            $data = '';
+            $dataAt = $offset + 2 + 12 * count($entries) + 4;
+            $out = pack('v', count($entries));
+            foreach ($entries as $tag => [$type, $count, $value]) {
+                if (strlen($value) <= 4) {
+                    $out .= pack('vvV', $tag, $type, $count).str_pad($value, 4, "\0");
+                } else {
+                    $out .= pack('vvVV', $tag, $type, $count, $dataAt + strlen($data));
+                    $data .= $value.(strlen($value) % 2 ? "\0" : '');
+                }
+            }
+
+            return $out.pack('V', 0).$data;
+        };
+        $tiff = "II\x2A\x00".pack('V', 8);
+        $tiff .= $write($ifd0, 8);
+        if ($gps) {
+            $tiff .= $write($gps, strlen($tiff));
+        }
+
+        return $tiff;
+    }
+
+    /** Put an EXIF chunk into a WebP file (adds the VP8X header that EXIF needs). */
+    public static function addExifToWebp(string $file, string $exif): void
+    {
+        $bytes = @file_get_contents($file);
+        if (! $bytes || substr($bytes, 0, 4) !== 'RIFF' || substr($bytes, 8, 4) !== 'WEBP') {
+            return;
+        }
+        $chunks = [];
+        for ($pos = 12; $pos + 8 <= strlen($bytes);) {
+            $fourcc = substr($bytes, $pos, 4);
+            $size = unpack('V', substr($bytes, $pos + 4, 4))[1];
+            $chunks[] = [$fourcc, substr($bytes, $pos + 8, $size)];
+            $pos += 8 + $size + ($size % 2);
+        }
+        $chunks = array_values(array_filter($chunks, fn ($c) => $c[0] !== 'EXIF'));
+        if (! $chunks) {
+            return;
+        }
+        if ($chunks[0][0] === 'VP8X') {
+            $chunks[0][1][0] = chr(ord($chunks[0][1][0]) | 0x08);
+        } else {
+            $size = @getimagesizefromstring($bytes);
+            if (! $size) {
+                return;
+            }
+            $flags = 0x08 | ($chunks[0][0] === 'VP8L' ? 0x10 : 0);
+            $w = $size[0] - 1;
+            $h = $size[1] - 1;
+            $vp8x = chr($flags)."\0\0\0".substr(pack('V', $w), 0, 3).substr(pack('V', $h), 0, 3);
+            array_unshift($chunks, ['VP8X', $vp8x]);
+        }
+        $chunks[] = ['EXIF', $exif];
+        $body = 'WEBP';
+        foreach ($chunks as [$fourcc, $payload]) {
+            $body .= $fourcc.pack('V', strlen($payload)).$payload.(strlen($payload) % 2 ? "\0" : '');
+        }
+        file_put_contents($file, 'RIFF'.pack('V', strlen($body)).$body);
+    }
+
+    /**
+     * Show $new wherever $old is shown: src, srcset (rebuilt from the new image's sizes), width/height,
+     * and the new image's alt text. Returns the places changed.
+     */
+    public static function replaceEverywhere(string $old, string $new, bool $dry): array
+    {
+        $old = '/'.ltrim($old, '/');
+        $new = '/'.ltrim($new, '/');
+        $file = public_path(ltrim($new, '/'));
+        if (! is_file($file)) {
+            throw new ToolError("$new does not exist (upload it first).");
+        }
+        if ($old === $new) {
+            throw new ToolError('old_path and new_path are the same image.');
+        }
+        $media = \App\Models\Media::query()->where('path', $new)->first();
+        $oldMedia = \App\Models\Media::query()->where('path', $old)->first();
+        $size = @getimagesize($file);
+        $srcset = $media ? collect($media->variants ?? [])->sortKeys()->map(fn ($p, $w) => '{{base}}'.$p.' '.$w.'w')->implode(', ') : '';
+        $tag = function (string $img) use ($size, $srcset) {
+            if ($size) {
+                $img = preg_replace('/\swidth="\d+"/', ' width="'.$size[0].'"', $img);
+                $img = preg_replace('/\sheight="\d+"/', ' height="'.$size[1].'"', $img);
+            }
+            // the old srcset lists the old image's other sizes: the browser would keep showing it
+            if (preg_match('/\ssrcset="[^"]*"/', $img)) {
+                $img = $srcset !== ''
+                    ? preg_replace('/\ssrcset="[^"]*"/', ' srcset="'.$srcset.'"', $img)
+                    : preg_replace('/\s(srcset|sizes)="[^"]*"/', '', $img);
+            }
+
+            return $img;
+        };
+        $changed = self::rewrite($old, $new, $dry, $tag);
+        // old variant files (x-480.webp ...) referenced on their own, e.g. in a <picture><source>
+        foreach (($oldMedia?->variants ?? []) as $w => $v) {
+            if ($v !== $old) {
+                $to = $media->variants[$w] ?? $new;
+                $changed = array_merge($changed, self::rewrite($v, $to, $dry));
+            }
+        }
+        $changed = array_values(array_unique($changed));
+        if ($media && $media->alt && ! $dry && $changed) {
+            self::setAlt($new, $media->alt, false);
+        }
+        if (! $dry && $changed) {
+            Activity::log('update', $oldMedia ?? $media, ['path' => $old], ['path' => $new], "image $old replaced by $new");
+        }
+
+        return $changed;
     }
 
     public static function slugName(string $name): string

@@ -175,6 +175,17 @@ only takes an https URL or base64, and typing out base64 by hand is not reliable
 3. You tell Claude "uploaded". Claude calls `get_image_upload_link`, gets the new path and puts the image
    on the page (`replace_image` or `update_page_section`).
 
+**Upload and set in one step.** When Claude passes `replace_path` (the image now on the page), `alt`,
+`title` (SEO description) and `geo` (`{lat, lng, place}`) to `create_image_upload_link` or `upload_image`,
+the upload itself swaps the new image in everywhere the old one was used (src, srcset, width/height, alt),
+and the description and GPS geotag are written into the WebP EXIF of every size. `get_image_upload_link`
+then only confirms (`replaced_in`).
+
+**Migrations run by themselves.** The first `/mcp` or upload-page request after a deploy runs any new
+migration (`App\Support\AutoMigrate`, marker in `storage/framework/migrations.fingerprint`), so a
+`git pull` without `php artisan migrate` no longer breaks tools ("no such table: upload_links").
+Set `APP_AUTO_MIGRATE=false` in `.env` to turn this off.
+
 The token in the link is the only check, so the page takes images only (JPEG/PNG/GIF/WebP, never SVG,
 installers or archives), only as many as the link allows, and stops working when it expires or is used up.
 It sends `noindex` and `no-store`, and every upload is in `activity_log` (tool `upload_page`). The server's

@@ -26,3 +26,5 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+/storage/framework/migrations.fingerprint
+/storage/framework/migrations.lock

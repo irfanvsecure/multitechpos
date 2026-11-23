@@ -13,5 +13,5 @@ class Media extends Model
 
     protected $guarded = ['id'];
 
-    protected $casts = ['variants' => 'array', 'size' => 'integer', 'width' => 'integer', 'height' => 'integer'];
+    protected $casts = ['variants' => 'array', 'geo' => 'array', 'size' => 'integer', 'width' => 'integer', 'height' => 'integer'];
 }

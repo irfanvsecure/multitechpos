@@ -209,6 +209,28 @@ class EveryToolTest extends McpTestCase
         $this->assertCount(1, $this->ok('get_image_upload_link', ['link_id' => $link['link_id']])['images']);
         $this->get('/mcp/upload/'.str_repeat('a', 43))->assertNotFound();
 
+        // ---- upload-and-set: one upload puts the image on the page with alt, description and geotag
+        $old = collect(\App\Mcp\Support\Images::usage())->filter(fn ($w) => str_starts_with($w[0], 'page '))->keys()->first(fn ($p) => str_ends_with($p, '.webp'));
+        $this->refused('create_image_upload_link', ['replace_path' => '/images/not-on-any-page.webp'], 'not used on any page');
+        $link = $this->ok('create_image_upload_link', ['alt' => 'Cashier using MultiTech POS at a Sharjah supermarket', 'title' => 'POS software in Sharjah: barcode billing and VAT invoices',
+            'geo' => ['lat' => 25.3463, 'lng' => 55.4209, 'place' => 'Sharjah, UAE'], 'replace_path' => $old]);
+        $file = \Illuminate\Http\UploadedFile::fake()->createWithContent('sharjah.png', base64_decode($this->png(900, 600)));
+        $this->post(parse_url($link['upload_url'], PHP_URL_PATH), ['images' => [$file], 'alt' => 'Cashier using MultiTech POS at a Sharjah supermarket'])->assertOk()->assertSee('now on the website');
+        $done = $this->ok('get_image_upload_link', ['link_id' => $link['link_id']]);
+        $this->assertNotEmpty($done['replaced_in']);
+        $this->assertNull($done['replace_error']);
+        $new = $done['images'][0];
+        $this->assertSame(['lat' => 25.3463, 'lng' => 55.4209, 'place' => 'Sharjah, UAE'], $new['geo']);
+        $usage = \App\Mcp\Support\Images::usage();
+        $this->assertArrayNotHasKey($old, $usage);
+        $this->assertArrayHasKey($new['path'], $usage);
+        $webp = file_get_contents(public_path(ltrim($new['path'], '/')));
+        $this->assertSame('VP8X', substr($webp, 12, 4));
+        $this->assertStringContainsString('EXIF', $webp);
+        $this->assertStringContainsString('POS software in Sharjah', $webp);
+        $this->assertNotFalse(imagecreatefromstring($webp));
+        $this->assertNotFalse(getimagesizefromstring($webp));
+
         // ---- business content: list, create, update, delete each
         $home = $this->pageId('');
         $logo = '/images/elementor/thumbs/bazaar-rh05mno1leaub84suaggl2evvu5jrlol0v4bw7fsyk.jpg';
@@ -267,7 +289,7 @@ class EveryToolTest extends McpTestCase
     protected function tearDown(): void
     {
         // uploaded test files
-        foreach (['cafe*', 'cashier-using-a-pos-in-a-dubai-shop*'] as $pattern) {
+        foreach (['cafe*', 'cashier-using-a-pos-in-a-dubai-shop*', 'cashier-using-multitech-pos-at-a-sharjah*'] as $pattern) {
             foreach (glob(public_path('images/uploads/'.date('Y/m').'/'.$pattern)) ?: [] as $f) {
                 @unlink($f);
             }

@@ -8,7 +8,7 @@ class UploadLink extends Model
 {
     protected $guarded = ['id'];
 
-    protected $casts = ['media_ids' => 'array', 'expires_at' => 'datetime', 'max_files' => 'integer'];
+    protected $casts = ['media_ids' => 'array', 'geo' => 'array', 'replaced' => 'array', 'expires_at' => 'datetime', 'max_files' => 'integer'];
 
     public static function findByToken(string $token): ?self
     {

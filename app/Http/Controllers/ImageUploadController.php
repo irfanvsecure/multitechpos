@@ -7,6 +7,7 @@ use App\Mcp\Support\Images;
 use App\Mcp\ToolError;
 use App\Models\Media;
 use App\Models\UploadLink;
+use App\Support\AutoMigrate;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Symfony\Component\HttpFoundation\Response;
@@ -20,6 +21,7 @@ class ImageUploadController extends Controller
 {
     public function show(string $token): Response
     {
+        AutoMigrate::ensure();
         $link = UploadLink::findByToken($token);
 
         return $this->page($link, $token);
@@ -27,6 +29,7 @@ class ImageUploadController extends Controller
 
     public function store(Request $request, string $token): Response
     {
+        AutoMigrate::ensure();
         $link = UploadLink::findByToken($token);
         if (! $link || $link->expired() || $link->remaining() === 0) {
             return $this->page($link, $token);
@@ -68,8 +71,13 @@ class ImageUploadController extends Controller
                     (string) file_get_contents($file->getRealPath()),
                     $alt !== '' ? $alt : (string) $link->purpose,
                     count($files) > 1 ? $stem.'-'.($i + 1) : $stem,
+                    $link->title,
+                    $link->geo,
                 );
                 $ids[] = $media->id;
+                if ($link->replace_path) {
+                    $this->swap($link, $media);
+                }
             } catch (ToolError $e) {
                 $errors[] = $name.': '.$e->getMessage();
             }
@@ -78,6 +86,18 @@ class ImageUploadController extends Controller
         $link->update(['media_ids' => $ids]);
 
         return $this->page($link->fresh(), $token, $errors, $added === 0 ? 422 : 200);
+    }
+
+    /** Put the uploaded image on the page in place of replace_path (the "set" half of upload-and-set). */
+    private function swap(UploadLink $link, Media $media): void
+    {
+        try {
+            $changed = Images::replaceEverywhere($link->replace_path, $media->path, false);
+            $link->update(['replaced' => $changed, 'replace_error' => $changed ? null : $link->replace_path.' is no longer used on any page']);
+        } catch (\Throwable $e) {
+            report($e);
+            $link->update(['replace_error' => mb_substr($e->getMessage(), 0, 250)]);
+        }
     }
 
     private function page(?UploadLink $link, string $token, array $errors = [], ?int $status = null): Response

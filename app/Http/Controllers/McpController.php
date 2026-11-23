@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mcp\Server;
+use App\Support\AutoMigrate;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,6 +13,8 @@ class McpController extends Controller
 {
     public function post(Request $request, Server $server): Response
     {
+        AutoMigrate::ensure();   // a deploy without `php artisan migrate` must not break tools
+
         $message = json_decode($request->getContent(), true);
         if (json_last_error() !== JSON_ERROR_NONE) {
             return new JsonResponse(['jsonrpc' => '2.0', 'id' => null, 'error' => ['code' => -32700, 'message' => 'Parse error']], 400);

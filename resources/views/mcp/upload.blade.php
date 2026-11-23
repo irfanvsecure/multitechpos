@@ -44,7 +44,11 @@
     @elseif ($state === 'expired')
       <p>This upload link has expired. Ask Claude for a new one.</p>
     @elseif ($state === 'done')
-      <div class="msg ok">Done. The image is in the website's media library. Go back to Claude and say "uploaded".</div>
+      @if ($link->replace_path && ! $link->replace_error)
+        <div class="msg ok">Done. The new image is now on the website. Go back to Claude and say "uploaded".</div>
+      @else
+        <div class="msg ok">Done. The image is in the website's media library. Go back to Claude and say "uploaded".</div>
+      @endif
     @else
       @if ($link->purpose)
         <p class="purpose">{{ $link->purpose }}</p>

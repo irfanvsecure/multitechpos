@@ -67,6 +67,10 @@ return [
 
     'timezone' => 'UTC',
 
+    // Run pending migrations on the first MCP / upload-page request after a deploy
+    // (App\Support\AutoMigrate), so a git pull without `php artisan migrate` cannot break tools.
+    'auto_migrate' => (bool) env('APP_AUTO_MIGRATE', true),
+
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
