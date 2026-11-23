@@ -189,6 +189,13 @@ class EveryToolTest extends McpTestCase
         $this->ok('list_images', ['search' => 'cafe-counter']);
         $img = $this->ok('update_image', ['id' => $img['image']['id'], 'expected_updated_at' => $img['image']['updated_at'], 'alt' => 'POS terminal on a cafe counter', 'filename' => 'cafe-pos-counter-test'])['image'];
         $this->assertStringEndsWith('/cafe-pos-counter-test.webp', $img['path']);
+        // an image already on the site can be geotagged afterwards
+        $img = $this->ok('update_image', ['id' => $img['id'], 'expected_updated_at' => $img['updated_at'], 'title' => 'Cafe POS terminal in Dubai', 'geo' => ['lat' => 25.2048, 'lng' => 55.2708, 'place' => 'Dubai, UAE']])['image'];
+        $this->assertSame('Dubai, UAE', $img['geo']['place']);
+        $webp = file_get_contents(public_path(ltrim($img['path'], '/')));
+        $this->assertStringContainsString('Cafe POS terminal in Dubai', $webp);
+        $this->assertSame(1, substr_count($webp, 'EXIF'));   // rewritten, not stacked
+        $this->assertNotFalse(imagecreatefromstring($webp));
         $this->ok('audit_images', ['page_id' => $pageId]);
         $this->ok('bulk_update_alt', ['items' => [['id' => $img['id'], 'alt' => 'A cafe POS terminal']]]);
         $this->ok('replace_image', ['old_path' => $img['path'], 'new_path' => '/images/2026/06/retail-pos-multitech.webp']);

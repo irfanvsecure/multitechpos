@@ -63,7 +63,9 @@ class Instructions
           place} of the city/area the page targets, e.g. Sharjah 25.3463, 55.4209) and replace_path (the old image).
           The site converts to WebP (variants keep well under 100 KB), writes description + GPS into the WebP EXIF and
           swaps the image everywhere (src, srcset, width/height, alt). Do not resize or convert the file yourself.
-          The same fields work on upload_image for an https URL.
+          The same fields work on upload_image for an https URL. The site keeps EXIF: never tell the owner that
+          the converter strips geotags. An image already uploaded without geo or title: update_image with geo/title
+          rewrites the EXIF of every size.
         - Enquiries (demo form, Setup Builder, contact form) are read-only (list_enquiries).
         - SITE_NOINDEX is {$noindex}. While it is on, every page says noindex and robots.txt disallows all, whatever
           a page's robots value says. Only the owner can change it in the server's .env (get_site_info shows it).

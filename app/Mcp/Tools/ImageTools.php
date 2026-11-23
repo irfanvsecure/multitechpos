@@ -59,10 +59,11 @@ class ImageTools extends ToolSet
                 'replace_path' => $replace,
             ], ['alt'], fn ($a) => $this->upload($a), false, true),
 
-            $this->write('update_image', 'Change alt, title or file name. A new alt is also written into every <img> that shows it (set_alt_in_pages=false to skip). Renaming moves the files, updates every reference and 301s the old URL.', $ref + [
+            $this->write('update_image', 'Change alt, title (description), geotag or file name. A new alt is also written into every <img> that shows it (set_alt_in_pages=false to skip). A new title or geo is written into the EXIF of every WebP size, so an image already on the site can be geotagged afterwards. Renaming moves the files, updates every reference and 301s the old URL.', $ref + [
                 'expected_updated_at' => self::expected(),
                 'alt' => self::s('New alt text'),
-                'title' => self::s('New title'),
+                'title' => $title,
+                'geo' => $geo,
                 'filename' => self::s('New file name (without folder or extension)'),
                 'set_alt_in_pages' => self::b('Default true'),
             ], ['expected_updated_at'], fn ($a) => $this->update($a)),
@@ -270,6 +271,18 @@ class ImageTools extends ToolSet
                 $m->variants = $variants ?: null;
                 $m->original_path = $moves[$m->original_path] ?? $m->original_path;
             }
+        }
+        if (isset($a['geo'])) {
+            $m->geo = Images::geo($a['geo']);
+        }
+        if (isset($a['geo']) || isset($a['title'])) {
+            $exif = Images::exif($m->title ?: (string) $m->alt, $m->geo);
+            $files = array_unique(array_merge([$m->path], array_values($m->variants ?? [])));
+            foreach ($files as $p) {
+                Images::addExifToWebp(public_path(ltrim($p, '/')), $exif);
+            }
+            $m->size = filesize(public_path(ltrim($m->path, '/'))) ?: $m->size;
+            $notes['exif_written_to'] = array_values($files);
         }
         $m->save();
         Activity::log('update', $m, $before, self::out($m), 'image '.$m->path);
