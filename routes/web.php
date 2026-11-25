@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LeadController;
+use App\Http\Controllers\LegacyRedirectController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RobotsController;
 use App\Http\Controllers\SitemapController;
@@ -19,21 +20,19 @@ Route::post('/request-demo', [LeadController::class, 'store'])
     ->name('lead.store');
 
 // Old WordPress URLs -> their new home (301, keeps search rankings).
-// RedirectResponse is used directly because redirect() would drop the trailing slash.
-$moved = fn (string $to) => fn (Request $request) => new RedirectResponse(
-    $request->getSchemeAndHttpHost().$request->getBaseUrl().$to, 301
-);
+// A controller, not a closure: nested closures break under `php artisan route:cache` (500 on prod).
+$moved = fn (string $uri, string $to) => Route::get($uri, LegacyRedirectController::class)->defaults('to', $to);
 
 foreach (['wp-sitemap.xml', 'sitemap_index.xml', 'page-sitemap.xml', 'post-sitemap.xml'] as $old) {
-    Route::get($old, $moved('/sitemap.xml'));
+    $moved($old, '/sitemap.xml');
 }
-Route::get('/wp-sitemap-{any}.xml', $moved('/sitemap.xml'))->where('any', '.*');
-Route::get('/feed', $moved('/our-blogs/'));
-Route::get('/comments/feed', $moved('/our-blogs/'));
-Route::get('/blog', $moved('/our-blogs/'));
-Route::get('/category/{any}', $moved('/our-blogs/'))->where('any', '.*');
-Route::get('/author/multitech_admin/page/{n}', $moved('/author/multitech_admin/'));
-Route::get('/download/restropro', $moved('/restropro/'));
+$moved('/wp-sitemap-{any}.xml', '/sitemap.xml')->where('any', '.*');
+$moved('/feed', '/our-blogs/');
+$moved('/comments/feed', '/our-blogs/');
+$moved('/blog', '/our-blogs/');
+$moved('/category/{any}', '/our-blogs/')->where('any', '.*');
+$moved('/author/multitech_admin/page/{n}', '/author/multitech_admin/');
+$moved('/download/restropro', '/restropro/');
 
 // Images moved from /wp-content/uploads/... to /images/...
 Route::get('/wp-content/uploads/{path}', fn (Request $request, string $path) => new RedirectResponse(

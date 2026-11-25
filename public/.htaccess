@@ -5,8 +5,10 @@
 
     RewriteEngine On
 
-    # Redirect www -> non-www
-    RewriteCond %{HTTP_HOST} ^www\.multitechpos\.com [NC]
+    # One hop to https://multitechpos.com for http:// and www (live host only, so localhost is untouched)
+    RewriteCond %{HTTP_HOST} ^(www\.)?multitechpos\.com$ [NC]
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\. [NC]
     RewriteRule ^(.*)$ https://multitechpos.com/$1 [R=301,L]
 
     # Strip /public from URL - this fires when LiteSpeed processes inside public/
